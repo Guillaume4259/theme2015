@@ -557,6 +557,18 @@ h3{
 .bloc-news-home h3, .bloc-events-home h3{
 	font-size:16px;
 }
+
+.punchline-program {
+	font-family: Open Sans;
+	text-transform:uppercase;
+	font-weight: 400; 
+	color: #fff;
+	margin: auto;
+	max-width: 1570px;
+	font-size: 30px;
+}
+
+
 /*----------------FIN TITRES----------------*/
 
 /*----------------LIENS ET BOUTONS----------------*/
