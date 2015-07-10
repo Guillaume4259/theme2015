@@ -15,13 +15,29 @@
 ?>
 <!-- VIDEOS --> 
 <div class="center-col"> 
-<section id="container-video" class="container-fluid" >
-    	<h1><?php _e("Make the change","ieseg2015") ?> <?php _e("and challenge yourself","ieseg2015") ?></h1>
-        <div class="row">
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('Discover IÉSEG', 'ieseg2015');?>" class="btn btn-blanc col-sm-2 col-sm-offset-5 "><?php _e("Discover IÉSEG","ieseg2015") ?></a>
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('View our programs', 'ieseg2015');?>" class="btn btn-blanc col-sm-2 col-sm-offset-5"><?php _e("View our programs","ieseg2015") ?></a>
+<div class="header-unit">
+    <div id="container-video" >
+        <video autoplay loop class="fillWidth">
+        <source src="<?php echo get_template_directory_uri() ;?>/videos/home.mp4" type="video/mp4"/>
+        <source src="<?php echo get_template_directory_uri() ;?>/videos/home.ogg" type="video/ogg"/>
+        <source src="<?php echo get_template_directory_uri() ;?>/videos/home.webm" type="video/webm"/>
+        Your browser does not support the video tag. Please upgrade your browser.
+        </video>
+        <div class="container-fluid container-1600">
+            <div class="row">
+                <h1><span ><?php _e("Make the change","ieseg2015") ?></span><?php _e("and challenge yourself","ieseg2015") ?></h1>
+            </div>
         </div>
-</section>
+        <div class="container-boutons">
+            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1762, 'page' ));?>" title="<?php _e('Discover IÉSEG', 'ieseg2015');?>" class="btn btn-blanc foundry_demi"><?php _e("Discover IÉSEG","ieseg2015") ?></a>
+            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1178, 'page' ));?>" title="<?php _e('View our programs', 'ieseg2015');?>" class="btn btn-blanc foundry_demi"><?php _e("View our programs","ieseg2015") ?></a>
+        </div>
+        
+        <div class="video-cover"></div>
+    </div><!-- end video-container -->
+</div><!-- end .header-unit -->
+
+
 <!-- NEWS -->   
 <section class="container-fluid container-1600 container-news">
 	<h2 class="text-center"><?php _e("News","ieseg2015") ?></h2>
