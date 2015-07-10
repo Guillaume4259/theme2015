@@ -1,10 +1,21 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+<?php
+/*
+Template Name: Home Program
+*/
+?>
 
-<body>
-</body>
-</html>
+<?php get_header(); ?>
+<?php
+	/*if ( have_posts() ) :
+		// Start the Loop.
+		 while ( have_posts() ) : the_post();*/
+?>
+
+
+
+
+<?php
+		/*endwhile;
+	endif;*/
+?>
+<?php get_footer(); ?>
