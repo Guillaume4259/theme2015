@@ -22,19 +22,44 @@ Template Name: Home Program
 		<?php } ?>
     
     </div>
-    	
     </div>
 
 
-<div class="container-fluid container-1600" role="main">
+<div class="container-fluid fond-menu-program" role="main">
+
+	<div id="menu-program">
+        <ul>
+            <li>
+            <div class="picto-menu-programme picto-overview"></div>
+               <?php echo '<a href="'.get_permalink($post->post_parent).'">Overview</a>'; ?>
+            </li>
+        </ul>
+            <?php if ( is_active_sidebar( 'program-menu' ) ) : ?>
+            <?php dynamic_sidebar( 'program-menu' ); ?>
+            <?php endif; ?>
+    </div>
+
 	<div id="breadcrumbs" class="row">
     	<!-- BREADCRUMBS -->
-            <div class="col-sm-12">
+            <div class="col-sm-12 fil-blanc">
                 <?php if(function_exists('bcn_display')){ bcn_display();}?>
             </div>
             <!-- END - BREADCRUMBS -->
     </div>
-    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
         blabla
 

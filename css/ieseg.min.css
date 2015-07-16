@@ -454,6 +454,80 @@ vertical-align: middle;
 
 /*----------------FIN MENU PRINCIPAL----------------*/
 
+/*----------------MENU PROGRAMMES-------------------*/
+
+.fond-menu-program {
+	background:#3c3c3b;
+}
+
+.fil-blanc {
+	color: #fff;
+}
+
+#menu-program ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+color: #fff;
+font: Source Sans Pro;
+font-weight: 400;
+font-size: 16px;
+display: inline;
+}
+
+#menu-program ul li { 
+display: inline;
+float: left;
+}
+
+#menu-program ul li a {
+text-decoration: none;
+padding: .2em 1em;
+color: #fff;
+background-color: none;
+}
+
+#menu-program ul li a:hover {
+color: #ffc20e;
+background-color: none;
+}
+
+#menu-program {
+	text-align:center;
+	padding: 20px 0;
+	margin-right:auto;
+	margin-left:auto;
+    width: 35%;
+}
+
+.picto-menu-programme {
+	width: 33px;
+	height: 31px;
+}
+
+.picto-overview {
+	background: url("../images/sprite-ieseg.png") no-repeat  -5px -372px;
+}
+
+.picto-overview:hover {
+	background: url("../images/sprite-ieseg.png") no-repeat  -7px -416px;
+}
+
+.picto-program {
+}
+
+.picto-profile {
+}
+
+.picto-admission {
+}
+
+.picto-testimonial {
+}
+
+/*----------------FIN MENU PROGRAMMES----------------*/
+
 /*----------------MENU DE GAUCHE----------------*/
 ul.menu-gauche{
 	text-decoration:none !important;

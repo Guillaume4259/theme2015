@@ -114,6 +114,15 @@ function ieseg_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Menu Program', 'ieseg' ),
+		'id'            => 'program-menu',
+		'description'   => __( 'Menu pour pages Program', 'ieseg' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'ieseg_widgets_init' );
 
@@ -212,8 +221,6 @@ function custom_search_footer( $form ) {
     $form .= '</form>';
     return $form;
 }
-
-
 
 add_filter('body_class','menu_class_to_body');
 function menu_class_to_body($classes)
