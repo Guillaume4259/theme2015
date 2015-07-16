@@ -22,4 +22,9 @@ $("#button-form-cibles-home").click(function(event){
 	event.preventDefault();
 });
 
-});     
+
+$('.home .bxslider').bxSlider();
+
+});
+
+     

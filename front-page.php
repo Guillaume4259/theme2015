@@ -239,9 +239,17 @@
             <div class="col-sm-3">
             	<h2 class="text-center"><?php _e("Rankings","ieseg2015") ?></h2>
             	<div class="bloc">
-                	<ul>
+                	<ul class="bxslider">
                     	<li>
                         	<h3>Financial Times</h3>
+                            <ul>
+                            	<li>1ère École Post-Bac</li>
+                                <li>21ème au niveau international</li>
+                                <li>7ème au niveau national</li>
+                            </ul>
+                        </li>
+                        <li>
+                        	<h3>Prout</h3>
                             <ul>
                             	<li>1ère École Post-Bac</li>
                                 <li>21ème au niveau international</li>

@@ -48,14 +48,14 @@ function ieseg_font_url() {
  */
 function ieseg2_scripts() {
 	//<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300,400italic' rel='stylesheet' type='text/css'>
-	// Add Lato font, used in the main stylesheet.
+	// Add Source Sans.
 	wp_enqueue_style( 'ieseg-source-sans', ieseg_font_url(), array(), null );
 
 	// Add Genericons font, used in the main stylesheet.
 	//wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.2' );
 
 	// Load our main stylesheet.
-	wp_enqueue_style( 'twentyfourteen-style', get_stylesheet_uri(), array( 'genericons' ) );
+	//wp_enqueue_style( 'twentyfourteen-style', get_stylesheet_uri(), array( 'genericons' ) );
 	
 	wp_enqueue_style('bootstrap',get_template_directory_uri().'/css/bootstrap.min.css',false,'1.0');
 	wp_enqueue_style('bootstrap-theme',get_template_directory_uri().'/css/bootstrap-theme.min.css',array('bootstrap'),'1.0');
@@ -64,8 +64,8 @@ function ieseg2_scripts() {
 	
 
 	// Load the Internet Explorer specific stylesheet.
-	wp_enqueue_style( 'twentyfourteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentyfourteen-style', 'genericons' ), '20131205' );
-	wp_style_add_data( 'twentyfourteen-ie', 'conditional', 'lt IE 9' );
+	//wp_enqueue_style( 'twentyfourteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentyfourteen-style', 'genericons' ), '20131205' );
+	//wp_style_add_data( 'twentyfourteen-ie', 'conditional', 'lt IE 9' );
 /*
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -88,9 +88,10 @@ function ieseg2_scripts() {
 		) );
 	}
 */
-	if ( is_front_page() ){
-		//video de homepage
-		wp_enqueue_script( 'tubular', get_template_directory_uri() . '/js/jquery.tubular.1.0.js', array( 'jquery' ), '1.0', true );
+	//BX slider
+	if ( is_front_page() || is_page_template('template-home-program.php') ){
+		wp_enqueue_script( 'bxslider', get_template_directory_uri() . '/js/jquery.bxslider.min.js', array( 'jquery' ), '1.0', true );
+		wp_enqueue_style('style-bxslider',get_template_directory_uri().'/css/jquery.bxslider.css',array('style-ieseg'),'1.0');
 	}
 	wp_enqueue_script( 'ieseg-script', get_template_directory_uri() . '/js/ieseg.js', array( 'jquery' ), '1.0', true );
 	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0', true );
