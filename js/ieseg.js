@@ -5,4 +5,21 @@ jQuery(document).ready(function($) {
 		jQuery('#barre-top .container-search-header').slideToggle();
 		
 	});
+	
+//Formulaire Cibles homepage	
+$("#button-form-cibles-home").click(function(event){
+
+	var q;
+	q=$("#form-cibles-home select").val();
+	window.location = q;
+});
+	
+	$('#form-cibles-home').submit(function(event){
+	
+	var q;
+	q=$("#form-cibles-home select").val();
+	window.location = q;
+	event.preventDefault();
+});
+
 });     
