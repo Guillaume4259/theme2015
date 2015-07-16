@@ -981,9 +981,16 @@ footer a, footer a:hover{
 	color:#fff;	
 }
 
+.btn-cta-home{
+	font-size:18px;
+	margin-top:40px;
+}
+
+
 .btn-blanc{
 	border:3px solid #fff;
 	color:#fff !important;
+	background:none;
 }
 
 .btn-blanc:hover{
@@ -1005,7 +1012,22 @@ ul {
 
 /*----------------FIN LISTES----------------*/
 
+/*----------------FORMULAIRES----------------*/
+#form-cibles-home .input-lg{
+	border:3px solid #fff;
+	border-radius:0;
+	color:#fff;
+	font-size:20px;
+	background:#fed650;
+	padding: 0 10px;
+	line-height: 46px;
+}
 
+#form-cibles-home input[type=submit]{
+	height:46px;	
+}
+
+/*----------------FIN FORMULAIRES----------------*/
 
 #container-img-une{
 	height:500px;
@@ -1237,6 +1259,27 @@ video.fillWidth {
 	background:none;
 	padding:0;
 }
+	.container-img-une{
+		display:block;
+		overflow:hidden;
+	}
+
+	.bloc-news-home img{
+		-webkit-transition: all 1s ease; /* Safari and Chrome */
+		-moz-transition: all 1s ease; /* Firefox */
+		-ms-transition: all 1s ease; /* IE 9 */
+		-o-transition: all 1s ease; /* Opera */
+		transition: all 1s ease;
+	}
+	
+	.bloc-news-home:hover img{
+		-webkit-transform:scale(1.25); /* Safari and Chrome */
+		-moz-transform:scale(1.25); /* Firefox */
+		-ms-transform:scale(1.25); /* IE 9 */
+		-o-transform:scale(1.25); /* Opera */
+		 transform:scale(1.25);
+	}
+
 
 .container-events{
 	min-height:400px;
@@ -1257,6 +1300,7 @@ video.fillWidth {
 	.bloc-events-home time{
 		text-transform:uppercase;
 		line-height:1;
+		margin:15px 0;
 	}
 	
 		.bloc-events-home time span{
@@ -1279,14 +1323,67 @@ video.fillWidth {
 .bloc-programme-home{
 	display:block;
 	background:#9b999a;
+	color:#fff !important;
+	position:relative;
+	margin-top:55px;
+	transition: background 0.3s ease 0s;
+}
+
+.bloc-programme-home:hover{
+ 	background:#ffc20e;	
+}
+
+	.container-titre-programme-home{
+		width:100%;
+		padding:20px 40px 20px 10px;
+		top:36%;
+		font-size:21px;
+		position:absolute;
+		display:block;
+		font-weight:bold;
+		text-transform:uppercase;
+		background:rgba(155,153,154,0.6);
+		transition: all 0.3s ease 0s;
+		word-wrap: break-word;
+	}
+	
+	.bloc-programme-home:hover .container-titre-programme-home{
+ 		background:rgba(255,194,14,0.6);	
+	}
+	
+	.container-info-programme-home{
+		padding:20px 10px;
+		display:block;
+		min-height:140px;
+	}
+
+.bloc-programme-home .btn-blanc{
+ 	display:none;
+	
+	width:70%;
+	margin:0 auto;
+
+}
+
+.bloc-programme-home:hover .btn-blanc{
+ 	/*display:inline-block;*/
+	display:block;
 }
 
 .container-ieseg-images{
 	background:#f5f2eb;
 }
 
+.key-fact-picto{
+	width:60px;
+	height:60px;
+	margin:auto;
+	display:block;
+	background:red;
+}
 .key-fact-number{
-	font-size:48px;	
+	font-size:48px;
+	display:block;
 }
 
 /*----------------RESPONSIVE----------------------------*/
