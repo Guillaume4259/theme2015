@@ -14,6 +14,7 @@ body{
 	font-weight: 400;
 	font-style: normal
 }
+
 @font-face {
 	font-family: foundrysterling-demiregular;
 	src: url(../fonts/foustdm-webfont.eot);
@@ -21,19 +22,19 @@ body{
 	font-weight: 400;
 	font-style: normal
 }
-/*@font-face {
+@font-face {
 	font-family: foundrysterling-lightregular;
 	src: url(../fonts/foustli-webfont.eot);
 	src: url(../fonts/foustli-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/foustli-webfont.woff) format('woff'), url(../fonts/foustli-webfont.ttf) format('truetype'), url(../fonts/foustli-webfont.svg#foundrysterling-lightregular) format('svg');
 	font-weight: 400;
 	font-style: normal
-}*/
+}
 .foundry_demi {
 	font-family: foundrysterling-demiregular;
 }
-/*.foundry_light {
-	font-family: foundrysterling-lightregular
-}*/
+.foundry_light {
+	font-family: foundrysterling-lightregular;
+}
 .foundry_bold {
 	font-family: foundrysterling-boldregular;
 }
@@ -483,7 +484,6 @@ float: left;
 
 #menu-program ul li a {
 text-decoration: none;
-padding: .2em 1em;
 color: #fff;
 background-color: none;
 }
@@ -498,35 +498,277 @@ background-color: none;
 	padding: 20px 0;
 	margin-right:auto;
 	margin-left:auto;
-    width: 35%;
+    width: 100%;
+}
+
+.widget_advanced_menu li {
+	margin: 25px;
 }
 
 .picto-menu-programme {
 	width: 33px;
 	height: 31px;
+	margin-left: auto;
+    margin-right: auto;
+	display: block;
+}
+
+.page-template-template-home-program-php .rub-programmes a {
+	display: inline-block;
+    height: 30px;
+    padding: 35px 10px 10px 10px;
+	width: 122px;
+	text-align: center;
 }
 
 .picto-overview {
 	background: url("../images/sprite-ieseg.png") no-repeat  -5px -372px;
 }
 
-.picto-overview:hover {
+.boutons-menu:hover .picto-overview {
 	background: url("../images/sprite-ieseg.png") no-repeat  -7px -416px;
+	width: 44px;
 }
 
 .picto-program {
+	background: url("../images/sprite-ieseg.png") no-repeat  -44px -376px;
+	width: 44px;
+	height: 40px;
+}
+
+.boutons-menu:hover .picto-program {
+	background: url("../images/sprite-ieseg.png") no-repeat  -41px -420px;
+	width: 44px;
 }
 
 .picto-profile {
+	background: url("../images/sprite-ieseg.png") no-repeat  -96px -372px;
+	width: 44px;
+	height: 40px;
 }
 
 .picto-admission {
+	background: url("../images/sprite-ieseg.png") no-repeat  -157px -369px;
+	width: 44px;
+	height: 40px;
 }
 
-.picto-testimonial {
+.picto-testimonials {
+	background: url("../images/sprite-ieseg.png") no-repeat  -206px -369px;
+	width: 44px;
+	height: 40px;
+}
+
+.page-template-template-home-program #breadcrumbs {
+	border-bottom: 1px solid #575756;
+}
+
+.page-template-template-home-program #breadcrumbs a {
+	color: #fff;
 }
 
 /*----------------FIN MENU PROGRAMMES----------------*/
+
+/*----------------PAGE PROGRAMMES----------------*/
+
+.page-template-template-home-program-php footer {
+	margin-top: 0px;
+}
+
+.programme-overview {
+	width: 100%;
+	background:  #fff;
+	font-family: 'Source Sans pro', sans-serif;
+}
+
+.overview-intro-bold {
+	font-family: 'Source Sans pro', sans-serif;
+	font-weight: 600;
+}
+
+.overview-intro {
+	margin-bottom: 40px;
+	padding: 20px;
+	border-top: 4px solid #ffc20e;
+	background: #fff;
+	opacity: 0.95;
+}
+
+.overview-title {
+	font-size: 50px;
+	color: #ffc20e;
+}
+
+.overview-button {
+	border: 3px solid #fff;
+	font-weight: 600;
+	font-size: 24px;
+	text-align: center;
+	padding: 12px;
+	border: 3px solid;
+	margin-top: 10px;
+	color: #fff;
+}
+
+.overview-button:hover {
+	border: 3px solid #333;
+	color: #333;
+	cursor: pointer;
+	background: #fff;
+}
+
+.overview-apply-button {
+	color: #ffc20e;
+	margin-top: 0px !important;
+}
+
+.overview-apply-button:hover {
+	color: #fff;
+	background: #ffc20e;
+	border: #fff 3px solid;
+}
+
+.container-overview-part1 {
+	margin-top: 20px;
+}
+
+.background-programme {
+	background: url(../images/msc_digital_marketing/fond-page-programme.jpg) no-repeat top;
+	background-size: cover;
+	position: relative;
+}
+
+.contact-programme {
+	background: #fff;
+	opacity: 0.95;
+	margin-top: 30px;
+	width: 100%;
+	float: left;
+}
+
+.contact-programme h4 {
+	font-size: 36px !important;
+	font-weight: 200;
+}
+
+.contact-programme .contact-name {
+	font-size: 18px !important;
+	font-weight: 400;
+	float:left
+}
+
+.contact-programme .contact-email {
+	font-size: 18px !important;
+	font-weight: 200;
+	float:left;
+}
+
+.contact-photo {
+	float:left;	
+	margin: 10px;
+}
+
+.programme-illustration {
+	float:left;	
+	margin: 20px;
+}
+
+.title {
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	padding: 15px 0;
+}
+
+.title-margin-bottom {
+	margin-bottom: 40px;
+}
+
+.container-overview-part2 {
+	background: #ffc20e;
+}
+
+.directors-photo {
+	float: left;
+}
+
+.dr-name {
+	color: #ffc20e;
+	font-size: 30px;
+	padding: 10px 0;
+}
+
+.dr-role {
+	color: #6f6f6e;
+	font-size: 16px;
+}
+
+.directors-word {
+	padding: 50px;
+}
+
+.bloc a {
+	color: #666666;
+	text-decoration:underline;
+}
+
+.foreword-contents {
+	position:relative;
+	z-index: 2;
+}
+
+span.foreword-contents::before {
+	width: 97px;
+	height: 88px;
+	background: url("../images/sprite-ieseg.png") no-repeat  0px -477px;
+	content:" ";
+	display: block;
+	position:absolute;
+	z-index: -1;
+	margin: -10px;
+}
+
+.infobox-programme {
+	margin-top: 30px;
+	width: 100%;
+}
+
+.infobox-programme h4 {
+	margin: 20px;
+	font-size: 33px !important;
+	color: #6f6f6e;
+	font-weight: 200;
+}
+
+.container-overview-part5 {
+	background: #575756;
+}
+
+.container-news-events {
+	background: #f4f2ea;
+}
+
+.box {
+    background: #fff;
+    border-top: 4px solid #6f6f6e;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.box h3 {
+	font-size: 48px !important;
+	color: #868686;
+	text-align: center;
+	font-weight: 200 !important;
+	font-style: Source Sans;
+	margin: 5px;
+}
+
+.container-overview-part6{
+	padding: 30px 0 20px 0;
+}
+
+/*----------------FIN PAGE PROGRAMMES----------------*/
 
 /*----------------MENU DE GAUCHE----------------*/
 ul.menu-gauche{
@@ -750,6 +992,18 @@ footer a, footer a:hover{
 	color:#333 !important;
 }
 /*----------------FIN LIENS ET BOUTONS----------------*/
+
+/*----------------LISTES----------------*/
+
+
+ul {
+	list-style-type: square;
+	line-height: 2;
+	font-weight: 400;
+}
+
+
+/*----------------FIN LISTES----------------*/
 
 
 
