@@ -242,19 +242,64 @@
                 	<ul class="bxslider">
                     	<li>
                         	<h3>Financial Times</h3>
-                            <ul>
-                            	<li>1ère École Post-Bac</li>
-                                <li>21ème au niveau international</li>
-                                <li>7ème au niveau national</li>
-                            </ul>
+                            <?php
+                            if (ICL_LANGUAGE_CODE=="fr"){?>
+                            	<ul>
+                                	<li>1<sup>ère</sup> École Post-Bac</li>
+                                    <li>Classement international : 21<sup>ème</sup></li>
+                                    <li>Classement national: 7<sup>ème</sup></li>
+                                </ul>
+                            <?php
+							}
+							else{
+							?>
+                            	<ul>
+                                    <li>International Ranking: 21<sup>st</sup></li>
+                                    <li>French Ranking: 7<sup>th</sup></li>
+                                </ul>
+							<?php
+							}
+							?> 
                         </li>
                         <li>
-                        	<h3>Prout</h3>
-                            <ul>
-                            	<li>1ère École Post-Bac</li>
-                                <li>21ème au niveau international</li>
-                                <li>7ème au niveau national</li>
-                            </ul>
+                        	<h3>L’Étudiant / L’Express</h3>
+                            <?php
+                            if (ICL_LANGUAGE_CODE=="fr"){?>
+                            	<ul>
+                                    <li>Excellence académique : 3<sup>ème</sup></li>
+                                    <li>International : 4<sup>ème</sup></li>
+                                </ul>
+                            <?php
+							}
+							else{
+							?>
+                            	<ul>
+                                    <li>Academic Excellence: 3<sup>rd</sup></li>
+                                    <li>International Excellence: 4<sup>th</sup></li>
+                                </ul>
+							<?php
+							}
+							?> 
+                        </li>
+                        <li>
+                        	<h3>Le Figaro Étudiant</h3>
+                            <?php
+                            if (ICL_LANGUAGE_CODE=="fr"){?>
+                            	<ul>
+                                    <li>1<sup>ère</sup> École Post-Bac</li>
+                                    <li>7<sup>ème</sup> école de commercce</li>
+                                </ul>
+                            <?php
+							}
+							else{
+							?>
+                            	<ul>
+                                    <li>French Ranking: 1<sup>st</sup> Business School Recruiting Students from High School</li>
+                                    <li>French Ranking: 7<sup>th</sup> Business School</li>
+                                </ul>
+							<?php
+							}
+							?> 
                         </li>
                     </ul>
                 </div>
@@ -266,7 +311,16 @@
 <section class="container-campus">
     <div class="container-fluid container-1600">
         <div class="row">
-            <div class="col-sm-6"><h2 class="text-center"><?php _e("Lille Campus","ieseg2015") ?></h2></div>
+            <div class="col-sm-6">
+            	<a href="<?php echo get_page_link(apply_filters('wpml_object_id',1910, 'page' ));?>" class="lien-container-campus">
+                	<img src="<?php echo get_template_directory_uri() ;?>/images/home/campus-lille.jpg" alt="<?php _e("Lille Campus","ieseg2015") ?>" class="img-responsive"/>
+                	<h2 class="text-center">
+                    	<?php _e("Lille Campus","ieseg2015") ?><br />
+                    	<span class="btn btn-blanc"><?php _e("Discover","ieseg2015") ?></span>
+                        
+                	</h2>
+                </a>
+            </div>
             <div class="col-sm-6"><h2 class="text-center"><?php _e("Paris Campus","ieseg2015") ?></h2></div>
         </div>
     </div>

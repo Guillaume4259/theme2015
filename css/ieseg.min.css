@@ -941,7 +941,8 @@ footer .twitter-timeline{
 }*/
 
 .home section{
- padding : 55px 0;	
+	padding-top : 55px;	
+	padding-bottom : 55px;
 }
 
 .header-unit {
@@ -1129,6 +1130,20 @@ video.fillWidth {
 .key-fact-number{
 	font-size:48px;
 	display:block;
+}
+
+.lien-container-campus{
+	display:block;
+	border-top:3px solid #666666;	
+	position:relative;
+}
+
+.container-campus h2{
+	width:100%;
+	position:absolute;
+	top:20%;
+	color:#fff;
+	background:rgba(54,65,75,0.70);	
 }
 
 /*----------------RESPONSIVE----------------------------*/

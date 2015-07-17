@@ -23,7 +23,9 @@ $("#button-form-cibles-home").click(function(event){
 });
 
 
-$('.home .bxslider').bxSlider();
+$('.home .bxslider').bxSlider({
+	auto: true	
+});
 
 });
 
