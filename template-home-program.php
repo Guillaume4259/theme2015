@@ -30,14 +30,17 @@ Template Name: Home Program
 	<div id="menu-program">
         <ul>
             <li>
-            <div class="picto-menu-programme picto-overview"></div>
-               <?php echo '<a href="'.get_permalink($post->post_parent).'">Overview</a>'; ?>
+               <?php echo '<a class="boutons-menu" href="'.get_permalink($post->post_parent).'">
+			   <span class="picto-menu-programme picto-overview"></span>
+			   Overview</a>'; ?>
             </li>
+
         </ul>
             <?php if ( is_active_sidebar( 'program-menu' ) ) : ?>
             <?php dynamic_sidebar( 'program-menu' ); ?>
             <?php endif; ?>
     </div>
+    <div class="clear"></div>
 
 	<div id="breadcrumbs" class="row">
     	<!-- BREADCRUMBS -->
@@ -50,17 +53,12 @@ Template Name: Home Program
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        blabla
+<div class="programme-overview">
+        <?php if (have_posts()) : while (have_posts()) : the_post();?>
+<?php the_content(); ?>
+<?php endwhile; endif; ?>
+</div>
+        
+        
 
 <?php get_footer(); ?>
