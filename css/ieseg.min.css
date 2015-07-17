@@ -282,6 +282,16 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	margin:0 auto;
 }
 
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 #barre-top{
 	background:#4d4d4d;
 	color:#f3f3e9;
@@ -997,6 +1007,21 @@ footer a, footer a:hover{
 	border:3px solid #fff;
 	background:#fff;
 	color:#333 !important;
+}
+
+.btn-lille span, .btn-paris span{
+	width:32px;
+	height:32px;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.btn-lille span{
+	background:url(../images/sprite-ieseg.png) no-repeat 0 -124px; 
+}
+
+.btn-paris span{
+	background:url(../images/sprite-ieseg.png) no-repeat -38px -124px; 
 }
 /*----------------FIN LIENS ET BOUTONS----------------*/
 

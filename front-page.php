@@ -316,12 +316,19 @@
                 	<img src="<?php echo get_template_directory_uri() ;?>/images/home/campus-lille.jpg" alt="<?php _e("Lille Campus","ieseg2015") ?>" class="img-responsive"/>
                 	<h2 class="text-center">
                     	<?php _e("Lille Campus","ieseg2015") ?><br />
-                    	<span class="btn btn-blanc"><?php _e("Discover","ieseg2015") ?></span>
-                        
+                    	<span class="btn btn-blanc btn-lille"><span></span><?php _e("Discover","ieseg2015") ?></span>      
                 	</h2>
                 </a>
             </div>
-            <div class="col-sm-6"><h2 class="text-center"><?php _e("Paris Campus","ieseg2015") ?></h2></div>
+            <div class="col-sm-6">
+            	<a href="<?php echo get_page_link(apply_filters('wpml_object_id',31473, 'page' ));?>" class="lien-container-campus">
+                	<img src="<?php echo get_template_directory_uri() ;?>/images/home/campus-paris.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive"/>
+                	<h2 class="text-center">
+                    	<?php _e("Paris Campus","ieseg2015") ?><br />
+                    	<span class="btn btn-blanc btn-paris"><span></span><?php _e("Discover","ieseg2015") ?></span>      
+                	</h2>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -329,11 +336,33 @@
 <section class="container-ieseg-images">
     <div class="container-fluid">
         <h2 class="text-center"><?php _e("Photo gallery","ieseg2015") ?></h2>
-        <div class="row">
-        
+    </div>
+        <div class="row no-gutters"><!-- no container needed for no-gutters rows-->
+        	<div class="col-xs-6 col-sm-3">
+        		<img src="<?php echo get_template_directory_uri() ;?>/images/home/la-defense.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+                <img src="<?php echo get_template_directory_uri() ;?>/images/home/cour-bat-a.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+        		<img src="<?php echo get_template_directory_uri() ;?>/images/home/cours-ecole-commerce.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            </div>
+            <div class="col-sm-3">
+        		<img src="<?php echo get_template_directory_uri() ;?>/images/home/cours-commerce-lille.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+                <div class="row no-gutters">
+                	<div class="col-xs-6">
+                		<img src="<?php echo get_template_directory_uri() ;?>/images/home/remise-diplome-ecole-commerce.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            		</div>
+                    <div class="col-xs-6">	
+                        <img src="<?php echo get_template_directory_uri() ;?>/images/home/travail-cour.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            		</div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+        		<img src="<?php echo get_template_directory_uri() ;?>/images/home/travail-paris.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            </div>
         </div>
+	<div class="container-fluid">
         <div class="row">
-            <a href="https://instagram.com/ieseg_school/" title="<?php _e('Follow IÉSEG on Instagram', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("Follow IÉSEG on Instagram","ieseg2015") ?></a>	
+            <a href="https://instagram.com/ieseg_school/" title="<?php _e('Follow IÉSEG on Instagram', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5" target="_blank"><?php _e("Follow IÉSEG on Instagram","ieseg2015") ?></a>	
         </div>
     </div>
 </section>
