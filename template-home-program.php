@@ -78,35 +78,42 @@ Template Name: Home Program
 
 	<div class="row">
     	<?php
-		$args = array( 'posts_per_page' => 4, 'order'=> 'DESC', 'orderby' => 'date','post_type' => 'news' );
+		$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date','post_type' => 'news' );
 		$postslist = get_posts( $args );
 		foreach ( $postslist as $post ) :
-		  setup_postdata( $post ); ?> 
-			<div class="col-sm-3">
-            	<div class="bloc bloc-news-home">
-					<?php 
-					if ( has_post_thumbnail() ) {?>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-une"><?php the_post_thumbnail(); ?></a>
-                    <?php
-					}
-					else {?>
-                    
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-une" style="display:block;overflow:hidden;"><img src="<?php echo get_template_directory_uri().'/images/actu-home-defaut.jpg' ;?>" class="img-responsive" alt="<?php the_title(); ?>"/>
-					<?php
-                    }
-					?>
-					<h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_excerpt(); ?></a>
-                </div>
-			</div>
+		  setup_postdata( $post ); ?>
+          
+     
+			<div class="col-sm-12 news-program">
+            
+                <div class="row">
+                    <div class="col-sm-3">
+                        <?php 
+                        if ( has_post_thumbnail() ) {?>
+                            <div class="row"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-news"><?php the_post_thumbnail(); ?></a></div>
+                        <?php
+                        }
+                        else {?>
+                        
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-news"><img src="<?php echo get_template_directory_uri().'/images/actu-home-defaut.jpg' ;?>" alt="<?php the_title(); ?>"/>
+                        <?php
+                        }
+                        ?>
+                     </div><!--END col-sm-3-->
+    				<div class="col-sm-9">
+                        <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><div class="news-program-excerpt"><?php the_excerpt(); ?></div></a>
+                    </div>
+               	</div><!--END row-->
+              </div>
 		<?php
 		endforeach; 
 		//wp_reset_postdata();
 		?>	
-        
     </div>
+    
     <div class="row">
-    	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home col-sm-2 col-sm-offset-5"><?php _e("All news","ieseg2015") ?></a>	
+    	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-see-all col-sm-2 col-sm-offset-5"><?php _e("All news","ieseg2015") ?></a>	
     </div>
 
                      </div><!--END box-->
@@ -150,7 +157,7 @@ Template Name: Home Program
             ?>		
         </div>
         <div class="row">
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn btn-cta-home col-sm-2 col-sm-offset-5"><?php _e("All events","ieseg2015") ?></a>	
+            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn btn-see-all col-sm-2 col-sm-offset-5"><?php _e("All events","ieseg2015") ?></a>	
         </div>	
            </div><!--END box-->
         </div><!--END col-sm-6-->

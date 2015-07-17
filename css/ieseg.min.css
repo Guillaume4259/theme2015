@@ -489,8 +489,8 @@ background-color: none;
 }
 
 #menu-program ul li a:hover {
-color: #ffc20e;
-background-color: none;
+	color: #ffc20e;
+	background-color: none;
 }
 
 #menu-program {
@@ -503,6 +503,12 @@ background-color: none;
 
 .widget_advanced_menu li {
 	margin: 25px;
+}
+
+.page-template-template-home-program-php #menu-program ul li {
+	float: left;
+	margin: 0;
+	display: block;
 }
 
 .picto-menu-programme {
@@ -521,7 +527,7 @@ background-color: none;
 	text-align: center;
 }
 
-.picto-overview {
+.picto-overview a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -5px -372px;
 }
 
@@ -530,30 +536,30 @@ background-color: none;
 	width: 44px;
 }
 
-.picto-program {
+.picto-program a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -44px -376px;
 	width: 44px;
 	height: 40px;
 }
 
-.boutons-menu:hover .picto-program {
+.boutons-menu:hover .picto-program a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -41px -420px;
 	width: 44px;
 }
 
-.picto-profile {
+.picto-profile a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -96px -372px;
 	width: 44px;
 	height: 40px;
 }
 
-.picto-admission {
+.picto-admission a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -157px -369px;
 	width: 44px;
 	height: 40px;
 }
 
-.picto-testimonials {
+.picto-testimonials a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -206px -369px;
 	width: 44px;
 	height: 40px;
@@ -805,6 +811,32 @@ span.foreword-contents::before {
 
 .lieu {
 	margin-left: 22px;
+}
+
+.news-program-excerpt {
+	text-transform: lowercase;
+	font-size: 14px;
+}
+
+.container-news-events .container-img-une img{
+	display: block;
+	height: auto;
+	max-width: auto !important;
+}
+
+.btn-see-all {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.news-program {
+	 padding: 15px;
+}
+
+.container-img-news img {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 /*----------------FIN PAGE PROGRAMMES----------------*/
