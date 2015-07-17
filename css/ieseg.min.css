@@ -499,8 +499,8 @@ background-color: none;
 }
 
 #menu-program ul li a:hover {
-color: #ffc20e;
-background-color: none;
+	color: #ffc20e;
+	background-color: none;
 }
 
 #menu-program {
@@ -513,6 +513,12 @@ background-color: none;
 
 .widget_advanced_menu li {
 	margin: 25px;
+}
+
+.page-template-template-home-program-php #menu-program ul li {
+	float: left;
+	margin: 0;
+	display: block;
 }
 
 .picto-menu-programme {
@@ -531,7 +537,7 @@ background-color: none;
 	text-align: center;
 }
 
-.picto-overview {
+.picto-overview a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -5px -372px;
 }
 
@@ -540,30 +546,30 @@ background-color: none;
 	width: 44px;
 }
 
-.picto-program {
+.picto-program a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -44px -376px;
 	width: 44px;
 	height: 40px;
 }
 
-.boutons-menu:hover .picto-program {
+.boutons-menu:hover .picto-program a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -41px -420px;
 	width: 44px;
 }
 
-.picto-profile {
+.picto-profile a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -96px -372px;
 	width: 44px;
 	height: 40px;
 }
 
-.picto-admission {
+.picto-admission a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -157px -369px;
 	width: 44px;
 	height: 40px;
 }
 
-.picto-testimonials {
+.picto-testimonials a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -206px -369px;
 	width: 44px;
 	height: 40px;
@@ -756,6 +762,8 @@ span.foreword-contents::before {
 
 .container-news-events {
 	background: #f4f2ea;
+	color: #3c3f44;
+	text-align: left;
 }
 
 .box {
@@ -771,11 +779,74 @@ span.foreword-contents::before {
 	text-align: center;
 	font-weight: 200 !important;
 	font-style: Source Sans;
-	margin: 5px;
+	margin: 5px 5px 20px 5px;
 }
 
 .container-overview-part6{
 	padding: 30px 0 20px 0;
+}
+
+.container-news-events h4, .container-news-events a {
+	font-size: 16px !important;
+	text-transform: uppercase;
+	color: #3c3f44;
+}
+
+.container-news-events .jour {
+	color: #9c9b9b;
+}
+
+.container-news-events .date {
+	color: #ffc20e;
+}
+
+.container-news-events .moi {
+	color: #3c3f44;
+}
+
+.container-news-events .bloc-events-home {
+	margin-bottom: 5px;
+}
+
+.picto-pin {
+	width: 15px;
+	height: 19px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -180px -636px;
+	float:left;
+}
+
+.lieu-event {
+	display:block;
+}
+
+.lieu {
+	margin-left: 22px;
+}
+
+.news-program-excerpt {
+	text-transform: lowercase;
+	font-size: 14px;
+}
+
+.container-news-events .container-img-une img{
+	display: block;
+	height: auto;
+	max-width: auto !important;
+}
+
+.btn-see-all {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.news-program {
+	 padding: 15px;
+}
+
+.container-img-news img {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 /*----------------FIN PAGE PROGRAMMES----------------*/
