@@ -514,6 +514,8 @@ background-color: none;
 	margin: 25px;
 }
 
+
+
 .page-template-template-home-program-php #menu-program ul li {
 	margin: 0;
 }
@@ -526,6 +528,10 @@ background-color: none;
 	display: block;
 }
 
+.page-template-template-home-program-php .fil-blanc {
+	color: #ffc20e;
+}
+
 .page-template-template-home-program-php .rub-programmes a {
 	display: inline-block;
     height: 30px;
@@ -533,16 +539,15 @@ background-color: none;
 	width: 120px;
 	text-align: center;
 	line-height: 1.3;
+	vertical-align: bottom;
 }
 
-.picto-overview {
-	background: url("../images/sprite-ieseg.png") no-repeat  -24px -357px;
-	height: 43px;
-	width: 44px;
+.picto-overview a {
+	background: url("../images/sprite-ieseg.png") no-repeat  13px -355px;
 }
 
-.boutons-menu:hover .picto-overview {
-	background: url("../images/sprite-ieseg.png") no-repeat  -24px -410px;
+.picto-overview:hover a {
+	background: url("../images/sprite-ieseg.png") no-repeat  13px -408px;
 }
 
 .picto-program a{
@@ -762,7 +767,7 @@ background-color: none;
 span.foreword-contents::before {
 	width: 97px;
 	height: 88px;
-	background: url("../images/sprite-ieseg.png") no-repeat  0px -477px;
+	background: url("../images/sprite-ieseg.png") no-repeat  0px -764px;
 	content:" ";
 	display: block;
 	position:absolute;
@@ -874,6 +879,15 @@ span.foreword-contents::before {
 	height: auto;
 	display: block;
 }
+
+/*----------------BLOC KEYFACTS----------------*/
+
+.keyfacts {
+	
+}
+
+/*----------------FIN BLOC KEYFACTS----------------*/
+
 
 /*----------------FIN PAGE PROGRAMMES----------------*/
 

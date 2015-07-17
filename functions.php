@@ -119,8 +119,8 @@ function ieseg_widgets_init() {
 		'name'          => __( 'Menu Program', 'ieseg' ),
 		'id'            => 'program-menu',
 		'description'   => __( 'Menu pour pages Program', 'ieseg' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
+		'before_widget' => '',
+		'after_widget'  => '',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
