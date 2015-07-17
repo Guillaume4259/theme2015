@@ -746,6 +746,8 @@ span.foreword-contents::before {
 
 .container-news-events {
 	background: #f4f2ea;
+	color: #3c3f44;
+	text-align: left;
 }
 
 .box {
@@ -761,11 +763,48 @@ span.foreword-contents::before {
 	text-align: center;
 	font-weight: 200 !important;
 	font-style: Source Sans;
-	margin: 5px;
+	margin: 5px 5px 20px 5px;
 }
 
 .container-overview-part6{
 	padding: 30px 0 20px 0;
+}
+
+.container-news-events h4, .container-news-events a {
+	font-size: 16px !important;
+	text-transform: uppercase;
+	color: #3c3f44;
+}
+
+.container-news-events .jour {
+	color: #9c9b9b;
+}
+
+.container-news-events .date {
+	color: #ffc20e;
+}
+
+.container-news-events .moi {
+	color: #3c3f44;
+}
+
+.container-news-events .bloc-events-home {
+	margin-bottom: 5px;
+}
+
+.picto-pin {
+	width: 15px;
+	height: 19px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -180px -636px;
+	float:left;
+}
+
+.lieu-event {
+	display:block;
+}
+
+.lieu {
+	margin-left: 22px;
 }
 
 /*----------------FIN PAGE PROGRAMMES----------------*/
