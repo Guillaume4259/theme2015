@@ -479,7 +479,6 @@ display: inline;
 
 #menu-program ul li { 
 display: inline;
-float: left;
 }
 
 #menu-program ul li a {
@@ -495,7 +494,7 @@ background-color: none;
 
 #menu-program {
 	text-align:center;
-	padding: 20px 0;
+	padding: 27px 0;
 	margin-right:auto;
 	margin-left:auto;
     width: 100%;
@@ -506,9 +505,7 @@ background-color: none;
 }
 
 .page-template-template-home-program-php #menu-program ul li {
-	float: left;
 	margin: 0;
-	display: block;
 }
 
 .picto-menu-programme {
@@ -522,24 +519,30 @@ background-color: none;
 .page-template-template-home-program-php .rub-programmes a {
 	display: inline-block;
     height: 30px;
-    padding: 35px 10px 10px 10px;
-	width: 122px;
+    padding: 49px 10px 10px 10px;
+	width: 120px;
 	text-align: center;
+	line-height: 1.3;
 }
 
-.picto-overview a {
-	background: url("../images/sprite-ieseg.png") no-repeat  -5px -372px;
+.picto-overview {
+	background: url("../images/sprite-ieseg.png") no-repeat  -24px -357px;
+	height: 43px;
+	width: 44px;
 }
 
 .boutons-menu:hover .picto-overview {
-	background: url("../images/sprite-ieseg.png") no-repeat  -7px -416px;
-	width: 44px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -24px -410px;
 }
 
 .picto-program a{
-	background: url("../images/sprite-ieseg.png") no-repeat  -44px -376px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -127px -360px;
 	width: 44px;
 	height: 40px;
+}
+
+.picto-program:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -127px -414px;
 }
 
 .boutons-menu:hover .picto-program a{
@@ -548,25 +551,43 @@ background-color: none;
 }
 
 .picto-profile a {
-	background: url("../images/sprite-ieseg.png") no-repeat  -96px -372px;
+	background: url("../images/sprite-ieseg.png") no-repeat  13px -479px;
 	width: 44px;
 	height: 40px;
 }
 
+.picto-profile:hover a {
+	background: url("../images/sprite-ieseg.png") no-repeat  13px -530px;
+}
+
+
 .picto-admission a{
-	background: url("../images/sprite-ieseg.png") no-repeat  -157px -369px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -130px -478px;
 	width: 44px;
 	height: 40px;
+}
+
+#menu-program li .picto-admission a {
+	padding-top: 5px;
+}
+
+.picto-admission:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -129px -531px;
 }
 
 .picto-testimonials a{
-	background: url("../images/sprite-ieseg.png") no-repeat  -206px -369px;
+	background: url("../images/sprite-ieseg.png") no-repeat  13px -588px;
 	width: 44px;
 	height: 40px;
+}
+
+.picto-testimonials:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  13px -647px;
 }
 
 .page-template-template-home-program #breadcrumbs {
 	border-bottom: 1px solid #575756;
+	height: 80px !important;
 }
 
 .page-template-template-home-program #breadcrumbs a {
@@ -576,6 +597,11 @@ background-color: none;
 /*----------------FIN MENU PROGRAMMES----------------*/
 
 /*----------------PAGE PROGRAMMES----------------*/
+
+
+.page-template-template-home-program-php #breadcrumbs {
+	color: #ffc20e;
+}
 
 .page-template-template-home-program-php footer {
 	margin-top: 0px;
