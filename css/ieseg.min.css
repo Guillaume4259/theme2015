@@ -1491,6 +1491,7 @@ video.fillWidth {
 
 .container-campus h2{
 	width:100%;
+	padding:20px 0 25px;
 	position:absolute;
 	top:20%;
 	color:#fff;
