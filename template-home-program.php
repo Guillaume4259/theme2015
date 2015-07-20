@@ -29,9 +29,10 @@ Template Name: Home Program
 
 	<div id="menu-program">
         <ul>
-            <li>
-               <?php echo '<a class="boutons-menu" href="'.get_permalink($post->post_parent).'">
-			   <span class="picto-menu-programme picto-overview"></span>
+            <li class="rub-programmes boutons-menu picto-menu-programme picto-overview menu-item menu-item-type-post_type menu-item-object-page">
+
+
+               <?php echo '<a  href="'.get_permalink($post->post_parent).'">
 			   Overview</a>'; ?>
             </li>
 
