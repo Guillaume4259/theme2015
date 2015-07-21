@@ -27,6 +27,14 @@ $('.home .bxslider').bxSlider({
 	auto: true	
 });
 
+
+// Slider Témoignages Homepage programmes
+
+$('.proghome-testimonials .bxslider').bxslider ({
+	auto: true
+});
+
+
 });
 
      

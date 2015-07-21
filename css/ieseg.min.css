@@ -514,8 +514,6 @@ background-color: none;
 	margin: 25px;
 }
 
-
-
 .page-template-template-home-program-php #menu-program ul li {
 	margin: 0;
 }
@@ -602,7 +600,6 @@ background-color: none;
 
 .page-template-template-home-program #breadcrumbs {
 	border-bottom: 1px solid #575756;
-	height: 80px !important;
 }
 
 .page-template-template-home-program #breadcrumbs a {
@@ -616,6 +613,12 @@ background-color: none;
 
 .page-template-template-home-program-php #breadcrumbs {
 	color: #ffc20e;
+	border-top:1px solid #575756;
+	border-bottom: 0px;
+	margin-bottom: 13px;
+    margin-top: 26px;
+    padding-top: 0px;
+    height: 0px;
 }
 
 .page-template-template-home-program-php footer {
@@ -842,7 +845,7 @@ span.foreword-contents::before {
 .picto-pin {
 	width: 15px;
 	height: 19px;
-	background: url("../images/sprite-ieseg.png") no-repeat  -180px -636px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -180px -930px;
 	float:left;
 }
 
@@ -859,7 +862,7 @@ span.foreword-contents::before {
 	font-size: 14px;
 }
 
-.container-news-events .container-img-une img{
+.container-news-events .container-img-une img {
 	display: block;
 	height: auto;
 	max-width: auto !important;
@@ -880,10 +883,69 @@ span.foreword-contents::before {
 	display: block;
 }
 
+.proghome-testimonials {
+	margin: 40px 0;
+	height: auto;
+}
+
+.proghome-testimonials h3 a {
+	font-weight: 600;
+	color: #ffc20e;
+	font-size: 25px;
+}
+
+.proghome-testimonials span {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.225;
+}
+
+.proghome-testimonials .readmore div {
+	font-size: 14px;
+}
+
+.yellow-quotation-mark {
+	height: 63px;
+	width: 77px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -138px -793px;
+}
+
+.testimonials-home-photo {
+  overflow: hidden;
+  width: 385px;
+  height: 420px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin: 25px 0 25px 150px;
+  float:left;
+}
+
 /*----------------BLOC KEYFACTS----------------*/
 
-.keyfacts {
-	
+.keyfacts{
+	background: rgba(255, 255, 255, 0.95);
+	border-top: 4px solid #ffc20e;
+	float: right;
+	margin-top: 70px;
+}
+
+.keyfacts .table tbody tr th {
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.keyfacts .keytitle {
+	font-size: 25px !important;
+	padding-top: 20px;
+}
+
+.keyfacts .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+	padding: 2px;
+	border: 0px;
 }
 
 /*----------------FIN BLOC KEYFACTS----------------*/
