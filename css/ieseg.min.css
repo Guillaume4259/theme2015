@@ -926,13 +926,13 @@ span.foreword-contents::before {
 
 .testimonials-home-photo {
   overflow: hidden;
-  width: 385px;
   height: 420px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  margin: 25px 0 25px 150px;
+  margin: 25px 0 25px -31px;
   float:left;
+  width: 100%;
 }
 
 
@@ -1713,6 +1713,17 @@ video.fillWidth {
 		margin:0;
 		width:auto;	
 	}
+
+	.testimonials-home-photo {
+		  overflow: hidden;
+		  width: 385px;
+		  height: 420px;
+		  background-size: cover;
+		  background-repeat: no-repeat;
+		  background-position: center top;
+		  margin: 25px 0 25px 150px;
+		  float:left;
+}
 
 }
 

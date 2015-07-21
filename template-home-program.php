@@ -140,7 +140,7 @@ Template Name: Home Program
                             <?php if ( has_post_thumbnail() ) { ?>
                             <?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' );
                             } ?>
-                        <div style="background-image: url('<?php echo $background[0]; ?>');" class="clear testimonials-home-photo"></div>
+                        <div style="background-image: url('<?php echo $background[0]; ?>');" class="clear testimonials-home-photo img-responsive"></div>
 
                         <div class="col-sm-6 col-sm-offset-0">
                             <?php 
