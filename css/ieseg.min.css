@@ -462,6 +462,10 @@ vertical-align: middle;
 	right:0;
 	left:auto !important;
 }
+/* cacher le niveau 3*/
+.ubermenu .ubermenu-item-level-2 ul.ubermenu-submenu{
+	display:none;	
+}
 
 /*----------------FIN MENU PRINCIPAL----------------*/
 
@@ -1167,9 +1171,36 @@ ul {
 
 #container-img-une{
 	height:500px;
-	background: url(../images/img_une_provi.jpg) no-repeat fixed center #A7A7A7;
+	background-image: url(../images/img_une_provi.jpg);
 	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:fixed;
 	position:relative;
+}
+
+.rub-ecole #container-img-une{
+	/*background-image: url(../images/img_une_provi.jpg);*/
+}
+
+.rub-services #container-img-une{
+	background-image: url(../images/img-une-services.jpg);
+}
+
+.rub-international #container-img-une{
+	background-image: url(../images/img-une-international.jpg);
+}
+
+.rub-enseignants #container-img-une{
+	/*background-image: url(../images/img-une-enseignants.jpg);*/
+}
+
+.rub-dre #container-img-une{
+	background-image: url(../images/img-une-dre.jpg);
+}
+
+.rub-exec #container-img-une{
+	/*background-image: url(../images/img-une-exec.jpg);*/
 }
 
 .container-titre{

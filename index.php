@@ -37,7 +37,7 @@
     
     
     <div class="row">
-    	<div role="navigation" class="col-md-3 left-col">
+    	<div role="navigation" class="col-sm-3 hidden-xs eft-col">
         	<!-- SUB NAVIGATION -->    
         	<?php get_sidebar( 'left-menu' ); ?>
             <!-- END - SUB NAVIGATION -->
