@@ -33,13 +33,13 @@ function theme_ieseg_setup() {
 endif; // theme_ieseg_setup
 add_action( 'after_setup_theme', 'theme_ieseg_setup' );
 
-function ieseg_font_url() {
+/*function ieseg_font_url() {
 
-	$font_url = add_query_arg( 'family', urlencode( 'Source+Sans+Pro:400,600,700,300,400italic' ), "//fonts.googleapis.com/css" );
+	$font_url = add_query_arg( 'family',urlencode('Source+Sans+Pro:400,600,700,300,400italic'), "//fonts.googleapis.com/css" );
 
 	return $font_url;
 }
-
+*/
 
 /**
  * Enqueue scripts and styles for the front end.
@@ -49,7 +49,7 @@ function ieseg_font_url() {
 function ieseg2_scripts() {
 	//<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300,400italic' rel='stylesheet' type='text/css'>
 	// Add Source Sans.
-	wp_enqueue_style( 'ieseg-source-sans', ieseg_font_url(), array(), null );
+	wp_enqueue_style( 'ieseg-source-sans', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300,400italic', array(), null );
 
 	// Add Genericons font, used in the main stylesheet.
 	//wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.2' );
@@ -66,28 +66,7 @@ function ieseg2_scripts() {
 	// Load the Internet Explorer specific stylesheet.
 	//wp_enqueue_style( 'twentyfourteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentyfourteen-style', 'genericons' ), '20131205' );
 	//wp_style_add_data( 'twentyfourteen-ie', 'conditional', 'lt IE 9' );
-/*
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
 
-
-	if ( is_singular() && wp_attachment_is_image() ) {
-		wp_enqueue_script( 'twentyfourteen-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20130402' );
-	}
-
-	if ( is_active_sidebar( 'sidebar-3' ) ) {
-		wp_enqueue_script( 'jquery-masonry' );
-	}
-
-	/*if ( is_front_page() && 'slider' == get_theme_mod( 'featured_content_layout' ) ) {
-		wp_enqueue_script( 'twentyfourteen-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery' ), '20131205', true );
-		wp_localize_script( 'twentyfourteen-slider', 'featuredSliderDefaults', array(
-			'prevText' => __( 'Previous', 'twentyfourteen' ),
-			'nextText' => __( 'Next', 'twentyfourteen' )
-		) );
-	}
-*/
 	//BX slider
 	if ( is_front_page() || is_page_template('template-home-program.php') ){
 		wp_enqueue_script( 'bxslider', get_template_directory_uri() . '/js/jquery.bxslider.min.js', array( 'jquery' ), '1.0', true );
@@ -226,7 +205,17 @@ function custom_search_footer( $form ) {
 add_filter('body_class','menu_class_to_body');
 function menu_class_to_body($classes)
 {
-        $items = wp_get_nav_menu_items( 49 ); //change to suit your menu id
+	$id_menu=49;
+    if (ICL_LANGUAGE_CODE=="fr"){
+		$id_menu=49;
+	}
+	elseif (ICL_LANGUAGE_CODE=="en"){
+		$id_menu=4;
+	}
+	elseif (ICL_LANGUAGE_CODE=="zh-hans"){
+		$id_menu=69;
+	}
+		$items = wp_get_nav_menu_items($id_menu); //change to suit your menu id
 
           foreach ($items as $item):
                 $menuClasses = $item->classes;
