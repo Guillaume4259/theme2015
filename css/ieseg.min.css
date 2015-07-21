@@ -97,7 +97,7 @@ li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a,
 }
 
 .rub-programmes .btn{
-	border-color:#ffc20e;	
+	border-color:#666666;	
 }
 
 
@@ -927,6 +927,37 @@ span.foreword-contents::before {
   float:left;
 }
 
+.proghome-testimonials .bx-wrapper .bx-viewport {
+	box-shadow: 0 0 0 0;
+}
+
+.proghome-testimonials .bx-wrapper .bx-controls-direction a {
+    height: 109px;
+    outline: 0 none;
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    width: 40px;
+    z-index: 9999;
+}
+
+.proghome-testimonials .bx-wrapper .bx-next {
+    background: url("../images/sprite-ieseg.png") no-repeat  -92px -951px;
+}
+
+.proghome-testimonials .bx-wrapper .bx-next:hover {
+    background: url("../images/sprite-ieseg.png") no-repeat  -92px -1062px;
+}
+
+.proghome-testimonials .bx-wrapper .bx-prev {
+    background: url("../images/sprite-ieseg.png") no-repeat  -12px -951px;
+}
+
+.proghome-testimonials .bx-wrapper .bx-prev:hover {
+    background: url("../images/sprite-ieseg.png") no-repeat  -12px -1062px;
+}
+
+
 /*----------------BLOC KEYFACTS----------------*/
 
 .keyfacts{
@@ -936,8 +967,7 @@ span.foreword-contents::before {
 	margin-top: 70px;
 }
 
-.keyfacts .table tbody tr th {
-	text-transform: uppercase;
+.keyfacts .table tbody tr th {	text-transform: uppercase;
 	font-weight: 100;
 	font-size: 18px;
 }
