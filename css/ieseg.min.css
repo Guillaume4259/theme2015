@@ -665,10 +665,11 @@ background-color: none;
 }
 
 .overview-button:hover {
-	border: 3px solid #333;
-	color: #333;
+	border: 3px solid #fff;
+	color: #3c3c3b;
 	cursor: pointer;
-	background: #fff;
+	background: rgba(255, 255, 255, 0.55);
+	transition: all 0.3s ease 0s;
 }
 
 .overview-apply-button {
@@ -679,7 +680,8 @@ background-color: none;
 .overview-apply-button:hover {
 	color: #fff;
 	background: #ffc20e;
-	border: #fff 3px solid;
+	border: #ffc20e 3px solid;
+	transition: all 0.3s ease 0s;
 }
 
 .container-overview-part1 {
@@ -904,8 +906,15 @@ span.foreword-contents::before {
 	line-height: 1.225;
 }
 
-.proghome-testimonials .readmore div {
-	font-size: 14px;
+.proghome-testimonials .readmore {
+	font-size: 18px;
+	color: #666;
+}
+
+.proghome-testimonials .readmore:hover {
+	font-size: 18px;
+	color: #36414b;
+	transition: all 0.3s ease 0s;
 }
 
 .yellow-quotation-mark {
@@ -926,6 +935,9 @@ span.foreword-contents::before {
   margin: 25px 0 25px 150px;
   float:left;
 }
+
+
+/* --------- Slider Témoignages HomePage Programme --------- */
 
 .proghome-testimonials .bx-wrapper .bx-viewport {
 	box-shadow: 0 0 0 0;
@@ -957,6 +969,13 @@ span.foreword-contents::before {
     background: url("../images/sprite-ieseg.png") no-repeat  -12px -1062px;
 }
 
+.proghome-testimonials .bx-wrapper .bx-pager {
+	display: none;
+}
+
+.proghome-testimonials .bx-wrapper {
+	margin-bottom: 20px;
+}
 
 /*----------------BLOC KEYFACTS----------------*/
 
@@ -1179,7 +1198,6 @@ footer a, footer a:hover{
 	}
 
 .footer-menu > ul > li > a, .footer-title{
-
 	font-weight:bold;
 	color:#fff;
 }
@@ -1190,6 +1208,7 @@ footer a, footer a:hover{
 	color:#666666;
 	transition: all 0.3s ease 0s;
 	text-decoration:none !important;
+	font-size: 16px;
 }
 
 .btn:hover{
@@ -1202,7 +1221,6 @@ footer a, footer a:hover{
 	font-size:18px;
 	margin-top:40px;
 }
-
 
 .btn-blanc{
 	border:3px solid #fff;

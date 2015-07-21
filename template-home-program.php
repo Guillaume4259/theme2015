@@ -131,8 +131,6 @@ Template Name: Home Program
 
                         );
 
-
-
                         //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
                         $postslist = get_posts( $args );
                         foreach ( $postslist as $post ) :
@@ -150,7 +148,7 @@ Template Name: Home Program
                             ?>
                                 <div class="yellow-quotation-mark"></div>
                                 <span><?php the_excerpt(); ?><a href="<?php the_permalink(); ?>"title="Read full post">
-                                <div class="readmore">Keep reading</div></a>
+                                <div class="readmore">Keep reading <div class="glyphicon glyphicon-menu-right" style="font-size:12px; padding-top:5px;"></div></div></a>
                                 </span>
                                 <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
                                 <br><?php echo get_post_meta($id,'wpcf-class', true)?></a>
@@ -163,9 +161,9 @@ Template Name: Home Program
                         ?>
             </ul>
 
-                <div class="row">
+             
             <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 124, 'testimonial-category' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("All testimonials","ieseg2015") ?></a>    
-                </div>
+               
         </div>
     </div>
 
