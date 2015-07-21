@@ -45,9 +45,10 @@
     	<?php
 		$args = array( 'posts_per_page' => 4, 'order'=> 'DESC', 'orderby' => 'date','post_type' => 'news' );
 		$postslist = get_posts( $args );
+		$i_news=1;
 		foreach ( $postslist as $post ) :
 		  setup_postdata( $post ); ?> 
-			<div class="col-sm-3">
+			<div class="col-sm-6 col-md-3">
             	<div class="bloc bloc-news-home">
 					<?php 
 					if ( has_post_thumbnail() ) {?>
@@ -56,7 +57,7 @@
 					}
 					else {?>
                     
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-une" style="display:block;overflow:hidden;"><img src="<?php echo get_template_directory_uri().'/images/actu-home-defaut.jpg' ;?>" class="img-responsive" alt="<?php the_title(); ?>"/>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-une"><img src="<?php echo get_template_directory_uri().'/images/actu-home-defaut.jpg' ;?>" class="img-responsive" alt="<?php the_title(); ?>"/></a>
 					<?php
                     }
 					?>
@@ -64,14 +65,25 @@
                     <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_excerpt(); ?></a>
                 </div>
 			</div>
+            <?php
+			if ($i_news==2){
+			?>
+            	<div class="clearfix visible-sm-block"></div>
+            <?php
+			}
+			?>
 		<?php
+		$i_news++;
+			
 		endforeach; 
 		//wp_reset_postdata();
 		?>	
         
     </div>
     <div class="row">
-    	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home col-sm-2 col-sm-offset-5"><?php _e("All news","ieseg2015") ?></a>	
+    	<div class="col-xs-12 col-sm-2 col-sm-offset-5">
+    		<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home"><?php _e("All news","ieseg2015") ?></a>	
+    	</div>
     </div>
 
 </section>
@@ -109,7 +121,9 @@
             ?>		
         </div>
         <div class="row">
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn btn-blanc btn-cta-home col-sm-2 col-sm-offset-5"><?php _e("All events","ieseg2015") ?></a>	
+        	<div class="col-xs-12 col-sm-2 col-sm-offset-5">
+            	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn btn-blanc btn-cta-home"><?php _e("All events","ieseg2015") ?></a>	
+        	</div>
         </div>
     </div>
 </section>
@@ -121,9 +135,9 @@
 	</div>
     <div class="row">
         <div class="col-md-2 col-md-offset-1">
-        	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',9782, 'page' ));?>" title="<?php _e('Grande École Program', 'ieseg2015');?>" class="bloc-programme-home">
+        	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',9782, 'page' ));?>" title="<?php _e('Grande École Program', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Grande École Program","ieseg2015") ?></span>
-            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/programme-grande-ecole.jpg" alt="<?php _e("Grande École Program","ieseg2015") ?>" class="img-responsive"/>
+            	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/programme-grande-ecole.jpg" alt="<?php _e("Grande École Program","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
                     <span class="show"><span class="duree-programme-picto"></span>5 <?php _e("years","ieseg2015") ?></span>
                     <span class="show"><span class="acessibilite-programme-picto"></span><?php _e("Accessible xxx","ieseg2015") ?></span>
@@ -132,9 +146,9 @@
             </a>	
         </div>
         <div class="col-md-2">
-        	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',19878, 'page' ));?>" title="<?php _e('Bachelor Program', 'ieseg2015');?>" class="bloc-programme-home">
+        	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',19878, 'page' ));?>" title="<?php _e('Bachelor Program', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Bachelor Program","ieseg2015") ?></span>
-            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/bachelor.jpg" alt="<?php _e("Bachelor Program","ieseg2015") ?>" class="img-responsive"/>
+            	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/bachelor.jpg" alt="<?php _e("Bachelor Program","ieseg2015") ?>" class="img-responsive"/>
                 <span class="container-info-programme-home">
                     <span class="show"><span class="duree-programme-picto"></span>3 <?php _e("years","ieseg2015") ?></span>
                     <span class="show"><span class="acessibilite-programme-picto"></span><?php _e("Accessible xxx","ieseg2015") ?></span>
@@ -143,9 +157,9 @@
             </a>	
         </div>
         <div class="col-md-2">
-        	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',18645, 'page' ));?>" title="<?php _e('Postgraduate Programs', 'ieseg2015');?>" class="bloc-programme-home">
+        	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',18645, 'page' ));?>" title="<?php _e('Postgraduate Programs', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Postgraduate Programs","ieseg2015") ?></span>
-            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/msc.jpg" alt="<?php _e("Postgraduate Programs","ieseg2015") ?>" class="img-responsive"/>
+            	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/msc.jpg" alt="<?php _e("Postgraduate Programs","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
                     <span class="show"><span class="duree-programme-picto"></span>18 <?php _e("monthes","ieseg2015") ?></span>
                     <span class="show"><span class="acessibilite-programme-picto"></span><?php _e("Accessible xxx","ieseg2015") ?></span>
@@ -154,9 +168,9 @@
             </a>	
         </div>
         <div class="col-md-2">
-        	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',17148, 'page' ));?>" title="<?php _e('International MBA', 'ieseg2015');?>" class="bloc-programme-home">
+        	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',17148, 'page' ));?>" title="<?php _e('International MBA', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("International MBA","ieseg2015") ?></span>
-            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/imba.jpg" alt="<?php _e("International MBA","ieseg2015") ?>" class="img-responsive"/>
+            	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/imba.jpg" alt="<?php _e("International MBA","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
                     <span class="show">18 <?php _e("monthes","ieseg2015") ?></span>
                     <span class="show"><span class="acessibilite-programme-picto"></span><?php _e("Accessible xxx","ieseg2015") ?></span>
@@ -165,9 +179,9 @@
             </a>	
         </div>
          <div class="col-md-2">
-        	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',2554, 'page' ));?>" title="<?php _e('Executive Education', 'ieseg2015');?>" class="bloc-programme-home">
+        	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',2554, 'page' ));?>" title="<?php _e('Executive Education', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Executive Education","ieseg2015") ?></span>
-            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/formation-continue.jpg" alt="<?php _e("Executive Education","ieseg2015") ?>" class="img-responsive"/>
+            	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/formation-continue.jpg" alt="<?php _e("Executive Education","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
                     <span class="show"><span class="duree-programme-picto"></span><?php _e("Customized Learning solutions and XXXX","ieseg2015") ?></span>
                     <span class="btn btn-blanc more-info-programme"><?php _e("More information","ieseg2015") ?></span>
@@ -179,7 +193,7 @@
 <!-- Besoin infos -->
 <section class="container-besoin-info bg-orange1">
     <div class="container-fluid container-1600">
-        <h2 class="text-center"><?php _e("Need informations ?","ieseg2015") ?></h2>
+        <h2 class="text-center"><?php _e("Need information ?","ieseg2015") ?></h2>
         <div class="row">
             	<form id="form-cibles-home" action="<?php bloginfo('url');?>">
                 	<div class="col-sm-4 col-sm-offset-4">
