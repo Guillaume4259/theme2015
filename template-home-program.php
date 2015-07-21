@@ -5,6 +5,10 @@ Template Name: Home Program
 ?>
 
 <?php get_header(); ?>
+<!-- bxSlider Javascript file -->
+<script src="/js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="/lib/jquery.bxslider.css" rel="stylesheet" />
 <div class="container-fluid" id="container-img-une">
  <?php
             if (is_page('17340') || custom_is_child(17340)){
@@ -120,9 +124,6 @@ Template Name: Home Program
                 foreach ( $postslist as $post ) :
                     setup_postdata( $post ); 
                   ?> 
-
-                       
-                        
                             <?php if ( has_post_thumbnail() ) { ?>
                             <?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' );
                             } ?>
