@@ -30,10 +30,15 @@ $('.home .bxslider').bxSlider({
 
 // Slider Témoignages Homepage programmes
 
-$('.proghome-testimonials .bxslider').bxslider ({
-	auto: true
+  $('.proghome-testimonials .bxslider').bxSlider({
+  	mode: 'fade',
+  	infiniteLoop: true,
+  	easing: 'linear',
+  	tickerHover: true,
+  	preloadImages: 'visible',
+  	auto: true,
+  	autoHover: true
 });
-
 
 });
 

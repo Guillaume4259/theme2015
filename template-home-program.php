@@ -5,10 +5,6 @@ Template Name: Home Program
 ?>
 
 <?php get_header(); ?>
-<!-- bxSlider Javascript file -->
-<script src="/js/jquery.bxslider.min.js"></script>
-<!-- bxSlider CSS file -->
-<link href="/lib/jquery.bxslider.css" rel="stylesheet" />
 <div class="container-fluid" id="container-img-une">
  <?php
             if (is_page('17340') || custom_is_child(17340)){
@@ -115,21 +111,38 @@ Template Name: Home Program
 
     <div class="col-sm-12">
 
-        <div  class="bxslider proghome-testimonials">
-            <ul>
-                <?php
-                $args = array( 'posts_per_page' => 4, 'order'=> 'DESC','post_type' => 'testimonial','suppress_filters' => false);
-                //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
-                $postslist = get_posts( $args );
-                foreach ( $postslist as $post ) :
-                    setup_postdata( $post ); 
-                  ?> 
+        <div  class="proghome-testimonials">
+
+            <ul class="bxslider">
+                         <?php
+                        $args = array(
+                            'posts_per_page' => -1,
+                            'order'=> 'DESC',
+                            'post_type' => 'testimonial',
+                            //'suppress_filters' => false,
+                            'tax_query' => 
+                            array(
+                                array(
+                                    'taxonomy' => 'testimonial-category',
+                                    'field'    => 'term_id',
+                                    'terms'    => apply_filters('wpml_object_id', 124, 'testimonial-category'),
+                                ),
+                            )
+
+                        );
+
+
+
+                        //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
+                        $postslist = get_posts( $args );
+                        foreach ( $postslist as $post ) :
+                            setup_postdata( $post ); 
+                          ?> 
+                <li>
                             <?php if ( has_post_thumbnail() ) { ?>
                             <?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' );
                             } ?>
                         <div style="background-image: url('<?php echo $background[0]; ?>');" class="clear testimonials-home-photo"></div>
-
-                      
 
                         <div class="col-sm-6 col-sm-offset-0">
                             <?php 
@@ -143,15 +156,15 @@ Template Name: Home Program
                                 <br><?php echo get_post_meta($id,'wpcf-class', true)?></a>
                                 </h3>
                         </div>
-
-                <?php
-                endforeach; 
-                //wp_reset_postdata();
-                ?>      
+                </li>
+                        <?php
+                        endforeach; 
+                        //wp_reset_postdata();
+                        ?>
             </ul>
 
                 <div class="row">
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("All the testimonials","ieseg2015") ?></a>    
+            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("All testimonials","ieseg2015") ?></a>    
                 </div>
         </div>
     </div>
