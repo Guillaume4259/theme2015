@@ -60,7 +60,7 @@ Template Name: Home Program
     </div>
 
 
-<div class="container-fluid fond-menu-program" role="main">
+<div class="container-fluid fond-menu-program hidden-xs" role="main">
 
 	<div id="menu-program">
         <ul>
