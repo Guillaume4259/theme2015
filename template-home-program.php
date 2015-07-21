@@ -182,7 +182,7 @@ Template Name: Home Program
                         <h3>News</h3>
 
 	<div class="row">  
-    	<?php 
+    	<?php  
 		$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date','post_type' => 'news' );
 		$postslist = get_posts( $args );
 		foreach ( $postslist as $post ) :
