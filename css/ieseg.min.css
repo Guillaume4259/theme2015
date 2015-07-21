@@ -1275,7 +1275,9 @@ ul {
 }
 
 #form-cibles-home input[type=submit]{
-	height:46px;	
+	height:46px;
+	margin:20px 0 0 0;
+	width:100%;	
 }
 
 /*----------------FIN FORMULAIRES----------------*/
@@ -1694,6 +1696,10 @@ video.fillWidth {
 		padding:0 30px;
 	}
 	
+	.bloc-news-home .container-img-une{
+		display:block;
+	}
+	
 	#container-video .btn:first-child{
 		margin:0 25px 0 0;
 	}
@@ -1702,7 +1708,11 @@ video.fillWidth {
 	  float: left;
 	  margin: 20px;
 	}
-
+	
+	#form-cibles-home input[type=submit]{	
+		margin:0;
+		width:auto;	
+	}
 
 }
 
