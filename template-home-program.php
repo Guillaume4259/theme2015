@@ -181,7 +181,7 @@ Template Name: Home Program
                     <div class="box">
                         <h3>News</h3>
 
-	<div class="row"> 
+	<div class="row">  
     	<?php
 		$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date','post_type' => 'news' );
 		$postslist = get_posts( $args );
