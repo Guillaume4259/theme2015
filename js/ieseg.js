@@ -37,7 +37,8 @@ $('.home .bxslider').bxSlider({
   	tickerHover: true,
   	preloadImages: 'visible',
   	auto: true,
-  	autoHover: true
+  	autoHover: true,
+  	speed: '400'
 });
 
 });
