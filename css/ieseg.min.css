@@ -825,9 +825,14 @@ span.foreword-contents::before {
 	padding: 30px 0 20px 0;
 }
 
-.container-news-events h4, .container-news-events a {
+.container-news-events h4 {
 	font-size: 16px !important;
 	text-transform: uppercase;
+	color: #3c3f44;
+}
+
+.container-news-events a {
+	font-size: 16px !important;
 	color: #3c3f44;
 }
 
@@ -863,7 +868,6 @@ span.foreword-contents::before {
 }
 
 .news-program-excerpt {
-	text-transform: lowercase;
 	font-size: 14px;
 }
 
