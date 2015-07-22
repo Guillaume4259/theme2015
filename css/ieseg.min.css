@@ -745,6 +745,8 @@ background-color: none;
 
 .directors-photo {
 	float: left;
+	margin-bottom: 35px;
+    margin-left: 50px;
 }
 
 .dr-name {
@@ -770,6 +772,7 @@ background-color: none;
 .foreword-contents {
 	position:relative;
 	z-index: 2;
+	display: inline-block;
 }
 
 span.foreword-contents::before {
@@ -799,6 +802,13 @@ span.foreword-contents::before {
 	background: #575756;
 }
 
+
+.container-overview-part5 .bx-viewport {
+	height: 100px;
+}
+
+
+
 .container-news-events {
 	background: #f4f2ea;
 	color: #3c3f44;
@@ -810,6 +820,7 @@ span.foreword-contents::before {
     border-top: 4px solid #6f6f6e;
     font-size: 16px;
     padding: 15px;
+    margin-top: 10px;
 }
 
 .box h3 {
@@ -822,7 +833,7 @@ span.foreword-contents::before {
 }
 
 .container-overview-part6{
-	padding: 30px 0 20px 0;
+	padding: 20px 0 20px 0;
 }
 
 .container-news-events h4 {
@@ -907,11 +918,14 @@ span.foreword-contents::before {
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 1.225;
+	width:100%;
+	float: left;
 }
 
 .proghome-testimonials .readmore {
 	font-size: 18px;
 	color: #666;
+	padding: 10px 0;
 }
 
 .proghome-testimonials .readmore:hover {
@@ -923,22 +937,49 @@ span.foreword-contents::before {
 .yellow-quotation-mark {
 	height: 63px;
 	width: 77px;
-	margin-bottom: 20px;
-	margin-top: 30px;
+	margin: 430px 0px 20px 114px;
 	background: url("../images/sprite-ieseg.png") no-repeat  -138px -793px;
 }
 
 .testimonials-home-photo {
-  overflow: hidden;
-  height: 420px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  margin: 25px 0 25px -31px;
-  float:left;
-  width: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    height: 400px;
+    margin: 0 0 138px -20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+	}
+
+
+.center-block {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+
+.proghome-testimonials .btn {
+	  display: block;
 }
 
+
+.page-template-template-home-program .bloc.video-container  {
+	  width: 84%;
+	  margin-right: auto;
+	  margin-left: auto;
+	  margin-top: 0;
+	  margin-bottom: 0;
+	}
+
+
+#container-testimonial-homepage-programs {
+	margin-top:5px;
+	display: block;
+	margin-left: -35px;
+	}
 
 /* --------- Slider Témoignages HomePage Programme --------- */
 
@@ -951,7 +992,7 @@ span.foreword-contents::before {
     outline: 0 none;
     position: absolute;
     text-indent: -9999px;
-    top: 40%;
+    top: 423px;
     width: 40px;
     z-index: 9999;
 }
@@ -978,6 +1019,22 @@ span.foreword-contents::before {
 
 .proghome-testimonials .bx-wrapper {
 	margin-bottom: 20px;
+	height: auto !important;
+}
+
+.proghome-testimonials .bx-wrapper li {
+	width: auto !important;
+}
+
+.proghome-testimonials .bx-wrapper .bxviewport {
+	position: relative !important;
+}
+
+.proghome-testimonials .bx-wrapper .bx-viewport {
+    background: #fff none repeat scroll 0 0;
+    border: 0px solid #fff;
+    left: 0px;
+    transform: translateZ(0px);
 }
 
 /*----------------BLOC KEYFACTS----------------*/
@@ -1591,6 +1648,7 @@ video.fillWidth {
 		text-transform:uppercase;
 		line-height:1;
 		margin:15px 0;
+		float: left;
 	}
 	
 		.bloc-events-home time span{
@@ -1725,8 +1783,56 @@ video.fillWidth {
 		  background-size: cover;
 		  background-repeat: no-repeat;
 		  background-position: center top;
-		  margin: 25px 0 25px 150px;
+		  margin: 25px 57px 25px 150px;
 		  float:left;
+	}
+
+	.container-news-events .container {
+	  width: 30%;
+	}
+
+
+	.page-template-template-home-program .bloc.video-container  {
+	  width: 25%;
+	}
+
+	.page-template-template-home-program .bloc-events-home time {
+	  text-transform: uppercase;
+	  line-height: 1;
+	  margin: 15px 0;
+	}
+
+	.box {
+    background: #fff;
+    border-top: 4px solid #6f6f6e;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 0px;
+	}
+
+	.yellow-quotation-mark {
+	height: 63px;
+	width: 77px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-left: 0;
+	background: url("../images/sprite-ieseg.png") no-repeat  -138px -793px;
+	}
+
+	.directors-photo {
+	float: left;
+	margin-bottom: 0px;
+    margin-left: 0px;
+	}
+
+	.proghome-testimonials .bx-wrapper .bx-controls-direction a {
+    height: 109px;
+    outline: 0 none;
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    width: 40px;
+    z-index: 9999;
 }
 
 }

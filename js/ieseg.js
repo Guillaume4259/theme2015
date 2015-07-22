@@ -38,7 +38,8 @@ $('.home .bxslider').bxSlider({
   	preloadImages: 'visible',
   	auto: true,
   	autoHover: true,
-  	speed: '400'
+  	speed: '400',
+  	adaptiveHeight: true
 });
 
 });
