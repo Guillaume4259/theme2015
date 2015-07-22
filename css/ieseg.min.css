@@ -633,6 +633,7 @@ background-color: none;
 	width: 100%;
 	background:  #fff;
 	font-family: 'Source Sans pro', sans-serif;
+	height: auto;
 }
 
 .overview-intro-bold {
@@ -1042,8 +1043,8 @@ span.foreword-contents::before {
 .keyfacts{
 	background: rgba(255, 255, 255, 0.95);
 	border-top: 4px solid #ffc20e;
-	float: right;
-	margin-top: 70px;
+	width: 100%;
+	margin-top: 0px;
 }
 
 .keyfacts .table tbody tr th {	text-transform: uppercase;
@@ -1060,6 +1061,8 @@ span.foreword-contents::before {
 	padding: 2px;
 	border: 0px;
 }
+
+
 
 /*----------------FIN BLOC KEYFACTS----------------*/
 
@@ -1834,6 +1837,14 @@ video.fillWidth {
     width: 40px;
     z-index: 9999;
 }
+
+	.keyfacts{
+		background: rgba(255, 255, 255, 0.95);
+		border-top: 4px solid #ffc20e;
+		float: right;
+		margin-top: 70px;
+		width: 30%;
+	}
 
 }
 

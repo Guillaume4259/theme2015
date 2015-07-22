@@ -10,7 +10,7 @@ Template Name: Home Program
             if (is_page('17340') || custom_is_child(17340)){
         ?>
 
- <div class="keyfacts col-sm-3">
+ <div class="keyfacts col-sm-3 hidden-xs hidden-sm">
         <table class="table">
           <tr>
             <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
@@ -36,7 +36,7 @@ Template Name: Home Program
             <td>September 2015</td>
           </tr>
         </table>
-        </div>
+ </div>
 
 
 
@@ -57,7 +57,10 @@ Template Name: Home Program
 		<?php } ?>
     
     </div>
+
     </div>
+
+
 
 
 <div class="container-fluid fond-menu-program hidden-xs" role="main">
@@ -79,6 +82,7 @@ Template Name: Home Program
     <div class="clear"></div>
 
 <div class="container-fluid container-1600" role="main">
+
 	<div id="breadcrumbs" class="row">
     	<!-- BREADCRUMBS -->
             <div class="col-sm-12 fil-blanc">
@@ -89,11 +93,47 @@ Template Name: Home Program
             <!-- END - BREADCRUMBS -->
         </div>
     </div>
+
+
 </div>
     
+
+
     
     
 <div class="programme-overview">
+
+
+    <div class="show-on-small hidden-md hidden-lg">
+         <div class="keyfacts col-sm-3">
+                <table class="table">
+                  <tr>
+                    <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+                  </tr>
+                  <tr class="foundry_light">
+                    <th>Duration</th>
+                    <td>3 semesters</td>
+                  </tr>
+                  <tr class="foundry_light">
+                    <th>Language</th>
+                    <td>English</td>
+                  </tr>
+                  <tr class="foundry_light">
+                    <th>Credits</th>
+                    <td>90 ECTS</td>
+                  </tr>
+                  <tr class="foundry_light">
+                    <th>Location</th>
+                    <td>Lille</td>
+                  </tr>
+                  <tr class="foundry_light">
+                    <th>Next intake</th>
+                    <td>September 2015</td>
+                  </tr>
+                </table>
+         </div>
+    </div>
+
 		
         <?php if (have_posts()) : while (have_posts()) : the_post();?>
 <?php the_content(); ?>
