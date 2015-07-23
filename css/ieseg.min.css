@@ -534,7 +534,7 @@ background-color: none;
 	color: #ffc20e;
 }
 
-.page-template-template-home-program-php .rub-programmes a {
+.rub-programmes .secondary-menu a {
 	display: inline-block;
     height: 30px;
     padding: 49px 10px 10px 10px;
@@ -584,7 +584,7 @@ background-color: none;
 	height: 40px;
 }
 
-#menu-program li .picto-admission a {
+li#menu-program  .picto-admission a {
 	padding-top: 5px;
 }
 
