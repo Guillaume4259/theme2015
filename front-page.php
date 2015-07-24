@@ -110,7 +110,7 @@
                             </time>
                             <div class="col-sm-9">
                             	<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-                            	<?php echo get_post_meta($id,'wpcf-city-town', true)?>
+                            	<span class="picto-pin"></span> <?php echo get_post_meta($id,'wpcf-city-town', true)?>
                             </div>
                         </div>
                     </div>

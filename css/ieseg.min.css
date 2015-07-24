@@ -868,7 +868,7 @@ span.foreword-contents::before {
 	width: 15px;
 	height: 19px;
 	background: url("../images/sprite-ieseg.png") no-repeat  -180px -930px;
-	float:left;
+	display:inline-block;
 }
 
 .lieu-event {
