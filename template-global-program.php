@@ -218,7 +218,7 @@ Template Name: Program default
                             </time>
                             <div class="col-sm-9">
                               <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
-                              <div class="lieu-event"><div class="picto-pin"></div><div class="lieu"><?php echo get_post_meta($id,'wpcf-city-town', true)?></div></div>
+                              <div class="show"><div class="picto-pin"></div><div class="lieu"><?php echo get_post_meta($id,'wpcf-city-town', true)?></div></div>
                             </div>
                         </div>
                     </div>
