@@ -544,6 +544,10 @@ background-color: none;
 	vertical-align: bottom;
 }
 
+.program-text-contents {
+	margin: 15px;
+}
+
 .picto-overview a {
 	background: url("../images/sprite-ieseg.png") no-repeat  13px -355px;
 }
@@ -614,6 +618,9 @@ li#menu-program  .picto-admission a {
 
 /*----------------PAGE PROGRAMMES----------------*/
 
+.programmes-admissions-onglets {
+	margin-bottom: 20px;
+}
 
 .page-template-template-home-program-php #breadcrumbs {
 	color: #ffc20e;
@@ -625,7 +632,7 @@ li#menu-program  .picto-admission a {
     height: 0px;
 }
 
-.page-template-template-home-program-php footer {
+.rub-programmes footer {
 	margin-top: 0px;
 }
 
@@ -674,16 +681,19 @@ li#menu-program  .picto-admission a {
 }
 
 .overview-apply-button {
-	color: #ffc20e;
+	border: #ffc20e 3px solid;
+	color: #fff;
 	margin-top: 0px !important;
+	background: #ffc20e;
 }
 
 .overview-apply-button:hover {
 	color: #fff;
-	background: #ffc20e;
+	background: rgba(255, 194, 14, 0.55);
 	border: #ffc20e 3px solid;
 	transition: all 0.3s ease 0s;
 }
+
 
 .container-overview-part1 {
 	margin-top: 20px;
@@ -982,6 +992,28 @@ span.foreword-contents::before {
 	margin-left: -35px;
 	}
 
+
+.align-left {
+	float: left;
+}
+
+.vert-align-btn-with-glyph {
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 100%;
+}
+
+.page-template-template-global-program .container-overview-part3 {
+	margin: 20px 0;
+}
+
+.btn-more-info-program {
+	background: #fcecbc;
+	font-weight: 600;
+	border: none !important;
+	margin-top: 20px;
+}
+
 /* --------- Slider Témoignages HomePage Programme --------- */
 
 .proghome-testimonials .bx-wrapper .bx-viewport {
@@ -1062,10 +1094,34 @@ span.foreword-contents::before {
 	border: 0px;
 }
 
-
-
 /*----------------FIN BLOC KEYFACTS----------------*/
 
+/*----------------TABS ADMISSIONS PAGES PROGRAMMES----------------*/
+
+.nav.active .admission-tab-number {
+    color: #3c3c3b;
+}
+
+.nav.active .admission-tab-title {
+	color: #3c3c3b;
+}
+
+.admission-tab-number {
+	float: left;
+    font-size: 60px;
+    line-height: 1;
+    margin-right: 5px;
+    color: #adadad;
+}
+
+.admission-tab-title {
+	font-size: 30px;
+	line-height: 1;
+	color: #adadad;
+}
+
+
+/*----------------FIN TABS ADMISSIONS PAGES PROGRAMMES----------------*/
 
 /*----------------FIN PAGE PROGRAMMES----------------*/
 
@@ -1844,6 +1900,10 @@ video.fillWidth {
 		float: right;
 		margin-top: 70px;
 		width: 30%;
+	}
+
+	div.col-sm-3.vertical-center{
+		margin-top: 180px;
 	}
 
 }
