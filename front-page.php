@@ -139,8 +139,8 @@
 				<span class="container-titre-programme-home"><?php _e("Grande École Program","ieseg2015") ?></span>
             	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/programme-grande-ecole.jpg" alt="<?php _e("Grande École Program","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
-                    <span class="show"><span class="duree-programme-picto"></span>5 <?php _e("years","ieseg2015") ?></span>
-                    <span class="show"><span class="acessibilite-programme-picto"></span>
+                    <span class="show"><span class="picto-programme-duration"></span>5 <?php _e("years","ieseg2015") ?></span>
+                    <span class="show"><span class="picto-programme-acessibility"></span>
 					<?php 
 					if (ICL_LANGUAGE_CODE=="fr"){?>
                     	Accessible niveau Bac, Bac+3 et Bac+4
@@ -162,8 +162,8 @@
 				<span class="container-titre-programme-home"><?php _e("Bachelor Program","ieseg2015") ?></span>
             	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/bachelor.jpg" alt="<?php _e("Bachelor Program","ieseg2015") ?>" class="img-responsive"/>
                 <span class="container-info-programme-home">
-                    <span class="show"><span class="duree-programme-picto"></span>3 <?php _e("years","ieseg2015") ?></span>
-                    <span class="show"><span class="acessibilite-programme-picto"></span>
+                    <span class="show"><span class="picto-programme-duration"></span>3 <?php _e("years","ieseg2015") ?></span>
+                    <span class="show"><span class="picto-programme-acessibility"></span>
 						Accessible niveau Bac
                     </span>
                     <span class="btn btn-blanc more-info-programme"><?php _e("More information","ieseg2015") ?></span>
@@ -175,9 +175,9 @@
 				<span class="container-titre-programme-home"><?php _e("Postgraduate Programs","ieseg2015") ?></span>
             	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/msc.jpg" alt="<?php _e("Postgraduate Programs","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
-                    <span class="show"><span class="duree-programme-picto"></span>18 <?php _e("months","ieseg2015") ?></span>
+                    <span class="show"><span class="picto-programme-duration"></span>18 <?php _e("months","ieseg2015") ?></span>
                     <span class="show">
-                    	<span class="acessibilite-programme-picto"></span>
+                    	<span class="picto-programme-acessibility"></span>
 						<?php 
 						if (ICL_LANGUAGE_CODE=="fr"){?>
 							Accessible niveau Bac+4
@@ -199,8 +199,8 @@
 				<span class="container-titre-programme-home"><?php _e("International MBA","ieseg2015") ?></span>
             	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/imba.jpg" alt="<?php _e("International MBA","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
-                    <span class="show">18 <?php _e("monthes","ieseg2015") ?></span>
-                    <span class="show"><span class="acessibilite-programme-picto"></span>
+                    <span class="show"><span class="picto-programme-duration"></span>18 <?php _e("months","ieseg2015") ?></span>
+                    <span class="show"><span class="picto-programme-acessibility"></span>
 						<?php 
 						if (ICL_LANGUAGE_CODE=="fr"){?>
 							Accessible niveau Bac+4
@@ -222,7 +222,7 @@
 				<span class="container-titre-programme-home"><?php _e("Executive Education","ieseg2015") ?></span>
             	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/formation-continue.jpg" alt="<?php _e("Executive Education","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
-                    <span class="show"><span class="duree-programme-picto"></span>
+                    <span class="show text-center">
 						<?php 
 						if (ICL_LANGUAGE_CODE=="fr"){?>
 							Sur-mesure ou diplômante
@@ -273,28 +273,28 @@
             	<div class="row">
             		<div class="col-xs-6 col-sm-3 text-center key-fact">
                     	<a href="<?php echo get_page_link(apply_filters('wpml_object_id',1766, 'page' ));?>">
-                        	<span class="key-fact-picto"></span>
+                        	<span class="key-fact-picto key-fact-students"></span>
                             <span class="key-fact-number txt-rose">3800</span>
                             <?php _e("students","ieseg2015") ?>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-3 text-center key-fact">
                     	<a href="<?php echo get_page_link(apply_filters('wpml_object_id',1976, 'page' ));?>">
-                        	<span class="key-fact-picto"></span>
-                    		<div class="key-fact-number txt-orange2">223</div>
+                        	<span class="key-fact-picto key-fact-universities"></span>
+                    		<div class="key-fact-number txt-orange1">223</div>
                     		<?php _e("partner universities","ieseg2015") ?>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-3 text-center key-fact">
                     	<a href="<?php echo get_page_link(apply_filters('wpml_object_id',2029, 'page' ));?>">
-                        	<span class="key-fact-picto"></span>
+                        	<span class="key-fact-picto key-fact-professors"></span>
                             <div class="key-fact-number txt-violet">83 %</div>
                             <?php _e("international professors","ieseg2015") ?>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-3 text-center key-fact">
                     	<a href="<?php echo get_page_link(apply_filters('wpml_object_id',2134, 'page' ));?>">
-                        	<span class="key-fact-picto"></span>
+                        	<span class="key-fact-picto key-fact-companies"></span>
                             <div class="key-fact-number txt-vert-canard">2500</div>
                             <?php _e("partner companies","ieseg2015") ?>
                         </a>
@@ -303,7 +303,7 @@
             </div>
             <div class="col-sm-3">
             	<h2 class="text-center"><?php _e("Rankings","ieseg2015") ?></h2>
-            	<div class="bloc">
+            	<div class="bloc bloc-rankings">
                 	<ul class="bxslider">
                     	<li>
                         	<h3>Financial Times</h3>
@@ -402,32 +402,32 @@
     <div class="container-fluid">
         <h2 class="text-center"><?php _e("Photo gallery","ieseg2015") ?></h2>
     </div>
-        <div class="row no-gutters"><!-- no container needed for no-gutters rows-->
-        	<div class="col-xs-6 col-sm-3">
-        		<img src="<?php echo get_template_directory_uri() ;?>/images/home/la-defense.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
-                <img src="<?php echo get_template_directory_uri() ;?>/images/home/cour-bat-a.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
-            </div>
-            <div class="col-xs-6 col-sm-3">
-        		<img src="<?php echo get_template_directory_uri() ;?>/images/home/cours-ecole-commerce.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-        		<img src="<?php echo get_template_directory_uri() ;?>/images/home/cours-commerce-lille.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
-                <div class="row no-gutters">
-                	<div class="col-xs-6">
-                		<img src="<?php echo get_template_directory_uri() ;?>/images/home/remise-diplome-ecole-commerce.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
-            		</div>
-                    <div class="col-xs-6">	
-                        <img src="<?php echo get_template_directory_uri() ;?>/images/home/travail-cour.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
-            		</div>
+    <div class="row no-gutters"><!-- no container needed for no-gutters rows-->
+        <div class="col-xs-6 col-sm-3">
+            <img src="<?php echo get_template_directory_uri() ;?>/images/home/la-defense.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            <img src="<?php echo get_template_directory_uri() ;?>/images/home/cour-bat-a.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <img src="<?php echo get_template_directory_uri() ;?>/images/home/cours-ecole-commerce.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <img src="<?php echo get_template_directory_uri() ;?>/images/home/cours-commerce-lille.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            <div class="row no-gutters">
+                <div class="col-xs-6">
+                    <img src="<?php echo get_template_directory_uri() ;?>/images/home/remise-diplome-ecole-commerce.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+                </div>
+                <div class="col-xs-6">	
+                    <img src="<?php echo get_template_directory_uri() ;?>/images/home/travail-cour.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-3">
-        		<img src="<?php echo get_template_directory_uri() ;?>/images/home/travail-paris.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
-            </div>
         </div>
+        <div class="col-xs-12 col-sm-3">
+            <img src="<?php echo get_template_directory_uri() ;?>/images/home/travail-paris.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+        </div>
+    </div>
 	<div class="container-fluid">
         <div class="row">
-            <a href="https://instagram.com/ieseg_school/" title="<?php _e('Follow IÉSEG on Instagram', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5" target="_blank"><?php _e("Follow IÉSEG on Instagram","ieseg2015") ?></a>	
+            <a href="https://instagram.com/ieseg_school/" title="<?php _e('Follow IÉSEG on Instagram', 'ieseg2015');?>" class="btn btn-instagram col-sm-2 col-sm-offset-5" target="_blank"><span></span><?php _e("Follow IÉSEG on Instagram","ieseg2015") ?></a>	
         </div>
     </div>
 </section>

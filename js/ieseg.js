@@ -23,8 +23,9 @@ $("#button-form-cibles-home").click(function(event){
 });
 
 
-$('.home .bxslider').bxSlider({
-	auto: true	
+$('.home .bloc-rankings .bxslider').bxSlider({
+	auto: true,
+	controls : false
 });
 
 

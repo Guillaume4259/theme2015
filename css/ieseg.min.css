@@ -881,7 +881,6 @@ span.foreword-contents::before {
 	display:inline-block;
 }
 
-
 .lieu {
 	margin-left: 22px;
 }
@@ -1013,8 +1012,8 @@ span.foreword-contents::before {
 
 /* --------- Slider Témoignages HomePage Programme --------- */
 
-.proghome-testimonials .bx-wrapper .bx-viewport {
-	box-shadow: 0 0 0 0;
+.bx-viewport {
+	box-shadow: none !important;
 }
 
 .proghome-testimonials .bx-wrapper .bx-controls-direction a {
@@ -1352,7 +1351,7 @@ footer a, footer a:hover{
 	color:#333 !important;
 }
 
-.btn-lille span, .btn-paris span{
+.btn-lille span, .btn-paris span, .btn-instagram span{
 	width:32px;
 	height:32px;
 	display:inline-block;
@@ -1365,6 +1364,11 @@ footer a, footer a:hover{
 
 .btn-paris span{
 	background:url(../images/sprite-ieseg.png) no-repeat -38px -124px; 
+}
+
+.btn-instagram span{
+	height: 20px;
+	background:url(../images/sprite-ieseg.png) no-repeat -224px -934px; 
 }
 /*----------------FIN LIENS ET BOUTONS----------------*/
 
@@ -1760,13 +1764,27 @@ video.fillWidth {
 		display:block;
 		min-height:140px;
 	}
+	
+	.picto-programme-duration, .picto-programme-acessibility{
+		width:25px;
+		height:20px;
+		display: inline-block;
+		vertical-align:middle;
+		background: url("../images/sprite-ieseg.png") no-repeat;
+	}
+	
+	.picto-programme-duration{
+		background-position: -178px -120px;
+	}
+	
+	.picto-programme-acessibility{
+		background-position: -210px -120px;
+	}
 
 .bloc-programme-home .btn-blanc{
  	display:none;
-	
 	width:70%;
 	margin:0 auto;
-
 }
 
 .bloc-programme-home:hover .btn-blanc{
@@ -1774,20 +1792,66 @@ video.fillWidth {
 	display:block;
 }
 
-.container-ieseg-images{
-	background:#f5f2eb;
-}
 
 .key-fact-picto{
 	width:60px;
 	height:60px;
 	margin:auto;
 	display:block;
-	background:red;
+	background: url("../images/sprite-ieseg.png") no-repeat;
 }
+
+	.key-fact-students{
+		width:50px;
+		background-position: -141px -965px
+	}
+	
+	.key-fact-universities{
+		background-position: -190px -965px
+	}
+	
+	.key-fact-professors{
+		background-position: -162px -1030px;
+	}
+	
+	.key-fact-companies{
+		width:80px;
+		background-position: -156px -1108px;
+	}
+
+
 .key-fact-number{
 	font-size:48px;
 	display:block;
+}
+
+.bloc-rankings{
+	background:#F4F2EA;
+	border-top-color:#FDC300;
+}
+	.bloc-rankings .bx-wrapper{
+		margin-bottom:25px;
+	}
+
+	.bloc-rankings .bx-wrapper .bx-viewport{
+		background:none;
+		border-color:#F4F2EA;
+	}
+	
+		.bloc-rankings .bx-wrapper .bx-viewport h3{
+			margin-top:0;
+		}
+		
+		.bloc-rankings .bx-pager-link{
+			background:#f9d45f !important;
+		}
+		
+		.bloc-rankings .bx-pager-link.active{
+			background:#FDC300 !important;
+		}
+		
+section.container-campus{
+	padding-top:0;
 }
 
 .lien-container-campus{
@@ -1796,13 +1860,22 @@ video.fillWidth {
 	position:relative;
 }
 
+
 .container-campus h2{
 	width:100%;
 	padding:20px 0 25px;
 	position:absolute;
-	top:20%;
+	top:27%;
 	color:#fff;
 	background:rgba(54,65,75,0.70);	
+}
+
+.container-ieseg-images{
+	background:#f5f2eb;
+}
+
+.container-ieseg-images > .row.no-gutters{
+	margin-bottom:40px;
 }
 
 /*----------------RESPONSIVE----------------------------*/
