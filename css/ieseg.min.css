@@ -1096,12 +1096,39 @@ span.foreword-contents::before {
 	font-size: 30px;
 	line-height: 1;
 	color: #adadad;
+	border-bottom: 1px solid;
+	padding-bottom: 10px;
 }
 
+.programmes-admissions-onglets .nav-tabs {
+    border-bottom: 0px solid;
+}
+
+/*.nav .active .admission-tab-title {
+	font-size: 30px;
+	line-height: 1;
+	color: #adadad;
+	border-bottom: 0px solid;
+	padding-bottom: 10px;
+}*/
+
+.programmes-admissions-onglets .nav-tabs > li > a {
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+    line-height: 1.42857;
+    margin-right: 2px;
+}
+
+.programmes-admissions-onglets .nav-tabs .nav .active {
+    border-bottom: 0px solid;
+    border-radius: 4px 4px 0 0;
+    line-height: 1.42857;
+    margin-right: 2px;
+}
 
 /*----------------FIN TABS ADMISSIONS PAGES PROGRAMMES----------------*/
 
-/*----------------FIN PAGE PROGRAMMES----------------*/
+/*----------------FIN PAGES PROGRAMMES----------------*/
 
 /*----------------MENU DE GAUCHE----------------*/
 ul.menu-gauche{

@@ -61,13 +61,11 @@ Template Name: Program default
     </div>
 
 
-
-
 <div class="container-fluid fond-menu-program hidden-xs" role="main">
 
   <div id="menu-program">
         <ul>
-            <li class="rub-programmes boutons-menu picto-menu-programme picto-overview menu-item menu-item-type-post_type menu-item-object-page">
+            <li class="rub-programmes secondary-menu boutons-menu picto-menu-programme picto-overview menu-item menu-item-type-post_type menu-item-object-page">
 
                <?php echo '<a  href="'.get_permalink($post->post_parent).'">
          Overview</a>'; ?>
