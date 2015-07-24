@@ -85,7 +85,7 @@ Template Name: Home Program
 
 	<div id="breadcrumbs" class="row">
     	<!-- BREADCRUMBS -->
-            <div class="col-sm-12 fil-blanc">
+            <div class="col-sm-12">
            
                 <?php if(function_exists('bcn_display')){ bcn_display();}?>
        
@@ -94,15 +94,9 @@ Template Name: Home Program
         </div>
     </div>
 
-
 </div>
     
-
-
-    
-    
 <div class="programme-overview">
-
 
     <div class="show-on-small hidden-md hidden-lg">
          <div class="keyfacts col-sm-3">
@@ -143,7 +137,7 @@ Template Name: Home Program
    
 <!--   Temoignages   -->
 
-<div class="container-fluid title container-overview-part5">
+<div class="container-fluid title container-titre-section-programmes-gris">
 	<span class="foundry_bold">Our students</span> <span class="foundry_light">speak</span>
 </div>
 

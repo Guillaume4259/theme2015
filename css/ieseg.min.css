@@ -475,10 +475,6 @@ vertical-align: middle;
 	background:#3c3c3b;
 }
 
-.fil-blanc {
-	color: #fff;
-}
-
 #menu-program ul {
 margin: 0;
 padding: 0;
@@ -493,6 +489,7 @@ display: inline;
 
 #menu-program ul li { 
 display: inline;
+margin: 0;
 }
 
 #menu-program ul li a {
@@ -518,20 +515,12 @@ background-color: none;
 	margin: 25px;
 }
 
-.page-template-template-home-program-php #menu-program ul li {
-	margin: 0;
-}
-
 .picto-menu-programme {
 	width: 33px;
 	height: 31px;
 	margin-left: auto;
     margin-right: auto;
 	display: block;
-}
-
-.page-template-template-home-program-php .fil-blanc {
-	color: #ffc20e;
 }
 
 .rub-programmes .secondary-menu a {
@@ -606,14 +595,6 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  13px -647px;
 }
 
-.page-template-template-home-program #breadcrumbs {
-	border-bottom: 1px solid #575756;
-}
-
-.page-template-template-home-program #breadcrumbs a {
-	color: #fff;
-}
-
 /*----------------FIN MENU PROGRAMMES----------------*/
 
 /*----------------PAGE PROGRAMMES----------------*/
@@ -622,7 +603,15 @@ li#menu-program  .picto-admission a {
 	margin-bottom: 20px;
 }
 
-.page-template-template-home-program-php #breadcrumbs {
+.page-template-template-home-program #breadcrumbs a, .page-template-template-global-program-php #breadcrumbs a {
+	color: #fff;
+}
+
+.page-template-template-home-program #breadcrumbs, .page-template-template-global-program-php #breadcrumbs {
+	color: #ffc20e;
+}
+
+.page-template-template-home-program-php #breadcrumbs, .page-template-template-global-program-php #breadcrumbs{
 	color: #ffc20e;
 	border-top:1px solid #575756;
 	border-bottom: 0px;
@@ -750,12 +739,11 @@ li#menu-program  .picto-admission a {
 	margin-bottom: 40px;
 }
 
-.container-overview-part2 {
+.container-titre-section-programmes-jaune {
 	background: #ffc20e;
 }
 
 .directors-photo {
-	float: left;
 	margin-bottom: 35px;
     margin-left: 50px;
 }
@@ -809,16 +797,14 @@ span.foreword-contents::before {
 	font-weight: 200;
 }
 
-.container-overview-part5 {
+.container-titre-section-programmes-gris {
 	background: #575756;
 }
 
 
-.container-overview-part5 .bx-viewport {
+.container-titre-section-programmes-gris .bx-viewport {
 	height: 100px;
 }
-
-
 
 .container-news-events {
 	background: #f4f2ea;
@@ -988,11 +974,6 @@ span.foreword-contents::before {
 	display: block;
 	margin-left: -35px;
 	}
-
-
-.align-left {
-	float: left;
-}
 
 .vert-align-btn-with-glyph {
 	display: table-cell;

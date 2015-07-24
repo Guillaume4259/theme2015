@@ -85,7 +85,7 @@ Template Name: Program default
 
   <div id="breadcrumbs" class="row">
       <!-- BREADCRUMBS -->
-            <div class="col-sm-12 fil-blanc">
+            <div class="col-sm-12">
            
                 <?php if(function_exists('bcn_display')){ bcn_display();}?>
        
