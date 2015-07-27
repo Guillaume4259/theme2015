@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: regpage msc marketing
+Template Name: template-programs-default
 */
 ?>
 
@@ -141,8 +141,8 @@ Template Name: regpage msc marketing
 
 <!--NEWS Box-->
 
-        <div class="container-fluid title container-news-events  container-overview-part6">
-               
+      <div class="container-fluid title container-news-events container-overview-part6">
+        <section class="container-1600">
           <div class="col-sm-6">
             <div class="box">
               <h3>News</h3>
@@ -235,6 +235,7 @@ Template Name: regpage msc marketing
            </div><!--END box-->
         </div><!--END col-sm-6-->
     </div><!--END row-->
+    </section>
 </div>
 
 

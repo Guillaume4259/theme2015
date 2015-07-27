@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: home program msc marketing
+Template Name: template-programs-home
 */
 ?>
 
@@ -98,7 +98,7 @@ Template Name: home program msc marketing
     
 <div class="programme-overview">
 
-    <div class="show-on-small hidden-md hidden-lg">
+    <div class="hidden-md hidden-lg">
          <div class="keyfacts col-sm-3">
                 <table class="table">
                   <tr>
@@ -138,7 +138,7 @@ Template Name: home program msc marketing
 <!--   Temoignages   -->
 
 <div class="container-fluid title container-titre-section-programmes-gris">
-	<span class="foundry_bold">Our students</span> <span class="foundry_light">speak</span>
+	<h2 class="foundry_bold">Our students</h2> <h2 class="foundry_light">speak</h2>
 </div>
 
 
@@ -210,8 +210,8 @@ Template Name: home program msc marketing
 
 <!--NEWS Box-->
 
-        <div class="container-fluid title container-news-events  container-overview-part6">
-               
+    <div class="container-fluid title container-news-events  container-overview-part6">
+        <section class="container-1600">
           <div class="col-sm-6">
             <div class="box">
               <h3>News</h3>
@@ -304,6 +304,7 @@ Template Name: home program msc marketing
            </div><!--END box-->
         </div><!--END col-sm-6-->
     </div><!--END row-->
+</section>
 </div>
 
        

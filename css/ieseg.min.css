@@ -603,15 +603,15 @@ li#menu-program  .picto-admission a {
 	margin-bottom: 20px;
 }
 
-.page-template-template-home-msc-marketing #breadcrumbs a, .page-template-template-regpage-msc-marketing-php #breadcrumbs a {
+.page-template-template-programs-home #breadcrumbs a, .page-template-template-programs-default-php #breadcrumbs a {
 	color: #fff;
 }
 
-.page-template-template-home-msc-marketing #breadcrumbs, .page-template-template-regpage-msc-marketing-php #breadcrumbs {
+.page-template-template-programs-home #breadcrumbs, .page-template-template-programs-default-php #breadcrumbs {
 	color: #ffc20e;
 }
 
-.page-template-template-home-msc-marketing-php #breadcrumbs, .page-template-template-regpage-msc-marketing-php #breadcrumbs{
+.page-template-template-programs-home-php #breadcrumbs, .page-template-template-programs-default-php #breadcrumbs{
 	color: #ffc20e;
 	border-top:1px solid #575756;
 	border-bottom: 0px;
@@ -649,40 +649,6 @@ li#menu-program  .picto-admission a {
 	font-size: 39px;
 	color: #ffc20e;
 }
-
-.overview-button {
-	border: 3px solid #fff;
-	font-weight: 600;
-	font-size: 24px;
-	text-align: center;
-	padding: 12px;
-	border: 3px solid;
-	margin-top: 10px;
-	color: #fff;
-}
-
-.overview-button:hover {
-	border: 3px solid #fff;
-	color: #3c3c3b;
-	cursor: pointer;
-	background: rgba(255, 255, 255, 0.55);
-	transition: all 0.3s ease 0s;
-}
-
-.overview-apply-button {
-	border: #ffc20e 3px solid;
-	color: #fff;
-	margin-top: 0px !important;
-	background: #ffc20e;
-}
-
-.overview-apply-button:hover {
-	color: #fff;
-	background: rgba(255, 194, 14, 0.55);
-	border: #ffc20e 3px solid;
-	transition: all 0.3s ease 0s;
-}
-
 
 .container-overview-padding {
 	padding-top: 20px;
@@ -788,9 +754,15 @@ span.foreword-contents::before {
 .infobox-programme {
 	margin-top: 30px;
 	width: 100%;
+	border-top: #575756 4px solid !important;
+	padding: 20px 0 !important;
 }
 
-.infobox-programme h4 {
+.infobox-programme > ul {
+	font-size: 18px;
+}
+
+.infobox-programme h3 {
 	margin: 20px;
 	font-size: 33px !important;
 	color: #6f6f6e;
@@ -805,6 +777,14 @@ span.foreword-contents::before {
 .container-titre-section-programmes-gris .bx-viewport {
 	height: 100px;
 }
+
+
+.container-titre-section-programmes-gris > h2, .container-titre-section-programmes-jaune > h2 {
+	color: inherit;
+	font-size: 50px !important;
+	border: 0px;
+}
+
 
 .container-news-events {
 	background: #f4f2ea;
@@ -953,7 +933,7 @@ span.foreword-contents::before {
 }
 
 
-.page-template-template-home-msc-marketing .bloc.video-container  {
+.page-template-template-programs-home .bloc.video-container  {
 	  width: 84%;
 	  margin-right: auto;
 	  margin-left: auto;
@@ -1229,6 +1209,11 @@ h3{
 /*----------------FIN TITRES----------------*/
 
 /*----------------LIENS ET BOUTONS----------------*/
+
+.remove-top-margin {
+	margin-top: 0px !important;
+}
+
 .center-col a, .right-col a{
 	text-decoration:underline;
 	color:#333333;
@@ -1340,6 +1325,38 @@ footer a, footer a:hover{
 	background:#fff;
 	color:#333 !important;
 }
+
+.btn-cta-blanc-large {
+	font-weight: 600;
+	font-size: 24px;
+	padding: 12px;
+	margin-top: 10px;
+	color: #fff;
+	width: 100%;
+	border:3px solid #fff !important;
+}
+
+.btn-cta-blanc-large:hover {
+	color: #3c3c3b;
+	background: rgba(255, 255, 255, 0.55);
+	transition: all 0.3s ease 0s;
+}
+
+.btn-cta-orange-large {
+	font-weight: 600;
+	font-size: 24px;
+	background: #ffc20e;
+	width: 100%;
+	padding: 12px;
+	border:3px solid #ffc20e !important;c
+	color: #3c3c3b !important;
+}
+
+.btn-cta-orange-large:hover {
+	background: rgba(255, 194, 14, 0.55);
+	transition: all 0.3s ease 0s;
+}
+
 
 .btn-lille span, .btn-paris span, .btn-instagram span{
 	width:32px;
@@ -1911,11 +1928,11 @@ section.container-campus{
 	}
 
 
-	.page-template-template-home-msc-marketing .bloc.video-container  {
+	.page-template-template-programs-home .bloc.video-container  {
 	  width: 25%;
 	}
 
-	.page-template-template-home-msc-marketing .bloc-events-home time {
+	.page-template-template-programs-home .bloc-events-home time {
 	  text-transform: uppercase;
 	  line-height: 1;
 	  margin: 15px 0;
@@ -1969,6 +1986,8 @@ section.container-campus{
 	.overview-title {
 	font-size: 50px;
 	color: #ffc20e;
+	border-bottom: 0px;
+	font-weight: 200;
 }
 
 }
