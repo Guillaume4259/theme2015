@@ -603,15 +603,15 @@ li#menu-program  .picto-admission a {
 	margin-bottom: 20px;
 }
 
-.page-template-template-home-program #breadcrumbs a, .page-template-template-global-program-php #breadcrumbs a {
+.page-template-template-home-msc-marketing #breadcrumbs a, .page-template-template-regpage-msc-marketing-php #breadcrumbs a {
 	color: #fff;
 }
 
-.page-template-template-home-program #breadcrumbs, .page-template-template-global-program-php #breadcrumbs {
+.page-template-template-home-msc-marketing #breadcrumbs, .page-template-template-regpage-msc-marketing-php #breadcrumbs {
 	color: #ffc20e;
 }
 
-.page-template-template-home-program-php #breadcrumbs, .page-template-template-global-program-php #breadcrumbs{
+.page-template-template-home-msc-marketing-php #breadcrumbs, .page-template-template-regpage-msc-marketing-php #breadcrumbs{
 	color: #ffc20e;
 	border-top:1px solid #575756;
 	border-bottom: 0px;
@@ -684,8 +684,8 @@ li#menu-program  .picto-admission a {
 }
 
 
-.container-overview-part1 {
-	margin-top: 20px;
+.container-overview-padding {
+	padding-top: 20px;
 }
 
 .background-programme {
@@ -947,19 +947,13 @@ span.foreword-contents::before {
 	}
 
 
-.center-block {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	}
-
 
 .proghome-testimonials .btn {
 	  display: block;
 }
 
 
-.page-template-template-home-program .bloc.video-container  {
+.page-template-template-home-msc-marketing .bloc.video-container  {
 	  width: 84%;
 	  margin-right: auto;
 	  margin-left: auto;
@@ -980,7 +974,7 @@ span.foreword-contents::before {
 	line-height: 100%;
 }
 
-.page-template-template-global-program .container-overview-part3 {
+.container-overview-margins {
 	margin: 20px 0;
 }
 
@@ -1917,11 +1911,11 @@ section.container-campus{
 	}
 
 
-	.page-template-template-home-program .bloc.video-container  {
+	.page-template-template-home-msc-marketing .bloc.video-container  {
 	  width: 25%;
 	}
 
-	.page-template-template-home-program .bloc-events-home time {
+	.page-template-template-home-msc-marketing .bloc-events-home time {
 	  text-transform: uppercase;
 	  line-height: 1;
 	  margin: 15px 0;

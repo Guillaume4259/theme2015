@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Program default
+Template Name: regpage msc marketing
 */
 ?>
 
