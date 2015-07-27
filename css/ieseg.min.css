@@ -646,7 +646,7 @@ li#menu-program  .picto-admission a {
 }
 
 .overview-title {
-	font-size: 50px;
+	font-size: 39px;
 	color: #ffc20e;
 }
 
@@ -1101,14 +1101,6 @@ span.foreword-contents::before {
     border-bottom: 0px solid;
 }
 
-/*.nav .active .admission-tab-title {
-	font-size: 30px;
-	line-height: 1;
-	color: #adadad;
-	border-bottom: 0px solid;
-	padding-bottom: 10px;
-}*/
-
 .programmes-admissions-onglets .nav-tabs > li > a {
     border-bottom: 1px solid #adadad;
     border-radius: 4px 4px 0 0;
@@ -1328,6 +1320,7 @@ footer a, footer a:hover{
 	transition: all 0.3s ease 0s;
 	text-decoration:none !important;
 	font-size: 16px;
+	white-space: normal;
 }
 
 .btn:hover{
@@ -1978,6 +1971,11 @@ section.container-campus{
 	div.col-sm-3.vertical-center{
 		margin-top: 180px;
 	}
+
+	.overview-title {
+	font-size: 50px;
+	color: #ffc20e;
+}
 
 }
 
