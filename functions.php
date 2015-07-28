@@ -12,7 +12,7 @@ function theme_ieseg_setup() {
 
 	add_image_size( 'mega-thumb', 2000, 786, true ); //content main image
 	add_image_size( 'master-thumb', 556, 183, true ); //old ieseg theme legacy
-	add_image_size( 'bloc-thumb', 378, 171, true ); //content main image
+	add_image_size( 'bloc-thumb', 378, 171, true ); //bloc asctu
 	
 	
 	register_nav_menus( array(
@@ -54,6 +54,8 @@ function ieseg2_scripts() {
 	
 	wp_enqueue_style('bootstrap',get_template_directory_uri().'/css/bootstrap.min.css',false,'1.0');
 	wp_enqueue_style('bootstrap-theme',get_template_directory_uri().'/css/bootstrap-theme.min.css',array('bootstrap'),'1.0');
+	
+	wp_enqueue_style('animate',get_template_directory_uri().'/css/animate.css',false,'1.0'); // utile pour wow.js
 	wp_enqueue_style('style-ieseg',get_template_directory_uri().'/css/ieseg.min.css',array('bootstrap'),'1.0');
    	//wp_enqueue_style('fancybox','/wp-content/themes/'.get_template().'/lib/fancybox/jquery.fancybox-1.3.4.css',false,'1.0');
 	
@@ -69,6 +71,7 @@ function ieseg2_scripts() {
 	}
 	wp_enqueue_script( 'ieseg-script', get_template_directory_uri() . '/js/ieseg.js', array( 'jquery' ), '1.0', true );
 	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.min.js', array( 'jquery' ), '1.0', true );
 	//wp_enqueue_script( 'responsive-nav', get_template_directory_uri() . '/js/responsive-nav.min.js', array( 'jquery' ), '1.0', true ); //menu de gauche responsive
 }
 

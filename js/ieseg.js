@@ -6,6 +6,8 @@ jQuery(document).ready(function($) {
 		
 	});
 	
+new WOW().init();
+	
 //Formulaire Cibles homepage	
 $("#button-form-cibles-home").click(function(event){
 

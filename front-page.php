@@ -49,7 +49,7 @@
 		$i_news=1;
 		foreach ( $postslist as $post ) :
 		  setup_postdata( $post ); ?> 
-			<div class="col-sm-6 col-md-3">
+			<div class="col-sm-6 col-md-3 wow bounceInUp">
             	<div class="bloc bloc-news-home">
 					<?php 
 					if ( has_post_thumbnail() ) {?>
@@ -83,7 +83,7 @@
     </div>
     <div class="row">
     	<div class="col-xs-12 col-sm-2 col-sm-offset-5">
-    		<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home"><?php _e("All news","ieseg2015") ?></a>	
+    		<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home wow"><?php _e("All news","ieseg2015") ?></a>	
     	</div>
     </div>
 
@@ -91,7 +91,7 @@
 <!-- EVENTS -->
 <section class="container-events">   
     <div class="container-fluid container-1600">
-        <h2 class="text-center"><?php _e("Events","ieseg2015") ?></h2>
+        <h2 class="text-center wow bounceInUp"><?php _e("Events","ieseg2015") ?></h2>
         <div class="row">
             <?php
             $args = array( 'posts_per_page' => 4, 'order'=> 'DESC', 'orderby' => 'meta_value_num','post_type' => 'events', 'meta_key'=> 'wpcf-start-date','suppress_filters' => false );
