@@ -5,43 +5,12 @@ Template Name: template-programs-default
 ?>
 
 <?php get_header(); ?>
+
+
 <div class="container-fluid" id="container-img-une">
- <?php
-            if (is_page('17340') || custom_is_child(17340)){
-        ?>
-
- <div class="keyfacts col-sm-3 hidden-xs hidden-sm">
-        <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
-          <tr class="foundry_light">
-            <th>Duration</th>
-            <td>3 semesters</td>
-          </tr>
-          <tr class="foundry_light">
-            <th>Language</th>
-            <td>English</td>
-          </tr>
-          <tr class="foundry_light">
-            <th>Credits</th>
-            <td>90 ECTS</td>
-          </tr>
-          <tr class="foundry_light">
-            <th>Location</th>
-            <td>Lille</td>
-          </tr>
-          <tr class="foundry_light">
-            <th>Next intake</th>
-            <td>September 2015</td>
-          </tr>
-        </table>
- </div>
-
-
-
-        <?php } ?>
-
+      <div class="keyfacts col-sm-3 hidden-xs hidden-sm">
+       <?php include('includes/blocs-keyfacts.php'); ?>
+       </div>
 
     <div class="container-titre">
       <div class="titre-deco"></div>
@@ -95,43 +64,11 @@ Template Name: template-programs-default
 
 </div>
     
-
-
-    
-    
 <div class="programme-overview">
 
-
           <div class="show-on-small hidden-md hidden-lg">
-               <div class="keyfacts col-sm-3">
-                      <table class="table">
-                        <tr>
-                          <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-                        </tr>
-                        <tr class="foundry_light">
-                          <th>Duration</th>
-                          <td>3 semesters</td>
-                        </tr>
-                        <tr class="foundry_light">
-                          <th>Language</th>
-                          <td>English</td>
-                        </tr>
-                        <tr class="foundry_light">
-                          <th>Credits</th>
-                          <td>90 ECTS</td>
-                        </tr>
-                        <tr class="foundry_light">
-                          <th>Location</th>
-                          <td>Lille</td>
-                        </tr>
-                        <tr class="foundry_light">
-                          <th>Next intake</th>
-                          <td>September 2015</td>
-                        </tr>
-                      </table>
-               </div>
+            <?php include('includes/blocs-keyfacts.php'); ?>
           </div>
-    
 
         <?php if (have_posts()) : while (have_posts()) : the_post();?>
         <?php the_content(); ?>
@@ -237,8 +174,6 @@ Template Name: template-programs-default
     </div><!--END row-->
     </section>
 </div>
-
-
 
 <script type="text/javascript">
 var smaller_height_box= jQuery( ".programmes-admissions-onglets .tab-pane  .col-sm-12.smaller-box" ).height()  ;
