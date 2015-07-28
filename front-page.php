@@ -43,7 +43,8 @@
 	<h2 class="text-center"><?php _e("News","ieseg2015") ?></h2>
 	<div class="row">
     	<?php
-		$args = array( 'posts_per_page' => 4, 'order'=> 'DESC', 'orderby' => 'date','post_type' => 'news' );
+		$args = array( 'posts_per_page' => 4, 'order'=> 'DESC', 'orderby' => 'date','post_type' => 'news','suppress_filters' => false );
+		//supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
 		$postslist = get_posts( $args );
 		$i_news=1;
 		foreach ( $postslist as $post ) :

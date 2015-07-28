@@ -1,5 +1,4 @@
 <?php
-wp_session_cleanup();
 if ( ! function_exists( 'theme_ieseg_setup' ) ) :
 function theme_ieseg_setup() {
 	load_theme_textdomain( 'ieseg2015', get_template_directory() . '/languages' );
@@ -11,20 +10,16 @@ function theme_ieseg_setup() {
 	set_post_thumbnail_size( 150, 150 ); // default Post Thumbnail dimensions   
 
 
-	add_image_size( 'master-thumb', 556, 183, true ); //content main image
-	add_image_size( 'side-thumb', 120, 116, true ); //content main image
-	add_image_size( 'menu-thumb', 144, 76, true ); //mega menu thumb image
-	add_image_size( 'landing-thumb', 56, 56, true ); //latest post landing thumb
-	add_image_size( 'home-thumb', 94, 71, true ); //latest post home thumb
-	add_image_size( 'home-thumb-next', 80, 52, true ); //home movie - image
-	add_image_size( 'home-feature', 222, 178, true ); //home feature thumb - largest size
-	add_image_size( 'home-movie', 362, 204, true ); //home movie - image
+	add_image_size( 'mega-thumb', 2000, 786, true ); //content main image
+	add_image_size( 'master-thumb', 556, 183, true ); //old ieseg theme legacy
+	add_image_size( 'bloc-thumb', 378, 171, true ); //content main image
 	
 	
 	register_nav_menus( array(
         'header' => 'Header Navigation',
 		'header2015' => 'Header Navigation 2015',
 		'Primary Menu' => 'Main Navigation',
+		'Primary Menu 2015' => 'Main Navigation 2015',
 		'footer' => 'Footer Navigation',
 		'footer2015' => 'Footer Navigation 2015'
     ) );

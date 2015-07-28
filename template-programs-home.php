@@ -456,7 +456,7 @@ Template Name: template-programs-home
 
     <div class="col-sm-12">
 
-        <div  class="proghome-testimonials">
+        <div class="proghome-testimonials">
 
             <ul class="bxslider">
                          <?php
