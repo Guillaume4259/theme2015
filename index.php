@@ -8,21 +8,22 @@
  */
 ?>
 <?php get_header(); ?>
-<div class="container-fluid" id="container-img-une">
+
 <?php
 	if ( have_posts() ) :
 		// Start the Loop.
 		 while ( have_posts() ) : the_post();
-		 if ( has_post_thumbnail()) :  ?>
-				<div class="master-image">
-					<?php /*the_post_thumbnail('master-thumb'); */?>
-				</div>
+		 if ( has_post_thumbnail()) : 
+		 
+		 $str_img_une = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'mega-thumb' );
+		 //echo get_the_ID().' '.var_dump($str_img_une);
+		  ?>
 <?php
          endif;
 ?>
+<div class="container-fluid" id="container-img-une" <?php if (!empty ($str_img_une[0]) && $str_img_une[1]>1000 ) { echo 'style="background-image:url('.$str_img_une[0].');"';}?>>
     <div class="container-titre">
-    	<div class="titre-deco"></div>
-    	<?php the_title( '<h1 class="entry-title foundry_demi">', '</h1>' ); ?>
+    	<span class="titre-deco hidden-xs"></span><?php the_title( '<h1 class="entry-title foundry_demi">', '</h1>' ); ?>
     </div>
 </div>
 <div class="container-fluid container-1600" role="main">
@@ -37,7 +38,7 @@
     
     
     <div class="row">
-    	<div role="navigation" class="col-sm-3 hidden-xs eft-col">
+    	<div role="navigation" class="col-sm-3 hidden-xs left-col">
         	<!-- SUB NAVIGATION -->    
         	<?php get_sidebar( 'left-menu' ); ?>
             <!-- END - SUB NAVIGATION -->
