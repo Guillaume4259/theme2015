@@ -7,7 +7,7 @@ Template Name: home program msc marketing
 <?php get_header(); ?>
 <div class="container-fluid" id="container-img-une">
  <?php
-            if (is_page('17340') || custom_is_child(17340)){
+            if (is_page(17340) || custom_is_child(17340)){
         ?>
 
  <div class="keyfacts col-sm-3 hidden-xs hidden-sm">
@@ -47,7 +47,7 @@ Template Name: home program msc marketing
     	<div class="titre-deco"></div>
     	<?php the_title( '<h1 class="entry-title foundry_demi">', '</h1>' ); ?>
         <?php
-			if (is_page('17340') || custom_is_child(17340)){
+			if (is_page(17340) || custom_is_child(17340)){
 		?>
 		
 		<div class="punchline-program">

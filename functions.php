@@ -1,5 +1,5 @@
 <?php
-
+wp_session_cleanup();
 if ( ! function_exists( 'theme_ieseg_setup' ) ) :
 function theme_ieseg_setup() {
 	load_theme_textdomain( 'ieseg2015', get_template_directory() . '/languages' );
