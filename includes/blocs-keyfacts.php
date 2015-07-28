@@ -25,7 +25,6 @@ $msc_marketing = '
             <td>September 2015</td>
           </tr>
         </table>
- 		</div>
  	';
  $msc_mib = '
  		<table class="table">
@@ -53,7 +52,6 @@ $msc_marketing = '
             <td>Sept. & Jan. (Lille only)</td>
           </tr>
         </table>
- 		</div>
  	';
  $msc_fashion = '
  		 	<table class="table">
@@ -81,7 +79,6 @@ $msc_marketing = '
             <td>September 2015</td>
           </tr>
         </table>
- 		</div>
  	';
  $msc_business_analysis = '
  		<table class="table">
@@ -109,7 +106,6 @@ $msc_marketing = '
             <td>September 2015</td>
           </tr>
         </table>
- 		</div>
  	';
  $msc_accounting = '
  			<table class="table">
@@ -137,7 +133,6 @@ $msc_marketing = '
             <td>September 2015</td>
           </tr>
         </table>
- 		</div>
  	';
  $msc_finance = '
  			<table class="table">
@@ -165,7 +160,6 @@ $msc_marketing = '
             <td>September 2015</td>
           </tr>
         </table>
- 		</div>
 	';
  $msc_banking = '
  			<table class="table">
@@ -193,7 +187,6 @@ $msc_marketing = '
             <td>September 2015</td>
           </tr>
         </table>
- 		</div>
  	';
  $msc_negotiation = '
  			<table class="table">
@@ -221,7 +214,6 @@ $msc_marketing = '
             <td>September 2015</td>
           </tr>
         </table>
- 		</div>
  	';
  $msc_big_data = '
  			<table class="table">
@@ -249,7 +241,6 @@ $msc_marketing = '
             <td>September 2015</td>
           </tr>
         </table>
- 		</div>
  	';
 
 if(is_page(17340) || custom_is_child(17340))//msc Marketing & CRM

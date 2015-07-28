@@ -5,30 +5,23 @@ Template Name: template-programs-default
 ?>
 
 <?php get_header(); ?>
-
-
 <div class="container-fluid" id="container-img-une">
-      <div class="keyfacts col-sm-3 hidden-xs hidden-sm">
-       <?php include('includes/blocs-keyfacts.php'); ?>
-       </div>
+                <div class="keyfacts col-sm-3 hidden-xs hidden-sm">
+                <?php include('includes/blocs-keyfacts.php'); ?>
+        		</div>
 
-    <div class="container-titre">
-      <div class="titre-deco"></div>
-      <?php the_title( '<h1 class="entry-title foundry_demi">', '</h1>' ); ?>
-        <?php
-      if (is_page('17340') || custom_is_child(17340)){
-    ?>
-    
-    <div class="punchline-program">
-    Become a digital expert
-    </div>
-
-    <?php } ?>
-    
-    </div>
-
-    </div>
-
+        <div class="container-titre">
+                <div class="titre-deco"></div>
+					<?php the_title( '<h1 class="entry-title foundry_demi">', '</h1>' ); ?>
+                    <?php
+                        if (is_page(17340) || custom_is_child(17340)){
+                    ?>
+                <div class="punchline-program">
+                	Become a digital expert
+                </div>
+                <?php } ?>
+    	</div>
+</div>
 
 <div class="container-fluid fond-menu-program hidden-xs" role="main">
 
@@ -184,8 +177,7 @@ if (smaller_height_box<tallest_height_box){
 }
 else{
         jQuery( ".page-template-template-global-program .tab-pane  .active .col-sm-12.smaller-box" ).height(smaller_height_box)
-}
-});
+};
 </script>
 
 
