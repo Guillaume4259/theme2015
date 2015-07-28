@@ -694,9 +694,7 @@ li.nav-small-devices {
 }
 
 .contact-programme .contact-email {
-	font-size: 18px !important;
-	font-weight: 200;
-	float:left;
+	width: 100%;
 }
 
 .contact-photo {
@@ -776,11 +774,11 @@ span.foreword-contents::before {
 }
 
 .infobox-programme h3 {
-	margin: 20px 0;
+	margin: 15px 0;
 	font-size: 33px !important;
 	color: #6f6f6e;
 	font-weight: 200;
-	padding-left: 18px;
+	padding-left: 0px;
 }
 
 .container-titre-section-programmes-gris {
@@ -2014,6 +2012,11 @@ section.container-campus{
 	li.nav-small-devices {
 	width: 33% !important;
 	}
+
+	.contact-programme .contact-email {
+	width: 50%;
+	}
+
 
 }
 
