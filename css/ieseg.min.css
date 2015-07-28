@@ -774,11 +774,11 @@ span.foreword-contents::before {
 }
 
 .infobox-programme h3 {
-	margin: 15px 0;
+	padding: 0 !important;
 	font-size: 33px !important;
 	color: #6f6f6e;
 	font-weight: 200;
-	padding-left: 0px;
+	margin: 20px !important;
 }
 
 .container-titre-section-programmes-gris {
@@ -1999,13 +1999,6 @@ section.container-campus{
 	font-size: 50px;
 	color: #ffc20e;
 	border-bottom: 0px;
-	font-weight: 200;
-	}
-
-	.infobox-programme h3 {
-	margin: 20px;
-	font-size: 33px !important;
-	color: #6f6f6e;
 	font-weight: 200;
 	}
 
