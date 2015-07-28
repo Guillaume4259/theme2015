@@ -922,7 +922,7 @@ span.foreword-contents::before {
 .yellow-quotation-mark {
 	height: 63px;
 	width: 77px;
-	margin: 435px 0px 20px 80px;
+	margin: 435px auto 20px;
 	background: url("../images/sprite-ieseg.png") no-repeat  -138px -793px;
 }
 
