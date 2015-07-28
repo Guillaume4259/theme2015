@@ -71,7 +71,7 @@ function ieseg2_scripts() {
 	}
 	wp_enqueue_script( 'ieseg-script', get_template_directory_uri() . '/js/ieseg.js', array( 'jquery' ), '1.0', true );
 	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0', true );
-	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.min.js', array( 'jquery' ), '1.0', true );
 	//wp_enqueue_script( 'responsive-nav', get_template_directory_uri() . '/js/responsive-nav.min.js', array( 'jquery' ), '1.0', true ); //menu de gauche responsive
 }
 
