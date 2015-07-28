@@ -651,8 +651,17 @@ li#menu-program  .picto-admission a {
 }
 
 .overview-title {
+	color: #ffc20e;
 	font-size: 39px;
 	color: #ffc20e;
+	border-bottom: 0px;
+	font-weight: 200;
+	margin-top: 12px;
+	display: inline-block;
+}
+
+li.nav-small-devices {
+	width: 100% !important;
 }
 
 .container-overview-padding {
@@ -758,7 +767,6 @@ span.foreword-contents::before {
 
 .infobox-programme {
 	margin-top: 30px;
-	width: 100%;
 	border-top: #575756 4px solid !important;
 	padding: 20px 0 !important;
 }
@@ -768,10 +776,11 @@ span.foreword-contents::before {
 }
 
 .infobox-programme h3 {
-	margin: 20px;
+	margin: 20px 0;
 	font-size: 33px !important;
 	color: #6f6f6e;
 	font-weight: 200;
+	padding-left: 18px;
 }
 
 .container-titre-section-programmes-gris {
@@ -915,7 +924,7 @@ span.foreword-contents::before {
 .yellow-quotation-mark {
 	height: 63px;
 	width: 77px;
-	margin: 430px 0px 20px 114px;
+	margin: 435px 0px 20px 80px;
 	background: url("../images/sprite-ieseg.png") no-repeat  -138px -793px;
 }
 
@@ -1030,7 +1039,7 @@ span.foreword-contents::before {
 
 .keyfacts{
 	background: rgba(255, 255, 255, 0.95);
-	border-top: 4px solid #ffc20e;
+	border-top: 4px solid #ffc20e !important;
 	width: 100%;
 	margin-top: 0px;
 }
@@ -1158,6 +1167,7 @@ ul.menu-gauche>li ul a{
 aside .bloc{
 	margin-bottom:35px;
 }
+
 
 /*----------------FIN BLOCS----------------*/
 
@@ -1361,7 +1371,6 @@ footer a, footer a:hover{
 	background: rgba(255, 194, 14, 0.55);
 	transition: all 0.3s ease 0s;
 }
-
 
 .btn-lille span, .btn-paris span, .btn-instagram span{
 	width:32px;
@@ -1993,7 +2002,18 @@ section.container-campus{
 	color: #ffc20e;
 	border-bottom: 0px;
 	font-weight: 200;
-}
+	}
+
+	.infobox-programme h3 {
+	margin: 20px;
+	font-size: 33px !important;
+	color: #6f6f6e;
+	font-weight: 200;
+	}
+
+	li.nav-small-devices {
+	width: 33% !important;
+	}
 
 }
 

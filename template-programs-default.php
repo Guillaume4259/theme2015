@@ -46,7 +46,6 @@ Template Name: template-programs-default
   <div id="breadcrumbs" class="row">
       <!-- BREADCRUMBS -->
             <div class="col-sm-12">
-           
                 <?php if(function_exists('bcn_display')){ bcn_display();}?>
        
             </div>
@@ -59,8 +58,14 @@ Template Name: template-programs-default
     
 <div class="programme-overview">
 
-          <div class="show-on-small hidden-md hidden-lg">
-            <?php include('includes/blocs-keyfacts.php'); ?>
+         <div class="hidden-md hidden-lg keyfacts">
+          <div class="container"
+          	<div class="row">
+            	<div class="col-sm-10">
+            		<?php include('includes/blocs-keyfacts.php'); ?>
+            	</div>
+            </div>
+            </div>
           </div>
 
         <?php if (have_posts()) : while (have_posts()) : the_post();?>

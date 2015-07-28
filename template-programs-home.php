@@ -75,7 +75,7 @@ Template Name: template-programs-home
 <!--   Temoignages   -->
 
 <div class="container-fluid title container-titre-section-programmes-gris">
-	<h2 class="foundry_bold">Our students</h2> <h2 class="foundry_light">speak</h2>
+	<h2><span class="foundry_bold">Our students</span> <span class="foundry_light">speak</span></h2>
 </div>
 
     <div class="col-sm-12">
