@@ -26,13 +26,11 @@ Template Name: template-programs-default
 <div class="container-fluid fond-menu-program hidden-xs" role="main">
 
   <div id="menu-program">
-        <ul>
-            <li class="rub-programmes secondary-menu boutons-menu picto-menu-programme picto-overview menu-item menu-item-type-post_type menu-item-object-page">
-
+        <ul class="btn-tout-seul-menu-programme">
+            <li class="secondary-menu btn-home-rub-programme picto-overview">
                <?php echo '<a  href="'.get_permalink($post->post_parent).'">
          Overview</a>'; ?>
             </li>
-
         </ul>
             <?php if ( is_active_sidebar( 'program-menu' ) ) : ?>
             <?php dynamic_sidebar( 'program-menu' ); ?>

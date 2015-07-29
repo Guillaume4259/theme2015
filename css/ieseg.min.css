@@ -479,55 +479,32 @@ vertical-align: middle;
 	background:#3c3c3b;
 }
 
-#menu-program ul {
-margin: 0;
-padding: 0;
-list-style-type: none;
-text-align: center;
-color: #fff;
-font: Source Sans Pro;
-font-weight: 400;
-font-size: 16px;
-display: inline;
-}
-
-#menu-program ul li { 
-display: inline;
-margin: 0;
-}
-
-#menu-program ul li a {
-text-decoration: none;
-color: #fff;
-background-color: none;
-}
-
-#menu-program ul li a:hover {
-	color: #ffc20e;
-	background-color: none;
-}
-
 #menu-program {
 	text-align:center;
-	padding: 27px 0;
-	margin-right:auto;
-	margin-left:auto;
+	padding: 20px 0;
+
     width: 100%;
+	color: #fff;
+	font: Source Sans Pro;
+	font-weight: 400;
+	font-size: 16px;
+	display: inline-block;
+}
+
+#menu-program > ul > li > a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+#menu-program > ul > li > a:hover {
+	color: #ffc20e !important;
 }
 
 #menu-program .widget_advanced_menu li {
 	margin: 25px;
 }
 
-#menu-program .picto-menu-programme {
-	width: 33px;
-	height: 31px;
-	margin-left: auto;
-    margin-right: auto;
-	display: block;
-}
-
-#menu-program .rub-programmes .secondary-menu a {
+#menu-program .secondary-menu a {
 	display: inline-block;
     height: 30px;
     padding: 49px 10px 10px 10px;
@@ -537,9 +514,23 @@ background-color: none;
 	vertical-align: bottom;
 }
 
-#menu-program .program-text-contents {
-	margin: 15px;
+#menu-program ul#menu-main-menu > li{
+	display: inline-block;
 }
+
+#menu-program > ul > li.btn-home-rub-programme {
+	display: inline-block;
+}
+
+.btn-tout-seul-menu-programme, #menu-program ul#menu-main-menu {
+	margin: 0px;
+	padding: 0;
+}
+
+ul.btn-tout-seul-menu-programme, #menu-program ul#menu-main-menu {
+	float:left;
+}
+
 
 .picto-overview a {
 	background: url("../images/sprite-ieseg.png") no-repeat  13px -355px;
