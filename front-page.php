@@ -49,7 +49,7 @@
 		$i_news=1;
 		foreach ( $postslist as $post ) :
 		  setup_postdata( $post ); ?> 
-			<div class="col-sm-6 col-md-3 wow bounceInUp">
+			<div class="col-sm-6 col-md-3 wow fadeInUp">
             	<div class="bloc bloc-news-home">
 					<?php 
 					if ( has_post_thumbnail() ) {?>
@@ -437,30 +437,56 @@
     <div class="container-fluid container-1600">
         <h2 class="text-center"><?php _e("Testimonials","ieseg2015") ?></h2>
         <div class="row">
-            <?php
-            $args = array( 'posts_per_page' => 4, 'order'=> 'DESC','post_type' => 'testimonial','suppress_filters' => false);
-            //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
-            $postslist = get_posts( $args );
-            foreach ( $postslist as $post ) :
-                setup_postdata( $post ); 
-                
-              ?> 
-                <div class="col-sm-3">
-                    <?php 
-                    $id=$post->ID;
-                    /*echo date('D',get_post_meta($id,'wpcf-start-date',true));
-                    echo date('d',get_post_meta($id,'wpcf-start-date',true));
-                    echo date('M',get_post_meta($id,'wpcf-start-date',true));*/
-                    ?>
-                    <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-                    
-                    <?php echo get_post_meta($id,'wpcf-city-town', true)?>
-                </div>
-            <?php
-            endforeach; 
-            //wp_reset_postdata();
-            ?>		
+        <div class="col-sm-12">
+
+        <div class="proghome-testimonials">
+
+            <ul class="bxslider">
+                         <?php
+                        $args = array(
+                            'posts_per_page' => -1,
+                            'order'=> 'DESC',
+                            'post_type' => 'testimonial',
+                            'suppress_filters' => false
+
+                        );
+
+                        //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
+                        $postslist = get_posts( $args );
+                        foreach ( $postslist as $post ) :
+                            setup_postdata( $post ); 
+                          ?> 
+                <li>
+                            <?php if ( has_post_thumbnail() ) { ?>
+                            <?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' );
+                            } ?>
+                        <div style="background-image: url('<?php echo $background[0]; ?>');" class="clear testimonials-home-photo img-responsive"></div>
+
+                        <div class="col-sm-6 col-sm-offset-0">
+                            <?php 
+                            $id=$post->ID;
+                            ?>
+
+                            <div id="container-testimonial-homepage-programs">
+                                <div class="yellow-quotation-mark"></div>
+                                <span><?php the_excerpt(); ?><a href="<?php the_permalink(); ?>"title="Read full post">
+                                <div class="readmore"><?php _e('Keep reading', 'ieseg2015');?> <div class="glyphicon glyphicon-menu-right" style="font-size:12px; padding-top:5px;"></div></div></a>
+                                </span>
+                                <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
+                                <br><?php echo get_post_meta($id,'wpcf-class', true)?></a>
+                                </h3>
+                            </div>
+                        </div>
+                </li>
+                        <?php
+                        endforeach; 
+                        //wp_reset_postdata();
+                        ?>
+            </ul> 
+               
         </div>
+    </div>
+    	</div>
         <div class="row">
             <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("All the testimonials","ieseg2015") ?></a>	
         </div>

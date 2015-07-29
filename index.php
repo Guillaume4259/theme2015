@@ -57,7 +57,7 @@
 <?php       	                  
 		if (has_excerpt()) :
 ?>
-            <div class="page_chapeau">
+            <div class="page_chapeau wow fadeInUp" data-wow-delay="0.5s">
                 <?php the_excerpt(); ?>
             </div>
 <?php 

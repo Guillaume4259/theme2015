@@ -25,6 +25,8 @@ $("#button-form-cibles-home").click(function(event){
 });
 
 
+
+// Slider bloc classement Homepage
 $('.home .bloc-rankings .bxslider').bxSlider({
 	auto: true,
 	controls : false
@@ -32,9 +34,8 @@ $('.home .bloc-rankings .bxslider').bxSlider({
 
 
 // Slider Témoignages Homepage programmes
-
-  $('.proghome-testimonials .bxslider').bxSlider({
-  	mode: 'fade',
+$('.proghome-testimonials .bxslider').bxSlider({
+	mode: 'fade',
   	infiniteLoop: true,
   	easing: 'linear',
   	tickerHover: true,
