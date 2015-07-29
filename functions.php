@@ -12,7 +12,8 @@ function theme_ieseg_setup() {
 
 	add_image_size( 'mega-thumb', 2000, 786, true ); //content main image
 	add_image_size( 'master-thumb', 556, 183, true ); //old ieseg theme legacy
-	add_image_size( 'bloc-thumb', 378, 171, true ); //bloc asctu
+	add_image_size( 'bloc-thumb', 378, 171, true ); //bloc actus
+	add_image_size( 'testimonial-thumb', 420, 385, true ); //testimonial
 	
 	
 	register_nav_menus( array(

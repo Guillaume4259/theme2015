@@ -56,8 +56,8 @@
                 <nav class="menu-cibles pull-right hidden-xs">
                     <!-- HEADER NAVIGATION -->
                     <?php wp_nav_menu( array(
-                          'theme_location'  => 'header',
-                          'menu'            => 'header2015', 
+                          'theme_location'  => 'header2015',
+                          'menu'            => '', 
                           'container'       => '', 
                           'container_class' => '', 
                           'container_id'    => '',
@@ -98,8 +98,8 @@
      
             <!-- MAIN NAVIGATION -->
             <?php wp_nav_menu( array(
-                  'theme_location'  => 'Primary Menu',
-                  'menu'            => 'main-menu', 
+                  'theme_location'  => 'Primary Menu 2015',
+                  'menu'            => '', 
                   'container'       => 'nav', 
                   'container_class' => 'menu-principal collapse navbar-collapse navbar-ex1-collapse', 
                   'container_id'    => 'mainNav',
