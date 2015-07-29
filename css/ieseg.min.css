@@ -540,6 +540,39 @@ ul.btn-tout-seul-menu-programme, #menu-program ul#menu-main-menu {
 	background: url("../images/sprite-ieseg.png") no-repeat  13px -408px;
 }
 
+.picto-dual a {
+	background: url("../images/sprite-ieseg.png") no-repeat  20px -1192px;
+}
+
+.picto-dual:hover a {
+	background: url("../images/sprite-ieseg.png") no-repeat  20px -1253px;
+}
+
+.picto-internship a{
+	background: url("../images/sprite-ieseg.png") no-repeat  39px -1587px;
+}
+
+.picto-internship:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  39px -1653px;
+}
+
+.picto-career a {
+	background: url("../images/sprite-ieseg.png") no-repeat  -39px -1583px;
+}
+
+.picto-career:hover a {
+	background: url("../images/sprite-ieseg.png") no-repeat  -40px -1646px;
+}
+
+.picto-partnership a {
+	background: url("../images/sprite-ieseg.png") no-repeat  -74px -1192px;
+}
+
+.picto-partnership:hover a {
+	background: url("../images/sprite-ieseg.png") no-repeat  -74px -1253px;
+}
+
+
 .picto-program a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -127px -360px;
 	width: 44px;
