@@ -7,6 +7,19 @@ jQuery(document).ready(function($) {
 	});
 	
 new WOW().init();
+
+// Egaliser les blocs NEWS et EVENTS :
+
+var smaller_height_box= jQuery( ".events" ).height()  ;
+
+var tallest_height_box= jQuery( ".news" ).height()  ;
+
+if (smaller_height_box<tallest_height_box){
+        jQuery( ".events" ).height(tallest_height_box);
+}
+else{
+        jQuery( ".news" ).height(smaller_height_box);
+};
 	
 //Formulaire Cibles homepage	
 $("#button-form-cibles-home").click(function(event){

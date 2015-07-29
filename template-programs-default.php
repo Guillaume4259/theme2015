@@ -26,13 +26,11 @@ Template Name: template-programs-default
 <div class="container-fluid fond-menu-program hidden-xs" role="main">
 
   <div id="menu-program">
-        <ul>
-            <li class="rub-programmes secondary-menu boutons-menu picto-menu-programme picto-overview menu-item menu-item-type-post_type menu-item-object-page">
-
+        <ul class="btn-tout-seul-menu-programme">
+            <li class="secondary-menu btn-home-rub-programme picto-overview">
                <?php echo '<a  href="'.get_permalink($post->post_parent).'">
          Overview</a>'; ?>
             </li>
-
         </ul>
             <?php if ( is_active_sidebar( 'program-menu' ) ) : ?>
             <?php dynamic_sidebar( 'program-menu' ); ?>
@@ -79,7 +77,7 @@ Template Name: template-programs-default
       <div class="container-fluid title container-news-events container-overview-part6">
         <section class="container-1600">
           <div class="col-sm-6">
-            <div class="box">
+            <div class="box news">
               <h3>News</h3>
                       <div class="row">  
                           <?php
@@ -129,7 +127,7 @@ Template Name: template-programs-default
     <!--EVENTS Box-->
 
         <div class="col-sm-6">
-           <div class="box">
+           <div class="box events">
              <h3>Events</h3>
                    
         <div class="row">
@@ -173,17 +171,7 @@ Template Name: template-programs-default
     </section>
 </div>
 
-<script type="text/javascript">
-var smaller_height_box= jQuery( ".programmes-admissions-onglets .tab-pane  .col-sm-12.smaller-box" ).height()  ;
-var tallest_height_box= jQuery( ".programmes-admissions-onglets .tab-pane  .col-sm-12.tallest-box" ).height()  ;
 
-if (smaller_height_box<tallest_height_box){
-        jQuery( ".page-template-template-global-program .tab-pane .active .col-sm-12.smaller-box " ).height(tallest_height_box)
-}
-else{
-        jQuery( ".page-template-template-global-program .tab-pane  .active .col-sm-12.smaller-box" ).height(smaller_height_box)
-};
-</script>
 
 
 
