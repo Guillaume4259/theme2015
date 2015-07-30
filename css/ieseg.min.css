@@ -479,34 +479,31 @@ vertical-align: middle;
 	background:#3c3c3b;
 }
 
-#menu-program {
-	text-align:center;
-	padding: 20px 0;
+.container-sous-menu {
+	text-align: center;
+}
 
-    width: 100%;
+#menu-program  {
+	margin: 20px;
 	color: #fff;
 	font: Source Sans Pro;
 	font-weight: 400;
 	font-size: 16px;
-	display: inline-block;
+	display:inline-block
+}
+
+#menu-program ul {
+	display: inline;
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
 }
 
 #menu-program > ul > li > a {
 	color: #fff !important;
 	text-decoration: none;
-}
-
-#menu-program > ul > li > a:hover {
-	color: #ffc20e !important;
-}
-
-#menu-program .widget_advanced_menu li {
-	margin: 25px;
-}
-
-#menu-program .secondary-menu a {
-	display: inline-block;
-    height: 30px;
+	display:inline-block;
+	height: 30px;
     padding: 49px 10px 10px 10px;
 	width: 120px;
 	text-align: center;
@@ -514,21 +511,17 @@ vertical-align: middle;
 	vertical-align: bottom;
 }
 
-#menu-program ul#menu-main-menu > li{
-	display: inline-block;
+#menu-program > ul > li > a:hover {
+	color: #ffc20e !important;
 }
 
-#menu-program > ul > li.btn-home-rub-programme {
-	display: inline-block;
+#menu-program > ul > li {
+	display:inline-block;
+	width: 110px;
 }
 
-.btn-tout-seul-menu-programme, #menu-program ul#menu-main-menu {
-	margin: 0px;
-	padding: 0;
-}
-
-ul.btn-tout-seul-menu-programme, #menu-program ul#menu-main-menu {
-	float:left;
+#menu-program #menu-main-menu, #menu-program ul.pull-left {
+	padding: 0 !important;
 }
 
 

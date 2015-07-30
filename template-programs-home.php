@@ -7,7 +7,7 @@ Template Name: template-programs-home
 <?php get_header(); ?>
 
 <div class="container-fluid" id="container-img-une">
-                <div class="keyfacts col-sm-3 hidden-xs hidden-sm">
+                <div class="keyfacts col-sm-3 hidden-xs hidden-sm wow swing" data-wow-duration="2s">
                 <?php include('includes/blocs-keyfacts.php'); ?>
         		</div>
 
@@ -21,18 +21,22 @@ Template Name: template-programs-home
 </div>
 
 <div class="container-fluid fond-menu-program hidden-xs" role="main">
-
-	<div id="menu-program">
-        <ul class="btn-tout-seul-menu-programme">
-            <li class="secondary-menu btn-home-rub-programme picto-overview">
-               <?php echo '<a  href="'.get_permalink($post->post_parent).'">
-			   Overview</a>'; ?>
-            </li>
-        </ul>
-            <?php if ( is_active_sidebar( 'program-menu' ) ) : ?>
-            <?php dynamic_sidebar( 'program-menu' ); ?>
-            <?php endif; ?>
+    <div class="container-1600">
+        <div class="row container-sous-menu">
+        	<div id="menu-program">
+                <ul class="pull-left">
+                    <li class="secondary-menu btn-home-rub-programme picto-overview">
+                       <?php echo '<a  href="'.get_permalink($post->post_parent).'">
+        			   Overview</a>'; ?>
+                    </li>
+                </ul>
+                    <?php if ( is_active_sidebar( 'program-menu' ) ) : ?>
+                    <?php dynamic_sidebar( 'program-menu' ); ?>
+                    <?php endif; ?>
+            </div>
+        </div>
     </div>
+
 
    	<div class="clear"></div>
 
@@ -143,7 +147,7 @@ Template Name: template-programs-home
     <div class="container-fluid title container-news-events  container-overview-part6">
         <section class="container-1600">
           <div class="col-sm-6">
-            <div class="box news">
+            <div class="box news wow pulse">
               <h3>News</h3>
                     	<div class="row">  
                         	<?php
@@ -193,7 +197,7 @@ Template Name: template-programs-home
     <!--EVENTS Box-->
 
         <div class="col-sm-6">
-           <div class="box events">
+           <div class="box events wow pulse">
              <h3>Events</h3>
                    
         <div class="row">
