@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
 	
 new WOW().init();
 
-// Egaliser les blocs :
+// Egaliser les blocs News et Events :
 
 var news = jQuery( ".news" ).height()  ;
 
@@ -20,6 +20,24 @@ if (news < events){
 else{
         jQuery( ".events" ).height(news);
 };
+
+
+// Egaliser deux blocs (divers) :
+
+var a = jQuery( ".bloca" ).height()  ;
+
+var b = jQuery( ".blocb" ).height()  ;
+
+if (a < b){
+        jQuery( ".bloca" ).height(b);
+}
+else{
+        jQuery( ".blocb" ).height(a);
+};
+
+
+
+
 	
 //Formulaire Cibles homepage	
 $("#button-form-cibles-home").click(function(event){
