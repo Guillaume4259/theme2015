@@ -1,11 +1,7 @@
 <?php
- /**
- * System Template: IESEG || Homepage
- *
- * @since IESEG 1.0
- * @package Wordpress 
- * @subpackage IESEG Theme
- */
+/*
+Template Name: Page cible
+*/
 ?>
 <?php get_header(); ?>
 
@@ -37,7 +33,7 @@
     <div class="row">
     	<div role="navigation" class="col-sm-3 hidden-xs left-col">
         	<!-- SUB NAVIGATION -->    
-        	<?php get_sidebar( 'left-menu' ); ?>
+        	<?php get_sidebar( 'left-menu-cibles' ); ?>
             <!-- END - SUB NAVIGATION -->
         </div>
         <?php 

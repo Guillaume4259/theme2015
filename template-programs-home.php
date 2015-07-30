@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 <?php
 /*
 Template Name: template-programs-home
 */
 ?>
-
 <?php get_header(); ?>
 
 <div class="container-fluid" id="container-img-une">
@@ -13,19 +11,19 @@ Template Name: template-programs-home
         		</div>
 
         <div class="container-titre">
-                <div class="titre-deco"></div>
-					<?php the_title( '<h1 class="entry-title foundry_demi">', '</h1>' ); ?>
+                <div class="titre-deco hidden-xs"></div>
+				<?php the_title( '<h1 class="entry-title foundry_demi">', '</h1>' ); ?>
                 <div class="punchline-program">
                     <?php include('includes/program-punchlines.php'); ?>
                 </div>
     	</div>
 </div>
 
-<div class="container-fluid fond-menu-program hidden-xs" role="main">
-    <div class="container-1600">
+<div class="fond-menu-program hidden-xs">
+    <div class="container-fluid container-1600">
         <div class="row container-sous-menu">
         	<div id="menu-program">
-                <ul class="pull-left">
+                <ul>
                     <li class="secondary-menu btn-home-rub-programme picto-overview">
                        <?php echo '<a  href="'.get_permalink($post->post_parent).'">
         			   Overview</a>'; ?>
@@ -38,22 +36,15 @@ Template Name: template-programs-home
         </div>
     </div>
 
-
-   	<div class="clear"></div>
-
-    <div class="container-fluid container-1600" role="main">
-    
+    <div class="container-fluid container-1600">
         <div id="breadcrumbs" class="row">
             <!-- BREADCRUMBS -->
                 <div class="col-sm-12">
-               
-                    <?php if(function_exists('bcn_display')){ bcn_display();}?>
-           
+                    <?php if(function_exists('bcn_display')){ bcn_display();}?>   
                 </div>
             <!-- END - BREADCRUMBS -->
           </div>
     </div>
-
 </div>
     
 <div class="programme-overview">
