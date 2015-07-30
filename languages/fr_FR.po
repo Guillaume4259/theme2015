@@ -1,0 +1,267 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ieseg2015\n"
+"POT-Creation-Date: 2015-07-30 12:00+0100\n"
+"PO-Revision-Date: 2015-07-30 12:18+0100\n"
+"Last-Translator: Guillaume Layes <g.layes@ieseg.fr>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\wamp\\www\\www.ieseg.fr\\wp-content\\themes"
+"\\ieseg-2015\n"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:20
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:22
+msgid "Contact"
+msgstr "Contact"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:26
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:28
+msgid "Admissions"
+msgstr "Admissions"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:32
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:34
+msgid "Meet with us"
+msgstr "Rencontrez-nous"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:38
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:40
+msgid "Brochures"
+msgstr "Plaquettes"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:74
+msgid "Social Networks"
+msgstr "Réseaux Sociaux"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:100
+msgid "(+33)3.20.54.58.92"
+msgstr "03.20.54.58.92"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/footer.php:101
+msgid "Map & Directions"
+msgstr "Plan d'accès"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:24
+msgid ""
+"Your browser does not support the video tag. Please upgrade your browser."
+msgstr ""
+"Votre navigateur ne peut pas afficher la vidéo. Nous vous recommandons de le "
+"mettre à jour."
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:28
+msgid "Make the change"
+msgstr "Rejoignez"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:28
+msgid "and challenge yourself"
+msgstr "la nouvelle culture du management international"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:32
+msgid "Discover IÉSEG"
+msgstr "Découvrir l'École"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:33
+msgid "View our programs"
+msgstr "Voir nos programmes"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:43
+msgid "News"
+msgstr "Actualités"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:86
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-programs-default.php:119
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-programs-home.php:185
+msgid "All news"
+msgstr "Toutes les actualités"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:94
+msgid "Events"
+msgstr "Evénements"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:126
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-programs-default.php:165
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-programs-home.php:231
+msgid "All events"
+msgstr "Tous les événements"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:133
+msgid "A complete range of programs"
+msgstr "Une gamme complète de programmes"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:139
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:140
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:141
+msgid "Grande École Program"
+msgstr "Programme Grande École"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:143
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:166
+msgid "years"
+msgstr "années"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:157
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:170
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:194
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:217
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:240
+msgid "More information"
+msgstr "Plus d'information"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:162
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:163
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:164
+msgid "Bachelor Program"
+msgstr "Programme Bachelor"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:175
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:176
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:177
+msgid "Postgraduate Programs"
+msgstr "Programmes MSc"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:179
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:203
+msgid "months"
+msgstr "mois"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:199
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:200
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:201
+msgid "International MBA"
+msgstr "International MBA"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:222
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:223
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:224
+msgid "Executive Education"
+msgstr "Formation Continue"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:249
+msgid "Need information ?"
+msgstr "besoin d'informations"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:254
+msgid "You are"
+msgstr "Vous êtes"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:255
+msgid "A prospective student"
+msgstr "Un candidat"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:256
+msgid "A parent"
+msgstr "Un parent"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:257
+msgid "A company"
+msgstr "Une entreprise"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:258
+msgid "An alumny"
+msgstr "Un diplômé"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:273
+msgid "Facts & Figures"
+msgstr "L'IÉSEG en chiffres"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:279
+msgid "students"
+msgstr "étudiants"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:286
+msgid "partner universities"
+msgstr "universités partenaires"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:293
+msgid "international professors"
+msgstr "de professeurs internationaux"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:300
+msgid "partner companies"
+msgstr "entreprises partenaires"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:306
+msgid "Rankings"
+msgstr "Classements"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:382
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:384
+msgid "Lille Campus"
+msgstr "Campus de Lille"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:385
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:394
+msgid "Discover"
+msgstr "Découvrir"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:391
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:393
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:408
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:409
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:412
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:415
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:418
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:421
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:426
+msgid "Paris Campus"
+msgstr "Campus de Paris"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:404
+msgid "Photo gallery"
+msgstr "L'IÉSEG en images"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:431
+msgid "Follow IÉSEG on Instagram"
+msgstr "Suivre l'IÉSEG sur Instagram"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:438
+msgid "Testimonials"
+msgstr "Témoignages"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:473
+msgid "Keep reading"
+msgstr "Lire la suite"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:491
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-programs-home.php:132
+msgid "All testimonials"
+msgstr "Tous les témoignages"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:491
+msgid "All the testimonials"
+msgstr "Tous les témoignages"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:88
+msgid "Sidebar Left Menu"
+msgstr ""
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:90
+msgid "Sidebar for Left Menu"
+msgstr ""
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:97
+msgid "Menu Program"
+msgstr ""
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:99
+msgid "Menu pour pages Program"
+msgstr ""
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:197
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/_searchform.php:2
+msgid "Search for"
+msgstr "Rechercher"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/header.php:47
+msgid "Our accreditations"
+msgstr "Nos accréditations"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/index.php:65
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
