@@ -7,7 +7,7 @@ Template Name: template-programs-home
 <?php get_header(); ?>
 
 <div class="container-fluid" id="container-img-une">
-                <div class="keyfacts col-sm-3 hidden-xs hidden-sm wow swing" data-wow-duration="2s">
+                <div class="keyfacts col-sm-3 hidden-xs hidden-sm wow fadeInUp" data-wow-duration="2s">
                 <?php include('includes/blocs-keyfacts.php'); ?>
         		</div>
 
@@ -147,7 +147,7 @@ Template Name: template-programs-home
     <div class="container-fluid title container-news-events  container-overview-part6">
         <section class="container-1600">
           <div class="col-sm-6">
-            <div class="box news wow pulse">
+            <div class="box news wow slideInLeft" data-wow-duration="0.5s">
               <h3>News</h3>
                     	<div class="row">  
                         	<?php
@@ -197,7 +197,7 @@ Template Name: template-programs-home
     <!--EVENTS Box-->
 
         <div class="col-sm-6">
-           <div class="box events wow pulse">
+           <div class="box events wow slideInRight"data-wow-duration="0.5s">
              <h3>Events</h3>
                    
         <div class="row">
