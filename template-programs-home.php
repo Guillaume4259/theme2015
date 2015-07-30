@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 /*
 Template Name: template-programs-home
