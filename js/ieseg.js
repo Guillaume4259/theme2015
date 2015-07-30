@@ -8,17 +8,17 @@ jQuery(document).ready(function($) {
 	
 new WOW().init();
 
-// Egaliser les blocs NEWS et EVENTS :
+// Egaliser les blocs :
 
-var smaller_height_box= jQuery( ".events" ).height()  ;
+var news = jQuery( ".news" ).height()  ;
 
-var tallest_height_box= jQuery( ".news" ).height()  ;
+var events = jQuery( ".events" ).height()  ;
 
-if (smaller_height_box<tallest_height_box){
-        jQuery( ".events" ).height(tallest_height_box);
+if (news < events){
+        jQuery( ".news" ).height(events);
 }
 else{
-        jQuery( ".news" ).height(smaller_height_box);
+        jQuery( ".events" ).height(news);
 };
 	
 //Formulaire Cibles homepage	

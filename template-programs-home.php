@@ -147,7 +147,7 @@ Template Name: template-programs-home
     <div class="container-fluid title container-news-events  container-overview-part6">
         <section class="container-1600">
           <div class="col-sm-6">
-            <div class="box news wow slideInLeft" data-wow-duration="0.5s">
+            <div class="box news size-comparator-1 wow fadeInLeftBig" data-wow-duration="2s">
               <h3>News</h3>
                     	<div class="row">  
                         	<?php
@@ -197,7 +197,7 @@ Template Name: template-programs-home
     <!--EVENTS Box-->
 
         <div class="col-sm-6">
-           <div class="box events wow slideInRight"data-wow-duration="0.5s">
+           <div class="box events size-comparator-2 wow fadeInRightBig"data-wow-duration="2s">
              <h3>Events</h3>
                    
         <div class="row">
