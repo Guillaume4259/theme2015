@@ -63,7 +63,7 @@ function ieseg2_scripts() {
 	//wp_style_add_data( 'twentyfourteen-ie', 'conditional', 'lt IE 9' );
 
 	//BX slider
-	if ( is_front_page() || is_page_template('template-programs-home.php') ){
+	if ( is_front_page() || is_page_template('template-page-programs.php') ){
 		wp_enqueue_script( 'bxslider', get_template_directory_uri() . '/js/jquery.bxslider.min.js', array( 'jquery' ), '1.0', true );
 		wp_enqueue_style('style-bxslider',get_template_directory_uri().'/css/jquery.bxslider.css',array('style-ieseg'),'1.0');
 	}

@@ -66,8 +66,7 @@ if (is_page($homes_programmes)){
           </div>
     </div>
 </div>
-    
-<div class="programme-overview">
+ <div class="programme-overview">
 
     <div class="hidden-md hidden-lg">
     	<div class="keyfacts col-sm-3">
@@ -76,24 +75,24 @@ if (is_page($homes_programmes)){
     </div>
            
 </div>
-		
-        <?php if (have_posts()) : while (have_posts()) : the_post();?>
-        <?php the_content(); ?>
-        <?php endwhile; endif; ?>
-</div>
+	
+<?php if (have_posts()) : while (have_posts()) : the_post();?>
+<?php the_content(); ?>
+<?php endwhile; endif; ?>
+
 <?php    
  if ($is_home_programe==true){ 
  ?>
-<!--   Temoignages   -->
+<!--   Temoignages   -->    
+<section class="container-testimonials">
+	<div class="container-fluid title container-titre-section-programmes-gris">
+		<h2><span class="foundry_bold"><?php _e("Our students","ieseg2015") ?></span> <span class="foundry_light"><?php _e("speak","ieseg2015") ?></span></h2>
+    </div>
+    <div class="container-fluid container-1600">
+        <div class="row">
+        <div class="col-sm-12">
 
-<div class="container-fluid title container-titre-section-programmes-gris">
-	<h2><span class="foundry_bold"><?php _e("Our students","ieseg2015") ?></span> <span class="foundry_light"><?php _e("speak","ieseg2015") ?></span></h2>
-</div>
-
-    <div class="col-sm-12">
-
-        <div  class="proghome-testimonials">
-
+        <div class="proghome-testimonials">
             <ul class="bxslider">
                          <?php
                         $args = array(
@@ -143,13 +142,16 @@ if (is_page($homes_programmes)){
                         endforeach; 
                         //wp_reset_postdata();
                         ?>
-            </ul>
-
-             
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 124, 'testimonial-category' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("All testimonials","ieseg2015") ?></a>    
+            </ul> 
                
         </div>
     </div>
+    	</div>
+        <div class="row">
+            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("All the testimonials","ieseg2015") ?></a>	
+        </div>
+    </div>
+</section>
 
 <!--End Témoignages-->
 
