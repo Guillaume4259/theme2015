@@ -556,13 +556,13 @@ vertical-align: middle;
 }
 
 
-.picto-program a{
+#menu-program .picto-program a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -67px -356px;
 	/*width: 44px;
 	height: 40px;*/
 }
 
-.picto-program:hover a{
+#menu-program .picto-program:hover a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -65px -456px;
 }
 
