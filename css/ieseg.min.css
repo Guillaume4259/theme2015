@@ -514,11 +514,11 @@ vertical-align: middle;
 }
 
 #menu-program .picto-overview a {
-	background: url("../images/sprite-ieseg.png") no-repeat  13px -355px;
+	background: url("../images/sprite-ieseg.png") no-repeat  37px -355px;
 }
 
 #menu-program .picto-overview:hover a {
-	background: url("../images/sprite-ieseg.png") no-repeat  13px -408px;
+	background: url("../images/sprite-ieseg.png") no-repeat  38px -449px;
 }
 
 #menu-program .picto-dual a {
@@ -555,13 +555,13 @@ vertical-align: middle;
 
 
 .picto-program a{
-	background: url("../images/sprite-ieseg.png") no-repeat  -127px -360px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -67px -356px;
 	/*width: 44px;
 	height: 40px;*/
 }
 
 .picto-program:hover a{
-	background: url("../images/sprite-ieseg.png") no-repeat  -127px -414px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -65px -456px;
 }
 
 .boutons-menu:hover .picto-program a{
@@ -570,20 +570,18 @@ vertical-align: middle;
 }
 
 #menu-program .picto-profile a {
-	background: url("../images/sprite-ieseg.png") no-repeat  13px -479px;
+	background: url("../images/sprite-ieseg.png") no-repeat  39px -561px;
 	/*width: 44px;
 	height: 40px;*/
 }
 
 #menu-program .picto-profile:hover a {
-	background: url("../images/sprite-ieseg.png") no-repeat  13px -530px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -64px -561px;
 }
 
 
 #menu-program .picto-admission a{
-	background: url("../images/sprite-ieseg.png") no-repeat  -130px -478px;
-	/*width: 44px;
-	height: 40px;*/
+	background: url("../images/sprite-ieseg.png") no-repeat  -172px -356px;
 }
 
 li#menu-program  .picto-admission a {
@@ -591,17 +589,17 @@ li#menu-program  .picto-admission a {
 }
 
 #menu-program .picto-admission:hover a{
-	background: url("../images/sprite-ieseg.png") no-repeat  -129px -531px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -172px -456px;
 }
 
 #menu-program .picto-testimonials a{
-	background: url("../images/sprite-ieseg.png") no-repeat  13px -588px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
 	/*width: 44px;
 	height: 40px;*/
 }
 
 #menu-program .picto-testimonials:hover a{
-	background: url("../images/sprite-ieseg.png") no-repeat  13px -647px;
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
 }
 
 /*----------------FIN MENU PROGRAMMES----------------*/
@@ -617,15 +615,15 @@ li#menu-program  .picto-admission a {
 	margin-top: 0px;
 }
 
-.page-template-template-programs-home #breadcrumbs a, .page-template-template-programs-default-php #breadcrumbs a {
+.page-template-template-page-programs #breadcrumbs a, .page-template-template-programs-default-php #breadcrumbs a {
 	color: #fff;
 }
 
-.page-template-template-programs-home #breadcrumbs, .page-template-template-programs-default-php #breadcrumbs {
+.page-template-template-page-programs #breadcrumbs, .page-template-template-programs-default-php #breadcrumbs {
 	color: #ffc20e;
 }
 
-.page-template-template-programs-home-php #breadcrumbs, .page-template-template-programs-default-php #breadcrumbs{
+.page-template-template-page-programs-php #breadcrumbs, .page-template-template-programs-default-php #breadcrumbs{
 	color: #ffc20e;
 	border-top:1px solid #575756;
 	border-bottom: 0px;
@@ -791,7 +789,7 @@ span.foreword-contents::before {
 }
 
 
-.page-template-template-programs-home footer, .page-template-template-programs-default footer {
+.page-template-template-page-programs footer, .page-template-template-programs-default footer {
 	margin: 0;
 }
 
@@ -960,7 +958,7 @@ span.foreword-contents::before {
 }
 
 
-.page-template-template-programs-home .bloc.video-container  {
+.page-template-template-page-programs .bloc.video-container  {
 	  width: 84%;
 	  margin-right: auto;
 	  margin-left: auto;
@@ -1953,11 +1951,11 @@ section.container-campus{
 	}
 
 
-	.page-template-template-programs-home .bloc.video-container  {
+	.page-template-template-page-programs .bloc.video-container  {
 	  width: 25%;
 	}
 
-	.page-template-template-programs-home .bloc-events-home time {
+	.page-template-template-page-programs .bloc-events-home time {
 	  text-transform: uppercase;
 	  line-height: 1;
 	  margin: 15px 0;
