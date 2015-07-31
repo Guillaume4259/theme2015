@@ -1,7 +1,15 @@
 <?php
 /*
-Template Name: template-programs-home
+Template Name: Page programme
 */
+//on a besoin de savoir si l'on est sur une home de programme pour :
+//charger la bonne sidebar, 
+//charger ou non les testimonials,
+$is_home_programe = false;
+$homes_programmes=array(18322,22831,12691,17155,10873,17340,17394,17445,17417,21849,21911,21935); //PGE a rajouter
+if (is_page($homes_programmes)){
+	$is_home_programe = true;
+}
 ?>
 <?php get_header(); ?>
 
@@ -29,9 +37,21 @@ Template Name: template-programs-home
         			   Overview</a>'; ?>
                     </li>
                 </ul>
-                    <?php if ( is_active_sidebar( 'program-menu' ) ) : ?>
-                    <?php dynamic_sidebar( 'program-menu' ); ?>
-                    <?php endif; ?>
+           			<?php
+					//Pour charger la bonne sidebar (et donc le bon menu), on a besoin de savoir si l'on est sur une home de programme 
+					$homes_programmes=array(18322,22831,12691,17155,10873,17340,17394,17445,17417,21849,21911,21935); //PGE a rajouter
+					if ($is_home_programe==true){
+						if ( is_active_sidebar( 'program-menu' ) ) {
+							dynamic_sidebar( 'program-home-menu' );
+						}
+					}
+					else{
+						if ( is_active_sidebar( 'program-menu' ) ) {
+							dynamic_sidebar( 'program-menu' );
+						}
+					}
+					
+					?>
             </div>
         </div>
     </div>
@@ -61,12 +81,13 @@ Template Name: template-programs-home
         <?php the_content(); ?>
         <?php endwhile; endif; ?>
 </div>
-    
-   
+<?php    
+ if ($is_home_programe==true){ 
+ ?>
 <!--   Temoignages   -->
 
 <div class="container-fluid title container-titre-section-programmes-gris">
-	<h2><span class="foundry_bold">Our students</span> <span class="foundry_light">speak</span></h2>
+	<h2><span class="foundry_bold"><?php _e("Our students","ieseg2015") ?></span> <span class="foundry_light"><?php _e("speak","ieseg2015") ?></span></h2>
 </div>
 
     <div class="col-sm-12">
@@ -110,7 +131,7 @@ Template Name: template-programs-home
                             <div id="container-testimonial-homepage-programs">
                                 <div class="yellow-quotation-mark"></div>
                                 <span><?php the_excerpt(); ?><a href="<?php the_permalink(); ?>"title="Read full post">
-                                <div class="readmore">Keep reading <div class="glyphicon glyphicon-menu-right" style="font-size:12px; padding-top:5px;"></div></div></a>
+                                <div class="readmore"><?php _e("Keep reading","ieseg2015") ?> <div class="glyphicon glyphicon-menu-right" style="font-size:12px; padding-top:5px;"></div></div></a>
                                 </span>
                                 <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
                                 <br><?php echo get_post_meta($id,'wpcf-class', true)?></a>
@@ -132,7 +153,9 @@ Template Name: template-programs-home
 
 <!--End Témoignages-->
 
-<div class="clear">&nbsp;</div>
+<?php
+ }//end if is_home_programme
+?>
 
 <!--NEWS Box-->
 
@@ -140,7 +163,7 @@ Template Name: template-programs-home
         <section class="container-1600">
           <div class="col-sm-6">
             <div class="box news">
-              <h3>News</h3>
+              <h3><?php _e("News","ieseg2015") ?></h3>
                     	<div class="row">  
                         	<?php
                     		$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date','post_type' => 'news' );
@@ -190,7 +213,7 @@ Template Name: template-programs-home
 
         <div class="col-sm-6">
            <div class="box events ">
-             <h3>Events</h3>
+             <h3><?php _e("Events","ieseg2015") ?></h3>
                    
         <div class="row">
             <?php

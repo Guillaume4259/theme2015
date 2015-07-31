@@ -82,32 +82,42 @@ add_action( 'wp_enqueue_scripts', 'ieseg2_scripts' );
 function ieseg_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => __( 'Sidebar Left Menu', 'ieseg2015' ),
+		'name'          => __('Sidebar Left Menu','ieseg2015'),
 		'id'            => 'sidebar-left-menu',
-		'description'   => __( 'Sidebar for Left Menu', 'ieseg' ),
+		'description'   => __('Sidebar for Left Menu','ieseg2015'),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Sidebar Left Menu for Pages Cibles', 'ieseg2015' ),
+		'name'          => __('Sidebar Left Menu for Pages Cibles','ieseg2015'),
 		'id'            => 'sidebar-left-menu-cibles',
-		'description'   => __( 'Sidebar for Left Menu on Pages Cibles', 'ieseg2015' ),
+		'description'   => __('Sidebar for Left Menu for Pages Cibles','ieseg2015'),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Menu Program', 'ieseg2015' ),
-		'id'            => 'program-menu',
-		'description'   => __( 'Menu pour pages Program', 'ieseg2015' ),
+		'name'          => __('Sidebar Menu for Programs homepages','ieseg2015'),
+		'id'            => 'program-home-menu',
+		'description'   => __('Sidebar Menu for Programs homepages','ieseg2015'),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => __('Sidebar Menu for Programs pages','ieseg2015'),
+		'id'            => 'program-menu',
+		'description'   => __('Sidebar Menu for default Programs pages (ie. not homepages)','ieseg2015'),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	
 }
 add_action( 'widgets_init', 'ieseg_widgets_init' );
 
