@@ -7,6 +7,6 @@
  * @since IESEG2 1.0
  */
 
-dynamic_sidebar( 'sidebar-left-menu' );        	      
+dynamic_sidebar( 'sidebar-left-menu-cibles' );        	      
 			                                                
 ?>

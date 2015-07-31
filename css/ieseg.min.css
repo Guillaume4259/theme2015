@@ -316,7 +316,7 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	}
 	
 	#barre-top .menu-cibles{
-		margin:8px 0 0 0;
+		margin:5px 0 0 0;
 	}
 	
 	#barre-top ul{
@@ -790,6 +790,11 @@ span.foreword-contents::before {
 	margin: 20px !important;
 }
 
+
+.page-template-template-programs-home footer, .page-template-template-programs-default footer {
+	margin: 0;
+}
+
 .container-titre-section-programmes-gris {
 	background: #575756;
 }
@@ -1219,11 +1224,9 @@ h3{
 }
 
 .punchline-program {
-	font-family: Open Sans;
 	text-transform:uppercase;
 	font-weight: 400; 
 	color: #fff;
-	margin: auto;
 	max-width: 1570px;
 	font-size: 30px;
 }
@@ -1491,7 +1494,7 @@ ul {
     background-color: rgba(252, 177, 1, 0.65);
 }
 
-#container-img-une h1{
+#container-img-une h1, .punchline-program{
 	margin: auto;
 	max-width: 1600px;
 	padding: 0;
