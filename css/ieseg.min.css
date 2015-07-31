@@ -790,6 +790,11 @@ span.foreword-contents::before {
 	margin: 20px !important;
 }
 
+
+.page-template-template-programs-home footer, .page-template-template-programs-default footer {
+	margin: 0;
+}
+
 .container-titre-section-programmes-gris {
 	background: #575756;
 }
