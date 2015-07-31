@@ -158,11 +158,11 @@ if (is_page($homes_programmes)){
 <?php
  }//end if is_home_programme
 ?>
-
+<!--News et events-->
+<section class="container-overview-part6 container-news-events">
 <!--NEWS Box-->
-
-    <div class="container-fluid title container-news-events  container-overview-part6">
-        <section class="container-1600">
+    <div class="container-fluid container-1600 title">
+    	<div class="row">
           <div class="col-sm-6">
             <div class="box news">
               <h3><?php _e("News","ieseg2015") ?></h3>
@@ -189,11 +189,11 @@ if (is_page($homes_programmes)){
                                             <?php
                                             }
                                             ?>
-                             </div><!--END col-sm-3-->
-            				<div class="col-sm-9">
-                                <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><div class="news-program-excerpt"><?php the_excerpt(); ?></div></a>
-                            </div>
+                            	 		</div><!--END col-sm-3-->
+                                    <div class="col-sm-9">
+                                        <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><div class="news-program-excerpt"><?php the_excerpt(); ?></div></a>
+                                    </div>
                        	</div><!--END row-->
                       </div>
         		<?php
@@ -201,61 +201,57 @@ if (is_page($homes_programmes)){
         		//wp_reset_postdata();
         		?>	
             </div>
-        <div class="container">
             <div class="row">
-            	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn center-block"><?php _e("All news","ieseg2015") ?></a>
+            	<div class="col-sm-4 col-sm-offset-4">
+            		<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn center-block"><?php _e("All news","ieseg2015") ?></a>
+            	</div>
             </div>
-        </div>
            </div><!--END box-->
         </div><!--END col-sm-6-->
-        
-
-
     <!--EVENTS Box-->
-
         <div class="col-sm-6">
            <div class="box events ">
-             <h3><?php _e("Events","ieseg2015") ?></h3>
+				<h3><?php _e("Events","ieseg2015") ?></h3>
                    
-        <div class="row">
-            <?php
-            $args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'meta_value_num','post_type' => 'events', 'meta_key'=> 'wpcf-start-date','suppress_filters' => false );
-            //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
-            $postslist = get_posts( $args );
-            foreach ( $postslist as $post ) :
-                setup_postdata( $post ); 
-                $id=$post->ID;
-              ?> 
-                <div class="col-sm-12">
-                	<div class="bloc-events-home">
-                    	<div class="row">
-                            <time class="col-sm-2 text-center"> 
-								<span class="jour foundry_bold"><?php echo date('D',get_post_meta($id,'wpcf-start-date',true)); ?></span>
-                                <span class="date foundry_bold"><?php echo date('d',get_post_meta($id,'wpcf-start-date',true)); ?></span>
-                                <span class="moi foundry_bold"><?php echo date('M',get_post_meta($id,'wpcf-start-date',true)); ?></span>
-                            </time>
-                            <div class="col-sm-9">
-                            	<h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
-                            	<div class="show"><div class="picto-pin"></div><div class="lieu"><?php echo get_post_meta($id,'wpcf-city-town', true)?></div></div>
+                <div class="row">
+                    <?php
+                    $args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'meta_value_num','post_type' => 'events', 'meta_key'=> 'wpcf-start-date','suppress_filters' => false );
+                    //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
+                    $postslist = get_posts( $args );
+                    foreach ( $postslist as $post ) :
+                        setup_postdata( $post ); 
+                        $id=$post->ID;
+                      ?> 
+                        <div class="col-sm-12">
+                            <div class="bloc-events-home">
+                                <div class="row">
+                                    <time class="col-sm-2 text-center"> 
+                                        <span class="jour foundry_bold"><?php echo date('D',get_post_meta($id,'wpcf-start-date',true)); ?></span>
+                                        <span class="date foundry_bold"><?php echo date('d',get_post_meta($id,'wpcf-start-date',true)); ?></span>
+                                        <span class="moi foundry_bold"><?php echo date('M',get_post_meta($id,'wpcf-start-date',true)); ?></span>
+                                    </time>
+                                    <div class="col-sm-9">
+                                        <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+                                        <div class="show"><div class="picto-pin"></div><div class="lieu"><?php echo get_post_meta($id,'wpcf-city-town', true)?></div></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            <?php
-            endforeach; 
-            //wp_reset_postdata();
-            ?>
-            <br>
-        </div>
-        <div class="container">
+                    <?php
+                    endforeach; 
+                    //wp_reset_postdata();
+                    ?>
+                    <br>
+			</div>
             <div class="row">
-                <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn center-block"><?php _e("All events","ieseg2015") ?></a>	
+                <div class="col-sm-4 col-sm-offset-4">
+                    <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn center-block"><?php _e("All events","ieseg2015") ?></a>	
+                </div>
             </div>	
-        </div>
            </div><!--END box-->
         </div><!--END col-sm-6-->
     </div><!--END row-->
+    </div>
 </section>
-</div>
 
 <?php get_footer(); ?>
