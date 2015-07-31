@@ -522,27 +522,29 @@ vertical-align: middle;
 }
 
 #menu-program .picto-dual a {
-	background: url("../images/sprite-ieseg.png") no-repeat  20px -1192px;
+	background: url("../images/sprite-ieseg.png") no-repeat  30px -1198px;
+	height: 26px;
 }
 
 #menu-program .picto-dual:hover a {
-	background: url("../images/sprite-ieseg.png") no-repeat  20px -1253px;
+	background: url("../images/sprite-ieseg.png") no-repeat  30px -1309px;
+	height: 26px;
 }
 
 #menu-program .picto-internship a{
-	background: url("../images/sprite-ieseg.png") no-repeat  39px -1587px;
+	background: url("../images/sprite-ieseg.png") no-repeat  34px -1712px;
 }
 
 #menu-program .picto-internship:hover a{
-	background: url("../images/sprite-ieseg.png") no-repeat  39px -1653px;
+	background: url("../images/sprite-ieseg.png") no-repeat  34px -1797px;
 }
 
 #menu-program .picto-career a {
-	background: url("../images/sprite-ieseg.png") no-repeat  -39px -1583px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -71px -1706px;
 }
 
 #menu-program .picto-career:hover a {
-	background: url("../images/sprite-ieseg.png") no-repeat  -40px -1646px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -72px -1800px;
 }
 
 #menu-program .picto-partnership a {
