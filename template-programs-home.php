@@ -22,66 +22,57 @@ Template Name: template-programs-home
 </div>
 
 <div class="container-fluid fond-menu-program hidden-xs" role="main">
-    <div class="container-1600">
-        <div class="row container-sous-menu">
-        	<div id="menu-program">
-                <ul class="pull-left">
-                    <li class="secondary-menu btn-home-rub-programme picto-overview">
-                       <?php echo '<a  href="'.get_permalink($post->post_parent).'">
-        			   Overview</a>'; ?>
-                    </li>
-                </ul>
-                    <?php if ( is_active_sidebar( 'program-menu' ) ) : ?>
-                    <?php dynamic_sidebar( 'program-menu' ); ?>
-                    <?php endif; ?>
-            </div>
+        <div class="container-1600">
+            <div class="row container-sous-menu">
+            	<div id="menu-program">
+                    <ul class="pull-left">
+                        <li class="secondary-menu btn-home-rub-programme picto-overview">
+                           <?php echo '<a  href="'.get_permalink($post->post_parent).'">
+            			   Overview</a>'; ?>
+                        </li>
+                    </ul>
+                        <?php if ( is_active_sidebar( 'program-menu' ) ) : ?>
+                        <?php dynamic_sidebar( 'program-menu' ); ?>
+                        <?php endif; ?>
+                </div>  <!-- END - menu-program -->
+            </div>  <!-- END - row container sous menu -->
+        </div>  <!-- END - container 1600 -->
+
+   	    <div class="clear"></div>
+
+        <div class="container-fluid container-1600" role="main">
+                <div id="breadcrumbs" class="row">
+                <!-- BREADCRUMBS -->
+                    <div class="col-sm-12">
+                        <?php if(function_exists('bcn_display')){ bcn_display();}?>
+                    </div>
+                <!-- END - BREADCRUMBS -->
+                </div>  <!-- END - #breadcrumb .row -->
         </div>
-    </div>
-
-
-   	<div class="clear"></div>
-
-    <div class="container-fluid container-1600" role="main">
+</div>  <!-- END - container-fluid fond-menu-program hidden-xs -->
     
-        <div id="breadcrumbs" class="row">
-            <!-- BREADCRUMBS -->
-                <div class="col-sm-12">
-               
-                    <?php if(function_exists('bcn_display')){ bcn_display();}?>
-           
-                </div>
-            <!-- END - BREADCRUMBS -->
-          </div>
-    </div>
 
-</div>
-    
 <div class="programme-overview">
-
     <div class="hidden-md hidden-lg">
     	<div class="keyfacts col-sm-3">
            <?php include('includes/blocs-keyfacts.php'); ?>
-         </div>
-    </div>
-           
-</div>
+        </div>  <!-- END - Keyfacts -->
+    </div>  <!-- END - hidden-md hidden-lg -->
+</div> <!-- END - Programme-overview -->
 		
         <?php if (have_posts()) : while (have_posts()) : the_post();?>
         <?php the_content(); ?>
         <?php endwhile; endif; ?>
-</div>
-    
+
    
 <!--   Temoignages   -->
 
 <div class="container-fluid title container-titre-section-programmes-gris">
 	<h2><span class="foundry_bold">Our students</span> <span class="foundry_light">speak</span></h2>
-</div>
+</div> <!-- END - container-fluid title container-titre-section-programmes-gris -->
 
     <div class="col-sm-12">
-
         <div  class="proghome-testimonials">
-
             <ul class="bxslider">
                          <?php
                         $args = array(
@@ -105,39 +96,38 @@ Template Name: template-programs-home
                         foreach ( $postslist as $post ) :
                             setup_postdata( $post ); 
                           ?> 
-                <li>
-                            <?php if ( has_post_thumbnail() ) { ?>
-                            <?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' );
-                            } ?>
-                        <div style="background-image: url('<?php echo $background[0]; ?>');" class="clear testimonials-home-photo img-responsive"></div>
+                        <li>
+                                    <?php if ( has_post_thumbnail() ) { ?>
+                                    <?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' );
+                                    } ?>
+                                <div style="background-image: url('<?php echo $background[0]; ?>');" class="clear testimonials-home-photo img-responsive"></div>
 
-                        <div class="col-sm-6 col-sm-offset-0">
-                            <?php 
-                            $id=$post->ID;
-                            ?>
+                                <div class="col-sm-6 col-sm-offset-0">
+                                    <?php 
+                                    $id=$post->ID;
+                                    ?>
 
-                            <div id="container-testimonial-homepage-programs">
-                                <div class="yellow-quotation-mark"></div>
-                                <span><?php the_excerpt(); ?><a href="<?php the_permalink(); ?>"title="Read full post">
-                                <div class="readmore">Keep reading <div class="glyphicon glyphicon-menu-right" style="font-size:12px; padding-top:5px;"></div></div></a>
-                                </span>
-                                <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
-                                <br><?php echo get_post_meta($id,'wpcf-class', true)?></a>
-                                </h3>
-                            </div>
-                        </div>
-                </li>
+                                    <div id="container-testimonial-homepage-programs">
+                                        <div class="yellow-quotation-mark"></div>
+                                        <span><?php the_excerpt(); ?><a href="<?php the_permalink(); ?>"title="Read full post">
+                                        <div class="readmore">Keep reading <div class="glyphicon glyphicon-menu-right" style="font-size:12px; padding-top:5px;"></div></div></a>
+                                        </span>
+                                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
+                                        <br><?php echo get_post_meta($id,'wpcf-class', true)?></a>
+                                        </h3>
+                                    </div>
+                                </div>
+                        </li>
                         <?php
                         endforeach; 
                         //wp_reset_postdata();
                         ?>
-            </ul>
+            </ul> <!-- END - bxslider -->
 
-             
             <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 124, 'testimonial-category' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("All testimonials","ieseg2015") ?></a>    
                
-        </div>
-    </div>
+        </div><!-- END - proghome testimonials -->
+    </div><!-- END - col-sm-12 -->
 
 <!--End Témoignages-->
 
@@ -156,35 +146,34 @@ Template Name: template-programs-home
                     		$postslist = get_posts( $args );
                     		foreach ( $postslist as $post ) :
                     		  setup_postdata( $post ); ?>
-                              
-                         
-                    			<div class="col-sm-12 news-program">
-                                
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <?php 
-                                            if ( has_post_thumbnail() ) {?>
-                                                <div class="row"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-news"><?php the_post_thumbnail(); ?></a></div>
-                                            <?php
-                                            }
-                                            else {?>
-                                            
-                                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-news"><img src="<?php echo get_template_directory_uri().'/images/actu-home-defaut.jpg' ;?>" alt="<?php the_title(); ?>"/>
-                                            <?php
-                                            }
-                                            ?>
-                             </div><!--END col-sm-3-->
-            				<div class="col-sm-9">
-                                <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><div class="news-program-excerpt"><?php the_excerpt(); ?></div></a>
-                            </div>
-                       	</div><!--END row-->
-                      </div>
-        		<?php
-        		endforeach; 
-        		//wp_reset_postdata();
-        		?>	
-            </div>
+                        			<div class="col-sm-12 news-program">
+                                        <div class="row">
+                                                <div class="col-sm-3">
+                                                    <?php 
+                                                    if ( has_post_thumbnail() ) {?>
+                                                        <div class="row"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-news"><?php the_post_thumbnail(); ?></a></div>
+                                                    <?php
+                                                    }
+                                                    else {?>
+                                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-news"><img src="<?php echo get_template_directory_uri().'/images/actu-home-defaut.jpg' ;?>" alt="<?php the_title(); ?>"/></a>
+                                                    <?php
+                                                    }
+                                                    ?>
+                                                </div><!--END col-sm-3-->
+                                				<div class="col-sm-9">
+                                                    <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+                                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><div class="news-program-excerpt"><?php the_excerpt(); ?></div></a>
+                                                </div><!-- END - col-sm-9 -->
+                           	            </div><!--END row-->
+                                    </div><!-- END - col-sm-12 news-program -->
+                                        		<?php
+                                        		endforeach; 
+                                        		//wp_reset_postdata();
+                                        		?>	
+                        </div><!--END row-->
+
+
+                        
         <div class="container">
             <div class="row">
             	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn center-block"><?php _e("All news","ieseg2015") ?></a>
