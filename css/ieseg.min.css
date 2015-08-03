@@ -1449,6 +1449,10 @@ ul {
 	/*background-image: url(../images/img_une_provi.jpg);*/
 }
 
+.rub-programmes #container-img-une{
+	background-image: url(../images/img-une-programmes.jpg);
+}
+
 .rub-services #container-img-une{
 	background-image: url(../images/img-une-services.jpg);
 }
@@ -1458,7 +1462,7 @@ ul {
 }
 
 .rub-enseignants #container-img-une{
-	/*background-image: url(../images/img-une-enseignants.jpg);*/
+	background-image: url(../images/img-une-enseignement.jpg);
 }
 
 .rub-dre #container-img-une{
@@ -1466,7 +1470,7 @@ ul {
 }
 
 .rub-exec #container-img-une{
-	/*background-image: url(../images/img-une-exec.jpg);*/
+	background-image: url(../images/img-une-executive.jpg);
 }
 
 .container-titre{
