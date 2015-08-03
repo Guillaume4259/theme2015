@@ -430,19 +430,16 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 
 
 .ubermenu .ubermenu-item.ubermenu-item-level-0 > a{
-border-left: 1px solid #e5e5e5;
-display: table-cell;
-font-family: foundrysterling-boldregular;
-font-size: 14px;
-height: 55px;
-max-width: 140px;
-padding: 0 20px;
-text-align: center;
-text-transform: uppercase;
-vertical-align: middle;
+	border-left: 1px solid #e5e5e5;
+	display: table-cell;
+	font-family: foundrysterling-boldregular;
+	height: 55px;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
 }
 .ubermenu-item-level-0 > a:hover, .ubermenu-item-level-0.ubermenu-current-menu-ancestor > a{
-  color:#fff;
+	color:#fff;
 }
 
 .ubermenu  a{
@@ -2019,19 +2016,28 @@ section.container-campus{
 	}
 
 	.contact-programme .contact-email {
-	width: 50%;
+		width: 50%;
 	}
 
+	.ubermenu .ubermenu-item.ubermenu-item-level-0 > a{
+		font-size: 13px;
+		max-width: 110px;
+		padding: 0 10px;
+	}
 
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+	
 	
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	
+	.ubermenu .ubermenu-item.ubermenu-item-level-0 > a{
+		font-size: 14px;
+		max-width: 140px;
+		padding: 0 20px;
+	}
 }
