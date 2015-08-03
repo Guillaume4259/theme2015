@@ -47,7 +47,7 @@ a {
 /*----------------JEUX DE COULEURS----------------------*/
 
 /*--École--*/
-.bg-bleu-ciel,.ubermenu .ubermenu-item-level-0.rub-ecole > a:hover, .ubermenu-item-level-0.rub-ecole.ubermenu-current-menu-ancestor > a,
+.bloc-information .bg-bleu-ciel,.ubermenu .ubermenu-item-level-0.rub-ecole > a:hover, .ubermenu-item-level-0.rub-ecole.ubermenu-current-menu-ancestor > a,
 .rub-ecole btn:hover{
 	background:#16c1f3;	
 }
@@ -76,7 +76,7 @@ li.rub-ecole.ubermenu-item.ubermenu-item-level-1 > a,
 }
 
 /*--Programmes--*/
-.bg-orange1,.ubermenu .ubermenu-item-level-0.rub-programmes > a:hover, .ubermenu-item-level-0.rub-programmes.ubermenu-current-menu-ancestor > a,
+.bloc-information, .bg-orange1,.ubermenu .ubermenu-item-level-0.rub-programmes > a:hover, .ubermenu-item-level-0.rub-programmes.ubermenu-current-menu-ancestor > a,
 .rub-programmes btn:hover{
 	background:#ffc20e;	
 }
@@ -106,7 +106,7 @@ li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a,
 
 
 /*--International--*/
-.bg-orange2,.ubermenu .ubermenu-item-level-0.rub-international > a:hover, .ubermenu-item-level-0.rub-international.ubermenu-current-menu-ancestor > a,
+.bloc-information .bg-orange2,.ubermenu .ubermenu-item-level-0.rub-international > a:hover, .ubermenu-item-level-0.rub-international.ubermenu-current-menu-ancestor > a,
 .rub-international btn:hover{
 	background:#f37043;	
 }
@@ -135,7 +135,7 @@ li.rub-international.ubermenu-item.ubermenu-item-level-1 > a,
 }
 
 /*--Services aux étudiants--*/
-.bg-rose,.ubermenu .ubermenu-item-level-0.rub-services > a:hover, .ubermenu-item-level-0.rub-services.ubermenu-current-menu-ancestor > a,
+.bloc-information .bg-rose,.ubermenu .ubermenu-item-level-0.rub-services > a:hover, .ubermenu-item-level-0.rub-services.ubermenu-current-menu-ancestor > a,
 .rub-services btn:hover{
 	background:#ef4d6e;	
 }
@@ -164,7 +164,7 @@ li.rub-services.ubermenu-item.ubermenu-item-level-1 > a,
 }
 
 /*--Executive Education--*/
-.bg-rouge,.ubermenu .ubermenu-item-level-0.rub-exec > a:hover, .ubermenu-item-level-0.rub-exec.ubermenu-current-menu-ancestor > a,
+.bloc-information .bg-rouge,.ubermenu .ubermenu-item-level-0.rub-exec > a:hover, .ubermenu-item-level-0.rub-exec.ubermenu-current-menu-ancestor > a,
 .rub-exec btn:hover{
 	background:#cc2a45;	
 }
@@ -193,7 +193,7 @@ li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a,
 }
 
 /*--Enseignement et recherche--*/
-.bg-violet,.ubermenu .ubermenu-item-level-0.rub-enseignants > a:hover, .ubermenu-item-level-0.rub-enseignants.ubermenu-current-menu-ancestor > a,
+.bloc-information .bg-violet,.ubermenu .ubermenu-item-level-0.rub-enseignants > a:hover, .ubermenu-item-level-0.rub-enseignants.ubermenu-current-menu-ancestor > a,
 .rub-enseignants btn:hover{
 	background:#a67db8;	
 }
@@ -222,7 +222,7 @@ li.rub-enseignants.ubermenu-item.ubermenu-item-level-1 > a,
 }
 
 /*--Relations Entreprises--*/
-.bg-vert-canard,.ubermenu .ubermenu-item-level-0.rub-dre > a:hover, .ubermenu-item-level-0.rub-dre.ubermenu-current-menu-ancestor > a,
+.bloc-information .bg-vert-canard,.ubermenu .ubermenu-item-level-0.rub-dre > a:hover, .ubermenu-item-level-0.rub-dre.ubermenu-current-menu-ancestor > a,
 .rub-dre btn:hover{
 	background:#18b68e;	
 }
@@ -470,6 +470,24 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*----------------FIN MENU PRINCIPAL----------------*/
 
+
+/*----------------BLOCS SPECIAUX--------------------*/
+
+.bloc-information, .bloc-information h3 {
+	color: #fff ;
+}
+.bloc-information {
+	padding: 10px;
+}
+.bloc-information h3 {
+	font-size: 36px;
+	font-weight: 500;
+	margin: 0;
+}
+
+/*--------------FIN BLOCS SPECIAUX------------------*/
+
+
 /*----------------MENU PROGRAMMES-------------------*/
 
 .fond-menu-program {
@@ -545,11 +563,13 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 }
 
 #menu-program .picto-partnership a {
-	background: url("../images/sprite-ieseg.png") no-repeat  -74px -1192px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -67px -1192px;
+	height: 40px;
 }
 
 #menu-program .picto-partnership:hover a {
-	background: url("../images/sprite-ieseg.png") no-repeat  -74px -1253px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -67px -1303px;
+	height: 40px;
 }
 
 
@@ -706,10 +726,6 @@ li.nav-small-devices {
 .contact-photo {
 	float:left;	
 	margin: 10px;
-}
-
-.programme-illustration {
-	float:left;	
 }
 
 .title {
