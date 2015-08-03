@@ -222,10 +222,10 @@ function menu_class_to_body($classes)
 {
 	$id_menu=49;
     if (ICL_LANGUAGE_CODE=="fr"){
-		$id_menu=49;
+		$id_menu=142;
 	}
 	elseif (ICL_LANGUAGE_CODE=="en"){
-		$id_menu=4;
+		$id_menu=144;
 	}
 	elseif (ICL_LANGUAGE_CODE=="zh-hans"){
 		$id_menu=69;

@@ -5,8 +5,15 @@ jQuery(document).ready(function($) {
 		jQuery('#barre-top .container-search-header').slideToggle();
 		
 	});
-	
-new WOW().init();
+
+//Initialisation de wow.js
+wow = new WOW(
+    {
+      mobile:       false       // default
+    }
+  )
+wow.init();
+
 
 // Egaliser les blocs News et Events :
 
@@ -35,9 +42,6 @@ else{
         jQuery( ".blocb" ).height(a);
 };
 
-
-
-
 	
 //Formulaire Cibles homepage	
 $("#button-form-cibles-home").click(function(event){
@@ -55,27 +59,6 @@ $("#button-form-cibles-home").click(function(event){
 	event.preventDefault();
 });
 
-
-
-// Slider bloc classement Homepage
-$('.home .bloc-rankings .bxslider').bxSlider({
-	auto: true,
-	controls : false
-});
-
-
-// Slider Témoignages Homepage programmes
-$('.proghome-testimonials .bxslider').bxSlider({
-	mode: 'fade',
-  	infiniteLoop: true,
-  	easing: 'linear',
-  	tickerHover: true,
-  	preloadImages: 'visible',
-  	auto: true,
-  	autoHover: true,
-  	speed: '400',
-  	adaptiveHeight: true
-});
 
 });
 
