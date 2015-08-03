@@ -71,6 +71,10 @@ function ieseg2_scripts() {
 	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0', true );
 	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.min.js', array( 'jquery' ), '1.0', true );
 	//wp_enqueue_script( 'responsive-nav', get_template_directory_uri() . '/js/responsive-nav.min.js', array( 'jquery' ), '1.0', true ); //menu de gauche responsive
+
+	if (is_page ( array( 'mib-class-profile', 'mib-career-opportunities','mfm-student-profiles', 'msc-digital-marketing-crm-class-profile', 'msc-business-analysis-consulting-class-profile', 'msc-accounting-audit-control', 'msc-finance-class-profile', 'msc-banking-capital-markets-class-profile', 'msc-in-negotiation-for-organizations-class-profile', 'msc-big-data-analytics-business-class-profile','imba-class-profile')) ){
+	wp_enqueue_script( 'classprofiles', get_bloginfo('template_directory').'/js/classprofiles.js', array(),'1.1',true );
+	}
 }
 
 add_action( 'wp_enqueue_scripts', 'ieseg2_scripts' );
