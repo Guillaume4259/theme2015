@@ -40,11 +40,11 @@ Template Name: Page cible
 		include('includes/blocs-sidebar-test.php'); 
 		
 		if (!empty($sidebar_a_acharger['global'])):?>
-        <div class="col-md-6 center-col">
+        <div class="col-sm-6 center-col">
         <?php
 		else:
 		?>
-        <div class="col-md-9 center-col">
+        <div class="col-sm-9 center-col">
 		<?php
 		endif;
 		?>
