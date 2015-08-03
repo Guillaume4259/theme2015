@@ -48,13 +48,13 @@ a {
 
 /*--École--*/
 .bg-bleu-ciel,.ubermenu .ubermenu-item-level-0.rub-ecole > a:hover, .ubermenu-item-level-0.rub-ecole.ubermenu-current-menu-ancestor > a,
-.rub-ecole btn:hover{
+.rub-ecole .btn:hover{
 	background:#16c1f3;	
 }
 
 .txt-bleu-ciel, .rub-ecole h2, .rub-ecole .menu-gauche li.current_page_item>a, .rub-ecole #breadcrumbs a,
 li.rub-ecole.ubermenu-item.ubermenu-item-level-1 > a,
-.rub-ecole btn
+.rub-ecole .btn
 {
 	color:#05a9c9;
 }
@@ -77,13 +77,13 @@ li.rub-ecole.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Programmes--*/
 .bg-orange1,.ubermenu .ubermenu-item-level-0.rub-programmes > a:hover, .ubermenu-item-level-0.rub-programmes.ubermenu-current-menu-ancestor > a,
-.rub-programmes btn:hover{
+.rub-programmes .btn:hover{
 	background:#ffc20e;	
 }
 
 .txt-orange1, .rub-programmes h2, .rub-programmes .menu-gauche li.current_page_item>a, .rub-programmes #breadcrumbs a,
 li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a,
-.rub-programmes btn
+.rub-programmes .btn
 {
 	color:#ffc20e;
 }
@@ -107,13 +107,13 @@ li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--International--*/
 .bg-orange2,.ubermenu .ubermenu-item-level-0.rub-international > a:hover, .ubermenu-item-level-0.rub-international.ubermenu-current-menu-ancestor > a,
-.rub-international btn:hover{
+.rub-international .btn:hover{
 	background:#f37043;	
 }
 
 .txt-orange2, .rub-international h2, .rub-international .menu-gauche li.current_page_item>a, .rub-international #breadcrumbs a,
 li.rub-international.ubermenu-item.ubermenu-item-level-1 > a,
-.rub-international btn
+.rub-international .btn
 {
 	color:#f37043;
 }
@@ -136,13 +136,13 @@ li.rub-international.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Services aux étudiants--*/
 .bg-rose,.ubermenu .ubermenu-item-level-0.rub-services > a:hover, .ubermenu-item-level-0.rub-services.ubermenu-current-menu-ancestor > a,
-.rub-services btn:hover{
+.rub-services .btn:hover{
 	background:#ef4d6e;	
 }
 
 .txt-rose, .rub-services h2, .rub-services .menu-gauche li.current_page_item>a, .rub-services #breadcrumbs a,
 li.rub-services.ubermenu-item.ubermenu-item-level-1 > a,
-.rub-services btn
+.rub-services .btn
 {
 	color:#ef4d6e;
 }
@@ -165,13 +165,13 @@ li.rub-services.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Executive Education--*/
 .bg-rouge,.ubermenu .ubermenu-item-level-0.rub-exec > a:hover, .ubermenu-item-level-0.rub-exec.ubermenu-current-menu-ancestor > a,
-.rub-exec btn:hover{
+.rub-exec .btn:hover{
 	background:#cc2a45;	
 }
 
 .txt-rouge, .rub-exec h2, .rub-exec .menu-gauche li.current_page_item>a, .rub-exec #breadcrumbs a,
 li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a,
-.rub-exec btn
+.rub-exec .btn
 {
 	color:#cc2a45;
 }
@@ -194,13 +194,13 @@ li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Enseignement et recherche--*/
 .bg-violet,.ubermenu .ubermenu-item-level-0.rub-enseignants > a:hover, .ubermenu-item-level-0.rub-enseignants.ubermenu-current-menu-ancestor > a,
-.rub-enseignants btn:hover{
+.rub-enseignants .btn:hover{
 	background:#a67db8;	
 }
 
 .txt-violet, .rub-enseignants h2, .rub-enseignants .menu-gauche li.current_page_item>a, .rub-enseignants #breadcrumbs a,
 li.rub-enseignants.ubermenu-item.ubermenu-item-level-1 > a,
-.rub-enseignants btn
+.rub-enseignants .btn
 {
 	color:#a67db8;
 }
@@ -223,13 +223,13 @@ li.rub-enseignants.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Relations Entreprises--*/
 .bg-vert-canard,.ubermenu .ubermenu-item-level-0.rub-dre > a:hover, .ubermenu-item-level-0.rub-dre.ubermenu-current-menu-ancestor > a,
-.rub-dre btn:hover{
+.rub-dre .btn:hover{
 	background:#18b68e;	
 }
 
 .txt-vert-canard, .rub-dre h2, .rub-dre .menu-gauche li.current_page_item>a, .rub-dre #breadcrumbs a,
 li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
-.rub-dre btn
+.rub-dre .btn
 {
 	color:#18b68e;
 }
