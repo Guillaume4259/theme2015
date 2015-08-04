@@ -49,7 +49,7 @@
 		$i_news=1;
 		foreach ( $postslist as $post ) :
 		  setup_postdata( $post ); ?> 
-			<div class="col-sm-6 col-md-3 wow fadeInUp">
+			<div class="col-sm-6 col-md-3">
             	<div class="bloc bloc-news-home">
 					<?php 
 					if ( has_post_thumbnail() ) {?>
@@ -91,7 +91,7 @@
 <!-- EVENTS -->
 <section class="container-events">   
     <div class="container-fluid container-1600">
-        <h2 class="text-center wow bounceInUp"><?php _e("Events","ieseg2015") ?></h2>
+        <h2 class="text-center"><?php _e("Events","ieseg2015") ?></h2>
         <div class="row">
             <?php
             $args = array( 'posts_per_page' => 4, 'order'=> 'DESC', 'orderby' => 'meta_value_num','post_type' => 'events', 'meta_key'=> 'wpcf-start-date','suppress_filters' => false );
@@ -135,7 +135,7 @@
     	<p class="col-md-10 col-md-offset-1 text-center">Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant, nec resistere planitie porrecta conati digressi sunt retroque concedentes omne iuventutis robur relictum in sedibus acciverunt.</p>
 	</div>
     <div class="row">
-        <div class="col-sm-4 col-md-2 col-md-offset-1">
+        <div class="col-sm-4 col-md-2 col-md-offset-1 wow fadeInUp" data-wow-delay="0.5s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',9782, 'page' ));?>" title="<?php _e('Grande École Program', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Grande École Program","ieseg2015") ?></span>
             	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/programme-grande-ecole.jpg" alt="<?php _e("Grande École Program","ieseg2015") ?>" class="img-responsive"/>
@@ -158,7 +158,7 @@
                 </span>
             </a>	
         </div>
-        <div class="col-sm-4 col-md-2">
+        <div class="col-sm-4 col-md-2 wow fadeInUp" data-wow-delay="1s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',19878, 'page' ));?>" title="<?php _e('Bachelor Program', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Bachelor Program","ieseg2015") ?></span>
             	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/bachelor.jpg" alt="<?php _e("Bachelor Program","ieseg2015") ?>" class="img-responsive"/>
@@ -171,7 +171,7 @@
                 </span>
             </a>	
         </div>
-        <div class="col-sm-4 col-md-2">
+        <div class="col-sm-4 col-md-2 wow fadeInUp" data-wow-delay="1.5s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',18645, 'page' ));?>" title="<?php _e('Postgraduate Programs', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Postgraduate Programs","ieseg2015") ?></span>
             	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/msc.jpg" alt="<?php _e("Postgraduate Programs","ieseg2015") ?>" class="img-responsive"/>
@@ -195,7 +195,7 @@
                 </span>
             </a>	
         </div>
-        <div class="col-sm-4 col-md-2">
+        <div class="col-sm-4 col-md-2 wow fadeInUp" data-wow-delay="2s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',17148, 'page' ));?>" title="<?php _e('International MBA', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("International MBA","ieseg2015") ?></span>
             	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/imba.jpg" alt="<?php _e("International MBA","ieseg2015") ?>" class="img-responsive"/>
@@ -218,7 +218,7 @@
                 </span>
             </a>	
         </div>
-         <div class="col-sm-4 col-md-2">
+         <div class="col-sm-4 col-md-2 wow fadeInUp" data-wow-delay="2.5s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',2554, 'page' ));?>" title="<?php _e('Executive Education', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Executive Education","ieseg2015") ?></span>
             	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/formation-continue.jpg" alt="<?php _e("Executive Education","ieseg2015") ?>" class="img-responsive"/>
@@ -272,28 +272,28 @@
             <div class="col-sm-9">
             	<h2 class="text-center"><?php _e("Facts & Figures","ieseg2015") ?></h2>
             	<div class="row">
-            		<div class="col-xs-6 col-sm-3 text-center key-fact">
+            		<div class="col-xs-6 col-sm-3 text-center key-fact wow fadeInUp" data-wow-delay="0.5s">
                     	<a href="<?php echo get_page_link(apply_filters('wpml_object_id',1766, 'page' ));?>">
                         	<span class="key-fact-picto key-fact-students"></span>
                             <span class="key-fact-number txt-rose">3800</span>
                             <?php _e("students","ieseg2015") ?>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-sm-3 text-center key-fact">
+                    <div class="col-xs-6 col-sm-3 text-center key-fact wow fadeInUp" data-wow-delay="1s">
                     	<a href="<?php echo get_page_link(apply_filters('wpml_object_id',1976, 'page' ));?>">
                         	<span class="key-fact-picto key-fact-universities"></span>
                     		<div class="key-fact-number txt-orange1">223</div>
                     		<?php _e("partner universities","ieseg2015") ?>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-sm-3 text-center key-fact">
+                    <div class="col-xs-6 col-sm-3 text-center key-fact wow fadeInUp" data-wow-delay="1.5s">
                     	<a href="<?php echo get_page_link(apply_filters('wpml_object_id',2029, 'page' ));?>">
                         	<span class="key-fact-picto key-fact-professors"></span>
                             <div class="key-fact-number txt-violet">83 %</div>
                             <?php _e("international professors","ieseg2015") ?>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-sm-3 text-center key-fact">
+                    <div class="col-xs-6 col-sm-3 text-center key-fact wow fadeInUp" data-wow-delay="2s">
                     	<a href="<?php echo get_page_link(apply_filters('wpml_object_id',2134, 'page' ));?>">
                         	<span class="key-fact-picto key-fact-companies"></span>
                             <div class="key-fact-number txt-vert-canard">2500</div>

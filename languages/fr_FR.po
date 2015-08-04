@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ieseg2015\n"
-"POT-Creation-Date: 2015-07-30 12:00+0100\n"
-"PO-Revision-Date: 2015-07-30 12:18+0100\n"
+"POT-Creation-Date: 2015-08-04 12:07+0100\n"
+"PO-Revision-Date: 2015-08-04 12:10+0100\n"
 "Last-Translator: Guillaume Layes <g.layes@ieseg.fr>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -71,22 +71,22 @@ msgid "View our programs"
 msgstr "Voir nos programmes"
 
 #: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:43
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-page-programs.php:168
 msgid "News"
 msgstr "Actualités"
 
 #: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:86
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-programs-default.php:119
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-programs-home.php:185
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-page-programs.php:206
 msgid "All news"
 msgstr "Toutes les actualités"
 
 #: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:94
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-page-programs.php:214
 msgid "Events"
 msgstr "Evénements"
 
 #: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:126
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-programs-default.php:165
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-programs-home.php:231
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-page-programs.php:248
 msgid "All events"
 msgstr "Tous les événements"
 
@@ -144,7 +144,7 @@ msgstr "Formation Continue"
 
 #: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:249
 msgid "Need information ?"
-msgstr "besoin d'informations"
+msgstr "Besoin d'informations"
 
 #: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:254
 msgid "You are"
@@ -225,35 +225,50 @@ msgid "Testimonials"
 msgstr "Témoignages"
 
 #: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:473
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-page-programs.php:133
 msgid "Keep reading"
 msgstr "Lire la suite"
 
 #: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:491
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-programs-home.php:132
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-page-programs.php:151
 msgid "All testimonials"
 msgstr "Tous les témoignages"
 
 #: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/front-page.php:491
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-page-programs.php:151
 msgid "All the testimonials"
 msgstr "Tous les témoignages"
 
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:88
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:89
 msgid "Sidebar Left Menu"
-msgstr ""
+msgstr "Sidebar Menu de gauche"
 
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:90
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:91
 msgid "Sidebar for Left Menu"
-msgstr ""
+msgstr "Sidebar pour le menu de gauche"
 
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:97
-msgid "Menu Program"
-msgstr ""
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:98
+msgid "Sidebar Left Menu for Pages Cibles"
+msgstr "Sidebar menu de gauche pour les pages cibles"
 
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:99
-msgid "Menu pour pages Program"
-msgstr ""
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:100
+msgid "Sidebar for Left Menu for Pages Cibles"
+msgstr "Sidebar menu de gauche pour les pages cibles"
 
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:197
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:107
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:109
+msgid "Sidebar Menu for Programs homepages"
+msgstr "Sidebar menu pour les pages programmes"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:116
+msgid "Sidebar Menu for Programs pages"
+msgstr "Sidebar menu pour les pages programmes"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:118
+msgid "Sidebar Menu for default Programs pages (ie. not homepages)"
+msgstr "Sidebar menu pour les pages programmes par défaut (càd pas les homes)"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/functions.php:217
 #: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/_searchform.php:2
 msgid "Search for"
 msgstr "Rechercher"
@@ -262,6 +277,15 @@ msgstr "Rechercher"
 msgid "Our accreditations"
 msgstr "Nos accréditations"
 
-#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/index.php:65
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/index.php:63
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-page-cible.php:59
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-page-programs.php:89
+msgid "Our students"
+msgstr "Nos étudiants"
+
+#: C:\wamp\www\www.ieseg.fr\wp-content\themes\ieseg-2015/template-page-programs.php:89
+msgid "speak"
+msgstr "ont la parole"

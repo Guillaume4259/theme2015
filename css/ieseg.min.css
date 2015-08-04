@@ -1511,7 +1511,7 @@ footer a, footer a:hover{
 
 .btn-instagram span{
 	height: 20px;
-	background:url(../images/sprite-ieseg.png) no-repeat -224px -934px; 
+	background:url(../images/sprite-ieseg.png) no-repeat -230px -1168px; 
 }
 /*----------------FIN LIENS ET BOUTONS----------------*/
 
@@ -1817,23 +1817,6 @@ video.fillWidth {
 		overflow:hidden;
 	}
 
-	.bloc-news-home img{
-		-webkit-transition: all 1s ease; /* Safari and Chrome */
-		-moz-transition: all 1s ease; /* Firefox */
-		-ms-transition: all 1s ease; /* IE 9 */
-		-o-transition: all 1s ease; /* Opera */
-		transition: all 1s ease;
-	}
-	
-	.bloc-news-home:hover img{
-		-webkit-transform:scale(1.25); /* Safari and Chrome */
-		-moz-transform:scale(1.25); /* Firefox */
-		-ms-transform:scale(1.25); /* IE 9 */
-		-o-transform:scale(1.25); /* Opera */
-		 transform:scale(1.25);
-	}
-
-
 .container-events{
 	min-height:400px;
 	background-image:url(../images/home/bg-events.jpg);
@@ -1920,11 +1903,11 @@ video.fillWidth {
 	}
 	
 	.picto-programme-duration{
-		background-position: -178px -120px;
+		background-position: -235px -120px;
 	}
 	
 	.picto-programme-acessibility{
-		background-position: -210px -120px;
+		background-position: -202px -120px;
 	}
 
 .bloc-programme-home .btn-blanc{
@@ -1957,7 +1940,7 @@ video.fillWidth {
 	}
 	
 	.key-fact-professors{
-		background-position: -162px -1030px;
+		background-position: -162px -1040px;
 	}
 	
 	.key-fact-companies{
