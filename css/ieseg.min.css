@@ -633,6 +633,20 @@ li#menu-program  .picto-admission a {
 
 /*----------------PAGE PROGRAMMES----------------*/
 
+.background-programme-profiles {
+	background: url(http://localhost/www.ieseg.fr/wp-content/uploads/2015/08/fond-page-programme-profiles.jpg)no-repeat top;
+	background-size: cover;
+	position: relative;
+}
+
+.transparent-white {
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.transparent-white h2 {
+	color: #3c3c3b;
+}
+
 .programmes-admissions-onglets {
 	margin-bottom: 20px;
 }

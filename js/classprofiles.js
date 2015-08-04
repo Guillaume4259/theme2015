@@ -1,6 +1,11 @@
  		<!-- DONUT 2014 MIB Class profile -->
 
+
+
+//redraw graph when window resize is completed  
+
       google.load("visualization", "1", {packages:["corechart","geochart"]});
+
 			 
 			  google.setOnLoadCallback(drawChart);
 			  function drawChart() {
@@ -25,7 +30,8 @@
 				  legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 16}, position: 'right', maxLines: 10},
 				  chartArea: {height: '300px', width:'100%'},
 				  fontSize: 14,
-				  fontName: 'foundrysterling-lightregular'
+				  fontName: 'foundrysterling-lightregular',
+				  backgroundColor: 'none'
 				};
 				
 				var chartmibdonut = new google.visualization.PieChart(document.getElementById('donutchart_mib'));
@@ -56,11 +62,12 @@
 				magnifyingGlass: {enable: true, zoomFactor: 7.5},
 				sizeAxis: {minValue: 2,  maxSize: 18, minSize: 12},
 				colorAxis: {colors:['#018990','#01595d']},
-				datalessRegionColor: '#e4e4e4',
+				datalessRegionColor: '#FFEEBC',
 				legend: {textStyle: {color: 'black', fontName: 'foundrysterling-boldregular'}},
 				fontSize: 14,
 				fontName: 'foundrysterling-boldregular',
-				tooltip: {textStyle: {color: '#636466'}, showColorCode: true, text: 'percentage'}
+				tooltip: {textStyle: {color: '#636466'}, showColorCode: true, text: 'percentage'},
+				backgroundColor: 'none'
 			  };
 		
 			  var mibgeochart = new google.visualization.GeoChart(document.getElementById('mib_chart_div'));
@@ -94,7 +101,8 @@
 				  legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 16}, position: 'right', maxLines: 10},
 				  chartArea: {height: '300px', width:'100%'},
 				  fontSize: 14,
-				  fontName: 'foundrysterling-lightregular'
+				  fontName: 'foundrysterling-lightregular',
+				  backgroundColor: 'none'
 				};
 		
 				var chartmfmdonut = new google.visualization.PieChart(document.getElementById('donutchart_mfm'));
@@ -123,11 +131,12 @@
 				magnifyingGlass: {enable: true, zoomFactor: 10.5},
 				sizeAxis: {minValue: 2,  maxSize: 18, minSize: 12},
 				colorAxis: {colors:['#018990','#018990']},
-				datalessRegionColor: '#e4e4e4',
+				datalessRegionColor: '#FFEEBC',
 				legend: {textStyle: {color: 'black', fontName: 'foundrysterling-boldregular'}},
 				fontSize: 14,
 				fontName: 'foundrysterling-boldregular',
-				tooltip: {textStyle: {color: '#636466'}, showColorCode: true, text: 'percentage'}
+				tooltip: {textStyle: {color: '#636466'}, showColorCode: true, text: 'percentage'},
+				backgroundColor: 'none'
 			  };
 		
 			  var chartmfm = new google.visualization.GeoChart(document.getElementById('geochart_mfm'));
@@ -161,7 +170,8 @@
 				  legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 16}, position: 'right', maxLines: 10},
 				  chartArea: {height: '300px', width:'100%'},
 				  fontSize: 14,
-				  fontName: 'foundrysterling-lightregular'
+				  fontName: 'foundrysterling-lightregular',
+				  backgroundColor: 'none'
 				};
 		
 				var chartmscdonut = new google.visualization.PieChart(document.getElementById('donutchart_msc'));
@@ -189,11 +199,12 @@
 				magnifyingGlass: {enable: true, zoomFactor: 10.5},
 				sizeAxis: {minValue: 2,  maxSize: 18, minSize: 12},
 				colorAxis: {colors:['#018990','#018990']},
-				datalessRegionColor: '#e4e4e4',
+				datalessRegionColor: '#FFEEBC',
 				legend: {textStyle: {color: 'black', fontName: 'foundrysterling-boldregular'}},
 				fontSize: 14,
 				fontName: 'foundrysterling-boldregular',
-				tooltip: {textStyle: {color: '#636466'}, showColorCode: true, text: 'percentage'}
+				tooltip: {textStyle: {color: '#636466'}, showColorCode: true, text: 'percentage'},
+				backgroundColor: 'none',
 			  };
 		
 			  var chartmsc = new google.visualization.GeoChart(document.getElementById('geochart_msc'));
@@ -228,7 +239,8 @@
 				  legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 16}, position: 'right', maxLines: 10},
 				  chartArea: {height: '300px', width:'100%'},
 				  fontSize: 14,
-				  fontName: 'foundrysterling-lightregular'
+				  fontName: 'foundrysterling-lightregular',
+				  backgroundColor: 'none'
 				};
 		
 				var chartimbadonut = new google.visualization.PieChart(document.getElementById('imba_donut'));
@@ -259,11 +271,12 @@
 				magnifyingGlass: {enable: true, zoomFactor: 10.5},
 				sizeAxis: {minValue: 2,  maxSize: 18, minSize: 12},
 				colorAxis: {colors:['#018990','#018990']},
-				datalessRegionColor: '#e4e4e4',
+				datalessRegionColor: '#FFEEBC',
 				legend: {textStyle: {color: 'black', fontName: 'foundrysterling-boldregular'}},
 				fontSize: 14,
 				fontName: 'foundrysterling-boldregular',
-				tooltip: {textStyle: {color: '#636466'}, showColorCode: true, text: 'percentage'}
+				tooltip: {textStyle: {color: '#636466'}, showColorCode: true, text: 'percentage'},
+				backgroundColor: 'none'
 			  };
 		
 			  var chartimbamap = new google.visualization.GeoChart(document.getElementById('imba_chart_div'));
@@ -311,7 +324,8 @@
 				  legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 16}, position: 'right', maxLines: 10},
 				  chartArea: {height: '3000', width:'100%'},
 				  fontSize: 14,
-				  fontName: 'foundrysterling-lightregular'
+				  fontName: 'foundrysterling-lightregular',
+				  backgroundColor: 'none'
 				
           };
 
@@ -356,7 +370,8 @@
 				  legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 16}, position: 'right'},
 				  chartArea: {height: '1000', width:'100%'},
 				  fontSize: 14,
-				  fontName: 'foundrysterling-lightregular'
+				  fontName: 'foundrysterling-lightregular',
+				  backgroundColor: 'none'
 			
              };
           var chart6 = new google.visualization.PieChart(document.getElementById('mib-function-donut'));
