@@ -1872,7 +1872,7 @@ video.fillWidth {
 
 	.container-titre-programme-home{
 		width:100%;
-		padding:20px 40px 20px 10px;
+		padding:20px 10px 20px 10px;
 		top:36%;
 		font-size:21px;
 		position:absolute;
@@ -1880,7 +1880,7 @@ video.fillWidth {
 		font-weight:bold;
 		text-transform:uppercase;
 		background:rgba(155,153,154,0.6);
-		transition: all 0.3s ease 0s;
+		transition: background 0.3s ease 0s;
 		word-wrap: break-word;
 	}
 	
@@ -1889,31 +1889,39 @@ video.fillWidth {
 	}
 	
 	.container-info-programme-home{
-		padding:20px 10px;
+		padding:10px 10px;
 		display:block;
-		min-height:140px;
+		min-height:165px;
+	}
+	
+	.programme-duration{
+		margin:0 0 10px;
 	}
 	
 	.picto-programme-duration, .picto-programme-acessibility{
 		width:25px;
 		height:20px;
-		display: inline-block;
+		
 		vertical-align:middle;
 		background: url("../images/sprite-ieseg.png") no-repeat;
 	}
 	
 	.picto-programme-duration{
+		display: inline-block;
 		background-position: -235px -120px;
 	}
 	
 	.picto-programme-acessibility{
 		background-position: -202px -120px;
+		margin:5px 0 25px;
 	}
 
 .bloc-programme-home .btn-blanc{
  	display:none;
-	width:70%;
+	width:90%;
 	margin:0 auto;
+	position:absolute;
+	bottom:10px;
 }
 
 .bloc-programme-home:hover .btn-blanc{
@@ -2049,6 +2057,10 @@ section.container-campus{
 		margin:0;
 		width:auto;	
 	}
+	
+	.container-titre-programme-home {
+		font-size: 16px;
+	}
 
 	.testimonials-home-photo {
 		  overflow: hidden;
@@ -2153,5 +2165,9 @@ section.container-campus{
 		font-size: 14px;
 		max-width: 140px;
 		padding: 0 20px;
+	}
+	
+	.container-titre-programme-home {
+		font-size: 21px;
 	}
 }
