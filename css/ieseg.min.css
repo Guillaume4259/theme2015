@@ -999,10 +999,6 @@ div.course_title:hover>div.read_on {
 	display:inline-block;
 }
 
-.lieu {
-	margin-left: 22px;
-}
-
 .news-program-excerpt {
 	font-size: 14px;
 }
@@ -1866,10 +1862,6 @@ video.fillWidth {
 			.bloc-events-home time .date{
 				font-size:38px;
 			}
-			
-			.bloc-events-home time .mois{
-				font-size:17px;
-			}
 
 .bloc-programme-home{
 	display:block;
@@ -2009,16 +2001,18 @@ section.container-campus{
 	display:block;
 	border-top:3px solid #666666;	
 	position:relative;
+	margin-bottom:15px;
 }
 
 
 .container-campus h2{
 	width:100%;
-	padding:20px 0 25px;
+	padding:10px 0 15px;
 	position:absolute;
-	top:27%;
+	top:10%;
 	color:#fff;
 	background:rgba(54,65,75,0.70);	
+	font-size:24px;
 }
 
 .container-ieseg-images{
@@ -2075,6 +2069,10 @@ section.container-campus{
 	.container-titre-programme-home {
 		font-size: 16px;
 	}
+	
+	.lien-container-campus{
+		margin-bottom:0;
+	}
 
 	.testimonials-home-photo {
 		  overflow: hidden;
@@ -2098,11 +2096,7 @@ section.container-campus{
 	}
 
 	.box {
-    background: #fff;
-    border-top: 4px solid #6f6f6e;
-    font-size: 16px;
-    padding: 15px;
-    margin-top: 0px;
+		margin-top: 0;
 	}
 
 	.yellow-quotation-mark {
@@ -2169,6 +2163,12 @@ section.container-campus{
 @media (min-width: 992px) {
 	#container-img-une{
 		height:500px;
+	}
+	
+	.container-campus h2{
+		font-size:48px;
+		padding:20px 0 25px;
+		top:27%;
 	}
 	
 }

@@ -107,7 +107,7 @@
                             <time class="col-sm-2 text-center"> 
 								<span class="jour foundry_bold"><?php echo date('D',get_post_meta($id,'wpcf-start-date',true)); ?></span>
                                 <span class="date foundry_bold"><?php echo date('d',get_post_meta($id,'wpcf-start-date',true)); ?></span>
-                                <span class="moi foundry_bold"><?php echo date('M',get_post_meta($id,'wpcf-start-date',true)); ?></span>
+                                <span class="mois foundry_bold"><?php echo date('M',get_post_meta($id,'wpcf-start-date',true)); ?></span>
                             </time>
                             <div class="col-sm-9">
                             	<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
@@ -182,7 +182,7 @@
                     <span class="show"><span class="picto-programme-acessibility show pull-left"></span>
 						Accessible niveau Bac
                     </span>
-                    <span class="btn btn-blanc more-info-programme"><?php _e("More information","ieseg2015") ?></span>
+                    <span class="btn btn-blanc more-info-programme hidden-xs"><?php _e("More information","ieseg2015") ?></span>
                 </span>
             </a>	
         </div>
