@@ -656,12 +656,12 @@ li#menu-program  .picto-admission a {
 	border-bottom: 0px;
 	margin-bottom: 13px;
     margin-top: 26px;
-    padding-top: 0px;
+    padding-top: 0;
     height: 0px;
 }
 
 .rub-programmes footer {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 .programme-overview {
@@ -687,8 +687,7 @@ li#menu-program  .picto-admission a {
 .overview-title {
 	color: #ffc20e;
 	font-size: 39px;
-	color: #ffc20e;
-	border-bottom: 0px;
+	border-bottom: 0;
 	font-weight: 200;
 	margin-top: 12px;
 	display: inline-block;
@@ -809,6 +808,97 @@ span.foreword-contents::before {
 	color: #6f6f6e;
 	font-weight: 200;
 	margin: 20px !important;
+}
+
+.tableau_programs_details td {
+	padding: 5px!important
+}
+.tableau_programs_details tbody.show_all_courses td {
+	padding-left: 15px!important
+}
+.tableau_programs_details td~td {
+	padding-top: 12px!important
+}
+.course_description {
+	display: none;
+	text-decoration: none!important;
+	float: left;
+	padding: 10px
+}
+.course_description ul li {
+	list-style-type: square;
+	list-style-image: none
+}
+.course_title {
+	text-decoration: underline;
+	cursor: pointer;
+	display: inline
+}
+.tableau_programs_no_course_description .course_title {
+	text-decoration: none;
+	cursor: default
+}
+div.click_block_title {
+	cursor: pointer;
+	font-size: 16px;
+	width: 12px;
+	background: #f0f2f4;
+	border: 1px solid #6d7f92;
+	color: #6d7f92;
+	font-weight: 700;
+	text-align: center;
+	float: left;
+	margin: 6px;
+	padding: 6px
+}
+.click_to_show_all_courses {
+	cursor: pointer
+}
+.read_on {
+	cursor: pointer;
+	font-size: 16px;
+	width: 12px;
+	background: #f0f2f4;
+	border: 1px solid #6d7f92;
+	color: #6d7f92;
+	font-weight: 700;
+	text-align: center;
+	float: left;
+	margin: 6px;
+	padding: 6px
+}
+.read_more {
+	cursor: pointer;
+	font-size: 16px;
+	width: 12px;
+	background: #6d7f92;
+	border: 1px solid #f0f2f4;
+	color: #f0f2f4;
+	font-weight: 700;
+	text-align: center;
+	float: left;
+	margin: 10px;
+	padding: 5px
+}
+.tableau_programs_no_course_description .read_on, tbody.show_all_courses {
+	display: none
+}
+th.click_to_show_all_courses:hover>div.read_more {
+	background: #f0f2f4;
+	border: 1px solid #f0f2f4;
+	color: #6d7f92
+}
+.tableau_programs tr {
+	margin-top: 0
+}
+td.different_tracks {
+	background-color: #98a5b2!important;
+	color: #fff
+}
+div.course_title:hover>div.read_on {
+	background: #6d7f92;
+	border: 1px solid #f0f2f4;
+	color: #f0f2f4
 }
 
 
@@ -1457,12 +1547,11 @@ ul {
 /*----------------FIN FORMULAIRES----------------*/
 
 #container-img-une{
-	height:500px;
+	height:300px;
 	background-image: url(../images/img_une_provi.jpg);
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
-	/*background-attachment:fixed;*/
 	position:relative;
 }
 
@@ -1495,7 +1584,7 @@ ul {
 }
 
 .container-titre{
-	padding:40px 0 40px 2%;
+	padding:20px 0 20px 2%;
 	position:absolute;
 	bottom:0;
 	left:0;
@@ -1533,7 +1622,7 @@ ul {
 }
 
 .page_chapeau{
-	font-size:30px;
+	font-size:25px;
 }
 
 footer{
@@ -1941,6 +2030,18 @@ section.container-campus{
 	h1{
 		font-size: 50px;
 	}
+	
+	#container-img-une{
+		height:400px;
+	}
+	
+	.container-titre{
+		padding:40px 0 40px 2%;
+	}
+	
+	.page_chapeau {
+	  font-size: 30px;
+	}
 
 	.footer-menu>ul>li{ /*colonnage du menu du footer*/
 		width:33%;
@@ -2057,7 +2158,9 @@ section.container-campus{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	
+	#container-img-une{
+		height:500px;
+	}
 	
 }
 

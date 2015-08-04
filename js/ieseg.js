@@ -9,9 +9,9 @@ jQuery(document).ready(function($) {
 //Initialisation de wow.js
 wow = new WOW(
     {
-      mobile:       false       // default
+      mobile:false 
     }
-  )
+  );
 wow.init();
 
 
@@ -26,7 +26,7 @@ if (news < events){
 }
 else{
         jQuery( ".events" ).height(news);
-};
+}
 
 
 // Egaliser deux blocs (divers) :
@@ -40,7 +40,7 @@ if (a < b){
 }
 else{
         jQuery( ".blocb" ).height(a);
-};
+}
 
 	
 //Formulaire Cibles homepage	
@@ -57,6 +57,41 @@ $("#button-form-cibles-home").click(function(event){
 	q=$("#form-cibles-home select").val();
 	window.location = q;
 	event.preventDefault();
+});
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////// Tableaux programs /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+jQuery('.click_to_show_all_courses').click(function(){
+
+	jQuery(this).parents('.tableau_programs_details').find("tbody").toggle('slow');
+   
+	if (jQuery(this).find('.read_more').html()==='+'){
+			jQuery(this).find('.read_more').html('-');
+			 
+	}
+	else if 
+			(jQuery(this).find('.read_more').html()==='-'){
+			jQuery(this).find('.read_more').html('+');
+
+	}
+	
+});
+
+jQuery('.course_title').click(function(){
+
+	jQuery(this).parents('.program').find('.course_description').slideToggle(500);
+	if (jQuery(this).parents('.program').find('.read_on').html()==='+'){
+			jQuery(this).parents('.program').find('.read_on').html('-');
+			 
+	}
+	else if 
+			(jQuery(this).parents('.program').find('.read_on').html()==='-'){
+			jQuery(this).parents('.program').find('.read_on').html('+');
+
+	}
+	
 });
 
 
