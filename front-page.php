@@ -82,7 +82,7 @@
     </div>
     <div class="row">
     	<div class="col-xs-12 col-sm-2 col-sm-offset-5">
-        	<a href="<?php echo get_post_type_archive_link( 'news' ); ?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home wow"><?php _e("All news","ieseg2015") ?></a>
+        	<a href="<?php echo get_post_type_archive_link('news'); ?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home"><?php _e("All news","ieseg2015") ?></a>
     		<?php
 			/*
             <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home wow"><?php _e("All news","ieseg2015") ?></a>	
