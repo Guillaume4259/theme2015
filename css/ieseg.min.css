@@ -1079,12 +1079,9 @@ div.course_title:hover>div.read_on {
     width: 100%;
 	}
 
-
-
 .proghome-testimonials .btn {
 	  display: block;
 }
-
 
 .page-template-template-page-programs .bloc.video-container  {
 	  width: 84%;
@@ -1093,7 +1090,6 @@ div.course_title:hover>div.read_on {
 	  margin-top: 0;
 	  margin-bottom: 0;
 	}
-
 
 #container-testimonial-homepage-programs {
 	margin-top:5px;
@@ -1117,6 +1113,7 @@ div.course_title:hover>div.read_on {
 	border: none !important;
 	margin-top: 20px;
 }
+
 
 /* --------- Slider Témoignages HomePage Programme --------- */
 
@@ -1345,7 +1342,7 @@ h3{
 	font-size:29px;
 }
 
-.bloc-news-home h3, .bloc-events-home h3{
+.bloc-news-home h2, .bloc-news-home h3, .bloc-events-home h3{
 	font-size:16px;
 }
 
@@ -1356,7 +1353,6 @@ h3{
 	max-width: 1570px;
 	font-size: 30px;
 }
-
 
 /*----------------FIN TITRES----------------*/
 
@@ -1371,7 +1367,7 @@ h3{
 	color:#333333;
 }
 
-.home a, .center-col a:hover, .right-col a:hover, .bloc h3 a, .bloc h4 a{
+.home a, .center-col a:hover, .right-col a:hover, .bloc h2 a, .bloc h3 a, .bloc h4 a{
 	text-decoration:none;
 }
 
@@ -1532,13 +1528,11 @@ footer a, footer a:hover{
 
 /*----------------LISTES----------------*/
 
-
 ul {
 	list-style-type: square;
 	line-height: 2;
 	font-weight: 400;
 }
-
 
 /*----------------FIN LISTES----------------*/
 
@@ -1748,6 +1742,10 @@ footer .picto-adresse{
 	
 footer .twitter-timeline{
 	height:345px;	
+}
+
+.font-bold {
+font-weight: bold;
 }
 
 
@@ -2026,6 +2024,10 @@ section.container-campus{
 
 .container-ieseg-images > .row.no-gutters{
 	margin-bottom:40px;
+}
+
+.wp-pagenavi{
+	text-align:center;
 }
 
 /*----------------RESPONSIVE----------------------------*/

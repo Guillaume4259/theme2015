@@ -47,24 +47,24 @@ else{
 	$str_btn_all = "All ".strtolower($custom_post_type_name); 
 }
 
-    $args = 
-        array(
-            'type'                     => $custom_post_type_slug,
-            'child_of'                 => 0,
-            'parent'                   => '',
-            'orderby'                  => 'name',
-            'order'                    => 'ASC',
-            'hide_empty'               => 1,
-            'hierarchical'             => 1,
-            'exclude'                  => '',
-            'include'                  => '',
-            'number'                   => '',
-            'taxonomy'                 => $custom_post_type_taxonomy,
-            'pad_counts'               => false 
-        );
+$args = 
+	array(
+		'type'                     => $custom_post_type_slug,
+		'child_of'                 => 0,
+		'parent'                   => '',
+		'orderby'                  => 'name',
+		'order'                    => 'ASC',
+		'hide_empty'               => 1,
+		'hierarchical'             => 1,
+		'exclude'                  => '',
+		'include'                  => '',
+		'number'                   => '',
+		'taxonomy'                 => $custom_post_type_taxonomy,
+		'pad_counts'               => false 
+	);
 
-    //get all categories
-    $categories = get_categories( $args );
+//get all categories
+$categories = get_categories( $args );
     
     if ($categories):					
 ?> 
@@ -73,9 +73,9 @@ else{
 <ul>
 <?php
 	foreach ($categories as $category) {
-		$class = ($id_current_taxo == $category->term_id) ? 'class="selected"' : '';   
+		$class = ($id_current_taxo == $category->term_id) ? 'class="font-bold"' : '';   
 ?>
-	<li <?php echo $class ?>><a href="<?php echo get_term_link($category) ; ?>" title="<?php echo $category->cat_name ; ?>"><?php echo $category->cat_name.' - '.$category->term_id  ; ?></a></li>
+	<li <?php echo $class ?>><a href="<?php echo get_term_link($category) ; ?>" title="<?php echo $category->cat_name ; ?>"><?php echo $category->cat_name  ; ?></a></li>
 <?php
 	}
 ?>
