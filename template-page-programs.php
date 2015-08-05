@@ -93,6 +93,50 @@ if (is_page($homes_programmes)){
         <div class="col-sm-12">
 
         <div class="proghome-testimonials">
+        	<?php
+			global $sidebar_a_acharger;
+			include('includes/blocs-sidebar-test.php');
+			//echo $sidebar_a_acharger['section'];
+			switch ($sidebar_a_acharger['section']) {
+				case "mib_program":
+				$id_cat_testimonials = 121;
+				break;
+				
+				case "msc_fashion":
+				$id_cat_testimonials = 123;
+				break;
+				
+				case "msc_digital":
+				$id_cat_testimonials = 124;
+				break;
+				
+				case "msc_business_analysis":
+				$id_cat_testimonials = 119;
+				break;
+				
+				case "msc_finance":
+				$id_cat_testimonials = 122;
+				break;
+				
+				case "msc_accounting":
+				$id_cat_testimonials = 127;
+				break;
+				
+				case "msc_banking_capital_markets":
+				$id_cat_testimonials = 126;
+				break;
+				
+				case "msc_bigdata":
+				$id_cat_testimonials = 125;
+				break;
+				
+				case "msc_negociation":
+				$id_cat_testimonials = 120;
+				break;
+				
+				
+			}
+			?>
             <ul class="bxslider">
                          <?php
                         $args = array(
@@ -105,7 +149,7 @@ if (is_page($homes_programmes)){
                                 array(
                                     'taxonomy' => 'testimonial-category',
                                     'field'    => 'term_id',
-                                    'terms'    => apply_filters('wpml_object_id', 124, 'testimonial-category'),
+                                    'terms'    => apply_filters('wpml_object_id', $id_cat_testimonials, 'testimonial-category'),
                                 ),
                             )
 
@@ -117,10 +161,9 @@ if (is_page($homes_programmes)){
                             setup_postdata( $post ); 
                           ?> 
                 <li>
-                            <?php if ( has_post_thumbnail() ) { ?>
-                            <?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' );
-                            } ?>
-                        <div style="background-image: url('<?php echo $background[0]; ?>');" class="clear testimonials-home-photo img-responsive"></div>
+                            <?php if ( has_post_thumbnail() ) { }?>
+                            <?php //$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' ); } ?>
+                            <img src="<?php echo get_template_directory_uri()?>/images/testiarnold.jpg" class="testimonials-home-photo img-responsive"/>
 
                         <div class="col-sm-6 col-sm-offset-0">
                             <?php 
