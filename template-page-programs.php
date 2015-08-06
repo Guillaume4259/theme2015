@@ -6,7 +6,7 @@ Template Name: Page programme
 //charger la bonne sidebar, 
 //charger ou non les testimonials,
 $is_home_programe = false;
-$homes_programmes=array(18322,22831,12691,17155,10873,17340,17394,17445,17417,21849,21911,21935); //PGE a rajouter
+$homes_programmes=array(18322,22831,12691,17155,10873,17340,17394,17445,17417,21849,21911,21935,17148); //PGE a rajouter
 if (is_page($homes_programmes)){
 	$is_home_programe = true;
 }
@@ -39,7 +39,7 @@ if (is_page($homes_programmes)){
                 </ul>
            			<?php
 					//Pour charger la bonne sidebar (et donc le bon menu), on a besoin de savoir si l'on est sur une home de programme 
-					$homes_programmes=array(18322,22831,12691,17155,10873,17340,17394,17445,17417,21849,21911,21935); //PGE a rajouter
+					$homes_programmes=array(18322,22831,12691,17155,10873,17340,17394,17445,17417,21849,21911,21935,17148); //PGE a rajouter
 					if ($is_home_programe==true){
 						if ( is_active_sidebar( 'program-menu' ) ) {
 							dynamic_sidebar( 'program-home-menu' );
