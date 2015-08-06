@@ -121,6 +121,24 @@ function ieseg_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	/*register_sidebar( array(
+		'name'          => __('Sidebar Menu for IMBA Program homepage','ieseg2015'),
+		'id'            => 'imba-home-menu',
+		'description'   => __('Sidebar Menu for IMBA Program homepage','ieseg2015'),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => __('Sidebar Menu for IMBA pages','ieseg2015'),
+		'id'            => 'imba-menu',
+		'description'   => __('Sidebar Menu for IMBA pages (ie. not homepages)','ieseg2015'),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );*/
 	
 }
 add_action( 'widgets_init', 'ieseg_widgets_init' );

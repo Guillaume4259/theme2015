@@ -39,7 +39,6 @@ if (is_page($homes_programmes)){
                 </ul>
            			<?php
 					//Pour charger la bonne sidebar (et donc le bon menu), on a besoin de savoir si l'on est sur une home de programme 
-					$homes_programmes=array(18322,22831,12691,17155,10873,17340,17394,17445,17417,21849,21911,21935,17148); //PGE a rajouter
 					if ($is_home_programe==true){
 						if ( is_active_sidebar( 'program-menu' ) ) {
 							dynamic_sidebar( 'program-home-menu' );
@@ -165,11 +164,15 @@ if (is_page($homes_programmes)){
                             setup_postdata( $post ); 
                           ?> 
                 <li>
-                            <?php if ( has_post_thumbnail() ) { }?>
-                            <?php //$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' ); } ?>
-                            <img src="<?php echo get_template_directory_uri()?>/images/testiarnold.jpg" class="testimonials-home-photo img-responsive"/>
-
-                        <div class="col-sm-6 col-sm-offset-0">
+                	<div class="row">
+						<?php if ( has_post_thumbnail() ) { }?>
+                        <?php //$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' ); } ?>
+                        <div class="col-sm-4">
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                            <img src="<?php echo get_template_directory_uri()?>/images/testiarnold.jpg" class="testimonials-home-photo img-responsive" alt=""/>
+                         </a>
+						</div>
+                        <div class="col-sm-6 col-sm-offset-1">
                             <?php 
                             $id=$post->ID;
                             ?>
@@ -184,6 +187,7 @@ if (is_page($homes_programmes)){
                                 </h3>
                             </div>
                         </div>
+                     </div>
                 </li>
                         <?php
                         endforeach; 

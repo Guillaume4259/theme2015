@@ -53,7 +53,9 @@ a {
 	background:#16c1f3;	
 }
 
-.txt-bleu-ciel, .rub-ecole h2, .rub-ecole .menu-gauche li.current_page_item>a, .rub-ecole #breadcrumbs a,
+.txt-bleu-ciel, .rub-ecole h2,
+.rub-ecole .menu-gauche li.current-menu-item>a,
+.rub-ecole #breadcrumbs a,
 li.rub-ecole.ubermenu-item.ubermenu-item-level-1 > a,
 .rub-ecole .btn
 {
@@ -83,7 +85,7 @@ li.rub-ecole.ubermenu-item.ubermenu-item-level-1 > a,
 	background:#ffc20e;	
 }
 
-.txt-orange1, .rub-programmes h2, .rub-programmes .menu-gauche li.current_page_item>a, .rub-programmes #breadcrumbs a,
+.txt-orange1, .rub-programmes h2, .rub-programmes .menu-gauche li.current-menu-item>a, .rub-programmes #breadcrumbs a,
 li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a,
 .rub-programmes .btn
 {
@@ -114,7 +116,7 @@ li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a,
 	background:#f37043;	
 }
 
-.txt-orange2, .rub-international h2, .rub-international .menu-gauche li.current_page_item>a, .rub-international #breadcrumbs a,
+.txt-orange2, .rub-international h2, .rub-international .menu-gauche li.current-menu-item>a, .rub-international #breadcrumbs a,
 li.rub-international.ubermenu-item.ubermenu-item-level-1 > a,
 .rub-international .btn
 {
@@ -144,7 +146,7 @@ li.rub-international.ubermenu-item.ubermenu-item-level-1 > a,
 	background:#ef4d6e;	
 }
 
-.txt-rose, .rub-services h2, .rub-services .menu-gauche li.current_page_item>a, .rub-services #breadcrumbs a,
+.txt-rose, .rub-services h2, .rub-services .menu-gauche li.current-menu-item>a, .rub-services #breadcrumbs a,
 li.rub-services.ubermenu-item.ubermenu-item-level-1 > a,
 .rub-services .btn
 {
@@ -174,7 +176,7 @@ li.rub-services.ubermenu-item.ubermenu-item-level-1 > a,
 	background:#cc2a45;	
 }
 
-.txt-rouge, .rub-exec h2, .rub-exec .menu-gauche li.current_page_item>a, .rub-exec #breadcrumbs a,
+.txt-rouge, .rub-exec h2, .rub-exec .menu-gauche li.current-menu-item>a, .rub-exec #breadcrumbs a,
 li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a,
 .rub-exec .btn
 {
@@ -204,7 +206,7 @@ li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a,
 	background:#a67db8;	
 }
 
-.txt-violet, .rub-enseignants h2, .rub-enseignants .menu-gauche li.current_page_item>a, .rub-enseignants #breadcrumbs a,
+.txt-violet, .rub-enseignants h2, .rub-enseignants .menu-gauche li.current-menu-item>a, .rub-enseignants #breadcrumbs a,
 li.rub-enseignants.ubermenu-item.ubermenu-item-level-1 > a,
 .rub-enseignants .btn
 {
@@ -234,7 +236,7 @@ li.rub-enseignants.ubermenu-item.ubermenu-item-level-1 > a,
 	background:#18b68e;	
 }
 
-.txt-vert-canard, .rub-dre h2, .rub-dre .menu-gauche li.current_page_item>a, .rub-dre #breadcrumbs a,
+.txt-vert-canard, .rub-dre h2, .rub-dre .menu-gauche li.current-menu-item>a, .rub-dre #breadcrumbs a,
 li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 .rub-dre .btn
 {
@@ -656,22 +658,16 @@ li#menu-program  .picto-admission a {
 	margin-top: 0px;
 }
 
-.page-template-template-page-programs #breadcrumbs a, .page-template-template-programs-default-php #breadcrumbs a {
-	color: #fff;
-}
 
-.page-template-template-page-programs #breadcrumbs, .page-template-template-programs-default-php #breadcrumbs {
-	color: #ffc20e;
-}
-
-.page-template-template-page-programs-php #breadcrumbs, .page-template-template-programs-default-php #breadcrumbs{
+.page-template-template-page-programs #breadcrumbs{
 	color: #ffc20e;
 	border-top:1px solid #575756;
-	border-bottom: 0px;
-	margin-bottom: 13px;
-    margin-top: 26px;
-    padding-top: 0;
-    height: 0px;
+	border-bottom: none;
+	margin-bottom: 5px;
+}
+
+.page-template-template-page-programs #breadcrumbs a{
+	color: #fff;
 }
 
 .rub-programmes footer {
@@ -1083,7 +1079,7 @@ div.course_title:hover>div.read_on {
 }
 
 .testimonials-home-photo {
-    background-position: center top;
+   /* background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
@@ -1091,8 +1087,8 @@ div.course_title:hover>div.read_on {
     margin: 0 0 138px -20px;
     overflow: hidden;
     position: relative;
-    width: 100%;
-	}
+    width: 100%;*/
+}
 
 .proghome-testimonials .btn {
 	  display: block;
@@ -1107,10 +1103,7 @@ div.course_title:hover>div.read_on {
 	}
 
 #container-testimonial-homepage-programs {
-	margin-top:5px;
-	display: block;
-	margin-left: -35px;
-	}
+}
 
 .vert-align-btn-with-glyph {
 	display: table-cell;
@@ -1160,10 +1153,6 @@ div.course_title:hover>div.read_on {
 
 .proghome-testimonials .bx-wrapper .bx-prev:hover {
     background: url("../images/sprite-ieseg.png") no-repeat  -12px -1062px;
-}
-
-.proghome-testimonials .bx-wrapper .bx-pager {
-	display: none;
 }
 
 .proghome-testimonials .bx-wrapper {
@@ -2094,17 +2083,6 @@ section.container-campus{
 	
 	.lien-container-campus{
 		margin-bottom:0;
-	}
-
-	.testimonials-home-photo {
-		  overflow: hidden;
-		  width: 385px;
-		  height: 420px;
-		  background-size: cover;
-		  background-repeat: no-repeat;
-		  background-position: center top;
-		  margin: 25px 57px 25px 150px;
-		  float:left;
 	}
 
 	.page-template-template-page-programs .bloc.video-container  {
