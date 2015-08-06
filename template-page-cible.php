@@ -22,6 +22,11 @@ Template Name: Page cible
     	<!-- BREADCRUMBS -->
         <div class="col-sm-12">
             <?php if(function_exists('bcn_display')){ bcn_display();}?>
+            <?php
+            	if ( function_exists( 'yoast_breadcrumb' ) ) {
+					yoast_breadcrumb();
+				}
+			?>
         </div>
          <!-- END - BREADCRUMBS -->
     </div>
