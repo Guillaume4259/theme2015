@@ -140,8 +140,8 @@ if (is_page($homes_programmes)){
 				
 			}
 			?>
-            <ul class="bxslider">
-                         <?php
+            
+                    <?php
                         $args = array(
                             'posts_per_page' => -1,
                             'order'=> 'DESC',
@@ -157,44 +157,56 @@ if (is_page($homes_programmes)){
                             )
 
                         );
-
                         //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
                         $postslist = get_posts( $args );
+						if ($postslist){
+						?>
+                        <ul class="bxslider">
+                 		<?php
                         foreach ( $postslist as $post ) :
                             setup_postdata( $post ); 
                           ?> 
-                <li>
-                	<div class="row">
-						<?php if ( has_post_thumbnail() ) { }?>
-                        <?php //$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' ); } ?>
-                        <div class="col-sm-4">
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                            <img src="<?php echo get_template_directory_uri()?>/images/testiarnold.jpg" class="testimonials-home-photo img-responsive" alt=""/>
-                         </a>
-						</div>
-                        <div class="col-sm-6 col-sm-offset-1">
-                            <?php 
-                            $id=$post->ID;
-                            ?>
-
-                            <div id="container-testimonial-homepage-programs">
-                                <div class="yellow-quotation-mark"></div>
-                                <span><?php the_excerpt(); ?><a href="<?php the_permalink(); ?>"title="Read full post">
-                                <div class="readmore"><?php _e("Keep reading","ieseg2015") ?> <div class="glyphicon glyphicon-menu-right" style="font-size:12px; padding-top:5px;"></div></div></a>
-                                </span>
-                                <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
-                                <br><?php echo get_post_meta($id,'wpcf-class', true)?></a>
-                                </h3>
-                            </div>
-                        </div>
-                     </div>
-                </li>
+                            <li>
+                                <div class="row">
+                                    <?php if ( has_post_thumbnail() ) { }?>
+                                    <?php //$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' ); } ?>
+                                    <div class="col-sm-4 col-sm-offset-1">
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                        <img src="<?php echo get_template_directory_uri()?>/images/testiarnold.jpg" class="testimonials-home-photo img-responsive" alt=""/>
+                                     </a>
+                                    </div>
+                                    <div class="col-sm-6 col-sm-offset-0">
+                                        <?php 
+                                        $id=$post->ID;
+                                        ?>
+            
+                                        <div id="container-testimonial-homepage-programs">
+                                            <div class="yellow-quotation-mark"></div>
+                                            <span>
+                                                <?php the_excerpt(); ?>
+                                                <a href="<?php the_permalink(); ?>" class="readmore" title="Read full post">
+                                                    <?php _e("Keep reading","ieseg2015") ?> 
+                                                    <span class="glyphicon glyphicon-menu-right"></span>
+                                                 </a>
+                                            </span>
+                                            <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
+                                                <br><?php echo get_post_meta($id,'wpcf-class', true)?></a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </li>
                         <?php
                         endforeach; 
-                        //wp_reset_postdata();
+						?>
+                        </ul> 
+                        <?php
+ 						}
+						else{
+                        	_e("No testimonial for this program","ieseg2015");
+						}
                         ?>
-            </ul> 
-               
+     
         </div>
     </div>
     	</div>
