@@ -59,8 +59,7 @@ if (is_page($homes_programmes)){
     <div class="container-fluid container-1600">
         <div id="breadcrumbs" class="row">
             <!-- BREADCRUMBS -->
-                <div class="col-sm-12">
-                    <?php if(function_exists('bcn_display')){ bcn_display();}?> 
+                <div class="col-sm-12">youhou
                     <?php
 						if ( function_exists( 'yoast_breadcrumb' ) ) {
 							yoast_breadcrumb();
