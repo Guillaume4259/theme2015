@@ -9,6 +9,7 @@ $msc_finance_punchline = 'Enhance your Understanding of Financial Mechanisms';
 $msc_banking_punchline = 'Deepen your Expertise in Capital Markets';
 $msc_negotiation_punchline = 'Effectively Negotiate in Multiple Contexts';
 $msc_big_data_punchline = 'Optimize Managerial Decision Making through Big Data Analytics';
+$imba_punchline = 'Sharpen your skills for the Global Market';
 
 if(is_page(17340) || custom_is_child(17340))//msc Marketing & CRM
 	{
@@ -45,6 +46,10 @@ elseif(is_page(21935) || custom_is_child(21935)) //Msc Negotiation for Organizat
 elseif(is_page(21911) || custom_is_child(21911)) //Msc Big Data Analytics for Business
 	{
 		echo $msc_big_data_punchline;			
+	}
+elseif(is_page(17148) || custom_is_child(17148)) //Msc Big Data Analytics for Business
+	{
+		echo $imba_punchline;			
 	}
 ?>
 

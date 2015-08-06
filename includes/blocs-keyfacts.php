@@ -242,6 +242,33 @@ $msc_marketing = '
           </tr>
         </table>
   ';
+  $mib_keyfacts = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>1 year</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Paris</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Next intake</th>
+            <td>September 2015</td>
+          </tr>
+        </table>
+  ';
 
 
 if(is_page(17340) || custom_is_child(17340))//msc Marketing & CRM
@@ -280,6 +307,10 @@ elseif(is_page(21911) || custom_is_child(21911)) //Msc Big Data Analytics for Bu
 	{
 		echo $msc_big_data;			
 	}
+elseif(is_page(17148) || custom_is_child(17148)) //Msc Big Data Analytics for Business
+  {
+    echo $mib_keyfacts;     
+  }
 ?>
 
 
