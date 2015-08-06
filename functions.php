@@ -240,7 +240,8 @@ function menu_class_to_body($classes)
                 $menuClasses = $item->classes;
                 $objectId = $item->object_id.' ';
 
-                if ( is_page($item->object_id) ):
+                //if ( is_page($item->object_id) ):
+				if ( is_page($item->object_id) || is_archive($item->object_id) || is_category($item->object_id)  ):
                     $current[] = $menuClasses;
                 endif;
 
