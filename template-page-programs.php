@@ -6,7 +6,7 @@ Template Name: Page programme
 //charger la bonne sidebar, 
 //charger ou non les testimonials,
 $is_home_programe = false;
-$homes_programmes=array(18322,22831,12691,17155,10873,17340,17394,17445,17417,21849,21911,21935,17148,8782,558); 
+$homes_programmes=array(18322,22831,12691,17155,10873,17340,17394,17445,17417,21849,21911,21935,17148,9782,558); 
 if (is_page($homes_programmes)){
 	$is_home_programe = true;
 }
