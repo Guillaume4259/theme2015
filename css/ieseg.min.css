@@ -631,6 +631,60 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
 }
 
+#menu-program .picto-bachelor a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
+	/*width: 44px;
+	height: 40px;*/
+}
+#menu-program .picto-bachelor:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+}
+
+#menu-program .picto-master a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
+	/*width: 44px;
+	height: 40px;*/
+}
+#menu-program .picto-master:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+}
+
+#menu-program .picto-alternance a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
+	/*width: 44px;
+	height: 40px;*/
+}
+#menu-program .picto-alternance:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+}
+
+#menu-program .picto-pedagogy a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
+	/*width: 44px;
+	height: 40px;*/
+}
+#menu-program .picto-pedagogy:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+}
+
+#menu-program .picto-abroad a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
+	/*width: 44px;
+	height: 40px;*/
+}
+#menu-program .picto-abroad:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+}
+
+#menu-program .picto-valise a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
+	/*width: 44px;
+	height: 40px;*/
+}
+#menu-program .picto-valise:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+}
+
 /*----------------FIN MENU PROGRAMMES----------------*/
 
 /*----------------PAGE PROGRAMMES----------------*/
