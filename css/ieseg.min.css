@@ -663,6 +663,36 @@ li#menu-program  .picto-admission a {
 #menu-program .picto-pedagogy:hover a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -125px -1636px;
 }
+#menu-program .picto-bachelor:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+}
+
+#menu-program .picto-master a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
+	/*width: 44px;
+	height: 40px;*/
+}
+#menu-program .picto-master:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+}
+
+#menu-program .picto-alternance a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
+	/*width: 44px;
+	height: 40px;*/
+}
+#menu-program .picto-alternance:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+}
+
+#menu-program .picto-pedagogy a{
+	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
+	/*width: 44px;
+	height: 40px;*/
+}
+#menu-program .picto-pedagogy:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+}
 
 #menu-program .picto-abroad a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
@@ -786,7 +816,6 @@ li.nav-small-devices {
 .contact-programme .contact-name {
 	font-size: 18px !important;
 	font-weight: 400;
-	float:left
 }
 
 .contact-programme .contact-email {
