@@ -156,8 +156,8 @@ $msc_marketing = '
             <td>Paris</td>
           </tr>
           <tr class="foundry_light">
-            <th>Next intake</th>
-            <td>September 2015</td>
+            <th>Intakes</th>
+            <td>September</td>
           </tr>
         </table>
   ';
@@ -183,8 +183,8 @@ $msc_marketing = '
             <td>Lille</td>
           </tr>
           <tr class="foundry_light">
-            <th>Next intake</th>
-            <td>September 2015</td>
+            <th>Intakes</th>
+            <td>September</td>
           </tr>
         </table>
   ';
@@ -210,8 +210,8 @@ $msc_marketing = '
             <td>Paris</td>
           </tr>
           <tr class="foundry_light">
-            <th>Next intake</th>
-            <td>September 2015</td>
+            <th>Intakes</th>
+            <td>September</td>
           </tr>
         </table>
   ';
@@ -237,8 +237,8 @@ $msc_marketing = '
             <td>Lille</td>
           </tr>
           <tr class="foundry_light">
-            <th>Next intake</th>
-            <td>September 2015</td>
+            <th>Intakes</th>
+            <td>September</td>
           </tr>
         </table>
   ';
@@ -264,8 +264,35 @@ $msc_marketing = '
             <td>Paris</td>
           </tr>
           <tr class="foundry_light">
-            <th>Next intake</th>
-            <td>September 2015</td>
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
+    $pge_keyfacts_fr = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Information</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>5 ans</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Langue</th>
+            <td>Français - Anglais</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>300 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Lieu</th>
+            <td>Lille ou Paris</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Rentrée</th>
+            <td>Septembre</td>
           </tr>
         </table>
   ';
@@ -307,10 +334,15 @@ elseif(is_page(21911) || custom_is_child(21911)) //Msc Big Data Analytics for Bu
 	{
 		echo $msc_big_data;			
 	}
-elseif(is_page(17148) || custom_is_child(17148)) //Msc Big Data Analytics for Business
+elseif(is_page(17148) || custom_is_child(17148)) // IMBA
   {
     echo $mib_keyfacts;     
   }
+elseif(is_page(9782) || custom_is_child(9782)) // PGE FR
+  {
+    echo $pge_keyfacts_fr;     
+  }
+  
 ?>
 
 
