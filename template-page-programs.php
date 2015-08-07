@@ -45,9 +45,35 @@ if (is_page($homes_programmes)){
 						}
 					}
 					else{
-						if ( is_active_sidebar( 'program-menu' ) ) {
-							dynamic_sidebar( 'program-menu' );
+						switch ($sidebar_a_acharger['global']) {
+
+							/*case "bachelors":
+								if ( is_active_sidebar( 'msc-program-menu' ) ) {
+									dynamic_sidebar( 'msc-program-menu' );
+								}
+								break;*/
+							/*case "exec":
+								if ( is_active_sidebar( 'msc-program-menu' ) ) {
+									dynamic_sidebar( 'msc-program-menu' );
+								}
+								break;*/
+							case "imba":
+								if ( is_active_sidebar( 'imba-program-menu' ) ) {
+									dynamic_sidebar( 'imba-program-menu' );
+								}
+								break;
+							case "pge":
+								if ( is_active_sidebar( 'pge-program-menu' ) ) {
+									dynamic_sidebar( 'pge-program-menu' );
+								}
+								break;
+								
+							default:
+								if ( is_active_sidebar( 'msc-program-menu' ) ) {
+									dynamic_sidebar( 'msc-program-menu' );
+								}
 						}
+						
 					}
 					
 					?>
@@ -98,7 +124,7 @@ if (is_page($homes_programmes)){
         <div class="proghome-testimonials">
         	<?php
 			global $sidebar_a_acharger;
-			include('includes/blocs-sidebar-test.php');
+			include('includes/test-current-page.php');
 			//echo $sidebar_a_acharger['section'];
 			switch ($sidebar_a_acharger['section']) {
 				case "mib_program":
