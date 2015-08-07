@@ -280,7 +280,7 @@ $msc_marketing = '
           </tr>
           <tr class="foundry_light">
             <th>Langue</th>
-            <td>Français - Anglais</td>
+            <td>Anglais - (Français possible les 2 premières années)</td>
           </tr>
           <tr class="foundry_light">
             <th>Credits</th>
