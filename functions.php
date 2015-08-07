@@ -86,59 +86,59 @@ add_action( 'wp_enqueue_scripts', 'ieseg2_scripts' );
 function ieseg_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => __('Sidebar Left Menu','ieseg2015'),
+		'name'          => __('Left Menu','ieseg2015'),
 		'id'            => 'sidebar-left-menu',
-		'description'   => __('Sidebar for Left Menu','ieseg2015'),
+		'description'   => __('Left Menu','ieseg2015'),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => __('Sidebar Left Menu for Pages Cibles','ieseg2015'),
+		'name'          => __('Left Menu for Pages Cibles','ieseg2015'),
 		'id'            => 'sidebar-left-menu-cibles',
-		'description'   => __('Sidebar for Left Menu for Pages Cibles','ieseg2015'),
+		'description'   => __('Left Menu for Pages Cibles','ieseg2015'),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => __('Sidebar Menu for Programs homepages','ieseg2015'),
+		'name'          => __('Menu for Programs homepages','ieseg2015'),
 		'id'            => 'program-home-menu',
-		'description'   => __('Sidebar Menu for Programs homepages','ieseg2015'),
+		'description'   => __('Menu for Programs homepages','ieseg2015'),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => __('Sidebar Menu for Programs pages','ieseg2015'),
-		'id'            => 'program-menu',
-		'description'   => __('Sidebar Menu for default Programs pages (ie. not homepages)','ieseg2015'),
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	/*register_sidebar( array(
-		'name'          => __('Sidebar Menu for IMBA Program homepage','ieseg2015'),
-		'id'            => 'imba-home-menu',
-		'description'   => __('Sidebar Menu for IMBA Program homepage','ieseg2015'),
+		'name'          => __('Menu for MSc Programs pages','ieseg2015'),
+		'id'            => 'msc-program-menu',
+		'description'   => __('Menu for default MSc Programs pages (ie. not homepages)','ieseg2015'),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => __('Sidebar Menu for IMBA pages','ieseg2015'),
-		'id'            => 'imba-menu',
-		'description'   => __('Sidebar Menu for IMBA pages (ie. not homepages)','ieseg2015'),
+		'name'          => __('Menu for IMBA Programs pages','ieseg2015'),
+		'id'            => 'imba-program-menu',
+		'description'   => __('Menu for default IMBA Programs pages (ie. not homepage)','ieseg2015'),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
-	) );*/
+	) );
+	register_sidebar( array(
+		'name'          => __('Menu for PGE Programs pages','ieseg2015'),
+		'id'            => 'pge-program-menu',
+		'description'   => __('Menu for default PGE Programs pages (ie. not homepage)','ieseg2015'),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 	
 }
 add_action( 'widgets_init', 'ieseg_widgets_init' );

@@ -272,10 +272,10 @@ $msc_marketing = '
     $pge_keyfacts_fr = '
       <table class="table">
           <tr>
-            <th colspan="2" class="keytitle foundry_bold">Information</th>
+            <th colspan="2" class="keytitle foundry_bold">Informations</th>
           </tr>
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th>Durée</th>
             <td>5 ans</td>
           </tr>
           <tr class="foundry_light">
