@@ -38,7 +38,7 @@
 		if ( have_posts() ) :
 		// Start the Loop.
 		 while ( have_posts() ) : the_post();
-		include('includes/blocs-sidebar-test.php'); 
+		include('includes/test-current-page.php'); 
 		
 		if (!empty($sidebar_a_acharger['global'])):?>
         <div class="col-sm-6 center-col">

@@ -47,7 +47,7 @@
             <!-- END - SUB NAVIGATION -->
         </div>
         <?php 
-		include('includes/blocs-sidebar-test.php'); 
+		include('includes/test-current-page.php'); 
 		?>
         <div class="col-sm-6 center-col">
         	<div class="row">
