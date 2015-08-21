@@ -42,6 +42,19 @@ else{
         jQuery( ".blocb" ).height(a);
 }
 
+// Egaliser deux blocs (dans la cas où on a 4 blocs sur la même page) :
+
+var c = jQuery( ".blocc" ).height()  ;
+
+var d = jQuery( ".blocd" ).height()  ;
+
+if (c < d){
+        jQuery( ".blocc" ).height(d);
+}
+else{
+        jQuery( ".blocd" ).height(c);
+}
+
 	
 //Formulaire Cibles homepage	
 $("#button-form-cibles-home").click(function(event){

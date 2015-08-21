@@ -21,8 +21,8 @@ $msc_marketing = '
             <td>Lille</td>
           </tr>
           <tr class="foundry_light">
-            <th>Next intake</th>
-            <td>September 2015</td>
+            <th>Intakes</th>
+            <td>September</td>
           </tr>
         </table>
   ';
@@ -48,7 +48,7 @@ $msc_marketing = '
             <td>Lille & Paris</td>
           </tr>
           <tr class="foundry_light">
-            <th>Next intake</th>
+            <th>Intakes</th>
             <td>Sept. & Jan. (Lille only)</td>
           </tr>
         </table>
@@ -75,8 +75,8 @@ $msc_marketing = '
             <td>Paris</td>
           </tr>
           <tr class="foundry_light">
-            <th>Next intake</th>
-            <td>September 2015</td>
+            <th>Intakes</th>
+            <td>September</td>
           </tr>
         </table>
   ';
@@ -102,8 +102,8 @@ $msc_marketing = '
             <td>Paris</td>
           </tr>
           <tr class="foundry_light">
-            <th>Next intake</th>
-            <td>September 2015</td>
+            <th>Intakes</th>
+            <td>September</td>
           </tr>
         </table>
   ';
@@ -129,8 +129,8 @@ $msc_marketing = '
             <td>Paris</td>
           </tr>
           <tr class="foundry_light">
-            <th>Next intake</th>
-            <td>September 2015</td>
+            <th>Intakes</th>
+            <td>September</td>
           </tr>
         </table>
   ';
@@ -296,7 +296,33 @@ $msc_marketing = '
           </tr>
         </table>
   ';
-
+    $ba_internbiz_keyfacts = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>3 years</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>180 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Lille</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
 
 if(is_page(17340) || custom_is_child(17340))//msc Marketing & CRM
 	{
@@ -342,7 +368,10 @@ elseif(is_page(9782) || custom_is_child(9782)) // PGE FR
   {
     echo $pge_keyfacts_fr;     
   }
-  
+elseif(is_page(18348) || custom_is_child(18348)) // Bachelor International Business
+  {
+    echo $ba_internbiz_keyfacts;     
+  }
 ?>
 
 
