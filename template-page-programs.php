@@ -194,27 +194,28 @@ if (is_page($homes_programmes)){
                           ?> 
                             <li>
                                 <div class="row">
-                                    <?php if ( has_post_thumbnail() ) { }?>
-                                    <?php //$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' ); } ?>
-                                    <div class="col-sm-4 col-sm-offset-1">
-                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                        <img src="<?php echo get_template_directory_uri()?>/images/testiarnold.jpg" class="testimonials-home-photo img-responsive" alt=""/>
-                                     </a>
-                                    </div>
-                                    <div class="col-sm-6 col-sm-offset-0">
-                                        <?php 
-                                        $id=$post->ID;
+                                	<div class="col-sm-4 col-sm-offset-1">
+                                    	<?php
+                                        if ( has_post_thumbnail() ) { 
+                                        $thumb_testi = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'testimonial-thumb' ); ?>
+                                        
+                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                            <img src="<?php echo $thumb_testi['0']; ?>" class="testimonials-home-photo img-responsive" alt="<?php the_title(); ?>"/>
+                                         </a>
+                                        <?php
+                                        }
                                         ?>
-            
+                                    </div>
+                                    <div class="col-sm-6 col-sm-offset-0">           
                                         <div id="container-testimonial-homepage-programs">
                                             <div class="yellow-quotation-mark"></div>
-                                            <span>
+                                            <div class="testi-excerpt">
                                                 <?php the_excerpt(); ?>
-                                                <a href="<?php the_permalink(); ?>" class="readmore" title="Read full post">
+                                                <a href="<?php the_permalink(); ?>" class="readmore" title="<?php _e("Read testimonial","ieseg2015"); ?>">
                                                     <?php _e("Keep reading","ieseg2015") ?> 
                                                     <span class="glyphicon glyphicon-menu-right"></span>
                                                  </a>
-                                            </span>
+                                            </div>
                                             <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
                                                 <br><?php echo get_post_meta($id,'wpcf-class', true)?></a>
                                             </h3>

@@ -316,6 +316,12 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
   padding-left: 0;
 }
 
+.row.no-gutters > [class^="col-"] .img-responsive,
+.row.no-gutters > [class*=" col-"] .img-responsive{
+  width:100%;
+}
+
+
 #barre-top{
 	background:#4d4d4d;
 	color:#f3f3e9;
@@ -1346,7 +1352,7 @@ div.course_title:hover>div.read_on {
 	font-size: 25px;
 }
 
-.proghome-testimonials span {
+.proghome-testimonials .testi-excerpt {
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 1.225;
@@ -1394,9 +1400,6 @@ div.course_title:hover>div.read_on {
 	  margin-top: 0;
 	  margin-bottom: 0;
 	}
-
-#container-testimonial-homepage-programs {
-}
 
 .vert-align-btn-with-glyph {
 	display: table-cell;
@@ -2189,6 +2192,7 @@ video.fillWidth {
 		border-top:4px solid;
 		display:inline-block;
 		overflow:hidden;
+		max-height:171px;
 	}
 
 .container-events{
@@ -2256,6 +2260,10 @@ video.fillWidth {
 	
 	.bloc-programme-home:hover .container-titre-programme-home{
  		background:rgba(255,194,14,0.6);	
+	}
+	
+	.bloc-programme-home img{
+		width:100%;
 	}
 	
 	.container-info-programme-home{

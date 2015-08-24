@@ -51,8 +51,13 @@
 			<div class="col-sm-6 col-md-3">
             	<div class="bloc bloc-news-home">
 					<?php 
-					if ( has_post_thumbnail() ) {?>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-une"><?php the_post_thumbnail(); ?></a>
+					if ( has_post_thumbnail() ) {
+					$thumb_news = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'bloc-thumb' );	
+					?>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="container-img-une">
+							<img src="<?php echo $thumb_news['0']; ?>" class="img-responsive" alt="<?php the_title(); ?>">
+                            <?php //the_post_thumbnail('bloc-thumb', array( 'class' => 'img-responsive' )); ?>
+                        </a>
                     <?php
 					}
 					else {?>
@@ -108,7 +113,7 @@
                 <div class="col-sm-6">
                 	<div class="bloc-events-home">
                     	<div class="row">
-                            <time class="col-sm-2 text-center"> 
+                            <time class="col-sm-2 text-center" datetime="<?php echo date('Y',get_post_meta($id,'wpcf-start-date',true)).'-'.date('m',get_post_meta($id,'wpcf-start-date',true)).'-'.date('d',get_post_meta($id,'wpcf-start-date',true)); ?>"> 
 								<span class="jour foundry_bold"><?php echo date('D',get_post_meta($id,'wpcf-start-date',true)); ?></span>
                                 <span class="date foundry_bold"><?php echo date('d',get_post_meta($id,'wpcf-start-date',true)); ?></span>
                                 <span class="mois foundry_bold"><?php echo date('M',get_post_meta($id,'wpcf-start-date',true)); ?></span>
@@ -154,7 +159,7 @@
         <div class="col-sm-4 col-lg-2 col-lg-offset-1 wow fadeInUp" data-wow-delay="0.5s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',9782, 'page' ));?>" title="<?php _e('Grande École Program', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Grande École Program","ieseg2015") ?></span>
-            	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/programme-grande-ecole.jpg" alt="<?php _e("Grande École Program","ieseg2015") ?>" class="img-responsive"/>
+            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/programme-grande-ecole.jpg" alt="<?php _e("Grande École Program","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
                     <span class="show programme-duration"><span class="picto-programme-duration"></span>5 <?php _e("years","ieseg2015") ?></span>
                     <span class="show">
@@ -180,7 +185,7 @@
         <div class="col-sm-4 col-lg-2 wow fadeInUp" data-wow-delay="1s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',19878, 'page' ));?>" title="<?php _e('Bachelor Program', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Bachelor Program","ieseg2015") ?></span>
-            	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/bachelor.jpg" alt="<?php _e("Bachelor Program","ieseg2015") ?>" class="img-responsive"/>
+            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/bachelor.jpg" alt="<?php _e("Bachelor Program","ieseg2015") ?>" class="img-responsive"/>
                 <span class="container-info-programme-home">
                     <span class="show programme-duration"><span class="picto-programme-duration"></span>3 <?php _e("years","ieseg2015") ?></span>
                     <span class="show"><span class="picto-programme-acessibility show pull-left"></span>
@@ -193,7 +198,7 @@
         <div class="col-sm-4 col-lg-2 wow fadeInUp" data-wow-delay="1.5s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',18645, 'page' ));?>" title="<?php _e('Postgraduate Programs', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Postgraduate Programs","ieseg2015") ?></span>
-            	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/msc.jpg" alt="<?php _e("Postgraduate Programs","ieseg2015") ?>" class="img-responsive"/>
+            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/msc.jpg" alt="<?php _e("Postgraduate Programs","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
                     <span class="show programme-duration"><span class="picto-programme-duration"></span>18 <?php _e("months","ieseg2015") ?></span>
                     <span class="show">
@@ -217,7 +222,7 @@
         <div class="col-sm-4 col-lg-2 col-sm-offset-2 col-lg-offset-0 wow fadeInUp" data-wow-delay="2s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',17148, 'page' ));?>" title="<?php _e('International MBA', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("International MBA","ieseg2015") ?></span>
-            	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/imba.jpg" alt="<?php _e("International MBA","ieseg2015") ?>" class="img-responsive"/>
+            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/imba.jpg" alt="<?php _e("International MBA","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
                     <span class="show programme-duration"><span class="picto-programme-duration"></span>18 <?php _e("months","ieseg2015") ?></span>
                     <span class="show"><span class="picto-programme-acessibility show pull-left"></span>
@@ -240,7 +245,7 @@
          <div class="col-sm-4 col-lg-2 wow fadeInUp" data-wow-delay="2.5s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',2554, 'page' ));?>" title="<?php _e('Executive Education', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Executive Education","ieseg2015") ?></span>
-            	<img width="100%" src="<?php echo get_template_directory_uri() ;?>/images/home/formation-continue.jpg" alt="<?php _e("Executive Education","ieseg2015") ?>" class="img-responsive"/>
+            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/formation-continue.jpg" alt="<?php _e("Executive Education","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
                     <span class="show text-center">
 						<?php 
@@ -424,25 +429,25 @@
     </div>
     <div class="row no-gutters"><!-- no container needed for no-gutters rows-->
         <div class="col-xs-6 col-sm-3">
-            <img src="<?php echo get_template_directory_uri() ;?>/images/home/la-defense.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
-            <img src="<?php echo get_template_directory_uri() ;?>/images/home/cour-bat-a.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            <img src="<?php echo get_template_directory_uri() ;?>/images/home/la-defense.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" />
+            <img src="<?php echo get_template_directory_uri() ;?>/images/home/cour-bat-a.jpg" alt="<?php _e("Lille Campus","ieseg2015") ?>" class="img-responsive" />
         </div>
         <div class="col-xs-6 col-sm-3">
-            <img src="<?php echo get_template_directory_uri() ;?>/images/home/cours-ecole-commerce.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            <img src="<?php echo get_template_directory_uri() ;?>/images/home/cours-ecole-commerce.jpg" alt="<?php _e("Business classroom in paris","ieseg2015") ?>" class="img-responsive" />
         </div>
         <div class="col-xs-12 col-sm-3">
-            <img src="<?php echo get_template_directory_uri() ;?>/images/home/cours-commerce-lille.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            <img src="<?php echo get_template_directory_uri() ;?>/images/home/cours-commerce-lille.jpg" alt="<?php _e("Business classroom in Lille","ieseg2015") ?>" class="img-responsive" />
             <div class="row no-gutters">
                 <div class="col-xs-6">
-                    <img src="<?php echo get_template_directory_uri() ;?>/images/home/remise-diplome-ecole-commerce.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+                    <img src="<?php echo get_template_directory_uri() ;?>/images/home/remise-diplome-ecole-commerce.jpg" alt="<?php _e("Graduation ceremony","ieseg2015") ?>" class="img-responsive" />
                 </div>
                 <div class="col-xs-6">	
-                    <img src="<?php echo get_template_directory_uri() ;?>/images/home/travail-cour.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+                    <img src="<?php echo get_template_directory_uri() ;?>/images/home/travail-cour.jpg" alt="<?php _e("Students in courtyard","ieseg2015") ?>" class="img-responsive" />
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-sm-3">
-            <img src="<?php echo get_template_directory_uri() ;?>/images/home/travail-paris.jpg" alt="<?php _e("Paris Campus","ieseg2015") ?>" class="img-responsive" width="100%"/>
+            <img src="<?php echo get_template_directory_uri() ;?>/images/home/travail-paris.jpg" alt="<?php _e("Students at works","ieseg2015") ?>" class="img-responsive" />
         </div>
     </div>
 	<div class="container-fluid">
@@ -479,27 +484,28 @@
                           ?> 
                             <li>
                                 <div class="row">
-                                    <?php if ( has_post_thumbnail() ) { }?>
-                                    <?php //$background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'small' ); } ?>
-                                    <div class="col-sm-4 col-sm-offset-1">
-                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                        <img src="<?php echo get_template_directory_uri()?>/images/testiarnold.jpg" class="testimonials-home-photo img-responsive" alt=""/>
-                                     </a>
+                                	<div class="col-sm-4 col-sm-offset-1">
+										<?php
+                                        if ( has_post_thumbnail() ) { 
+                                        $thumb_testi = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'testimonial-thumb' ); ?>
+                                        
+                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                            <img src="<?php echo $thumb_testi['0']; ?>" class="testimonials-home-photo img-responsive" alt="<?php the_title(); ?>"/>
+                                         </a>
+                                        <?php
+                                        }
+                                        ?>
                                     </div>
                                     <div class="col-sm-6 col-sm-offset-0">
-                                        <?php 
-                                        $id=$post->ID;
-                                        ?>
-            
-                                        <div id="container-testimonial-homepage-programs">
+                                        <div class="container-testimonial-homepage-programs">
                                             <div class="yellow-quotation-mark"></div>
-                                            <span>
+                                            <div class="testi-excerpt">
                                                 <?php the_excerpt(); ?>
                                                 <a href="<?php the_permalink(); ?>" class="readmore" title="Read full post">
                                                     <?php _e("Keep reading","ieseg2015") ?> 
                                                     <span class="glyphicon glyphicon-menu-right"></span>
                                                  </a>
-                                            </span>
+                                            </div>
                                             <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
                                                 <br><?php echo get_post_meta($id,'wpcf-class', true)?></a>
                                             </h3>
