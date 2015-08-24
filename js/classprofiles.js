@@ -417,3 +417,34 @@
 
           chart7.draw(data7, options);
       }
+
+
+
+ <!-- Chart Débouchés Home PGE -->
+
+
+ google.setOnLoadCallback(drawChart8);
+      function drawChart() {
+        var data8 = google.visualization.arrayToDataTable([
+          ['Field', 'Students'],
+          ['Marketing',  15.1],
+          ['Commerce',  22.7],
+          ['Audit', 22.7],
+        ]);
+
+      var options = {
+        legend: {position: 'labeled', fontName: 'foundrysterling-lightregular', textStyle: {color: 'black', fontSize: 20}},
+        pieSliceText: 'none',
+        pieStartAngle: 100,
+        pieSliceBorderColor: 'black',
+        backgroundColor: 'none',
+        slices: {  0: {offset: 0.05, color: 'none'},
+                   1: {offset: 0.05, color: 'none'},
+                   2: {offset: 0.05, color: 'none'},
+               }
+      };
+
+        var chart8 = new google.visualization.PieChart(document.getElementById('debouches-pge'));
+        chart8.draw(data8, options);
+      }
+      

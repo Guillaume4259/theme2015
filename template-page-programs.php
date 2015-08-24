@@ -80,7 +80,7 @@ if (is_page($homes_programmes)){
             </div>
         </div>
     </div>
-
+<div id="clear"></div>
     <div class="container-fluid container-1600">
         <div id="breadcrumbs" class="row">
             <!-- BREADCRUMBS -->
@@ -110,12 +110,12 @@ if (is_page($homes_programmes)){
 <?php endwhile; endif; ?>
 
 <?php    
- if ($is_home_programe==true){ 
+ if ($is_home_programe==true){
  ?>
 <!--   Temoignages   -->    
 <section class="container-testimonials">
 	<div class="container-fluid title container-titre-section-programmes-gris">
-		<h2><span class="foundry_bold"><?php _e("Our students","ieseg2015") ?></span> <span class="foundry_light"><?php _e("speak","ieseg2015") ?></span></h2>
+		<h2><span class="foundry_light"><?php _e("What our students","ieseg2015") ?></span> <span class="foundry_bold"><?php _e("say","ieseg2015") ?></span></h2>
     </div>
     <div class="container-fluid container-1600">
         <div class="row">

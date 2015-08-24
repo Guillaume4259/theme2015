@@ -78,6 +78,11 @@ li.rub-ecole.ubermenu-item.ubermenu-item-level-1 > a,
 	border-color:#16c1f3;	
 }
 
+.rub-ecole .btn-more-info-program{
+	background:#16c1f3;
+	color: black;
+}
+
 /*--Programmes--*/
 .bg-orange1,.ubermenu .ubermenu-item-level-0.rub-programmes > a:hover, .ubermenu-item-level-0.rub-programmes.ubermenu-current-menu-ancestor > a,
 .rub-programmes .btn:hover, .rub-programmes .bloc-information
@@ -167,6 +172,11 @@ li.rub-services.ubermenu-item.ubermenu-item-level-1 > a,
 
 .rub-services .btn{
 	border-color:#ef4d6e;	
+}
+
+
+.rub-services .highlight-text {
+	color: #b33a53;
 }
 
 /*--Executive Education--*/
@@ -665,22 +675,184 @@ li#menu-program  .picto-admission a {
 }
 
 #menu-program .picto-abroad a{
-	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
-	/*width: 44px;
-	height: 40px;*/
+	background: url("../images/sprite-ieseg.png") no-repeat  -172px -1381px;
+	height: 40px;
 }
 #menu-program .picto-abroad:hover a{
-	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -172px -1472px;
 }
 
 #menu-program .picto-valise a{
-	background: url("../images/sprite-ieseg.png") no-repeat  -176px -560px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -73px -1704px;
 	/*width: 44px;
 	height: 40px;*/
 }
 #menu-program .picto-valise:hover a{
-	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -74px -1798px;
 }
+
+#menu-program .picto-projetpro a {
+	background: url("../images/sprite-ieseg.png") no-repeat  -168px -1196px;
+	height: 40px;
+}
+
+#menu-program .picto-projetpro:hover a {
+	background: url("../images/sprite-ieseg.png") no-repeat  -169px -1309px;
+	height: 40px;
+}
+
+#menu-program .picto-stage a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -1709px;
+	height: 40px;
+}
+#menu-program .picto-stage:hover a{
+	background: url("../images/sprite-ieseg.png") no-repeat  33px -1794px;
+	height: 40px;
+}
+
+.picto-infobloc {
+	background: url("../images/sprite-ieseg.png") no-repeat  -5px -1874px;
+	height: 50px;
+}
+
+.timer {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll 2px -1938px;
+    height: 36px;
+    width: 23px;
+    float: left;
+}
+
+.align-content-within-div {
+	display: inline-block;
+}
+
+.picto-fondamentaux {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -39px -1946px;
+	height: 30px;
+	width: 30px;
+}
+
+.picto-disciplines {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -88px -1943px;
+	height: 30px;
+	width: 30px;
+}
+
+.picto-devperso {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -144px -1937px;
+	height: 48px;
+	width: 30px;
+}
+
+.picto-stages {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -179px -1946px;
+	height: 40px;
+	width: 30px;
+}
+
+.picto-echanges {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -220px -1946px;
+	height: 40px;
+	width: 30px;
+}
+
+.picto-logement-studio {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll 2px -2073px;
+	height: 40px;
+	width: 30px;
+}
+
+.picto-logement-linge {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -39px -2073px;
+	height: 40px;
+	width: 30px;
+}
+
+.picto-logement-bain {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -86px -2073px;
+	height: 40px;
+	width: 31px;
+}
+
+.picto-logement-kitchen {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -135px -2073px;
+	height: 40px;
+	width: 46px;
+}
+
+.picto-logement-sallepol {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -196px -2073px;
+	height: 40px;
+	width: 46px;
+}
+
+.picto-logement-detente {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -5px -2127px;
+	height: 40px;
+	width: 51px;
+}
+
+.picto-logement-ptitdej {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -85px -2127px;
+	height: 40px;
+	width: 51px;
+}
+
+.picto-logement-internet {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -151px -2127px;
+	height: 40px;
+	width: 51px;
+}
+
+.picto-logement-tel {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -201px -2132px;
+	height: 40px;
+	width: 51px;
+}
+
+.picto-logement-loyer {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll 2px -2178px;
+	height: 40px;
+	width: 51px;
+}
+
+.picto-logement-jardin {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -57px -2178px;
+	height: 40px;
+	width: 51px;
+}
+
+.picto-logement-velo {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -122px -2179px;
+	height: 40px;
+	width: 51px;
+}
+
+.picto-pin-black {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -217px -2179px;
+	height: 40px;
+	width: 51px;
+}
+
+.rectangle-adresse {
+	background: #f4f2ea !important;
+	padding: 10px;
+	margin: 25px 0;
+}
+
+.picto-photos {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -6px -2230px;
+	height: 40px;
+	width: 42px;
+}
+
+a:hover div.btn > .picto-photos {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -72px -2231px;
+	height: 40px;
+	width: 42px;
+}
+
+
 
 /*----------------FIN MENU PROGRAMMES----------------*/
 
@@ -692,8 +864,42 @@ li#menu-program  .picto-admission a {
 	position: relative;
 }
 
+.background-pge-debouches {
+	background: url(http://localhost/www.ieseg.fr/wp-content/uploads/fond-page-pge-debouches.jpg)no-repeat top;
+	background-size: cover;
+	position: relative;
+}
+
+
 .transparent-white {
 	background: rgba(255, 255, 255, 0.8);
+}
+
+.yellow-background {
+	background: #ffe88c;
+}
+
+.light-yellow-background {
+	background: #fbf7df;
+}
+
+.dark-grey-background {
+	background: #575756;
+	color: #fff;
+}
+
+.light-grey-background {
+	background: #DDDDDD;
+	color: #333;
+}
+
+.light-grey-background h3 {
+	color: #333;
+}
+
+.emphasize-text {
+	font-size: 30px;
+	width: 50%;
 }
 
 .transparent-white h2 {
@@ -860,6 +1066,10 @@ span.foreword-contents::before {
 	padding: 20px 0 !important;
 }
 
+.infobox-programme.padding {
+	padding: 20px !important;
+}
+
 .infobox-programme > ul {
 	font-size: 18px;
 }
@@ -872,6 +1082,37 @@ span.foreword-contents::before {
 	margin: 20px !important;
 }
 
+
+/* ------------------------ TABLEAUX ONGLETS STRUCTURE DES PROGRAMMES -------------------- */
+
+table > thead {
+	font-size: 20px;
+	padding: 18px 10px !important;
+}
+
+
+/* ------------------------ Page Classements -------------------- */
+
+.center-text {
+	text-align: center;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.black-text {
+	color: #000 !important;
+}
+
+.palme {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll 48px -1984px;
+	height: 92px;
+}
+
+.add-top-padding {
+	padding-top: 11px;
+}
 
 /* ------------------------ TABLEAUX COURS PAGES PROGRAMMES -------------------- */
 
@@ -947,6 +1188,7 @@ tbody.show_all_courses > tr > td {
 	margin: 2px 5px;
 	padding: 5px;
 }
+
 .read_more {
     background: #6d7f92 none repeat scroll 0 0;
     border: 1px solid #f0f2f4;
@@ -1249,6 +1491,21 @@ div.course_title:hover>div.read_on {
 
 /*----------------FIN BLOC KEYFACTS----------------*/
 
+/* ---------- BLOCS SIDEBAR ------------------- */
+
+.remove-margins {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.remove-margins-bottom {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+
+
 /*----------------TABS ADMISSIONS PAGES PROGRAMMES----------------*/
 
 .nav.active .admission-tab-number {
@@ -1291,6 +1548,54 @@ div.course_title:hover>div.read_on {
 /*----------------FIN TABS ADMISSIONS PAGES PROGRAMMES----------------*/
 
 /*----------------FIN PAGES PROGRAMMES----------------*/
+
+
+/* ------------------------ Page Services Aux Etudiants -------------------- */
+
+.ardoise {
+	background: url('http://localhost/www.ieseg.fr/wp-content/uploads/fond-ardoise.jpg') repeat;
+	color: #FFF;
+}
+
+.picto-tasse {
+	height: 97px;
+	width: 90px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -7px -2281px;
+	margin-top: 14px;
+	margin-bottom: 10px;
+}
+
+
+.picto-cherries {
+	height: 97px;
+	width: 69px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -145px -2281px;
+	margin-top: 13px;
+	margin-bottom: 12px;
+}
+
+.picto-sandwich {
+	height: 72px;
+	width: 195px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -25px -2389px;
+	margin-top: 31px;
+	margin-bottom: 19px;
+}
+
+.picto-separateur-menu {
+	height: 14px;
+	width: 83px;
+	background: url("../images/sprite-ieseg.png") no-repeat  -151px -2240px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.text-large {
+	font-size: 36px;
+}
+
+/* ------------------------ Fin Page Services Aux Etudiants -------------------- */
+
 
 /*----------------MENU DE GAUCHE----------------*/
 ul.menu-gauche{
@@ -2193,6 +2498,10 @@ section.container-campus{
 	li.nav-small-devices {
 	width: 33% !important;
 	}
+
+	li.nav-deux-onglets {
+    width: 50% !important;
+}
 
 	.contact-programme .contact-email {
 		width: 50%;
