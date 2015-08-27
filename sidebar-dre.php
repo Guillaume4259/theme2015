@@ -5,43 +5,60 @@
  * @package WordPress
  * @subpackage IESEG2
  * @since IESEG2 1.0
+ *
+ *
  */
-/*
-if ( ! is_active_sidebar( 'sidebar-2' ) ) {
-	return;
-}*/
 global $sidebar_a_acharger;
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+<div class="bloc">
+	<h4><?php _e('Agenda', 'ieseg2015'); ?></h4>
+<?php
+$args = 
+		array(
+			'posts_per_page' => 4,
+			'order'=> 'DESC',
+			'orderby' => 'meta_value_num',
+			'post_type' => 'events',
+			'meta_key'=> 'wpcf-start-date',
+			'tax_query' => 
+                            array(
+                                array(
+                                    'taxonomy' => 'events-category',
+                                    'field'    => 'term_id',
+                                    'terms'    => apply_filters('wpml_object_id', 55, 'events-category'),
+                                ),
+                            )
+		);
+ $postslist = get_posts( $args );
+ if (!empty($postslist)){?>
+ 	<ul>
+ <?php
+	foreach ( $postslist as $post ) :
+		setup_postdata( $post ); 
+		$id=$post->ID;
+	  ?>
+		<li>
+			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+			<time class="" datetime="<?php echo date('Y',get_post_meta($id,'wpcf-start-date',true)).'-'.date('m',get_post_meta($id,'wpcf-start-date',true)).'-'.date('d',get_post_meta($id,'wpcf-start-date',true)); ?>"> 
+				<?php echo date('d',get_post_meta($id,'wpcf-start-date',true)).' '.date('M',get_post_meta($id,'wpcf-start-date',true)).' '.date('Y',get_post_meta($id,'wpcf-start-date',true)); ?>
+				<?php echo get_post_meta($id,'wpcf-city-town', true)?>
+			</time>
 
-<?php
-/*
-?>
-<div class="conteneur_bloc conteneur_bloc_jaune">
-	<div class="bloc bloc_jaune bloc_contact">
-		<h4 style="margin-bottom:20px;">Agenda Executive MBA</h4>
-		<!--<p>
-		<i>Atelier Découverte</i><br /><br />
-		<strong>4 nov. 2014 - La Défense</strong></p>
-		<a href="http://www.ieseg.fr/programmes/formation-continue/executive-mba/atelier-decouvrez-votre-personnalite/" class="btn_gris" style="text-align:center;display:block;font-weight:bold;margin-bottom:20px;" >S'inscrire</a>-->
-		<p>
-		<i>Conférence "Comment un leader donne-t-il envie d'adhérer au changement ?"</i><br /><br />
-		<strong>20 nov. 2014 - La Défense</strong></p>
-		<a href="http://www.ieseg.fr/programmes/formation-continue/executive-mba/conference-leader-adherer-changement/" class="btn_gris" style="text-align:center;display:block;font-weight:bold;margin-bottom:20px;" >S'inscrire</a>
-		<a href="http://www.ieseg.fr/programmes/formation-continue/executive-mba/agenda/" style="text-align:right;display:block;font-weight:bold;">Voir l'agenda complet ></a>
-	</div>
+		</li>
+	<?php
+	endforeach;
+	?>
+     </ul>
+     <?php
+	  $id_rub_dre = intval(apply_filters('wpml_object_id', 55, 'events-category')); //obligé de faire un intval pour convertir l'id en int
+	 ?>
+     <a href="<?php echo get_term_link($id_rub_dre,'events-category')?>" title="<?php _e('All events', 'ieseg2015')?>" class="btn"><?php _e('All events', 'ieseg2015')?></a>
+ <?php
+ }
+ else{
+	 _e('No event in this category', 'ieseg2015');
+ }
+ ?>	
 </div>
-<?php
-*/
-?>
-	<!--
-	<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-		<div class="bloc bloc_gris_fonce bloc_contact">
-			<h4 style="margin-bottom:20px;">Forum IÉSEG</h4>
-			<p>
-			Rencontrez plus de 500 étudiants et jeunes diplômés de l'IÉSEG, français et internationaux.</p>
-			<strong>Le 4 novembre 2014 <br />Paris La Défense</strong><br /><br />
-			<a href="http://www.ieseg.fr/forum-2014-en-savoir-plus/" style="text-align:right;display:block;font-weight:bold;" >En savoir plus ></a>
-		</div>
-	</div>-->
 </div><!-- #content-sidebar -->

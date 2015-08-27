@@ -5,11 +5,11 @@
  * @package WordPress
  * @subpackage IESEG2
  * @since IESEG2 1.0
+ *
+ *
  */
-/*
-if ( ! is_active_sidebar( 'sidebar-2' ) ) {
-	return;
-}*/
+
+
 global $sidebar_a_acharger;
 
 ?>

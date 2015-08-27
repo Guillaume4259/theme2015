@@ -48,6 +48,7 @@ a {
 
 /*--École-- */
 .bg-bleu-ciel,.ubermenu .ubermenu-item-level-0.rub-ecole > a:hover, .ubermenu-item-level-0.rub-ecole.ubermenu-current-menu-ancestor > a,
+.ubermenu-item-level-0.rub-ecole.ubermenu-current-menu-item > a,
 .rub-ecole .btn:hover, .rub-ecole .bloc-information
 {
 	background:#16c1f3;	
@@ -85,6 +86,7 @@ li.rub-ecole.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Programmes--*/
 .bg-orange1,.ubermenu .ubermenu-item-level-0.rub-programmes > a:hover, .ubermenu-item-level-0.rub-programmes.ubermenu-current-menu-ancestor > a,
+.ubermenu-item-level-0.rub-programmes.ubermenu-current-menu-item > a,
 .rub-programmes .btn:hover, .rub-programmes .bloc-information
 {
 	background:#ffc20e;	
@@ -116,6 +118,7 @@ li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--International--*/
 .bg-orange2,.ubermenu .ubermenu-item-level-0.rub-international > a:hover, .ubermenu-item-level-0.rub-international.ubermenu-current-menu-ancestor > a,
+.ubermenu-item-level-0.rub-international.ubermenu-current-menu-item > a,
 .rub-international .btn:hover, .rub-international .bloc-information
 {
 	background:#f37043;	
@@ -146,6 +149,7 @@ li.rub-international.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Services aux étudiants--*/
 .bg-rose,.ubermenu .ubermenu-item-level-0.rub-services > a:hover, .ubermenu-item-level-0.rub-services.ubermenu-current-menu-ancestor > a,
+.ubermenu-item-level-0.rub-services.ubermenu-current-menu-item > a,
 .rub-services .btn:hover, .rub-services .bloc-information
 {
 	background:#ef4d6e;	
@@ -181,6 +185,7 @@ li.rub-services.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Executive Education--*/
 .bg-rouge,.ubermenu .ubermenu-item-level-0.rub-exec > a:hover, .ubermenu-item-level-0.rub-exec.ubermenu-current-menu-ancestor > a,
+.ubermenu-item-level-0.rub-exec.ubermenu-current-menu-item > a,
 .rub-exec .btn:hover, .rub-exec .bloc-information
 {
 	background:#cc2a45;	
@@ -211,6 +216,7 @@ li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Enseignement et recherche--*/
 .bg-violet,.ubermenu .ubermenu-item-level-0.rub-enseignants > a:hover, .ubermenu-item-level-0.rub-enseignants.ubermenu-current-menu-ancestor > a,
+.ubermenu-item-level-0.rub-enseignants.ubermenu-current-menu-item > a,
 .rub-enseignants .btn:hover, .rub-enseignants .bloc-information
 {
 	background:#a67db8;	
@@ -241,6 +247,7 @@ li.rub-enseignants.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Relations Entreprises--*/
 .bg-vert-canard,.ubermenu .ubermenu-item-level-0.rub-dre > a:hover, .ubermenu-item-level-0.rub-dre.ubermenu-current-menu-ancestor > a,
+.ubermenu-item-level-0.rub-dre.ubermenu-current-menu-item > a,
 .rub-dre .btn:hover, .rub-dre .bloc-information
 {
 	background:#18b68e;	
@@ -464,7 +471,8 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	text-transform: uppercase;
 	vertical-align: middle;
 }
-.ubermenu-item-level-0 > a:hover, .ubermenu-item-level-0.ubermenu-current-menu-ancestor > a{
+.ubermenu-item-level-0 > a:hover, .ubermenu-item-level-0.ubermenu-current-menu-ancestor > a,
+.ubermenu-item-level-0.ubermenu-current-menu-item > a{
 	color:#fff;
 }
 
@@ -865,13 +873,13 @@ a:hover div.btn > .picto-photos {
 /*----------------PAGE PROGRAMMES----------------*/
 
 .background-programme-profiles {
-	background: url(http://localhost/www.ieseg.fr/wp-content/uploads/2015/08/fond-page-programme-profiles.jpg)no-repeat top;
+	background: url("../images/fond-page-programme-profiles.jpg") no-repeat top;
 	background-size: cover;
 	position: relative;
 }
 
 .background-pge-debouches {
-	background: url(http://localhost/www.ieseg.fr/wp-content/uploads/fond-page-pge-debouches.jpg)no-repeat top;
+	background: url("../images/fond-page-pge-debouches.jpg") no-repeat top;
 	background-size: cover;
 	position: relative;
 }
@@ -1487,7 +1495,8 @@ div.course_title:hover>div.read_on {
 	padding-top: 20px;
 }
 
-.keyfacts .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+.keyfacts .table > tbody > tr > td, .keyfacts .table > tbody > tr > th, .keyfacts .table > tfoot > tr > td, 
+.keyfacts .table > tfoot > tr > th, .keyfacts .table > thead > tr > td, .keyfacts .table > thead > tr > th {
 	padding: 2px;
 	border: 0px;
 }
@@ -1556,7 +1565,7 @@ div.course_title:hover>div.read_on {
 /* ------------------------ Page Services Aux Etudiants -------------------- */
 
 .ardoise {
-	background: url('http://localhost/www.ieseg.fr/wp-content/uploads/fond-ardoise.jpg') repeat;
+	background: url('../images/fond-ardoise.jpg') repeat;
 	color: #FFF;
 }
 
@@ -1996,6 +2005,7 @@ ul {
 
 .page_chapeau{
 	font-size:25px;
+	margin-bottom:30px;
 }
 
 footer{
@@ -2111,8 +2121,33 @@ footer .twitter-timeline{
 .font-bold {
 font-weight: bold;
 }
-
-
+/*-----------------------CLASSES UTILES WORDPRESS----------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+.text-left {
+	text-align: left
+}
+.text-right {
+	text-align: right
+}
+.text-justify {
+	text-align: justify
+}
+/*-----------------------FIN CLASSES UTILES WORDPRESS----------------------------*/
 /*-----------------------HOME----------------------------*/
 /*#container-video{
 	height:600px;

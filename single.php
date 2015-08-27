@@ -1,6 +1,6 @@
 <?php
  /**
- * System Template: IESEG || Homepage
+ * System Template: IESEG || Single
  *
  * @since IESEG 1.0
  * @package Wordpress 

@@ -1,6 +1,27 @@
 <?php
 $sidebar_a_acharger=array();
-
+$punchline_programme="";
+//--------------------L'Ecole--------------------------
+if(is_page(1910)  //Campus de Lille - FR
+|| custom_is_child(1910)
+|| is_page(31454) //Campus de Paris - FR
+|| custom_is_child(31454)
+|| is_page(1797) //Espace Presse - FR
+){
+	$sidebar_a_acharger['global']="ecole";
+	if(is_page(1910) || custom_is_child(1910) ) //Campus de Lille - FR
+	{
+		$sidebar_a_acharger['section']="campus-lille-fr";			
+	}
+	if(is_page(31454) || custom_is_child(31454) ) //Campus de Paris - FR
+	{
+		$sidebar_a_acharger['section']="campus-paris-fr";			
+	}
+	if(is_page(1797)) //Presse - FR
+	{
+		$sidebar_a_acharger['section']="presse-fr";			
+	}
+}
 
 //--------------------ADMISSIONS--------------------------
 if(is_page(1782)  //rencontrez nous
@@ -42,12 +63,6 @@ if(is_page(1782)  //rencontrez nous
 		$sidebar_a_acharger['section']="adm-master-apprentissage";			
 	}
 }
-//--------------------BACHELORS--------------------------
-if(is_page(18322) || custom_is_child(18322)){ 
-	$sidebar_a_acharger['global']="bachelors";
-	$sidebar_a_acharger['section']="bachelor-international-business";	
-}
-
 //--------------------CHINESE--------------------------
 if (ICL_LANGUAGE_CODE=="zh-hans"){
 	$sidebar_a_acharger['global']="chinese";
@@ -101,9 +116,73 @@ if(is_page(2554) || custom_is_child(2554)){
 if(is_page(22381)){
 	$sidebar_a_acharger['global']="fondation";
 }
+
+//--------------------BACHELORS--------------------------
+if(is_page(18322) || custom_is_child(18322)){ 
+	$sidebar_a_acharger['global']="bachelors";
+	$sidebar_a_acharger['section']="bachelor-international-business";	
+	$punchline_programme="Punchline en attente";
+	$keyfacts_programme = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>3 years</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>180 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Lille - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
+}
+
+
 //--------------------IMBA--------------------------
-if(is_page(17148)){
-	$sidebar_a_acharger['global']="imba";	
+if(is_page(17148) || custom_is_child(17148) || $cat_testi[0]->term_id==128){
+	$sidebar_a_acharger['global']="imba";
+	$punchline_programme="Sharpen your skills for the Global Market";	
+	$keyfacts_programme = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>1 year</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Paris - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
 }
 
 //--------------------MSC--------------------------
@@ -115,64 +194,340 @@ if(is_page(554)){
 }
 
 //MIB
-if(is_page(17155) || custom_is_child(17155)){
-	$sidebar_a_acharger['global']="mib";
-	//$sidebar_a_acharger['section']="mib_accueil";	
-	if(is_page($page_mib_program->ID)){
-		$sidebar_a_acharger['global']="mib";
-		$sidebar_a_acharger['section']="mib_program";			
-	}
+if(is_page(17155) || custom_is_child(17155) || $cat_testi[0]->term_id==121){
+	$sidebar_a_acharger['global']="msc";
+	$sidebar_a_acharger['section']="mib";
+	$punchline_programme="Manage Organizations in a Global Environment";
+	$keyfacts_programme = '
+    <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>1 year / 3 terms</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Lille & Paris - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>Sept. & Jan. (Lille only)</td>
+          </tr>
+        </table>
+  ';
 }
+
 //MSc in Fashion Management
-if(is_page(10873) || custom_is_child(10873)){
+if(is_page(10873) || custom_is_child(10873) || $cat_testi[0]->term_id==123){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_fashion";	
+	$punchline_programme="Where fashion meets management";
+	$keyfacts_programme = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>1 year / 3 terms</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Paris - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
 }
 
 //MSc Digital Marketing
-if(is_page(17340) || custom_is_child(17340)){
+if(is_page(17340) || custom_is_child(17340) || $cat_testi[0]->term_id==124){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_digital";	
+	$punchline_programme="Become a digital expert";
+	$keyfacts_programme = '
+        <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>3 semesters</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Lille - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
 }
 
 //MSc in Business Analysis and Consulting
-if(is_page(17394) || custom_is_child(17394)){
+if(is_page(17394) || custom_is_child(17394) || $cat_testi[0]->term_id==119){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_business_analysis";	
+	$punchline_programme="Translate Strategic Plans into Tangible Performance";
+	$keyfacts_programme = '
+    <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>1 year / 3 terms</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Paris - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
 }
 
 //MSc in Finance
-if(is_page(17445) || custom_is_child(17445)){
+if(is_page(17445) || custom_is_child(17445) || $cat_testi[0]->term_id==122){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_finance";	
+	$punchline_programme="Enhance your Understanding of Financial Mechanisms";
+	$keyfacts_programme = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>1 year / 3 terms</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Paris - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
 }
 
 //MSc in Accounting
-if(is_page(17417) || custom_is_child(17417)){
+if(is_page(17417) || custom_is_child(17417) || $cat_testi[0]->term_id==127){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_accounting";	
+	$punchline_programme="Explore the Importance of Financial Reporting in the Modern Business Environment";
+	$keyfacts_programme = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>1 year / 3 terms</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Paris - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
 }
 
 //MSc in Banking and Capital Markets
-if(is_page(21849) || custom_is_child(21849)){
+if(is_page(21849) || custom_is_child(21849) || $cat_testi[0]->term_id==126){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_banking_capital_markets";	
+	$punchline_programme="Deepen your Expertise in Capital Markets";
+	$keyfacts_programme = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>1 year / 3 terms</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Lille - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
 }
 //MSc in Big Data Analytics for Business
 if(is_page(21911) || custom_is_child(21911)){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_bigdata";	
+	$punchline_programme="Optimize Managerial Decision Making through Big Data Analytics";
+	$keyfacts_programme = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>1 year / 3 terms</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Lille - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
 }
-//MSc in Negotiation for Organizations
-if(is_page(21935) || custom_is_child(21935)){
+//MSc in International Business Negotiation
+if(is_page(21935) || custom_is_child(21935) || $cat_testi[0]->term_id==120){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_negociation";	
+	$punchline_programme="Effectively Negotiate in Multiple Contexts";
+	$keyfacts_programme = '
+      <table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>1 year / 3 terms</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>90 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Paris - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intakes</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
 }
 
 
 //--------------------PGE--------------------------
-if(is_page(18085)){ //PGG 3ème année
+if(is_page(9782) || custom_is_child(9782)){ //PGE FR
 	$sidebar_a_acharger['global']="pge";	
+	$punchline_programme="Effectively Negotiate in Multiple Contexts";
+	$keyfacts_programme = '<table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Informations</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Durée</th>
+            <td>5 ans</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Langue</th>
+            <td>Anglais - (Français possible les 2 premières années)</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>300 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Lieu</th>
+            <td>Lille ou Paris</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Rentrée</th>
+            <td>Septembre</td>
+          </tr>
+        </table>
+  ';
 }
 //--------------------RECHERCHE--------------------------
 if(
@@ -183,6 +538,7 @@ if(
 || (is_page(20450) || custom_is_child(20450)) //Workshop MIFN
 || (is_page(20925) || custom_is_child(20925)) //Course in Applied Empirical Analysis in Economics and Finance
 || (is_page(24376) || custom_is_child(24376)) //2015 ILM Conference
+|| (is_page(2089) || custom_is_child(2089)) //Recherche FR
 ){
 	$sidebar_a_acharger['global']="recherche";
 	
@@ -219,6 +575,11 @@ if(
 	//2015 ILM Conference
 	if(is_page(24376) || custom_is_child(24376)){
 		$sidebar_a_acharger['section']="2015_ilm";
+	}
+	
+	//Recherche FR
+	if(is_page(2089) || custom_is_child(2089)){
+		$sidebar_a_acharger['section']="recherche-fr";
 	}
 }
 //--------------------SUMMER--------------------------

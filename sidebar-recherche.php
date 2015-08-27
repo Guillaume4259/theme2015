@@ -171,22 +171,80 @@ global $sidebar_a_acharger;
 					} //fin Course in Applied Empirical Analysis in Economics and Finance
 
 					?>
-					<?php
-					//2015 ILM Conference
-					if ($sidebar_a_acharger['section']=="2015_ilm"){ 
-					?>						
-					<a href="<?php echo get_permalink(get_page_by_path('faculty-and-research/ieseg-research/2015-ilm-conference/')->ID); ?>" class="lien_imp_conference_sidebar" title="2015 ILM Conference"><img src="<?php echo get_template_directory_uri(); ?>/images/workshop_bouten/overview.jpg" alt="2015 ILM Workshop"/></a>
-					
-					<a href="<?php echo get_permalink(get_page_by_path('faculty-and-research/ieseg-research/2015-ilm-conference/program/')->ID); ?>" class="lien_imp_conference_sidebar" title="Program"><img src="<?php echo get_template_directory_uri(); ?>/images/research_day_accounting/program.jpg" alt="Program"/></a>								
-					
-					<a href="<?php echo get_permalink(get_page_by_path('faculty-and-research/ieseg-research/2015-ilm-conference/speakers/')->ID); ?>" class="lien_imp_conference_sidebar" title="Speakers"><img src="<?php echo get_template_directory_uri(); ?>/images/ilm_workshop/speakers.jpg" alt="Speakers"/></a>
-					
-					<a href="<?php echo get_permalink(get_page_by_path('faculty-and-research/ieseg-research/2015-ilm-conference/venue/')->ID); ?>" class="lien_imp_conference_sidebar" title="Venue"><img src="<?php echo get_template_directory_uri(); ?>/images/ilm_workshop/venue.jpg" alt="Venue"/></a>
-					
-					<a href="<?php echo get_permalink(get_page_by_path('faculty-and-research/ieseg-research/2015-ilm-conference/registration')->ID); ?>" class="lien_imp_conference_sidebar" title="Registration"><img src="<?php echo get_template_directory_uri(); ?>/images/research_day_accounting/registration.jpg" alt="Registration"/></a>
-					
-					<?php
-					} //fin if(is_page
-					?>
+<?php
+//2015 ILM Conference
+if ($sidebar_a_acharger['section']=="2015_ilm"){ 
+?>						
+<a href="<?php echo get_permalink(get_page_by_path('faculty-and-research/ieseg-research/2015-ilm-conference/')->ID); ?>" class="lien_imp_conference_sidebar" title="2015 ILM Conference"><img src="<?php echo get_template_directory_uri(); ?>/images/workshop_bouten/overview.jpg" alt="2015 ILM Workshop"/></a>
+
+<a href="<?php echo get_permalink(get_page_by_path('faculty-and-research/ieseg-research/2015-ilm-conference/program/')->ID); ?>" class="lien_imp_conference_sidebar" title="Program"><img src="<?php echo get_template_directory_uri(); ?>/images/research_day_accounting/program.jpg" alt="Program"/></a>								
+
+<a href="<?php echo get_permalink(get_page_by_path('faculty-and-research/ieseg-research/2015-ilm-conference/speakers/')->ID); ?>" class="lien_imp_conference_sidebar" title="Speakers"><img src="<?php echo get_template_directory_uri(); ?>/images/ilm_workshop/speakers.jpg" alt="Speakers"/></a>
+
+<a href="<?php echo get_permalink(get_page_by_path('faculty-and-research/ieseg-research/2015-ilm-conference/venue/')->ID); ?>" class="lien_imp_conference_sidebar" title="Venue"><img src="<?php echo get_template_directory_uri(); ?>/images/ilm_workshop/venue.jpg" alt="Venue"/></a>
+
+<a href="<?php echo get_permalink(get_page_by_path('faculty-and-research/ieseg-research/2015-ilm-conference/registration')->ID); ?>" class="lien_imp_conference_sidebar" title="Registration"><img src="<?php echo get_template_directory_uri(); ?>/images/research_day_accounting/registration.jpg" alt="Registration"/></a>
+
+<?php
+} //fin if(is_page
+?>
+
+<?php
+//Recherche FR
+if ($sidebar_a_acharger['section']=="recherche-fr"){
+?>
+<div class="bloc">
+	<h4><?php _e('Research Agenda', 'ieseg2015'); ?></h4>
+<?php
+$args = 
+		array(
+			'posts_per_page' => 4,
+			'order'=> 'DESC',
+			'orderby' => 'meta_value_num',
+			'post_type' => 'events',
+			'meta_key'=> 'wpcf-start-date',
+			'tax_query' => 
+                            array(
+                                array(
+                                    'taxonomy' => 'events-category',
+                                    'field'    => 'term_id',
+                                    'terms'    => apply_filters('wpml_object_id', 48, 'events-category'),
+                                ),
+                            )
+		);
+ $postslist = get_posts( $args );
+ if (!empty($postslist)){?>
+ 	<ul>
+ <?php
+	foreach ( $postslist as $post ) :
+		setup_postdata( $post ); 
+		$id=$post->ID;
+	  ?>
+		<li>
+			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+			<time class="" datetime="<?php echo date('Y',get_post_meta($id,'wpcf-start-date',true)).'-'.date('m',get_post_meta($id,'wpcf-start-date',true)).'-'.date('d',get_post_meta($id,'wpcf-start-date',true)); ?>"> 
+				<?php echo date('d',get_post_meta($id,'wpcf-start-date',true)).' '.date('M',get_post_meta($id,'wpcf-start-date',true)).' '.date('Y',get_post_meta($id,'wpcf-start-date',true)); ?>
+				<?php echo get_post_meta($id,'wpcf-city-town', true)?>
+			</time>
+
+		</li>
+	<?php
+	endforeach;
+	?>
+     </ul>
+     <?php
+	  $id_rub_recherche = intval(apply_filters('wpml_object_id', 48, 'events-category')); //obligé de faire un intval pour convertir l'id en int
+	 ?>
+     <a href="<?php echo get_term_link($id_rub_recherche,'events-category')?>" title="<?php _e('All Research Events', 'ieseg2015')?>" class="btn"><?php _e('All Research Events', 'ieseg2015')?></a>
+ <?php
+ }
+ else{
+	 _e('No event in this category', 'ieseg2015');
+ }
+ ?>	
+</div>
+<?php
+} //Fin Recherche FR
+?>
                     				
 </div><!-- #content-sidebar -->

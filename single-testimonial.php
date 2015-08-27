@@ -1,44 +1,23 @@
-<?php
-/*
-Template Name: Page programme
-*/
-//on a besoin de savoir si l'on est sur une home de programme pour :
-//charger la bonne sidebar, 
-//charger ou non les testimonials,
-?>
 <?php get_header(); ?>
 <?php
-if ( has_post_thumbnail()) : 
-	$str_img_une = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'mega-thumb' );
-	//echo get_the_ID().' '.var_dump($str_img_une);
+//
+echo $post->ID;
+$cat_testi=get_the_terms($post->ID,'testimonial-category');
+//var_dump($cat_testi);
+//echo $cat_testi[0]->name;
 
-endif;
-
-$is_home_programe = false;
-$homes_programmes=array(18322,22831,12691,17155,10873,17340,17394,17445,17417,21849,21911,21935,17148,9782,558); 
-if (is_page($homes_programmes)){
-	$is_home_programe = true;
-}
 global $sidebar_a_acharger;
 include('includes/test-current-page.php');
 ?>
-<div class="container-fluid" id="container-img-une" <?php if (!empty ($str_img_une[0]) && $str_img_une[1]>1000 ) { echo 'style="background-image:url('.$str_img_une[0].');"';}?>>
-        <div class="keyfacts col-sm-3 hidden-xs hidden-sm wow fadeInUp" data-wow-duration="2s">
-			<?php echo $keyfacts_programme ; ?>
-        </div>
+<div class="container-fluid" id="container-img-une">
+                
 
         <div class="container-titre">
                 <div class="titre-deco hidden-xs"></div>
-                <?php    
- 					if ($is_home_programe==true){
- 						the_title( '<h1 class="entry-title foundry_demi">', '</h1>' ); 
-					}
-					else{
-						echo '<h1 class="entry-title foundry_demi">'.get_the_title( $post->post_parent ).'</h1>';
-					}
-				?>
+                
+				<h1 class="entry-title foundry_demi"><?php echo $cat_testi[0]->name; ?></h1>
                 <div class="punchline-program">
-					<?php echo $punchline_programme; ?>
+                    <?php echo $punchline_programme; ?>
                 </div>
     	</div>
 </div>
@@ -49,17 +28,8 @@ include('includes/test-current-page.php');
         	<div id="menu-program">
                 <ul>
                     <li class="secondary-menu btn-home-rub-programme picto-overview">
-                    		
-                       <?php 
-					   	include('includes/test-current-page.php'); 
-						
-					   	if ($is_home_programe==true){
-						   echo '<a  href="'.get_permalink().'"> Overview</a>'; 
-						}
-						else{
-							echo '<a  href="'.get_permalink($post->post_parent).'"> Overview</a>'; 
-						}
-						?>
+                       <?php echo '<a  href="'.get_permalink($post->post_parent).'">
+        			   Overview</a>'; ?>
                     </li>
                 </ul>
            			<?php
@@ -122,11 +92,6 @@ include('includes/test-current-page.php');
 </div>
  <div class="programme-overview">
 
-    <div class="hidden-md hidden-lg">
-    	<div class="keyfacts col-sm-3">
-           <?php echo $keyfacts_programme ; ?>
-         </div>
-    </div>
            
 </div>
 	
@@ -148,10 +113,9 @@ include('includes/test-current-page.php');
 
         <div class="proghome-testimonials">
         	<?php
-			
 			//echo $sidebar_a_acharger['section'];
 			switch ($sidebar_a_acharger['section']) {
-				case "mib":
+				case "mib_program":
 				$id_cat_testimonials = 121;
 				break;
 				
@@ -187,9 +151,7 @@ include('includes/test-current-page.php');
 				$id_cat_testimonials = 120;
 				break;
 				
-				case "imba":
-				$id_cat_testimonials = 128;
-				break;
+				
 			}
 			?>
             
@@ -330,7 +292,7 @@ include('includes/test-current-page.php');
                    
                 <div class="row">
                     <?php
-                    $args = array( 'posts_per_page' => 4, 'order'=> 'DESC', 'orderby' => 'meta_value_num','post_type' => 'events', 'meta_key'=> 'wpcf-start-date','suppress_filters' => false );
+                    $args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'meta_value_num','post_type' => 'events', 'meta_key'=> 'wpcf-start-date','suppress_filters' => false );
                     //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
                     $postslist = get_posts( $args );
                     foreach ( $postslist as $post ) :

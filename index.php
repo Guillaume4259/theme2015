@@ -11,7 +11,7 @@
  if ( has_post_thumbnail()) : 
  $str_img_une = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'mega-thumb' );
  //echo get_the_ID().' '.var_dump($str_img_une);
-  ?>
+ ?>
 <?php
  endif;
 ?>
@@ -75,6 +75,9 @@
 		}
 		
 		switch ($sidebar_a_acharger['global']) {
+			case "ecole":
+				get_sidebar( 'ecole' );
+				break;
 			case "admissions":
 				get_sidebar( 'admissions' );
 				break;
