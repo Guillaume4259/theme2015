@@ -20,19 +20,47 @@ if ($sidebar_a_acharger['section']=="rencontrez-nous"){
 	if (ICL_LANGUAGE_CODE=="fr"){
 ?>							
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
-				<h4 style="margin-bottom:20px;">Contact</h4>
-				<em>Vous souhaitez rencontrer le service des admissions pour des informations sur :</em><br />
-				<br />
-				<strong>Une admission en 1ère année</strong><br /> 
-				<em>En France métropolitaine :</em><br /><a href="mailto:c.etmans@ieseg.fr" target="_blank" class="lien_mail" style="margin-top:10px;"><span></span>c.etmans@ieseg.fr</a><a href="mailto:m.will@ieseg.fr" target="_blank" class="lien_mail" style="margin-top:10px;"><span></span>m.will@ieseg.fr</a><br /><br />
-				<strong>Une Admission parallèle</strong><br /><em>(3ème et 4ème année du programme Grande École)</em> <a href="mailto:m.brecville@ieseg.fr" target="_blank" class="lien_mail" style="margin-top:10px;"><span></span>m.brecville@ieseg.fr</a>
-<br />
-<br />
-				<strong>Admission en MSc </strong> <a href="mailto:admissions@ieseg.fr" target="_blank" class="lien_mail" style="margin-top:10px;"><span></span>e.lagorsse@ieseg </a>
-			</div>
+    <div class="bloc bloc_gris_fonce bloc_contact">
+        <h4 style="margin-bottom:20px;">Contact</h4>
+        <em>Vous souhaitez rencontrer le service des admissions pour des informations sur :</em><br />
+        <br />
+        <strong>Une admission en 1ère année</strong><br /> 
+        <em>En France métropolitaine :</em><br /><a href="mailto:c.etmans@ieseg.fr" target="_blank" class="lien_mail" style="margin-top:10px;"><span></span>c.etmans@ieseg.fr</a><br /> 
+        <a href="mailto:m.will@ieseg.fr" target="_blank" class="lien_mail" style="margin-top:10px;"><span></span>m.will@ieseg.fr</a><br /><br />
+        <strong>Une Admission parallèle</strong><br /><em>(3ème et 4ème année du programme Grande École)</em> <a href="mailto:m.brecville@ieseg.fr" target="_blank" class="lien_mail" style="margin-top:10px;"><span></span>m.brecville@ieseg.fr</a>
+        <br />
+        <br />
+        <strong>Admission en MSc </strong><br /> 
+        <a href="mailto:admissions@ieseg.fr" target="_blank" class="lien_mail" style="margin-top:10px;"><span></span>e.lagorsse@ieseg </a>
+    </div>
+    
+    <div class="bloc">
+		<div class="remove-margins">
+			<iframe width="100%" height="222" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=3%20rue%20de%20la%20digue%20lille&key=AIzaSyAFz4SPvq87AbAH5da_ewmDcXEkmfHO43k" allowfullscreen></iframe>
 		</div>
+			<h4><?php _e("Lille Campus","ieseg2015") ?></h4>
+			<span>3 rue de la Digue <br />
+				59000 Lille
+			</span><br />
+			<a class="btn" title="Cliquer pour ouvrir la carte dans une nouvelle fenêtre" target="_blank" href="https://www.google.com/maps?ll=50.634972,3.0481&z=14&t=m&hl=fr&gl=US&mapclient=embed&q=3+Rue+de+la+Digue+59800+Lille+France">
+				Agrandir le plan
+			</a>
+	</div>
+    
+    <div class="bloc">
+        <div class="remove-margins">
+            <iframe width="100%" height="222" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=1%20parvis%20de%20la%20grande%20arche%20paris&key=AIzaSyAxUZS-Lj5u4m-uwMzqa98hw4-_bG1hOQE" allowfullscreen></iframe>
+        </div>
+        <h4><?php _e("Paris Campus","ieseg2015") ?></h4>
+        <span>1 parvis de la Défense<br />
+            Socle de la Grande Arche<br />
+            92044 Paris la Défense
+        </span>
+        <a class="btn" title="Cliquer pour ouvrir la carte dans une nouvelle fenêtre" target="_blank" href="https://www.google.com/maps?ll=48.885543,2.209548&z=13&t=m&hl=fr-FR&gl=US&mapclient=embed&cid=44418648437117820">
+            Agrandir le plan
+        </a>
+	</div>
 		
 <?php
 	}

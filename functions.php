@@ -167,7 +167,7 @@ function ieseg_excerpt() {
     return $summary;
 }
 
-function ieseg_excerpt_home() {
+function ieseg_excerpt_debut_contenu($length = 200) {
 
     global $post;
 
@@ -175,8 +175,7 @@ function ieseg_excerpt_home() {
     $content_uf = $post->post_content;
     $excerpt_uf = $post->post_excerpt;
 
-    //$excerpt_gen = strip_tags(substr($content_uf, 0, 250));
-	$excerpt_gen = substr(strip_tags($content_uf), 0, 230);
+	$excerpt_gen = substr(strip_tags($content_uf), 0, $length);
 
     $summary = (!$excerpt) ? $excerpt_gen : $excerpt_uf;
     
@@ -210,6 +209,22 @@ function my_add_excerpts_to_pages() {
      add_post_type_support( 'page', 'excerpt' );
 }
 add_action( 'init', 'my_add_excerpts_to_pages' );
+
+//Fonction a appeller pour une longueur d'excerpt differente
+// Parametres : 1 longueur souhaitée, 2. caractères de troncature
+function custom_excerpt($new_length = 20, $new_more = '...') {
+  add_filter('excerpt_length', function () use ($new_length) {
+    return $new_length;
+  }, 999);
+  add_filter('excerpt_more', function () use ($new_more) {
+    return $new_more;
+  });
+  $output = get_the_excerpt();
+  $output = apply_filters('wptexturize', $output);
+  $output = apply_filters('convert_chars', $output);
+  $output = '<p>' . $output . '</p>';
+  echo $output;
+}
 
 //--------------Droits pour modifier les menus pour les Editeurs------------ 
 // get the the role object

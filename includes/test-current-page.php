@@ -120,7 +120,8 @@ if(is_page(22381)){
 //--------------------BACHELORS--------------------------
 if(is_page(18322) || custom_is_child(18322)){ 
 	$sidebar_a_acharger['global']="bachelors";
-	$sidebar_a_acharger['section']="bachelor-international-business";	
+	$sidebar_a_acharger['section']="bachelor-international-business";
+		
 	$punchline_programme="Punchline en attente";
 	$keyfacts_programme = '
       <table class="table">
@@ -156,6 +157,7 @@ if(is_page(18322) || custom_is_child(18322)){
 if(is_page(17148) || custom_is_child(17148) || $cat_testi[0]->term_id==128){
 	$sidebar_a_acharger['global']="imba";
 	$punchline_programme="Sharpen your skills for the Global Market";	
+	$id_cat_testimonials = 128;
 	$keyfacts_programme = '
       <table class="table">
           <tr>
@@ -198,6 +200,7 @@ if(is_page(17155) || custom_is_child(17155) || $cat_testi[0]->term_id==121){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="mib";
 	$punchline_programme="Manage Organizations in a Global Environment";
+	$id_cat_testimonials = 121;
 	$keyfacts_programme = '
     <table class="table">
           <tr>
@@ -232,6 +235,7 @@ if(is_page(10873) || custom_is_child(10873) || $cat_testi[0]->term_id==123){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_fashion";	
 	$punchline_programme="Where fashion meets management";
+	$id_cat_testimonials = 123;
 	$keyfacts_programme = '
       <table class="table">
           <tr>
@@ -266,6 +270,7 @@ if(is_page(17340) || custom_is_child(17340) || $cat_testi[0]->term_id==124){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_digital";	
 	$punchline_programme="Become a digital expert";
+	$id_cat_testimonials = 124;
 	$keyfacts_programme = '
         <table class="table">
           <tr>
@@ -299,6 +304,7 @@ if(is_page(17340) || custom_is_child(17340) || $cat_testi[0]->term_id==124){
 if(is_page(17394) || custom_is_child(17394) || $cat_testi[0]->term_id==119){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_business_analysis";	
+	$id_cat_testimonials = 119;
 	$punchline_programme="Translate Strategic Plans into Tangible Performance";
 	$keyfacts_programme = '
     <table class="table">
@@ -333,6 +339,7 @@ if(is_page(17394) || custom_is_child(17394) || $cat_testi[0]->term_id==119){
 if(is_page(17445) || custom_is_child(17445) || $cat_testi[0]->term_id==122){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_finance";	
+	$id_cat_testimonials = 122;
 	$punchline_programme="Enhance your Understanding of Financial Mechanisms";
 	$keyfacts_programme = '
       <table class="table">
@@ -367,6 +374,7 @@ if(is_page(17445) || custom_is_child(17445) || $cat_testi[0]->term_id==122){
 if(is_page(17417) || custom_is_child(17417) || $cat_testi[0]->term_id==127){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_accounting";	
+	$id_cat_testimonials = 127;
 	$punchline_programme="Explore the Importance of Financial Reporting in the Modern Business Environment";
 	$keyfacts_programme = '
       <table class="table">
@@ -400,7 +408,8 @@ if(is_page(17417) || custom_is_child(17417) || $cat_testi[0]->term_id==127){
 //MSc in Banking and Capital Markets
 if(is_page(21849) || custom_is_child(21849) || $cat_testi[0]->term_id==126){
 	$sidebar_a_acharger['global']="msc";
-	$sidebar_a_acharger['section']="msc_banking_capital_markets";	
+	$sidebar_a_acharger['section']="msc_banking_capital_markets";
+	$id_cat_testimonials = 126;	
 	$punchline_programme="Deepen your Expertise in Capital Markets";
 	$keyfacts_programme = '
       <table class="table">
@@ -434,6 +443,7 @@ if(is_page(21849) || custom_is_child(21849) || $cat_testi[0]->term_id==126){
 if(is_page(21911) || custom_is_child(21911)){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_bigdata";	
+	$id_cat_testimonials = 125;
 	$punchline_programme="Optimize Managerial Decision Making through Big Data Analytics";
 	$keyfacts_programme = '
       <table class="table">
@@ -467,6 +477,7 @@ if(is_page(21911) || custom_is_child(21911)){
 if(is_page(21935) || custom_is_child(21935) || $cat_testi[0]->term_id==120){
 	$sidebar_a_acharger['global']="msc";
 	$sidebar_a_acharger['section']="msc_negociation";	
+	$id_cat_testimonials = 120;
 	$punchline_programme="Effectively Negotiate in Multiple Contexts";
 	$keyfacts_programme = '
       <table class="table">
@@ -502,6 +513,7 @@ if(is_page(21935) || custom_is_child(21935) || $cat_testi[0]->term_id==120){
 if(is_page(9782) || custom_is_child(9782)){ //PGE FR
 	$sidebar_a_acharger['global']="pge";	
 	$punchline_programme="Effectively Negotiate in Multiple Contexts";
+	$id_cat_testimonials = 104;
 	$keyfacts_programme = '<table class="table">
           <tr>
             <th colspan="2" class="keytitle foundry_bold">Informations</th>
