@@ -296,5 +296,4 @@ if ($postslist){
     </div><!--END row-->
     </div>
 </section>
-
 <?php get_footer(); ?>

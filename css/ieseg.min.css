@@ -1485,6 +1485,7 @@ div.course_title:hover>div.read_on {
     font-size: 50px !important;
 }
 
+
 /* --------------------- Marges et espacements ---------------- */
 
 .container-overview-margins {
@@ -2301,7 +2302,8 @@ video {
 }
 
 video.fillWidth {
-	width: 100%;
+	min-height:100%;
+	min-width:100%;
 }
 
 .container-boutons{
