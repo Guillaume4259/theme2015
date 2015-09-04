@@ -20,7 +20,7 @@
     	<span class="titre-deco hidden-xs"></span><?php
 		//Si on est dans une categorie, on recuperere le nom de la categorie courante
 		$cat_actuelle=single_cat_title('',false);
-		//Si on est dans une categorie (par exemple a la racine d'un custom post type,on recupere le titre du type d'archive 
+		//Si on est pas dans une categorie (par exemple a la racine d'un custom post type,on recupere le titre du type d'archive 
 		if (!$cat_actuelle){
 			$cat_actuelle=post_type_archive_title('',false);
 		}
@@ -31,7 +31,6 @@
 	<div id="breadcrumbs" class="row">
     	<!-- BREADCRUMBS -->
         <div class="col-sm-12">
-            <?php if(function_exists('bcn_display')){ bcn_display();}?>
             <?php
             	if ( function_exists( 'yoast_breadcrumb' ) ) {
 					yoast_breadcrumb();

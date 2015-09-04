@@ -424,7 +424,7 @@
 
 
  google.setOnLoadCallback(drawChart8);
-      function drawChart() {
+      function drawChart8() {
         var data8 = google.visualization.arrayToDataTable([
           ['Field', 'Students'],
           ['Marketing',  15.1],

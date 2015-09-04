@@ -301,6 +301,13 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	color:#f37042;	
 }
 /*----------------FIN JEUX DE COULEURS-------------------*/
+.row-eq-height { /*ajout bootstrap test*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+} 
+
 
 #container-global{
 	/*padding:0 6%;*/
@@ -552,7 +559,7 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	width: 100%;
 }
 
-#menu-program > ul > li > a:hover {
+#menu-program > ul > li > a:hover, #menu-program > ul > li.current-menu-item > a {
 	color: #ffc20e !important;
 }
 
@@ -566,7 +573,7 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	background: url("../images/sprite-ieseg.png") no-repeat  37px -355px;
 }
 
-#menu-program .picto-overview:hover a {
+#menu-program .picto-overview:hover a, #menu-program .picto-overview.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  38px -449px;
 }
 
@@ -575,7 +582,7 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	height: 26px;
 }
 
-#menu-program .picto-dual:hover a {
+#menu-program .picto-dual:hover a, #menu-program .picto-dual.current-menu-item a  {
 	background: url("../images/sprite-ieseg.png") no-repeat  30px -1309px;
 	height: 26px;
 }
@@ -584,7 +591,7 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	background: url("../images/sprite-ieseg.png") no-repeat  34px -1712px;
 }
 
-#menu-program .picto-internship:hover a{
+#menu-program .picto-internship:hover a, #menu-program .picto-internship.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  34px -1797px;
 }
 
@@ -592,7 +599,7 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	background: url("../images/sprite-ieseg.png") no-repeat  -71px -1706px;
 }
 
-#menu-program .picto-career:hover a {
+#menu-program .picto-career:hover a, #menu-program .picto-career.current-menu-item a  {
 	background: url("../images/sprite-ieseg.png") no-repeat  -72px -1800px;
 }
 
@@ -601,7 +608,7 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	height: 40px;
 }
 
-#menu-program .picto-partnership:hover a {
+#menu-program .picto-partnership:hover a, #menu-program .picto-partnership.current-menu-item a  {
 	background: url("../images/sprite-ieseg.png") no-repeat  -67px -1303px;
 	height: 40px;
 }
@@ -613,7 +620,7 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	height: 40px;*/
 }
 
-#menu-program .picto-program:hover a{
+#menu-program .picto-program:hover a, #menu-program .picto-program.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -65px -456px;
 }
 
@@ -628,7 +635,7 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	height: 40px;*/
 }
 
-#menu-program .picto-profile:hover a {
+#menu-program .picto-profile:hover a, #menu-program .picto-profile.current-menu-item a  {
 	background: url("../images/sprite-ieseg.png") no-repeat  -64px -561px;
 }
 
@@ -641,7 +648,7 @@ li#menu-program  .picto-admission a {
 	padding-top: 5px;
 }
 
-#menu-program .picto-admission:hover a{
+#menu-program .picto-admission:hover a, #menu-program .picto-admission.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -172px -456px;
 }
 
@@ -651,7 +658,7 @@ li#menu-program  .picto-admission a {
 	height: 40px;*/
 }
 
-#menu-program .picto-testimonials:hover a{
+#menu-program .picto-testimonials:hover a, #menu-program .picto-testimonials.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  33px -671px;
 }
 
@@ -659,7 +666,7 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  31px -1385px;
 	height: 40px;
 }
-#menu-program .picto-bachelor:hover a{
+#menu-program .picto-bachelor:hover a, #menu-program .picto-bachelor.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  32px -1468px;
 }
 
@@ -667,7 +674,7 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -66px -1386px;
 	height: 40px;
 }
-#menu-program .picto-master:hover a{
+#menu-program .picto-master:hover a, #menu-program .picto--master.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -66px -1469px;
 }
 
@@ -676,7 +683,7 @@ li#menu-program  .picto-admission a {
 	height: 40px;
 	width: 114px;
 }
-#menu-program .picto-alternance:hover a{
+#menu-program .picto-alternance:hover a, #menu-program .picto-alternance.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  19px -1636px;
 }
 
@@ -684,7 +691,7 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -125px -1552px;
 	height: 40px;
 }
-#menu-program .picto-pedagogy:hover a{
+#menu-program .picto-pedagogy:hover a, #menu-program .picto-pedagogy.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -125px -1636px;
 }
 
@@ -692,7 +699,7 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -172px -1381px;
 	height: 40px;
 }
-#menu-program .picto-abroad:hover a{
+#menu-program .picto-abroad:hover a, #menu-program .picto-abroad.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -172px -1472px;
 }
 
@@ -701,7 +708,7 @@ li#menu-program  .picto-admission a {
 	/*width: 44px;
 	height: 40px;*/
 }
-#menu-program .picto-valise:hover a{
+#menu-program .picto-valise:hover a, #menu-program .picto-valise.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -74px -1798px;
 }
 
@@ -710,7 +717,7 @@ li#menu-program  .picto-admission a {
 	height: 40px;
 }
 
-#menu-program .picto-projetpro:hover a {
+#menu-program .picto-projetpro:hover a, #menu-program .picto-projetpro.current-menu-item a  {
 	background: url("../images/sprite-ieseg.png") no-repeat  -169px -1309px;
 	height: 40px;
 }
@@ -719,7 +726,7 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  33px -1709px;
 	height: 40px;
 }
-#menu-program .picto-stage:hover a{
+#menu-program .picto-stage:hover a, #menu-program .picto-stage.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  33px -1794px;
 	height: 40px;
 }
@@ -768,6 +775,13 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat scroll -220px -1946px;
 	height: 40px;
 	width: 30px;
+}
+
+.picto-echanges-large {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -0px -2466px;
+	height: 61px;
+	width: 68px;
+	margin: 10px;
 }
 
 .picto-logement-studio {
@@ -860,6 +874,27 @@ li#menu-program  .picto-admission a {
 	width: 42px;
 }
 
+.picto-backpack {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -79px -2467px;
+	height: 61px;
+	width: 68px;
+	margin: 10px;
+}
+
+.picto-hand {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -166px -2467px;
+	height: 61px;
+	width: 61px;
+	margin: 10px;
+}
+
+.picto-electifs {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll 10px -2542px;
+	height: 59px;
+	width: 68px;
+	margin: 10px;
+}
+
 a:hover div.btn > .picto-photos {
 	background: url("../images/sprite-ieseg.png") no-repeat scroll -72px -2231px;
 	height: 40px;
@@ -884,9 +919,15 @@ a:hover div.btn > .picto-photos {
 	position: relative;
 }
 
+.background-ladefense {
+	background: url("../images/fond-page-defense.jpg") top;
+	background-size: cover;
+	position: relative;
+}
+
 
 .transparent-white {
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.9);
 }
 
 .yellow-background {
@@ -903,7 +944,7 @@ a:hover div.btn > .picto-photos {
 }
 
 .light-grey-background {
-	background: #DDDDDD;
+	background: #EEEEEE;
 	color: #333;
 }
 
@@ -930,14 +971,14 @@ a:hover div.btn > .picto-photos {
 }
 
 
-.page-template-template-page-programs #breadcrumbs{
+.page-template-template-page-programs #breadcrumbs, .page-template-template-page-programs-testimonials #breadcrumbs{
 	color: #ffc20e;
 	border-top:1px solid #575756;
 	border-bottom: none;
 	margin-bottom: 5px;
 }
 
-.page-template-template-page-programs #breadcrumbs a{
+.page-template-template-page-programs #breadcrumbs a, .page-template-template-page-programs-testimonials #breadcrumbs a{
 	color: #fff;
 }
 
@@ -1385,18 +1426,6 @@ div.course_title:hover>div.read_on {
 	background: url("../images/sprite-ieseg.png") no-repeat  -138px -793px;
 }
 
-.testimonials-home-photo {
-   /* background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: left;
-    height: 400px;
-    margin: 0 0 138px -20px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;*/
-}
-
 .proghome-testimonials .btn {
 	  display: block;
 }
@@ -1415,10 +1444,6 @@ div.course_title:hover>div.read_on {
 	line-height: 100%;
 }
 
-.container-overview-margins {
-	margin-top: 20px;
-}
-
 .btn-more-info-program {
 	background: #fcecbc;
 	font-weight: 600;
@@ -1426,6 +1451,57 @@ div.course_title:hover>div.read_on {
 	margin-top: 20px;
 }
 
+.testimonial-infos-bar{
+	background:#d9d9d9;
+	color:#3c3c3a;
+	padding: 10px 0;
+	margin: 0 0 30px;
+}
+
+.testimonial-infos-bar .glyphicon{
+	margin:0 5px 0 40px;
+}
+
+.testimonial-infos-bar .glyphicon{
+	margin:0 5px 0 40px;
+}
+
+.testimonial-infos-bar .glyphicon:first-child {
+	margin:0 5px 0 0;
+}
+
+.testimonial_chapeau{
+	font-size:35px;
+	font-style:italic;
+	font-weight:200;
+}
+#container-other-testimonials{
+	background:#3c3c3b;
+}
+
+#container-other-testimonials h2{
+	border: 0;
+    color: #fff;
+    font-size: 50px !important;
+}
+
+/* --------------------- Marges et espacements ---------------- */
+
+.container-overview-margins {
+	margin-top: 20px;
+}
+
+.container-margin-15 {
+	margin: 15px !important;
+}
+
+.container-top-margin-15 {
+	margin: 15px !important;
+}
+
+.remove-left-padding {
+	padding-left: 0px;
+}
 
 /* --------- Slider Témoignages HomePage Programme --------- */
 
@@ -1508,7 +1584,7 @@ div.course_title:hover>div.read_on {
 .remove-margins {
     margin-right: -15px;
     margin-left: -15px;
-    margin-top: -15px;
+    margin-top: -15px !important;
 }
 
 .remove-margins-bottom {
@@ -1606,6 +1682,10 @@ div.course_title:hover>div.read_on {
 	font-size: 36px;
 }
 
+.text-medium {
+	font-size: 26px;
+}
+
 /* ------------------------ Fin Page Services Aux Etudiants -------------------- */
 
 
@@ -1673,6 +1753,31 @@ aside .bloc{
 	margin-bottom:35px;
 }
 
+.bloc-other-testimonials{
+	border-top-color:#ffc20f;
+	font-size:17px;
+	font-weight:bold;
+	padding:50px 0 0 0;
+	background:#fff ;
+	word-wrap: break-word;
+}
+
+.container-texte-other-testi{
+	min-height:120px;
+}
+
+.bloc-other-testimonials h3{
+	font-size:35px;
+	font-weight:200;
+}
+
+.container-img-une-other-testi{
+	background:#f5f5f5 ;
+	margin-top:50px;
+	display:block;
+	max-height:339px;
+	overflow:hidden;
+}
 
 /*----------------FIN BLOCS----------------*/
 

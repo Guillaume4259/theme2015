@@ -11,7 +11,7 @@
  if ( has_post_thumbnail()) : 
  $str_img_une = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'mega-thumb' );
  //echo get_the_ID().' '.var_dump($str_img_une);
-  ?>
+ ?>
 <?php
  endif;
 ?>
@@ -40,16 +40,9 @@
         </div>
         <?php 
 		include('includes/test-current-page.php'); 
-		
-		if (!empty($sidebar_a_acharger['global'])):?>
-        <div class="col-sm-6 center-col">
-        <?php
-		else:
 		?>
-        <div class="col-sm-9 center-col">
+        <div class="col-sm-6 center-col">
 		<?php
-		endif;
-
 		if ( have_posts() ) :
 		// Start the Loop.
 		while ( have_posts() ) : the_post();
@@ -68,64 +61,9 @@
 ?>
         </div>
         
-        <?php
-		if (!empty($sidebar_a_acharger['global'])){?>
-			<aside class="col-sm-3 right-col">
-        <?php
-		}
-		
-		switch ($sidebar_a_acharger['global']) {
-			case "admissions":
-				get_sidebar( 'admissions' );
-				break;
-			case "bachelors":
-				get_sidebar( 'bachelors' );
-				break;
-			case "chinese":
-				get_sidebar( 'chinese' );
-				break;
-			case "dre":
-				get_sidebar( 'dre' );
-				break;
-			case "exec":
-				get_sidebar( 'exec' );
-				break;
-			case "fondation":
-				get_sidebar( 'fondation' );
-				break;
-			case "imba":
-				get_sidebar( 'imba' );
-				break;
-			case "mib":
-				get_sidebar( 'mib' );
-				break;
-			case "msc":
-				get_sidebar( 'msc' );
-				break;
-			case "pge":
-				get_sidebar( 'pge' );
-				break;
-			case "recherche":
-				get_sidebar( 'recherche' );
-				break;
-			case "summer":
-				get_sidebar( 'summer' );
-				break;
-			case "taxe":
-				get_sidebar( 'taxe' );
-				break;
-				
-			/*default:
-				echo "yep";*/
-		}
-
-		?>
-        <?php
-		if (!empty($sidebar_a_acharger['global'])){?>
-			</aside>
-        <?php
-		}
-		?>
+        <aside class="col-sm-3 right-col">
+            <?php get_sidebar( 'news' );?>
+        </aside>
     </div>
 </div>
 <?php get_footer(); ?>

@@ -78,21 +78,14 @@
 			}
 			?>
 		<?php
-		$i_news++;
-			
+		$i_news++;	
 		endforeach; 
-		//wp_reset_postdata();
 		?>	
         
     </div>
     <div class="row">
     	<div class="col-xs-12 col-sm-2 col-sm-offset-5">
         	<a href="<?php echo get_post_type_archive_link('news'); ?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home"><?php _e("All news","ieseg2015") ?></a>
-    		<?php
-			/*
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home wow"><?php _e("All news","ieseg2015") ?></a>	
-    		*/
-			?>
         </div>
     </div>
 
@@ -499,9 +492,9 @@
                                     <div class="col-sm-6 col-sm-offset-0">
                                         <div class="container-testimonial-homepage-programs">
                                             <div class="yellow-quotation-mark"></div>
-                                            <div class="testi-excerpt">
-                                                <?php the_excerpt(); ?>
-                                                <a href="<?php the_permalink(); ?>" class="readmore" title="Read full post">
+                                            <div class="testi-excerpt"><?php ieseg_excerpt_debut_contenu(430) ?>
+                                                <?php //the_excerpt(); ?>
+                                                <a href="<?php the_permalink(); ?>" class="readmore" title="<?php _e("Keep reading","ieseg2015") ?>">
                                                     <?php _e("Keep reading","ieseg2015") ?> 
                                                     <span class="glyphicon glyphicon-menu-right"></span>
                                                  </a>
@@ -528,7 +521,7 @@
     </div>
     	</div>
         <div class="row">
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("All the testimonials","ieseg2015") ?></a>	
+            <a href="<?php echo get_post_type_archive_link('testimonial'); ?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("All the testimonials","ieseg2015") ?></a>	
         </div>
     </div>
 </section>
