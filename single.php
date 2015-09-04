@@ -53,8 +53,18 @@
                 <?php the_excerpt(); ?>
             </div>
 <?php 
-            endif;   
-            the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'ieseg2015' ) );
+        endif; 
+
+		$metas_post=get_post_meta(get_the_ID());
+		if($metas_post['wpcf-start-date']){
+			echo '<span class="glyphicon glyphicon-calendar"></span>'.strftime('%d %B %Y',$metas_post['wpcf-start-date'][0]);
+		}
+		if($metas_post['wpcf-city-town']){
+		
+			echo '<span class="glyphicon glyphicon-map-marker"></span>'.$metas_post['wpcf-city-town'][0];
+		}
+		  
+		the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'ieseg2015' ) );
     
  	endwhile;
  endif;

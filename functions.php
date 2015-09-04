@@ -22,6 +22,9 @@ function theme_ieseg_setup() {
 		'footer2015' => 'Footer Navigation 2015'
     ) );
 	
+	if (ICL_LANGUAGE_CODE=="fr"){
+		setlocale (LC_TIME, 'fr_FR.utf8','fra');
+	}
 }
 endif; // theme_ieseg_setup
 add_action( 'after_setup_theme', 'theme_ieseg_setup' );
@@ -144,29 +147,19 @@ function ieseg_widgets_init() {
 add_action( 'widgets_init', 'ieseg_widgets_init' );
 
 
-/**
- * Customised Excerpt
- * 
- * @since IESEG v.1.0
- */
-function ieseg_excerpt() {
-
-    global $post;
-
-    $format = $post->post_format;
-    $content_uf = $post->post_content;
-    $excerpt_uf = $post->post_excerpt;
-
-    //$excerpt_gen = strip_tags(substr($content_uf, 0, 250));
-	$excerpt_gen = substr(strip_tags($content_uf), 0, 170);
-
-    $summary = (!$excerpt) ? $excerpt_gen : $excerpt_uf;
-    
-	echo $summary .= ' ...';
-	
-    return $summary;
+function custom_is_child($pid) {
+	// $pid = The ID of the ancestor page
+	global $post; // load details about this page
+	$anc = get_post_ancestors( $post->ID );
+	foreach($anc as $ancestor) {
+		if(is_page() && $ancestor == $pid) {
+			return true;
+		}
+	}
+	return false; // we're elsewhere
 }
 
+//--------------------------------Excerpt----------------------------------
 function ieseg_excerpt_debut_contenu($length = 200) {
 
     global $post;
@@ -184,19 +177,6 @@ function ieseg_excerpt_debut_contenu($length = 200) {
     return $summary;
 }
 
-function custom_is_child($pid) {
-	// $pid = The ID of the ancestor page
-	global $post; // load details about this page
-	$anc = get_post_ancestors( $post->ID );
-	foreach($anc as $ancestor) {
-		if(is_page() && $ancestor == $pid) {
-			return true;
-		}
-	}
-	return false; // we're elsewhere
-}
-
-//--------------------------------Excerpt----------------------------------
 //Longueur de l'excerpt
 function custom_excerpt_length( $length ) {
 	return 30;
@@ -284,44 +264,3 @@ function menu_class_to_body($classes)
 
         return $classes;
 }
-
-/*
-//add_filter('body_class','pa_assign_menu_class_to_body');
-function pa_assign_menu_class_to_body(){
-  // 'main' is the theme_location, set earlier using register_nav_menus()
-  $menu_name = 'Primary Menu';
-  $class_list = array();
-
-  if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
-    $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
-    $menu_items = wp_get_nav_menu_items($menu->term_id);
-	//var_dump($menu_items);
-    // _wp_menu_item_classes_by_context() adds current, current_item_parent and current_item_ancestor to the appropriate arrays in the provided variable
-    _wp_menu_item_classes_by_context( $menu_items );
-
-    $classes = array();
-
-    foreach($menu_items as $menu_item) {
-      if ($menu_item->current == 1) {
-        $classes['current'] = $menu_item->classes;
-      }
-      if ($menu_item->current_item_parent == 1) {
-        $classes['parents'] = $menu_item->classes;
-      }
-      if ($menu_item->current_item_ancestor == 1) {
-        $classes['ancestors'] = $menu_item->classes;
-      }
-    }
-
-    // create a one-dimensional array of unique classes
-    foreach($classes as $class) 
-      foreach ($class as $cls) $class_list[] = $cls;
-    $class_list = array_values(array_unique($class_list));
-  }
-  // if, for some reason, we have no results, we need to assign a default class otherwise WordPress complains
-  if (empty($class_list)) $class_list[] = 'default';
-  return $class_list;
-}
-*/
-//add_action( 'init', 'pa_assign_menu_class_to_body' );
-//var_dump(pa_assign_menu_class_to_body());

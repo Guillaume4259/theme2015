@@ -107,9 +107,15 @@
                 	<div class="bloc-events-home">
                     	<div class="row">
                             <time class="col-sm-2 text-center" datetime="<?php echo date('Y',get_post_meta($id,'wpcf-start-date',true)).'-'.date('m',get_post_meta($id,'wpcf-start-date',true)).'-'.date('d',get_post_meta($id,'wpcf-start-date',true)); ?>"> 
-								<span class="jour foundry_bold"><?php echo date('D',get_post_meta($id,'wpcf-start-date',true)); ?></span>
-                                <span class="date foundry_bold"><?php echo date('d',get_post_meta($id,'wpcf-start-date',true)); ?></span>
-                                <span class="mois foundry_bold"><?php echo date('M',get_post_meta($id,'wpcf-start-date',true)); ?></span>
+								<span class="jour foundry_bold">
+									<?php echo strftime('%a',get_post_meta($id,'wpcf-start-date',true)); ?>
+                                </span>
+                                <span class="date foundry_bold">
+									<?php echo date('d',get_post_meta($id,'wpcf-start-date',true)); ?>
+                                </span>
+                                <span class="mois foundry_bold">
+                                    <?php echo strftime('%b',get_post_meta($id,'wpcf-start-date',true)); ?>                            
+                                </span>
                             </time>
                             <div class="col-sm-9">
                             	<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
@@ -137,7 +143,7 @@
     	<p class="col-md-10 col-md-offset-1 text-center">
         <?php 
 		if (ICL_LANGUAGE_CODE=="fr"){?>
-			Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant, nec resistere planitie porrecta conati digressi sunt retroque concedentes omne iuventutis robur relictum in sedibus acciverunt.
+			L’IÉSEG School of Management propose sur ses campus lillois et parisien un Programme Grande École post-bac en 5 ans, des programmes internationaux de type BBA ,MSc et MBA ainsi qu’une offre de formation continue.
 		<?php 
 		}
 		else {

@@ -111,10 +111,10 @@ Template Name: Meet with Us
 								?>
                             </th>
                         	<td><?php echo $metas_fair['wpcf-city-town'][0]; ?></td>
-                        	<td><?php echo date('d',$metas_fair['wpcf-start-date'][0]).' '.strtolower(date('M',$metas_fair['wpcf-start-date'][0])).' '.date('Y',$metas_fair['wpcf-start-date'][0]); ?>
+                        	<td><?php echo date('d',$metas_fair['wpcf-start-date'][0]).' '.strtolower(strftime('%b',$metas_fair['wpcf-start-date'][0])).' '.date('Y',$metas_fair['wpcf-start-date'][0]); ?>
                             	<?php
 								 if ($metas_fair['wpcf-start-date'][0] != $metas_fair['wpcf-end-date'][0]){
-									 echo ' - '.date('d',$metas_fair['wpcf-end-date'][0]).' '.strtolower(date('M',$metas_fair['wpcf-end-date'][0])).' '.date('Y',$metas_fair['wpcf-end-date'][0]);
+									 echo ' - '.date('d',$metas_fair['wpcf-end-date'][0]).' '.strtolower(strftime('%b',$metas_fair['wpcf-end-date'][0])).' '.date('Y',$metas_fair['wpcf-end-date'][0]);
 								 }
 								?>
                             </td>
@@ -182,10 +182,10 @@ Template Name: Meet with Us
                       ?> 
                       	<tr>
                         	<td><?php echo $metas_openday['wpcf-city-town'][0]; ?></td>
-                        	<td><?php echo date('d',$metas_openday['wpcf-start-date'][0]).' '.strtolower(date('M',$metas_openday['wpcf-start-date'][0])).' '.date('Y',$metas_openday['wpcf-start-date'][0]); ?>
+                        	<td><?php echo date('d',$metas_openday['wpcf-start-date'][0]).' '.strtolower(strftime('%b',$metas_openday['wpcf-start-date'][0])).' '.date('Y',$metas_openday['wpcf-start-date'][0]); ?>
                             	<?php
 								 if ($metas_openday['wpcf-start-date'][0] != $metas_openday['wpcf-end-date'][0]){
-									 echo ' - '.date('d',$metas_openday['wpcf-end-date'][0]).' '.strtolower(date('M',$metas_openday['wpcf-end-date'][0])).' '.date('Y',$metas_openday['wpcf-end-date'][0]);
+									 echo ' - '.date('d',$metas_openday['wpcf-end-date'][0]).' '.strtolower(strftime('%b',$metas_openday['wpcf-end-date'][0])).' '.date('Y',$metas_openday['wpcf-end-date'][0]);
 								 }
 								?>
                             </td>
