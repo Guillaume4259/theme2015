@@ -895,6 +895,27 @@ li#menu-program  .picto-admission a {
 	margin: 10px;
 }
 
+.picto-stage-large {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -49px -2544px;
+	height: 59px;
+	width: 68px;
+	margin: 10px;
+}
+
+.picto-coq {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -119px -2534px;
+	height: 59px;
+	width: 68px;
+	margin: 10px;
+}
+
+.picto-costume {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -205px -2534px;
+	height: 59px;
+	width: 38px;
+	margin: 10px;
+}
+
 a:hover div.btn > .picto-photos {
 	background: url("../images/sprite-ieseg.png") no-repeat scroll -72px -2231px;
 	height: 40px;
@@ -1617,6 +1638,7 @@ div.course_title:hover>div.read_on {
 	font-size: 30px;
 	line-height: 1;
 	color: #adadad;
+	margin-top: 11px;
 }
 
 .programmes-admissions-onglets .nav-tabs {
