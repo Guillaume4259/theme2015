@@ -927,7 +927,9 @@ a:hover div.btn > .picto-photos {
 	width: 42px;
 }
 
-
+.container-margin-15 {
+	margin: 15px;
+}
 
 /*----------------FIN MENU PROGRAMMES----------------*/
 
@@ -945,9 +947,15 @@ a:hover div.btn > .picto-photos {
 	position: relative;
 }
 
+.background-ladefense {
+	background: url("../images/fond-page-defense.jpg") repeat top;
+	background-size: cover;
+	position: relative;
+}
+
 
 .transparent-white {
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.9);
 }
 
 .yellow-background {
@@ -964,7 +972,7 @@ a:hover div.btn > .picto-photos {
 }
 
 .light-grey-background {
-	background: #DDDDDD;
+	background: #F1F1F1;
 	color: #333;
 }
 
