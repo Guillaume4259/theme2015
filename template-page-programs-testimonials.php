@@ -246,7 +246,7 @@ if ($postslist){
                         </div>
                         <div class="row">
                             <div class="col-sm-4 col-sm-offset-4">
-                                <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn center-block"><?php _e("All news","ieseg2015") ?></a>
+                                <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1786, 'page' ));?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-gris center-block"><?php _e("All news","ieseg2015") ?></a>
                             </div>
                         </div>
            </div><!--END box-->
@@ -288,7 +288,7 @@ if ($postslist){
 			</div>
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4">
-                    <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn center-block"><?php _e("All events","ieseg2015") ?></a>	
+                    <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn btn-gris center-block"><?php _e("All events","ieseg2015") ?></a>	
                 </div>
             </div>	
            </div><!--END box-->

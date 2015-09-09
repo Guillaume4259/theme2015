@@ -219,7 +219,7 @@ include('includes/test-current-page.php');
     </div>
     	</div>
         <div class="row">
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn col-sm-2 col-sm-offset-5"><?php _e("All the testimonials","ieseg2015") ?></a>	
+            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn btn-gris col-sm-2 col-sm-offset-5"><?php _e("All the testimonials","ieseg2015") ?></a>	
         </div>
     </div>
 </section>
@@ -273,7 +273,7 @@ include('includes/test-current-page.php');
                         </div>
                         <div class="row">
                             <div class="col-sm-4 col-sm-offset-4">
-                                <a href="<?php echo get_post_type_archive_link('news'); ?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn center-block"><?php _e("All news","ieseg2015") ?></a>
+                                <a href="<?php echo get_post_type_archive_link('news'); ?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-gris center-block"><?php _e("All news","ieseg2015") ?></a>
                             </div>
                         </div>
            </div><!--END box-->
@@ -314,7 +314,7 @@ include('includes/test-current-page.php');
 				</div>
             	<div class="row">
                     <div class="col-sm-4 col-sm-offset-4">
-                        <a href="<?php echo get_post_type_archive_link('events'); ?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn center-block"><?php _e("All events","ieseg2015") ?></a>	
+                        <a href="<?php echo get_post_type_archive_link('events'); ?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn btn-gris center-block"><?php _e("All events","ieseg2015") ?></a>	
                     </div>
 				</div>	
            </div><!--END box-->

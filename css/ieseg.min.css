@@ -75,7 +75,7 @@ li.rub-ecole.ubermenu-item.ubermenu-item-level-1 > a,
 	border-top-color:#16c1f3;	
 }
 
-.rub-ecole .btn{
+.rub-ecole .btn, .rub-ecole .btn:hover {
 	border-color:#16c1f3;	
 }
 
@@ -111,10 +111,9 @@ li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a,
 	border-top-color:#ffc20e;	
 }
 
-.rub-programmes .btn{
-	border-color:#666666;	
+.rub-programmes .btn, .rub-programmes .btn:hover{
+	border-color:#ffc20e;	
 }
-
 
 /*--International--*/
 .bg-orange2,.ubermenu .ubermenu-item-level-0.rub-international > a:hover, .ubermenu-item-level-0.rub-international.ubermenu-current-menu-ancestor > a,
@@ -143,7 +142,7 @@ li.rub-international.ubermenu-item.ubermenu-item-level-1 > a,
 	border-top-color:#f37043;	
 }
 
-.rub-international .btn{
+.rub-international .btn, .rub-international .btn:hover{
 	border-color:#f37043;	
 }
 
@@ -174,7 +173,7 @@ li.rub-services.ubermenu-item.ubermenu-item-level-1 > a,
 	border-top-color:#ef4d6e;	
 }
 
-.rub-services .btn{
+.rub-services .btn, .rub-services .btn:hover{
 	border-color:#ef4d6e;	
 }
 
@@ -210,7 +209,7 @@ li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a,
 	border-top-color:#cc2a45;	
 }
 
-.rub-exec .btn{
+.rub-exec .btn, .rub-exec .btn:hover{
 	border-color:#cc2a45;	
 }
 
@@ -241,7 +240,7 @@ li.rub-enseignants.ubermenu-item.ubermenu-item-level-1 > a,
 	border-top-color:#a67db8;	
 }
 
-.rub-enseignants .btn{
+.rub-enseignants .btn, .rub-enseignants .btn:hover{
 	border-color:#a67db8;	
 }
 
@@ -272,7 +271,7 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 	border-top-color:#18b68e;	
 }
 
-.rub-dre .btn{
+.rub-dre .btn, .rub-dre .btn:hover{
 	border-color:#18b68e;	
 }
 
@@ -1971,6 +1970,18 @@ footer a, footer a:hover{
 	color:#333 !important;
 }
 
+.btn-gris{
+	border:3px solid #666666 !important;
+	color:#666666 !important;
+	background:none !important;
+}
+
+.btn-gris:hover{
+	border:3px solid #666666 !important;
+	background:#666666 !important;
+	color:#fff !important;
+}
+
 .btn-cta-blanc-large {
 	font-weight: 600;
 	font-size: 24px;
@@ -1984,7 +1995,7 @@ footer a, footer a:hover{
 .btn-cta-blanc-large:hover {
 	color: #3c3c3b;
 	background: rgba(255, 255, 255, 0.55);
-	transition: all 0.3s ease 0s;
+	border-color: #ffc20e !important;
 }
 
 .btn-cta-orange-large {
@@ -1999,7 +2010,7 @@ footer a, footer a:hover{
 
 .btn-cta-orange-large:hover {
 	background: rgba(255, 194, 14, 0.55);
-	transition: all 0.3s ease 0s;
+	border-color: #ffc20e !important;
 }
 
 .btn-lille span, .btn-paris span, .btn-instagram span{
