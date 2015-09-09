@@ -945,6 +945,12 @@ a:hover div.btn > .picto-photos {
 	position: relative;
 }
 
+.background-ladefense {
+	background: url("../images/fond-page-defense.jpg") repeat top;
+	background-size: cover;
+	position: relative;
+}
+
 
 .transparent-white {
 	background: rgba(255, 255, 255, 0.8);
