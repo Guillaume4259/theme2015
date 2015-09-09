@@ -219,7 +219,10 @@ include('includes/test-current-page.php');
     </div>
     	</div>
         <div class="row">
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1787, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn btn-gris col-sm-2 col-sm-offset-5"><?php _e("All the testimonials","ieseg2015") ?></a>	
+        <?php
+			 wp_reset_postdata();
+		?>
+            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', $id_page_testimonials, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn btn-gris col-sm-2 col-sm-offset-5"><?php echo __("All testimonials about","ieseg2015")." ".get_the_title();  ?></a>	
         </div>
     </div>
 </section>
