@@ -874,6 +874,13 @@ li#menu-program  .picto-admission a {
 	width: 42px;
 }
 
+
+.picto-photos {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -6px -2230px;
+	height: 40px;
+	width: 42px;
+}
+
 .picto-backpack {
 	background: url("../images/sprite-ieseg.png") no-repeat scroll -79px -2467px;
 	height: 61px;
@@ -915,7 +922,6 @@ li#menu-program  .picto-admission a {
 	width: 38px;
 	margin: 10px;
 }
-
 a:hover div.btn > .picto-photos {
 	background: url("../images/sprite-ieseg.png") no-repeat scroll -72px -2231px;
 	height: 40px;
@@ -940,15 +946,9 @@ a:hover div.btn > .picto-photos {
 	position: relative;
 }
 
-.background-ladefense {
-	background: url("../images/fond-page-defense.jpg") top;
-	background-size: cover;
-	position: relative;
-}
-
 
 .transparent-white {
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.8);
 }
 
 .yellow-background {
@@ -965,7 +965,7 @@ a:hover div.btn > .picto-photos {
 }
 
 .light-grey-background {
-	background: #EEEEEE;
+	background: #DDDDDD;
 	color: #333;
 }
 
@@ -1465,6 +1465,10 @@ div.course_title:hover>div.read_on {
 	line-height: 100%;
 }
 
+.container-overview-margins {
+	margin-top: 20px;
+}
+
 .btn-more-info-program {
 	background: #fcecbc;
 	font-weight: 600;
@@ -1505,26 +1509,6 @@ div.course_title:hover>div.read_on {
     color: #fff;
     font-size: 50px !important;
 }
-
-
-/* --------------------- Marges et espacements ---------------- */
-
-.container-overview-margins {
-	margin-top: 20px;
-}
-
-.container-margin-15 {
-	margin: 15px !important;
-}
-
-.container-top-margin-15 {
-	margin: 15px !important;
-}
-
-.remove-left-padding {
-	padding-left: 0px;
-}
-
 /* --------- Slider Témoignages HomePage Programme --------- */
 
 .bx-viewport {
@@ -1703,10 +1687,6 @@ div.course_title:hover>div.read_on {
 
 .text-large {
 	font-size: 36px;
-}
-
-.text-medium {
-	font-size: 26px;
 }
 
 /* ------------------------ Fin Page Services Aux Etudiants -------------------- */
