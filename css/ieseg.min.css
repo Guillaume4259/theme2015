@@ -927,7 +927,9 @@ a:hover div.btn > .picto-photos {
 	width: 42px;
 }
 
-
+.container-margin-15 {
+	margin: 15px;
+}
 
 /*----------------FIN MENU PROGRAMMES----------------*/
 
