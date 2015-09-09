@@ -295,10 +295,10 @@ include('includes/test-current-page.php');
                         <div class="col-sm-12">
                             <div class="bloc-events-home">
                                 <div class="row">
-                                    <time class="col-sm-2 text-center"> 
-                                        <span class="jour foundry_bold"><?php echo date('D',get_post_meta($id,'wpcf-start-date',true)); ?></span>
+                                    <time class="col-sm-2 text-center">                       
+                                        <span class="jour foundry_bold"><?php echo strftime('%a',get_post_meta($id,'wpcf-start-date',true)); ?></span>
                                         <span class="date foundry_bold"><?php echo date('d',get_post_meta($id,'wpcf-start-date',true)); ?></span>
-                                        <span class="mois foundry_bold"><?php echo date('M',get_post_meta($id,'wpcf-start-date',true)); ?></span>
+                                        <span class="mois foundry_bold"><?php echo strftime('%b',get_post_meta($id,'wpcf-start-date',true)); ?></span>
                                     </time>
                                     <div class="col-sm-9">
                                         <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
