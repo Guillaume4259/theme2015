@@ -1996,6 +1996,12 @@ footer a, footer a:hover{
 	border-color: #ffc20e !important;
 }
 
+.rub-exec .btn-cta-blanc-large:hover {
+	color: #fff !important;
+	background: #cc2a45 !important;
+	border-color: #cc2a45 !important;
+}
+
 .btn-cta-orange-large {
 	font-weight: 600;
 	font-size: 24px;
@@ -2018,7 +2024,7 @@ footer a, footer a:hover{
 }
 
 .rub-exec .btn-cta-orange-large:hover {
-	background: rgba(204,42,69,0.55);
+	background: #cc2a45 !important;
 	border-color: #cc2a45 !important;
 }
 
