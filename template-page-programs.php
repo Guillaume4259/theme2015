@@ -140,7 +140,18 @@ include('includes/test-current-page.php');
 <!--   Temoignages   -->    
 <section class="container-testimonials">
 	<div class="container-fluid title container-titre-section-programmes-gris">
+    	<?php
+		if($sidebar_a_acharger['global']=="exec"){
+		?>
+        <h2><span class="foundry_light"><span class="foundry_bold"><?php _e("Scientific commitee opinion","ieseg2015") ?></span></h2>
+        <?php
+		}
+		else{
+		?>
 		<h2><span class="foundry_light"><?php _e("What our students","ieseg2015") ?></span> <span class="foundry_bold"><?php _e("say","ieseg2015") ?></span></h2>
+        <?php
+		}
+		?>
     </div>
     <div class="container-fluid container-1600">
         <div class="row">

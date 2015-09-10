@@ -103,14 +103,40 @@ if(is_page(2554) || custom_is_child(2554)){
 	$sidebar_a_acharger['section']="global-fr";
 		
 	if(is_page(22831) || custom_is_child(22831)){ 
-		$sidebar_a_acharger['section']="programme-direction-financiere";		
+		$sidebar_a_acharger['section']="programme-direction-financiere";	
+		//$punchline_programme="Faire grandir vos équipes, faire grandir votre entreprise";
+		//$id_cat_testimonials = 117;
+		//$id_page_testimonials = 34752;
+		$keyfacts_programme = '
+		<table class="table">
+			  <tr>
+				<th colspan="2" class="keytitle foundry_bold">Informations</th>
+			  </tr>
+			  <tr class="foundry_light">
+				<th>Durée</th>
+				<td>14 mois</td>
+			  </tr>
+			  <tr class="foundry_light">
+				<th>Langue</th>
+				<td>Français</td>
+			  </tr>
+			  <tr class="foundry_light">
+				<th>Lieu</th>
+				<td>Paris La Défense</td>
+			  </tr>
+			  <tr class="foundry_light">
+				<th>Prochaine rentrée</th>
+				<td>Mars 2016</td>
+			  </tr>
+			</table>
+	  ';	
 	}
 	
 	if(is_page(12691) || custom_is_child(12691)){ //EMBA FR
 		$sidebar_a_acharger['section']="emba";		
 		$punchline_programme="Faire grandir vos équipes, faire grandir votre entreprise";
 		$id_cat_testimonials = 117;
-		//$id_page_testimonials = 17175;
+		$id_page_testimonials = 34752;
 		$keyfacts_programme = '
 		<table class="table">
 			  <tr>
@@ -125,11 +151,7 @@ if(is_page(2554) || custom_is_child(2554)){
 				<td>Français & Anglais</td>
 			  </tr>
 			  <tr class="foundry_light">
-				<th>Credits</th>
-				<td>90 ECTS</td>
-			  </tr>
-			  <tr class="foundry_light">
-				<th>Location</th>
+				<th>Lieu</th>
 				<td>Paris La Défense</td>
 			  </tr>
 			  <tr class="foundry_light">

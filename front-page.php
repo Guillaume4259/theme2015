@@ -467,8 +467,16 @@
                         $args = array(
                             'posts_per_page' => -1,
                             'order'=> 'DESC',
-                            'post_type' => 'testimonial',
-                            'suppress_filters' => false
+                            'post_type' => 'testimonial', 
+                            'suppress_filters' => false,
+							'tax_query' =>  array ( //Exclusion de la cat EMBA
+													array(
+														'taxonomy' => 'testimonial-category', // My Custom Taxonomy
+														'terms' => 'emba', // My Taxonomy Term that I wanted to exclude
+														'field' => 'slug', // Whether I am passing term Slug or term ID
+														'operator' => 'NOT IN', // Selection operator - use IN to include, NOT IN to exclude
+													),
+												),
 
                         );
 
