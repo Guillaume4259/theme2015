@@ -1006,6 +1006,10 @@ a:hover div.btn > .picto-photos {
 	margin-bottom: 5px;
 }
 
+.rub-exec.page-template-template-page-programs #breadcrumbs, .rub-exec.page-template-template-page-programs-testimonials #breadcrumbs{
+	color: #cc2a45;
+}
+
 .page-template-template-page-programs #breadcrumbs a, .page-template-template-page-programs-testimonials #breadcrumbs a{
 	color: #fff;
 }
@@ -1117,6 +1121,10 @@ li.nav-small-devices {
 	padding: 10px 0;
 }
 
+.rub-exec .dr-name {
+	color: #cc2a45;
+}
+
 .dr-role {
 	color: #6f6f6e;
 	font-size: 16px;
@@ -1168,6 +1176,11 @@ span.foreword-contents::before {
 	color: #6f6f6e;
 	font-weight: 200;
 	margin: 20px !important;
+}
+
+.infobox-programme p {
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 
@@ -1582,6 +1595,10 @@ div.course_title:hover>div.read_on {
 	border-top: 4px solid #ffc20e !important;
 	width: 100%;
 	margin-top: 0px;
+}
+
+.rub-exec .keyfacts{
+	border-top: 4px solid #cc2a45 !important;
 }
 
 .keyfacts .table tbody tr th {	text-transform: uppercase;
