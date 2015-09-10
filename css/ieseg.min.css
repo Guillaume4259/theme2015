@@ -1028,6 +1028,8 @@ a:hover div.btn > .picto-photos {
 .overview-intro-bold {
 	font-family: 'Source Sans pro', sans-serif;
 	font-weight: 600;
+	padding: 15px;
+    display: block;
 }
 
 .overview-intro {
