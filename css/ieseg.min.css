@@ -1102,7 +1102,7 @@ li.nav-small-devices {
 	background: #ffc20e;
 }
 
-.rub-exec.container-titre-section-programmes-jaune {
+.rub-exec .container-titre-section-programmes-jaune {
 	background: #cc2a45;
 }
 
@@ -1376,12 +1376,12 @@ div.course_title:hover>div.read_on {
 	color: #9c9b9b;
 }
 
-.rub-exec .container-news-events .jour {
-	color: #cc2a45;
-}
-
 .container-news-events .date {
 	color: #ffc20e;
+}
+
+.rub-exec .container-news-events .date {
+	color: #cc2a45;
 }
 
 .container-news-events .moi {
@@ -2009,6 +2009,17 @@ footer a, footer a:hover{
 .btn-cta-orange-large:hover {
 	background: rgba(255, 194, 14, 0.55);
 	border-color: #ffc20e !important;
+}
+
+.rub-exec .btn-cta-orange-large {
+	background: #cc2a45;
+	border:3px solid #cc2a45 !important;
+	color: #fff !important;
+}
+
+.rub-exec .btn-cta-orange-large:hover {
+	background: rgba(204,42,69,0.55);
+	border-color: #cc2a45 !important;
 }
 
 .btn-lille span, .btn-paris span, .btn-instagram span{
