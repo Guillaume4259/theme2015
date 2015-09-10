@@ -1030,11 +1030,12 @@ a:hover div.btn > .picto-photos {
 	margin-bottom: 40px;
 	padding: 20px;
 	border-top: 4px solid #ffc20e;
-	background: #fff;
-	opacity: 0.95;
+	background-color: rgba(255,255,255,0.95);
 }
 
-
+.rub-exec .overview-intro {
+	border-top: 4px solid #cc2a45;
+}
 
 .overview-title {
 	color: #ffc20e;
@@ -1099,6 +1100,10 @@ li.nav-small-devices {
 
 .container-titre-section-programmes-jaune {
 	background: #ffc20e;
+}
+
+.rub-exec.container-titre-section-programmes-jaune {
+	background: #cc2a45;
 }
 
 .directors-photo {
@@ -1369,6 +1374,10 @@ div.course_title:hover>div.read_on {
 
 .container-news-events .jour {
 	color: #9c9b9b;
+}
+
+.rub-exec .container-news-events .jour {
+	color: #cc2a45;
 }
 
 .container-news-events .date {
