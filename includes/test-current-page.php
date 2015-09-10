@@ -603,6 +603,39 @@ if(is_page(9782) || custom_is_child(9782)){ //PGE FR
         </table>
   ';
 }
+
+if(is_page(558) || custom_is_child(558)){ //PGE GB
+	$sidebar_a_acharger['global']="pge";	
+	$punchline_programme="Effectively Negotiate in Multiple Contexts";
+	$id_cat_testimonials = 104;
+	$id_page_testimonials = 34265;
+	$keyfacts_programme = '<table class="table">
+          <tr>
+            <th colspan="2" class="keytitle foundry_bold">Key facts</th>
+          </tr>
+          <tr class="foundry_light">
+            <th>Duration</th>
+            <td>5 years</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Language</th>
+            <td>English - (French possible during the first two years)</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Credits</th>
+            <td>300 ECTS</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Location</th>
+            <td>Lille or Paris - France</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Intake</th>
+            <td>September</td>
+          </tr>
+        </table>
+  ';
+}
 //--------------------RECHERCHE--------------------------
 if(
 (is_page(18853) || custom_is_child(18853)) //12th Corporate FinanceDay

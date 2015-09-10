@@ -71,26 +71,27 @@ include('includes/test-current-page.php');
 					}
 					else{
 						switch ($sidebar_a_acharger['global']) {
-
-							/*case "bachelors":
-								if ( is_active_sidebar( 'msc-program-menu' ) ) {
-									dynamic_sidebar( 'msc-program-menu' );
+							//on utilise plusieurs fois le menu imba car c'est le niveau de profondeur qui nous interesse
+							case "bachelors":
+								if ( is_active_sidebar( 'imba-program-menu' ) ) { 
+									dynamic_sidebar( 'imba-program-menu' );
 								}
-								break;*/
-							/*case "exec":
-								if ( is_active_sidebar( 'msc-program-menu' ) ) {
-									dynamic_sidebar( 'msc-program-menu' );
+								break;
+							case "exec":	
+								if ( is_active_sidebar( 'imba-program-menu' ) ) { 
+									dynamic_sidebar( 'imba-program-menu' );
 								}
-								break;*/
+								break;
 							case "imba":
 								if ( is_active_sidebar( 'imba-program-menu' ) ) {
 									dynamic_sidebar( 'imba-program-menu' );
 								}
 								break;
 							case "pge":
-								if ( is_active_sidebar( 'pge-program-menu' ) ) {
-									dynamic_sidebar( 'pge-program-menu' );
+								if ( is_active_sidebar( 'imba-program-menu' ) ) {
+									dynamic_sidebar( 'imba-program-menu' );
 								}
+	
 								break;
 								
 							default:
