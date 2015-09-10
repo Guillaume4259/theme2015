@@ -122,7 +122,7 @@ if(is_page(2554) || custom_is_child(2554)){
 			  </tr>
 			  <tr class="foundry_light">
 				<th>Langue</th>
-				<td>Français &quot; Anglais</td>
+				<td>Français & Anglais</td>
 			  </tr>
 			  <tr class="foundry_light">
 				<th>Credits</th>
