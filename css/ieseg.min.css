@@ -38,6 +38,9 @@ body{
 .foundry_bold {
 	font-family: foundrysterling-boldregular;
 }
+.text-18 {
+	font-size: 18px !important;
+}
 
 /*----------------FIN FONTS----------------------*/
 
