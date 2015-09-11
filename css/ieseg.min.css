@@ -38,7 +38,42 @@ body{
 .foundry_bold {
 	font-family: foundrysterling-boldregular;
 }
+.text-18 {
+	font-size: 18px !important;
+}
+
+.container-overview-padding {  /* Beaucoup utilisé sur les pages programmes. A remplacer par ".padding-top-20" pour optimiser */
+	padding-top: 20px;
+}
+
+.padding-top-20 {
+	padding-top: 20px;
+}
+
 /*----------------FIN FONTS----------------------*/
+
+
+/*----------------MARGES----------------------*/
+.remove-margins {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: -15px !important;
+}
+
+.remove-margins-bottom {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+
+.container-overview-margins {
+	margin-top: 20px;
+}
+
+.margin-right-10 {
+	margin-right: 10px;
+}
+/*----------------FIN MARGES----------------------*/
 
 a {
    outline: 0 !important;
@@ -1056,9 +1091,6 @@ li.nav-small-devices {
 	width: 100% !important;
 }
 
-.container-overview-padding {
-	padding-top: 20px;
-}
 
 .background-programme {
 	background: url(../images/msc_digital_marketing/fond-page-programme.jpg) no-repeat top;
@@ -1497,10 +1529,6 @@ div.course_title:hover>div.read_on {
 	line-height: 100%;
 }
 
-.container-overview-margins {
-	margin-top: 20px;
-}
-
 .btn-more-info-program {
 	background: #fcecbc;
 	font-weight: 600;
@@ -1620,21 +1648,6 @@ div.course_title:hover>div.read_on {
 }
 
 /*----------------FIN BLOC KEYFACTS----------------*/
-
-/* ---------- BLOCS SIDEBAR ------------------- */
-
-.remove-margins {
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-top: -15px !important;
-}
-
-.remove-margins-bottom {
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-bottom: -15px;
-}
-
 
 /*----------------TABS ADMISSIONS PAGES PROGRAMMES----------------*/
 
