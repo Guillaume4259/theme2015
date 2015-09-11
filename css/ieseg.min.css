@@ -42,6 +42,14 @@ body{
 	font-size: 18px !important;
 }
 
+.container-overview-padding {  /* Beaucoup utilisé sur les pages programmes. A remplacer par ".padding-top-20" pour optimiser */
+	padding-top: 20px;
+}
+
+.padding-top-20 {
+	padding-top: 20px;
+}
+
 /*----------------FIN FONTS----------------------*/
 
 
@@ -1083,9 +1091,6 @@ li.nav-small-devices {
 	width: 100% !important;
 }
 
-.container-overview-padding {
-	padding-top: 20px;
-}
 
 .background-programme {
 	background: url(../images/msc_digital_marketing/fond-page-programme.jpg) no-repeat top;
