@@ -1835,7 +1835,7 @@ aside .bloc{
 	padding-left:40px;
 }
 
-.container-event-agenda a:hover{
+.container-event-agenda a:hover, .visuel-hprubrique h3 a:hover{
 	text-decoration:underline !important;
 }
 .container-event-agenda time{
@@ -1850,14 +1850,16 @@ aside .bloc{
 }
 
 .visuel-hprubrique{
-	margin-bottom:30px;
+	margin-bottom:40px;
 }
 
 .visuel-hprubrique h3{
 	margin-top:0;
 }
 
-
+.visuel-hprubrique h3 a{
+	text-decoration:none !important;
+}
 /*----------------FIN BLOCS----------------*/
 
 /*----------------TITRES----------------*/

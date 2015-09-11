@@ -11,8 +11,6 @@
 global $sidebar_a_acharger;
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
-<div class="bloc bloc-agenda">
-	<h4><?php _e('Agenda', 'ieseg2015'); ?></h4>
 <?php
 $args = 
 		array(
@@ -32,6 +30,9 @@ $args =
 		);
  $postslist = get_posts( $args );
  if (!empty($postslist)){?>
+<div class="bloc bloc-agenda">
+	<h4><?php _e('Agenda', 'ieseg2015'); ?></h4>
+
  
  <?php
 	foreach ( $postslist as $post ) :
@@ -54,11 +55,8 @@ $args =
 	  $id_rub_dre = intval(apply_filters('wpml_object_id', 55, 'events-category')); //obligé de faire un intval pour convertir l'id en int
 	 ?>
      <a href="<?php echo get_term_link($id_rub_dre,'events-category')?>" title="<?php _e('All events', 'ieseg2015')?>" class="btn"><?php _e('All events', 'ieseg2015')?></a>
+ </div>
  <?php
  }
- else{
-	 _e('No event in this category', 'ieseg2015');
- }
  ?>	
-</div>
 </div><!-- #content-sidebar -->
