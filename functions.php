@@ -58,6 +58,9 @@ function ieseg2_scripts() {
 	
 	wp_enqueue_style('animate',get_template_directory_uri().'/css/animate.css',false,'1.0'); // utile pour wow.js
 	wp_enqueue_style('style-ieseg',get_template_directory_uri().'/css/ieseg.min.css',array('bootstrap'),'1.0');
+	if ( is_page (array (1766, 59) )) {
+		wp_enqueue_style('style-timeline',get_template_directory_uri().'/css/timeline.css');
+	}
    	//wp_enqueue_style('fancybox','/wp-content/themes/'.get_template().'/lib/fancybox/jquery.fancybox-1.3.4.css',false,'1.0');
 	
 
