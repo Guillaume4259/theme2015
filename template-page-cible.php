@@ -31,8 +31,12 @@ Template Name: Page cible
     </div>
     <div class="row">
     	<div role="navigation" class="col-sm-3 hidden-xs left-col">
-        	<!-- SUB NAVIGATION -->    
-        	<?php get_sidebar( 'left-menu-cibles' ); ?>
+        	<!-- SUB NAVIGATION -->
+            <?php
+            if ( is_active_sidebar( 'left-menu-cibles' ) ) {
+				dynamic_sidebar( 'left-menu-cibles' );
+			} 
+			?>
             <!-- END - SUB NAVIGATION -->
         </div>
         <?php 

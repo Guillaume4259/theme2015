@@ -65,7 +65,7 @@ include('includes/test-current-page.php');
            			<?php
 					//Pour charger la bonne sidebar (et donc le bon menu), on a besoin de savoir si l'on est sur une home de programme 
 					if ($is_home_programe==true){
-						if ( is_active_sidebar( 'program-menu' ) ) {
+						if ( is_active_sidebar( 'program-home-menu' ) ) {
 							dynamic_sidebar( 'program-home-menu' );
 						}
 					}

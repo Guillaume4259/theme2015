@@ -90,7 +90,7 @@ function ieseg_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => __('Left Menu','ieseg2015'),
-		'id'            => 'sidebar-left-menu',
+		'id'            => 'left-menu',
 		'description'   => __('Left Menu','ieseg2015'),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -99,7 +99,7 @@ function ieseg_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => __('Left Menu for Pages Cibles','ieseg2015'),
-		'id'            => 'sidebar-left-menu-cibles',
+		'id'            => 'left-menu-cibles',
 		'description'   => __('Left Menu for Pages Cibles','ieseg2015'),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',

@@ -34,8 +34,12 @@
     </div>
     <div class="row">
     	<div role="navigation" class="col-sm-3 hidden-xs left-col">
-        	<!-- SUB NAVIGATION -->    
-        	<?php get_sidebar( 'left-menu' ); ?>
+        	<!-- SUB NAVIGATION --> 
+            <?php
+            if ( is_active_sidebar( 'left-menu' ) ) {
+				dynamic_sidebar( 'left-menu' );
+			} 
+			?>   
             <!-- END - SUB NAVIGATION -->
         </div>
         <?php 
