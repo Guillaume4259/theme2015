@@ -11,7 +11,7 @@
 global $sidebar_a_acharger;
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
-<div class="bloc">
+<div class="bloc bloc-agenda">
 	<h4><?php _e('Agenda', 'ieseg2015'); ?></h4>
 <?php
 $args = 
@@ -32,24 +32,24 @@ $args =
 		);
  $postslist = get_posts( $args );
  if (!empty($postslist)){?>
- 	<ul>
+ 
  <?php
 	foreach ( $postslist as $post ) :
 		setup_postdata( $post ); 
 		$id=$post->ID;
 	  ?>
-		<li>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			<time class="" datetime="<?php echo date('Y',get_post_meta($id,'wpcf-start-date',true)).'-'.date('m',get_post_meta($id,'wpcf-start-date',true)).'-'.date('d',get_post_meta($id,'wpcf-start-date',true)); ?>"> 
-				<?php echo date('d',get_post_meta($id,'wpcf-start-date',true)).' '.date('M',get_post_meta($id,'wpcf-start-date',true)).' '.date('Y',get_post_meta($id,'wpcf-start-date',true)); ?>
-				<?php echo get_post_meta($id,'wpcf-city-town', true)?>
+		<div class="container-event-agenda">
+        	<time class="" datetime="<?php echo date('Y',get_post_meta($id,'wpcf-start-date',true)).'-'.date('m',get_post_meta($id,'wpcf-start-date',true)).'-'.date('d',get_post_meta($id,'wpcf-start-date',true)); ?>"> 
+                 <span class="glyphicon glyphicon-calendar"></span> 
+					<?php echo strftime('%d %B %Y',get_post_meta($id,'wpcf-start-date',true)).' - '.get_post_meta($id,'wpcf-city-town', true) ;?>
+             
 			</time>
-
-		</li>
+        	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>	
+		</div>
 	<?php
 	endforeach;
 	?>
-     </ul>
+
      <?php
 	  $id_rub_dre = intval(apply_filters('wpml_object_id', 55, 'events-category')); //obligé de faire un intval pour convertir l'id en int
 	 ?>

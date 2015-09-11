@@ -1787,6 +1787,12 @@ ul.menu-gauche>li ul a{
 	font-size:24px;
 }
 
+aside .bloc h4{
+	font-size:32px;
+	font-weight:200;
+	margin-bottom:20px;
+}
+
 /*blocs de sidebar*/
 aside .bloc{
 	margin-bottom:35px;
@@ -1817,6 +1823,32 @@ aside .bloc{
 	max-height:339px;
 	overflow:hidden;
 }
+
+.container-event-agenda{
+	margin:0 0 20px 0;
+}
+
+.container-event-agenda a{
+	text-decoration:none !important;
+	font-size:18px;
+	display:block;
+	padding-left:40px;
+}
+
+.container-event-agenda a:hover{
+	text-decoration:underline !important;
+}
+.container-event-agenda time{
+	background:#e6e6e6;
+	display:block;
+	padding:10px;
+	font-weight:bold;
+}
+
+.container-event-agenda .glyphicon{
+	margin-right:10px;
+}
+
 
 /*----------------FIN BLOCS----------------*/
 
