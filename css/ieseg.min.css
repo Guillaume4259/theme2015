@@ -44,6 +44,29 @@ body{
 
 /*----------------FIN FONTS----------------------*/
 
+
+/*----------------MARGES----------------------*/
+.remove-margins {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: -15px !important;
+}
+
+.remove-margins-bottom {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+
+.container-overview-margins {
+	margin-top: 20px;
+}
+
+.margin-right-10 {
+	margin-right: 10px;
+}
+/*----------------FIN MARGES----------------------*/
+
 a {
    outline: 0 !important;
 }
@@ -1501,10 +1524,6 @@ div.course_title:hover>div.read_on {
 	line-height: 100%;
 }
 
-.container-overview-margins {
-	margin-top: 20px;
-}
-
 .btn-more-info-program {
 	background: #fcecbc;
 	font-weight: 600;
@@ -1624,21 +1643,6 @@ div.course_title:hover>div.read_on {
 }
 
 /*----------------FIN BLOC KEYFACTS----------------*/
-
-/* ---------- BLOCS SIDEBAR ------------------- */
-
-.remove-margins {
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-top: -15px !important;
-}
-
-.remove-margins-bottom {
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-bottom: -15px;
-}
-
 
 /*----------------TABS ADMISSIONS PAGES PROGRAMMES----------------*/
 
