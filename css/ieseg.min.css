@@ -142,7 +142,7 @@ li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a,
 	color:#ffc20e;
 }
 
-.rub-programmes .bloc, li.rub-programmes.ubermenu-item .ubermenu-submenu-drop{
+.rub-programmes .bloc, .error404  .bloc, li.rub-programmes.ubermenu-item .ubermenu-submenu-drop{
 	border-top-color:#ffc20e;	
 }
 
@@ -525,15 +525,19 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
   color:#fdc300;
 }
 
+.ubermenu .ubermenu-item.ubermenu-item-level-1 > a span{
+  /*background:red;*/
+}
+
 .ubermenu .ubermenu-item.ubermenu-item-level-2 > a{
   color:#fff;
 }
-
 
 .ubermenu .ubermenu-item .ubermenu-submenu-drop{
 	border-top:4px solid #ffc20e;
 	box-shadow:none !important;
 	background:#636569;
+	/*background:#bfbfbf;*/
 	max-width:1200px;
 	right:0;
 	left:auto !important;
@@ -1927,6 +1931,15 @@ h3{
 	font-size: 30px;
 }
 
+.error404 h1{
+	margin-top:0;
+}
+
+.error404 h2{
+	margin:5px 0 40px;
+	border:0;
+}
+
 /*----------------FIN TITRES----------------*/
 
 /*----------------LIENS ET BOUTONS----------------*/
@@ -2667,6 +2680,22 @@ section.container-campus{
 .wp-pagenavi{
 	text-align:center;
 }
+
+/*----------------404----------------------------*/
+.search-box-404 form{
+	text-align:center;
+	margin-bottom:30px;	
+}
+
+.search-box-404 .search-field{
+	width:40%;
+	border:3px solid #666666;
+	margin-right:10px;
+	font-size: 16px;
+	padding: 6px 12px;
+}
+
+/*----------------FIN 404----------------------------*/
 
 /*----------------RESPONSIVE----------------------------*/
 /* Small devices (tablets, 768px and up) */

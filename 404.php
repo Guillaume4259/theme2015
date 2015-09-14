@@ -47,12 +47,13 @@
 		endif;
 
 ?>
-			<h1><?php _e( 'Page not found', 'ieseg2015' ); ?></h1>
+			<h1 class="txt-orange1"><?php _e( 'Page not found', 'ieseg2015' ); ?></h1>
             <h2><?php _e( 'It\'s embarrassing but it looks like nothing was found at this location.', 'ieseg2015' ); ?></h2>
-			<p><?php _e( 'The page you are looking for may have been removed or renamed', 'ieseg2015' ); ?>.
-             	<?php _e( 'Be sure to check the spelling of the URL', 'ieseg2015' ); ?>
+			<p><?php _e( 'The page you are looking for may have been removed or renamed', 'ieseg2015' ); ?>. <?php _e( 'But we can help you to get out of here', 'ieseg2015' ); ?>. 
+             	<?php _e( 'First of all, please double-check the spelling of the URL', 'ieseg2015' ); ?>.
+				<?php echo __( 'If the problem remains, feel free to', 'ieseg2015' ).' <a href="mailto:ieseg@ieseg.fr" target="_blank">'.__( 'contact us', 'ieseg2015' ).'</a> '.__( 'or go back to the ', 'ieseg2015' ).' <a href="'.get_bloginfo('url').'">'.__( 'Homepage', 'ieseg2015' ).'</a>'; ?>.
              </p>
-            <p><?php _e( 'We can help you to get out of here', 'ieseg2015' ); ?></p>
+            <p><strong><?php _e( 'You can also', 'ieseg2015' ); ?> :</strong></p>
             <div class="row">
                 <div class="col-sm-12 search-box-404">
                     <h2><?php _e( 'Try a search', 'ieseg2015' ); ?></h2>
@@ -64,7 +65,6 @@
                 	<div class="bloc">
                         <h4><?php _e( 'Look into these pages', 'ieseg2015' ); ?></h4>
                         <ul>
-                            <li><a href="<?php bloginfo('url');?>" title="<?php _e('Homepage', 'ieseg2015');?>"><?php _e('Homepage', 'ieseg2015');?></a></li>
                             <li><a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1762, 'page' ));?>" title="<?php _e('Discover IÉSEG', 'ieseg2015');?>"><?php _e('Discover IÉSEG', 'ieseg2015');?></a></li>
                             <li><a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1178, 'page' ));?>" title="<?php _e('View our programs', 'ieseg2015');?>"><?php _e('View our programs', 'ieseg2015');?></a></li>
                             <li><a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 711, 'page' ));?>" title="<?php _e('Admissions', 'ieseg2015');?>"><?php _e('Admissions', 'ieseg2015');?></a></li>
@@ -78,7 +78,9 @@
                         3 rue de la Digue - 59000 Lille <br />
                         1 parvis de La Défense - 92044 Paris La Défense <br />
                         03.20.54.58.92 <br />
-                        <a href="mailto:ieseg@ieseg.fr" target="_blank" class="btn"><?php _e( 'Leave us an email', 'ieseg2015' ); ?></a>
+                        <div class="text-center">
+                        	<a href="mailto:ieseg@ieseg.fr" target="_blank" class="btn"><?php _e( 'Leave us an email', 'ieseg2015' ); ?></a>
+                        </div>
                     </div>
                 </div>
             </div>

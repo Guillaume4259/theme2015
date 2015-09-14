@@ -55,6 +55,14 @@ else{
         jQuery( ".blocd" ).height(c);
 }
 
+//Formulaire Recherche sur page 404
+
+//$(".error404 .search-box-404 form").addClass("form-inline");
+//$(".error404 .search-box-404 .search-field").addClass("form-control input-lg");
+$(".error404 .search-box-404 .search-submit").addClass("btn");
+
+
+
 	
 //Formulaire Cibles homepage	
 $("#button-form-cibles-home").click(function(event){
