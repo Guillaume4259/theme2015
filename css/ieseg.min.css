@@ -1273,15 +1273,20 @@ table > thead {
 }
 .course_title {
 	text-decoration: none;
-	display: inline-block;
+	display: inline;
 	cursor: pointer;
 	vertical-align: middle;
 }
 
 .course_title > p, .read_on > p, .course_description {
 	vertical-align: middle;
-	margin: 0;
+	margin: 6px;
 	float: left;
+	width: 80%;
+}
+
+.click_to_show_all_courses > p {
+	margin: 4px 0;
 }
 
 .page-template-template-page-programs tr th~th {

@@ -1,35 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,900);
-
-/*body{
-  font-family: 'Raleway', sans-serif;
-  color: #333;
+#historique .first-element {
+  margin-top:5px;
 }
 
-header h1{
-  text-align: center;
-  font-weight: bold;
-  margin-top: 0;
-}
-  
- header p{
-   text-align: center;
-   margin-bottom: 0;
- }
-*/
-.hexa{
-  border: 0px;
-  float: left;
-  text-align: center;
-  height: 35px;
-  width: 60px;
-  font-size: 22px;
-  background: #f0f0f0;
-  color: #3c3c3c;
-  position: relative;
-  margin-top: 15px;
+#historique .hexa{
+  display: none;
 }
 
-.hexa:before{
+#historique .hexa:before{
   content: ""; 
   position: absolute; 
   left: 0; 
@@ -41,7 +18,7 @@ header h1{
   top: -15px;
 }
 
-.hexa:after{
+#historique .hexa:after{
   content: ""; 
   position: absolute; 
   left: 0; 
@@ -53,7 +30,7 @@ header h1{
   bottom: -15px;
 }
 
-.timeline {
+#historique .timeline {
   position: relative;
   padding: 0;
   width: 100%;
@@ -61,9 +38,9 @@ header h1{
   list-style-type: none;
 }
 
-.timeline:before {
+#historique .timeline:before {
   position: absolute;
-  left: 50%;
+  left: 0%;
   top: 0;
   content: ' ';
   display: block;
@@ -80,11 +57,11 @@ header h1{
   z-index: 5;
 }
 
-.timeline li {
-  padding: 2em 0;
+#historique .timeline li {
+  /*padding: 1em 0;*/
 }
 
-.timeline .hexa{
+#historique .timeline .hexa{
   width: 16px;
   height: 10px;
   position: absolute;
@@ -94,40 +71,39 @@ header h1{
   right: 0;
   margin-left:auto;
   margin-right:auto;
-  top: -30px;
+  top: -40px;
   margin-top: 0;
 }
 
-.timeline .hexa:before {
+#historique .timeline .hexa:before {
   border-bottom: 4px solid #00c4f3;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
 }
 
-.timeline .hexa:after {
+#historique .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
   border-top: 4px solid #00c4f3;
   bottom: -4px;
 }
 
-.direction-l,
-.direction-r {
+#historique .direction-l,
+#historique .direction-r {
   float: none;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
-.flag-wrapper {
-  text-align: center;
+#historique .flag-wrapper {
+  text-align: left;
   position: relative;
 }
 
-.flag {
+#historique .flag {
   position: relative;
   display: inline;
-  background: rgb(255,255,255);
   font-weight: 600;
   z-index: 15;
   padding: 6px 10px;
@@ -135,8 +111,8 @@ header h1{
   border-radius: 5px;
 }
 
-.direction-l .flag:after,
-.direction-r .flag:after {
+#historique .direction-l .flag:after,
+#historique .direction-r .flag:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -150,20 +126,20 @@ header h1{
   pointer-events: none;
 }
 
-.direction-l .flag {
+#historique .direction-l .flag {
   -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
 }
 
-.direction-r .flag {
+#historique .direction-r .flag {
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
 }
 
-.time-wrapper {
-  display: block;
+#historique .time-wrapper {
+  display: inline;
   position: relative;
   margin: 4px 0 0 0;
   z-index: 14;
@@ -172,88 +148,100 @@ header h1{
   color: #fff;
 }
 
-.direction-l .time-wrapper {
+#historique .direction-l .time-wrapper {
   float: none;
 }
 
-.direction-r .time-wrapper {
+#historique .direction-r .time-wrapper {
   float: none;
 }
 
-.time {
+#historique .time {
   background: #00c4f3;
-  display: inline-block;
+  display: inline;
   padding: 8px;
+  margin-left: 0.75em;
 }
 
-.desc {
+#historique .desc {
   position: relative;
   margin: 1em 0 0 0;
   padding: 1em;
-  background: rgb(254,254,254);
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   box-shadow: 0 0 1px rgba(0,0,0,0.20);
   z-index: 15;
 }
 
-.direction-l .desc,
-.direction-r .desc {
+#historique .direction-l .desc,
+#historique .direction-r .desc {
   position: relative;
-  margin: 1em 1em 0 1em;
-  padding: 1em;
+  margin: 0.5em 0.5em 0 0.5em;
+  padding: 0.5em;
   z-index: 15;
 }
 
 @media(min-width: 768px){
-  .timeline {
-    width: 660px;
+  #historique .timeline {
+    width: 100%;
     margin: 0 auto;
     margin-top: 20px;
   }
 
-  .timeline li:after {
+  #historique .timeline li:after {
     content: "";
     display: block;
     height: 0;
     clear: both;
     visibility: hidden;
   }
-  
-  .timeline .hexa {
-    left: -28px;
+   #historique .hexa {
+    border: 0px;
+    float: left;
+    text-align: center;
+    height: 35px;
+    width: 60px;
+    font-size: 22px;
+    background: #f0f0f0;
+    color: #3c3c3c;
+    position: relative;
+    margin-top: 15px;
+    display: inline;
+}
+  #historique .timeline .hexa {
+    left: -8px;
     right: auto;
-    top: 8px;
+    top: 40px;
   }
 
-  .timeline .direction-l .hexa {
+  #historique .timeline .direction-l .hexa {
     left: auto;
-    right: -28px;
+    right: -8px;
   }
 
-  .direction-l {
+  #historique .direction-l {
     position: relative;
     width: 310px;
     float: left;
     text-align: right;
   }
 
-  .direction-r {
+  #historique .direction-r {
     position: relative;
-    width: 310px;
+    width: 100%;
     float: right;
     text-align: left;
   }
 
-  .flag-wrapper {
-    display: inline-block;
+  #historique .flag-wrapper {
+    display: block;
   }
   
-  .flag {
+  #historique .flag {
     font-size: 18px;
   }
 
-  .direction-l .flag:after {
+  #historique .direction-l .flag:after {
     left: auto;
     right: -16px;
     top: 50%;
@@ -263,7 +251,7 @@ header h1{
     border-width: 8px;
   }
 
-  .direction-r .flag:after {
+  #historique .direction-r .flag:after {
     top: 50%;
     margin-top: -8px;
     border: solid transparent;
@@ -272,47 +260,63 @@ header h1{
     left: -8px;
   }
 
-  .time-wrapper {
+  #historique .time-wrapper {
     display: inline;
     vertical-align: middle;
     margin: 0;
   }
 
-  .direction-l .time-wrapper {
+  #historique .direction-l .time-wrapper {
     float: left;
   }
 
-  .direction-r .time-wrapper {
-    float: right;
+  #historique .direction-r .time-wrapper {
+    float: left;
   }
 
-  .time {
+  #historique .time {
     padding: 5px 10px;
+    margin-left: 0.75em;
+    display: inline;
   }
 
-  .direction-r .desc {
-    margin: 1em 0 0 0.75em;
+  #historique .direction-r .desc {
+    margin: 1.4em 0 0 0.75em;
   }
 }
 
 @media(min-width: 992px){
-  .timeline {
-    width: 800px;
+  #historique .timeline {
+    width: 100%;
     margin: 0 auto;
     margin-top: 20px;
   }
 
-  .direction-l {
+  #historique .direction-l {
     position: relative;
     width: 380px;
     float: left;
     text-align: right;
   }
 
-  .direction-r {
+  #historique .direction-r {
     position: relative;
-    width: 380px;
-    float: right;
+    width: 100%;
+    float: left;
     text-align: left;
   }
+
+ #historique .hexa {
+    border: 0px;
+    float: left;
+    text-align: center;
+    height: 35px;
+    width: 60px;
+    font-size: 22px;
+    background: #f0f0f0;
+    color: #3c3c3c;
+    position: relative;
+    margin-top: 15px;
+    display: inline;
+}
 }
