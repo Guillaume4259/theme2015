@@ -42,7 +42,7 @@
 		if ( have_posts() ) :
 		// Start the Loop.
 		$hit_count = $wp_query->found_posts; // count # of search results ?>
-		<p><?php echo $hit_count . __(' result(s)','ieseg2015'); ?></p>
+		<p><?php echo $hit_count .' '.__('result(s)','ieseg2015'); ?></p>
 		<?php while ( have_posts() ) : the_post();
 		      	                  
 

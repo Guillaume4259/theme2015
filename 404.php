@@ -15,11 +15,7 @@
 <?php
  endif;
 ?>
-<div class="container-fluid" id="container-img-une" <?php if (!empty ($str_img_une[0]) && $str_img_une[1]>1000 ) { echo 'style="background-image:url('.$str_img_une[0].');"';}?>>
-    <div class="container-titre">
-    	<span class="titre-deco hidden-xs"></span><h1 class="entry-title foundry_demi"><?php _e( 'This page doesn\'t exist', 'ieseg2015' ); ?></h1>
-    </div>
-</div>
+
 <div class="container-fluid container-1600" role="main">
 	<div id="breadcrumbs" class="row">
     	<!-- BREADCRUMBS -->
@@ -35,11 +31,7 @@
     <div class="row">
     	<div role="navigation" class="col-sm-3 hidden-xs left-col">
         	<!-- SUB NAVIGATION -->    
-        	<?php
-            if ( is_active_sidebar( 'left-menu' ) ) {
-				dynamic_sidebar( 'left-menu' );
-			} 
-			?>
+        	<img src="<?php echo get_template_directory_uri().'/images/404.jpg' ;?>" class="img-responsive" width="100%" alt="">
             <!-- END - SUB NAVIGATION -->
         </div>
         <?php 
@@ -55,11 +47,41 @@
 		endif;
 
 ?>
-            <h4><?php _e( 'This is somewhat embarrassing, isn’t it?', 'ieseg2015' ); ?></h4>
-			<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'ieseg2015' ); ?></p>
-
-			<?php get_search_form(); ?>
-
+			<h1><?php _e( 'Page not found', 'ieseg2015' ); ?></h1>
+            <h2><?php _e( 'It\'s embarrassing but it looks like nothing was found at this location.', 'ieseg2015' ); ?></h2>
+			<p><?php _e( 'The page you are looking for may have been removed or renamed', 'ieseg2015' ); ?>.
+             	<?php _e( 'Be sure to check the spelling of the URL', 'ieseg2015' ); ?>
+             </p>
+            <p><?php _e( 'We can help you to get out of here', 'ieseg2015' ); ?></p>
+            <div class="row">
+                <div class="col-sm-12 search-box-404">
+                    <h2><?php _e( 'Try a search', 'ieseg2015' ); ?></h2>
+                    <?php get_search_form(); ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                	<div class="bloc">
+                        <h4><?php _e( 'Look into these pages', 'ieseg2015' ); ?></h4>
+                        <ul>
+                            <li><a href="<?php bloginfo('url');?>" title="<?php _e('Homepage', 'ieseg2015');?>"><?php _e('Homepage', 'ieseg2015');?></a></li>
+                            <li><a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1762, 'page' ));?>" title="<?php _e('Discover IÉSEG', 'ieseg2015');?>"><?php _e('Discover IÉSEG', 'ieseg2015');?></a></li>
+                            <li><a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1178, 'page' ));?>" title="<?php _e('View our programs', 'ieseg2015');?>"><?php _e('View our programs', 'ieseg2015');?></a></li>
+                            <li><a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 711, 'page' ));?>" title="<?php _e('Admissions', 'ieseg2015');?>"><?php _e('Admissions', 'ieseg2015');?></a></li>
+                            <li><a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', 1782, 'page' ));?>" title="<?php _e('Meet with us', 'ieseg2015');?>"><?php _e('Meet with us', 'ieseg2015');?></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                	<div class="bloc">
+                        <h4><?php _e( 'Contact us', 'ieseg2015' ); ?></h4>
+                        3 rue de la Digue - 59000 Lille <br />
+                        1 parvis de La Défense - 92044 Paris La Défense <br />
+                        03.20.54.58.92 <br />
+                        <a href="mailto:ieseg@ieseg.fr" target="_blank" class="btn"><?php _e( 'Leave us an email', 'ieseg2015' ); ?></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
 		<aside class="col-sm-3 right-col">
@@ -67,7 +89,7 @@
 			//get_sidebar( '404' );
 		?>
 
-			</aside>
+		</aside>
     </div>
 </div>
 <?php get_footer(); ?>
