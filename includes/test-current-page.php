@@ -433,7 +433,7 @@ if(is_page(17417) || custom_is_child(17417) || $cat_testi[0]->term_id==127){
 	$sidebar_a_acharger['section']="msc_accounting";	
 	$id_cat_testimonials = 127;
 	$id_page_testimonials = 30228;
-	$punchline_programme="Explore the Importance of Financial Reporting in the Modern Business Environment";
+	$punchline_programme="Master the Ins and Outs of Financial Reporting and Advisory Services";
 	$keyfacts_programme = '
       <table class="table">
           <tr>
