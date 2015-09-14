@@ -1280,7 +1280,7 @@ table > thead {
 
 .course_title > p, .read_on > p, .course_description {
 	vertical-align: middle;
-	margin: 0;
+	margin: 6px;
 	float: left;
 }
 
