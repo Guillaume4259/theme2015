@@ -14,17 +14,17 @@ global $sidebar_a_acharger;
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
 		
-    <div class="conteneur_bloc conteneur_bloc_gris_fonce">
-        <div class="bloc bloc_gris_fonce bloc_contact">
-            <a href="http://www.ieseg.fr/pdf/schema_taxe_2015.pdf" target="_blank" title="Schéma taxe 2015" style="font-size:13px;font-weight:bold;">Schéma taxe 2015</a>
-        </div>
-    </div>
+<div class="bloc ">
+	<h4>Schéma taxe</h4>
+    <a href="<?php bloginfo('url');?>/pdf/schema_taxe_2015.pdf" target="_blank" title="Schéma taxe 2015" class="btn">Voir le schéma taxe 2015</a>
+</div>
         
-    <div class="conteneur_bloc conteneur_bloc_gris_fonce">
-        <div class="bloc bloc_gris_fonce bloc_contact">
-            <h4 style="margin-bottom:20px;">La Fondation IÉSEG</h4>
-            Vous pouvez également soutenir l'École grâce à la fondation IÉSEG.
-            <a href="http://www.ieseg.fr/a-propos-de-lieseg/fondation-ieseg/" title="En savoir +" style="font-size:13px;display:block;font-weight:bold;text-align:right;margin-top:15px;">En savoir +</a>
-        </div>
+<div class="bloc">
+	<div class="remove-margins">
+	<img src="<?php echo get_template_directory_uri().'/images/fondation/sidebar-fondation.jpg' ;?>" class="img-responsive" width="100%" alt="Fondation IÉSEG">
     </div>
+    <h4>La Fondation IÉSEG</h4>
+    Vous pouvez également soutenir l'École grâce à la fondation IÉSEG.<br /><br />
+    <a href="<?php bloginfo('url');?>/a-propos-de-lieseg/fondation-ieseg/" title="En savoir +" class="btn">En savoir +</a>
+</div>
 </div><!-- #content-sidebar -->
