@@ -1102,6 +1102,12 @@ li.nav-small-devices {
 	position: relative;
 }
 
+.background-programme {
+	background: url(../images/fond-mfm.jpg) no-repeat top;
+	background-size: cover;
+	position: relative;
+}
+
 .contact-programme {
 	background: #fff;
 	opacity: 0.95;
