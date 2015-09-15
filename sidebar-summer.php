@@ -17,8 +17,7 @@ global $sidebar_a_acharger;
 	//Fashion Summer Business Program 
 	if ($sidebar_a_acharger['section']=="fashion_summer"){ 
 	?>
-	<div class="conteneur_bloc conteneur_bloc_gris_medium">
-			<div class="bloc bloc_gris_medium bloc_edito">
+			<div class="bloc">
 				<h4>Foreword</h4>
 				<p>Grab the chance to learn more about yourself, expand your perspective, your network and add an attention getting asset to your CV.</p>
 				<p>This two-week credit-awarding summer program taught in English will provide you with the opportunity to study something new; learn more about the fashion industry; 
@@ -31,15 +30,13 @@ global $sidebar_a_acharger;
 					
 				</div>
 			</div>
-	</div>
 	<?php
-	} //fin if(is_page page accueil des MSc
+	} //fin Fashion Summer Business Program
 	?>
 	<?php
     //French Culture
     if ($sidebar_a_acharger['section']=="french_culture"){ 
     ?>
-    <div class="conteneur_bloc conteneur_bloc_gris_medium">
             <div class="bloc bloc_gris_medium bloc_edito">
                 <h4>Foreword</h4>
                 <p>Studying for a month in Paris will be an unforgettable cultural and educational experience. We will look forward to you joining us on this year's Summer French Culture Spring Session and to making your time in France as rewarding and as enjoyable as possible.</p>
@@ -49,17 +46,13 @@ global $sidebar_a_acharger;
                     Associate Director - International Relations
                 </div>
             </div>
-    </div>
-    
         
-    <div class="conteneur_bloc conteneur_bloc_gris_fonce">
         <div class="bloc bloc_gris_fonce bloc_contact">
-            <h4 style="margin-bottom:20px;">Contact</h4>
-            <a href="mailto:m.vazquez@ieseg.fr" target="_blank" title="Contact Mrs. Marta VAZQUEZ">Mrs. Marta VAZQUEZ</a>
-            <a href="mailto:m.vazquez@ieseg.fr" target="_blank" title="Contact Mrs. Marta VAZQUEZ" class="lien_mail"><span></span>m.vazquez@ieseg.fr</a>
+            <h4>Contact</h4>
+            Mrs. Marta VAZQUEZ</a><br />
+            <a href="mailto:m.vazquez@ieseg.fr" target="_blank" title="Contact Mrs. Marta VAZQUEZ" class="btn">m.vazquez@ieseg.fr</a>
         </div>
-    </div>
     <?php
-    } //fin if(is_page
+    } //fin French Culture
     ?>
 </div><!-- #content-sidebar -->

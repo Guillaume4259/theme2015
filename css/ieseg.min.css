@@ -1078,6 +1078,10 @@ a:hover div.btn > .picto-photos {
 	background-color: rgba(255,255,255,0.95);
 }
 
+.overview-intro ul{
+	list-style-position:inside;
+}
+
 .rub-exec .overview-intro {
 	border-top: 4px solid #cc2a45;
 }
