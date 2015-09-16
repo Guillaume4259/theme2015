@@ -156,8 +156,12 @@ include('includes/test-current-page.php');
     </div>
     <div class="container-fluid container-1600">
         <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 padding-top-20 foundry_demi text-center">
+                Our alumni often describe their experience as unforgettable and fulfilling, academically, professionally and personally. <br>Meet some of our graduates and current students and find out more about their experience at IÉSEG. 
+                </div>
+        </div>
+        <div class="row">
         <div class="col-sm-12">
-
         <div class="proghome-testimonials">            
 			<?php
                 $args = array(
@@ -226,7 +230,6 @@ include('includes/test-current-page.php');
                     _e("No testimonial for this program","ieseg2015");
                 }
                 ?>
-     
         </div>
     </div>
     	</div>
@@ -234,11 +237,10 @@ include('includes/test-current-page.php');
         <?php
 			 wp_reset_postdata();
 		?>
-            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', $id_page_testimonials, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn btn-gris col-sm-2 col-sm-offset-5"><?php echo __("All testimonials about","ieseg2015")." ".get_the_title();  ?></a>	
+            <a href="<?php echo get_page_link(apply_filters( 'wpml_object_id', $id_page_testimonials, 'page' ));?>" title="<?php _e('All testimonials', 'ieseg2015');?>" class="btn btn-gris col-sm-2 col-sm-offset-5"><?php echo __("All testimonials about the","ieseg2015")." ".get_the_title();  ?></a>	
         </div>
     </div>
 </section>
-
 <!--End Témoignages-->
 
 <?php
