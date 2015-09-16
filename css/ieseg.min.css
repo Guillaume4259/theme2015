@@ -992,6 +992,12 @@ a:hover div.btn > .picto-photos {
 	position: relative;
 }
 
+.background-bloombergroom {
+	background: url("../images/fond-bloomberg.jpg") repeat top;
+	background-size: cover;
+	position: relative;
+}
+
 
 .transparent-white {
 	background: rgba(255, 255, 255, 0.9);
