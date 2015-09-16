@@ -128,7 +128,7 @@ li.rub-ecole.ubermenu-item.ubermenu-item-level-1 > a,
 }
 
 .txt-orange1, .rub-programmes h2, .rub-programmes .menu-gauche li.current-menu-item>a, .rub-programmes #breadcrumbs a,
-li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a,
+li.rub-programmes.ubermenu-item.ubermenu-item-level-1 > a, .ubermenu li.rub-programmes li.ubermenu-item-object-ubermenu-custom a,
 .rub-programmes .btn
 {
 	color:#ffc20e;
@@ -226,7 +226,6 @@ li.rub-services.ubermenu-item.ubermenu-item-level-1 > a,
 }
 
 .txt-rouge, .rub-exec h2, .rub-exec .menu-gauche li.current-menu-item>a, .rub-exec #breadcrumbs a,
-li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a,
 .rub-exec .btn
 {
 	color:#cc2a45;
@@ -236,7 +235,7 @@ li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a,
 	background-color: rgba(204, 42, 69, 0.65);
 }
 
-.rub-exec h3{
+.rub-exec h3,li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a{
 	color:#e37161;
 }
 
@@ -250,14 +249,12 @@ li.rub-exec.ubermenu-item.ubermenu-item-level-1 > a,
 
 /*--Enseignement et recherche--*/
 .bg-violet,.ubermenu .ubermenu-item-level-0.rub-enseignants > a:hover, .ubermenu-item-level-0.rub-enseignants.ubermenu-current-menu-ancestor > a,
-.ubermenu-item-level-0.rub-enseignants.ubermenu-current-menu-item > a,
 .rub-enseignants .btn:hover, .rub-enseignants .bloc-information
 {
 	background:#a67db8 ;	
 }
 
 .txt-violet, .rub-enseignants h2, .rub-enseignants .menu-gauche li.current-menu-item>a, .rub-enseignants #breadcrumbs a,
-li.rub-enseignants.ubermenu-item.ubermenu-item-level-1 > a,
 .rub-enseignants .btn
 {
 	color:#a67db8;
@@ -267,7 +264,7 @@ li.rub-enseignants.ubermenu-item.ubermenu-item-level-1 > a,
 	background-color: rgba(166, 125, 184, 0.65);
 }
 
-.rub-enseignants h3{
+.rub-enseignants h3,li.rub-enseignants.ubermenu-item.ubermenu-item-level-1 > a{
 	color:#cab1d4;
 }
 
@@ -523,14 +520,26 @@ li.rub-dre.ubermenu-item.ubermenu-item-level-1 > a,
 
 .ubermenu .ubermenu-item.ubermenu-item-level-1 > a{
   color:#fdc300;
+  /*border-bottom:1px solid #fff;*/
 }
 
 .ubermenu .ubermenu-item.ubermenu-item-level-1 > a span{
-  /*background:red;*/
+  padding-bottom:5px;
+  border-bottom:1px solid #b0b0b0;
+  display:block;
+}
+
+.ubermenu .ubermenu-item.ubermenu-item-level-1 > a{
+  padding-bottom:0;
+}
+
+.ubermenu .ubermenu-item.ubermenu-item-level-1 > a + ul{
+  padding-top:0;
 }
 
 .ubermenu .ubermenu-item.ubermenu-item-level-2 > a{
   color:#fff;
+  padding-left:30px !important
 }
 
 .ubermenu .ubermenu-item .ubermenu-submenu-drop{
