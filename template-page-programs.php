@@ -156,7 +156,7 @@ include('includes/test-current-page.php');
     </div>
     <div class="container-fluid container-1600">
         <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 padding-top-20 foundry_demi text-center">
+                <div class="col-sm-10 col-sm-offset-1 padding-top-20 foundry_light text-center">
                 Our alumni often describe their experience as unforgettable and fulfilling, academically, professionally and personally. <br>Meet some of our graduates and current students and find out more about their experience at IÉSEG. 
                 </div>
         </div>
