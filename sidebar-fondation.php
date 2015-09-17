@@ -43,8 +43,10 @@ global $sidebar_a_acharger;
         
         <img src="<?php echo get_template_directory_uri().'/images/fondation/gderendinger.jpg' ;?>" class="alignleft" alt="Guillaume de RENDINGER"><strong>Guillaume de RENDINGER</strong>, <br />
         Délégué Général de la Fondation IÉSEG
-        <br />
-      <a href="mailto:fondation@ieseg.fr" target="_blank" title="Contacter Guillaume de RENDINGER" class="btn">fondation@ieseg.fr</a>
+        <br /><br />
+        <div class="text-center">
+      		<a href="mailto:fondation@ieseg.fr" target="_blank" title="Contacter Guillaume de RENDINGER" class="btn">fondation@ieseg.fr</a>
+      	</div>
      </div>
 
 </div><!-- #content-sidebar -->

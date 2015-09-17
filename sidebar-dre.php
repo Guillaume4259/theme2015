@@ -54,7 +54,9 @@ $args =
      <?php
 	  $id_rub_dre = intval(apply_filters('wpml_object_id', 55, 'events-category')); //obligé de faire un intval pour convertir l'id en int
 	 ?>
-     <a href="<?php echo get_term_link($id_rub_dre,'events-category')?>" title="<?php _e('All events', 'ieseg2015')?>" class="btn"><?php _e('All events', 'ieseg2015')?></a>
+    <div class="text-center">
+     	<a href="<?php echo get_term_link($id_rub_dre,'events-category')?>" title="<?php _e('All events', 'ieseg2015')?>" class="btn"><?php _e('All events', 'ieseg2015')?></a>
+	</div>
  </div>
  <?php
  }

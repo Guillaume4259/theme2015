@@ -25,6 +25,8 @@ global $sidebar_a_acharger;
     </div>
     <h4>La Fondation IÉSEG</h4>
     Vous pouvez également soutenir l'École grâce à la fondation IÉSEG.<br /><br />
-    <a href="<?php bloginfo('url');?>/a-propos-de-lieseg/fondation-ieseg/" title="En savoir +" class="btn">En savoir +</a>
+    <div class="text-center">
+    	<a href="<?php bloginfo('url');?>/a-propos-de-lieseg/fondation-ieseg/" title="En savoir +" class="btn">En savoir +</a>
+    </div>
 </div>
 </div><!-- #content-sidebar -->

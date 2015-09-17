@@ -49,8 +49,10 @@ global $sidebar_a_acharger;
         
         <div class="bloc bloc_gris_fonce bloc_contact">
             <h4>Contact</h4>
-            Mrs. Marta VAZQUEZ</a><br />
-            <a href="mailto:m.vazquez@ieseg.fr" target="_blank" title="Contact Mrs. Marta VAZQUEZ" class="btn">m.vazquez@ieseg.fr</a>
+            Mrs. Marta VAZQUEZ</a><br /><br />
+            <div class="text-center">
+            	<a href="mailto:m.vazquez@ieseg.fr" target="_blank" title="Contact Mrs. Marta VAZQUEZ" class="btn">m.vazquez@ieseg.fr</a>
+            </div>
         </div>
     <?php
     } //fin French Culture

@@ -88,7 +88,9 @@ if ($categories):
         }
     ?>
     </ul>
-    <a href="<?php echo get_post_type_archive_link($custom_post_type_slug); ?>" title="<?php echo $str_btn_all ?>" class="btn"><?php echo $str_btn_all ?></a>
+    <div class="text-center">
+    	<a href="<?php echo get_post_type_archive_link($custom_post_type_slug); ?>" title="<?php echo $str_btn_all ?>" class="btn"><?php echo $str_btn_all ?></a>
+    </div>
 </div>
 <?php 
 endif; 

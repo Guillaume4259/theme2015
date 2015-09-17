@@ -22,9 +22,11 @@ if ($sidebar_a_acharger['section']=="campus-lille-fr"){
 			<span>3 rue de la Digue <br />
 				59000 Lille
 			</span><br />
-			<a class="btn" title="Cliquer pour ouvrir la carte dans une nouvelle fenêtre" target="_blank" href="https://www.google.com/maps?ll=50.634972,3.0481&z=14&t=m&hl=fr&gl=US&mapclient=embed&q=3+Rue+de+la+Digue+59800+Lille+France">
-				Agrandir le plan
-			</a>
+            <div class="text-center">
+                <a class="btn" title="Cliquer pour ouvrir la carte dans une nouvelle fenêtre" target="_blank" href="https://www.google.com/maps?ll=50.634972,3.0481&z=14&t=m&hl=fr&gl=US&mapclient=embed&q=3+Rue+de+la+Digue+59800+Lille+France">
+                    Agrandir le plan
+                </a>
+            </div>
 	</div>
 
 	<div class="bloc">
@@ -33,9 +35,11 @@ if ($sidebar_a_acharger['section']=="campus-lille-fr"){
         </div>
 			<h4>Visite virtuelle</h4>
 			<span>Depuis chez vous, visitez notre campus de Lille grâce à la visite virtuelle qui vous est proposée.</span><br />
-			<a class="btn" title="Cliquer pour accèder à la visite virtuelle du campus de Lille" target="_blank" href="https://walkinto.in/tour/bytz02hsVgZJeFGA2nsEl">
-				Accéder à la visite virtuelle
-			</a>
+            <div class="text-center">
+                <a class="btn" title="Cliquer pour accèder à la visite virtuelle du campus de Lille" target="_blank" href="https://walkinto.in/tour/bytz02hsVgZJeFGA2nsEl">
+                    Accéder à la visite virtuelle
+                </a>
+            </div>
 	</div>
 <?php
 } //fin campus-lille FR
@@ -54,9 +58,11 @@ if ($sidebar_a_acharger['section']=="campus-paris-fr"){
 				Socle de la Grande Arche<br />
 				92044 Paris la Défense
 			</span><br />
-			<a class="btn" title="Cliquer pour ouvrir la carte dans une nouvelle fenêtre" target="_blank" href="https://www.google.com/maps?ll=48.885543,2.209548&z=13&t=m&hl=fr-FR&gl=US&mapclient=embed&cid=44418648437117820">
-				Agrandir le plan
-			</a>
+            <div class="text-center">
+                <a class="btn" title="Cliquer pour ouvrir la carte dans une nouvelle fenêtre" target="_blank" href="https://www.google.com/maps?ll=48.885543,2.209548&z=13&t=m&hl=fr-FR&gl=US&mapclient=embed&cid=44418648437117820">
+                    Agrandir le plan
+                </a>
+            </div>
 		</div>
 
 		<div class="bloc">
@@ -65,17 +71,21 @@ if ($sidebar_a_acharger['section']=="campus-paris-fr"){
 			</div>
 			<h4>Visite virtuelle</h4>
 			<span>Depuis chez vous, visitez notre campus de Paris grâce à la visite virtuelle qui vous est proposée.</span><br />
-			<a class="btn" title="Cliquer pour ouvrir la carte dans une nouvelle fenêtre" target="_blank" href="https://walkinto.in/tour/eJgUHAPipelkle8S0Do6e">
-				Accéder à la visite virtuelle
-			</a>
+            <div class="text-center">
+                <a class="btn" title="Cliquer pour ouvrir la carte dans une nouvelle fenêtre" target="_blank" href="https://walkinto.in/tour/eJgUHAPipelkle8S0Do6e">
+                    Accéder à la visite virtuelle
+                </a>
+            </div>
 		</div>
 
 		<div class="bloc">
 			<h4>Plan du campus de La Défense</h4>
 			<span>Répérez-vous plus facilement sur la campus de Paris.</span> <br />
-			<a class="btn" title="Plan du campus de La Défense" target="_blank" href="<?php bloginfo('url');?>/wp-content/uploads/plan-IESEG-campus-Paris.pdf">
-				Voir le plan
-			</a>
+            <div class="text-center">
+                <a class="btn" title="Plan du campus de La Défense" target="_blank" href="<?php bloginfo('url');?>/wp-content/uploads/plan-IESEG-campus-Paris.pdf">
+                    Voir le plan
+                </a>
+            </div>
 		</div>
 <?php
 } //fin Campus Paris FR
@@ -90,17 +100,21 @@ if ($sidebar_a_acharger['section']=="presse-fr"){
 				Attaché de presse<br />
 				Tél.: +33 (0)3.20.54.58.92
 			</span><br /><br />
-			<a class="btn" target="_blank" href="mailto:a.miller@ieseg.fr">
-				a.miller@ieseg.fr
-			</a>
+            <div class="text-center">
+                <a class="btn" target="_blank" href="mailto:a.miller@ieseg.fr">
+                    a.miller@ieseg.fr
+                </a>
+            </div>
 		</div>
 
 		<div class="bloc">
 			<h4>Dossier de presse</h4>
 			<br />
-			<a class="btn" title="Téléchargez le Dossier de Presse" target="_blank" href="<?php bloginfo('url');?>/wp-content/uploads/DP_FR_sept2014_andrew2.pdf">
-				Téléchargez le Dossier de Presse
-			</a>
+            <div class="text-center">
+                <a class="btn" title="Téléchargez le Dossier de Presse" target="_blank" href="<?php bloginfo('url');?>/wp-content/uploads/DP_FR_sept2014_andrew2.pdf">
+                    Téléchargez le Dossier de Presse
+                </a>
+            </div>
 		</div>
 <?php
 } //fin Presse FR
