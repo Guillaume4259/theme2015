@@ -2439,7 +2439,7 @@ font-weight: bold;
 }
 
 .header-unit {
-  height: 400px;
+  height: 300px;
   position: relative;
   padding: 20px;
 }
@@ -2494,7 +2494,9 @@ video.fillWidth {
 	left:0;
 	position:absolute;
 	z-index:1;
-	background-color:rgba(0,0,0,0.40);	
+	background-image:url(../images/img-business-school-france.jpg);
+	background-size:cover;
+	background-position:center center;
 }
 
 .bloc-news-home{
@@ -2859,6 +2861,12 @@ section.container-campus{
 	.header-unit {
 	  height: 700px;
 	}
+	
+	.video-cover{
+		background-image:none;
+		background-color:rgba(0,0,0,0.40);	
+	}
+	
 	#container-img-une{
 		height:500px;
 	}
