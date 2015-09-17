@@ -17,7 +17,7 @@
 <div class="center-col"> 
 <div class="header-unit">
     <div id="container-video" >
-        <video autoplay loop class="fillWidth">
+        <video autoplay loop class="fillWidth hidden-xs">
         <source src="<?php echo get_template_directory_uri() ;?>/videos/home.mp4" type="video/mp4"/>
         <source src="<?php echo get_template_directory_uri() ;?>/videos/home.ogg" type="video/ogg"/>
         <source src="<?php echo get_template_directory_uri() ;?>/videos/home.webm" type="video/webm"/>

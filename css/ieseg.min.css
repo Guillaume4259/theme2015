@@ -1354,6 +1354,7 @@ tbody.show_all_courses > tr > td {
 .click_to_show_all_courses {
 	cursor: pointer;
 }
+
 .read_on {
 	cursor: pointer;
 	width: 35px;
@@ -1378,6 +1379,7 @@ tbody.show_all_courses > tr > td {
     text-align: center;
     width: 35px;
 }
+
 .tableau_programs_no_course_description .read_on, tbody.show_all_courses {
 	display: none
 }
@@ -1387,19 +1389,21 @@ th.click_to_show_all_courses:hover>div.read_more {
 	color: #6d7f92;
 	vertical-align:middle;
 }
+
 .tableau_programs tr {
 	margin-top: 0;
 }
+
 td.different_tracks {
 	background-color: #98a5b2!important;
 	color: #fff;
 }
+
 div.course_title:hover>div.read_on {
 	background: #6d7f92;
 	border: 1px solid #f0f2f4;
 	color: #f0f2f4;
 }
-
 
 .page-template-template-page-programs footer, .page-template-template-programs-default footer {
 	margin: 0;
@@ -1409,11 +1413,9 @@ div.course_title:hover>div.read_on {
 	background: #575756;
 }
 
-
 .container-titre-section-programmes-gris .bx-viewport {
 	height: 100px;
 }
-
 
 .container-titre-section-programmes-gris > h2, .container-titre-section-programmes-jaune > h2 {
 	color: inherit;
@@ -1421,7 +1423,6 @@ div.course_title:hover>div.read_on {
 	border: 0px;
 	margin-top: 12px;
 }
-
 
 .container-news-events {
 	background: #f4f2ea;
@@ -1925,9 +1926,10 @@ h1{
 }
 
 #container-video h1{
+	font-size:25px;
 	position:relative;
 	z-index:2;
-	margin:100px 0 0 20px;
+	margin:30px 0 0 20px;
 }
 
 #container-video h1 span{
@@ -2439,7 +2441,7 @@ font-weight: bold;
 }
 
 .header-unit {
-  height: 300px;
+  height: 350px;
   position: relative;
   padding: 20px;
 }
@@ -2737,6 +2739,10 @@ section.container-campus{
 @media (min-width: 768px) { 
 	h1{
 		font-size: 50px;
+	}
+	
+	#container-video h1{
+		margin:100px 0 0 20px;
 	}
 	
 	#container-img-une{
