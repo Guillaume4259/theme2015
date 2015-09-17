@@ -21,6 +21,7 @@
         <source src="<?php echo get_template_directory_uri() ;?>/videos/home.mp4" type="video/mp4"/>
         <source src="<?php echo get_template_directory_uri() ;?>/videos/home.ogg" type="video/ogg"/>
         <source src="<?php echo get_template_directory_uri() ;?>/videos/home.webm" type="video/webm"/>
+        <img src="<?php echo get_template_directory_uri().'/images/img-business-school-france.jpg' ;?>" alt="">
         <?php _e("Your browser does not support the video tag. Please upgrade your browser.","ieseg2015") ?>
         </video>
         <div class="container-fluid container-1600">

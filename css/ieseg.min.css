@@ -1665,14 +1665,15 @@ div.course_title:hover>div.read_on {
 	background: rgba(255, 255, 255, 0.95);
 	border-top: 4px solid #ffc20e !important;
 	width: 100%;
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 .rub-exec .keyfacts{
 	border-top: 4px solid #cc2a45 !important;
 }
 
-.keyfacts .table tbody tr th {	text-transform: uppercase;
+.keyfacts .table tbody tr th {	
+	text-transform: uppercase;
 	font-weight: 100;
 	font-size: 18px;
 }
@@ -2438,7 +2439,7 @@ font-weight: bold;
 }
 
 .header-unit {
-  height: 700px;
+  height: 400px;
   position: relative;
   padding: 20px;
 }
@@ -2855,6 +2856,9 @@ section.container-campus{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	.header-unit {
+	  height: 700px;
+	}
 	#container-img-une{
 		height:500px;
 	}
