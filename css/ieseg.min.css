@@ -2484,7 +2484,7 @@ video.fillWidth {
 .container-boutons{
 	width:100%;
 	position:absolute;
-	top:75%;
+	top:53%;
 	text-align:center;
 	z-index:2;
 }
@@ -2737,12 +2737,16 @@ section.container-campus{
 /*----------------RESPONSIVE----------------------------*/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-	h1{
+	h1, #container-video h1{
 		font-size: 50px;
 	}
 	
 	#container-video h1{
 		margin:100px 0 0 20px;
+	}
+	
+	.container-boutons{
+		top:75%;
 	}
 	
 	#container-img-une{
