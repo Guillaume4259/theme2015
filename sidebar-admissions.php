@@ -13,7 +13,7 @@ if ( ! is_active_sidebar( 'sidebar-2' ) ) {
 global $sidebar_a_acharger;
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
-					
+	<div class="row">					
 <?php
 //SIDEBAR page rencontrez nous
 if ($sidebar_a_acharger['section']=="rencontrez-nous"){
@@ -348,4 +348,5 @@ if ($sidebar_a_acharger['section']=="adm-master-apprentissage"){
 <?php
 } //fin if(is_page
 ?>
+</div>
 </div><!-- #content-sidebar -->

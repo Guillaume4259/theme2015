@@ -1851,7 +1851,7 @@ aside .bloc h4{
 
 /*blocs de sidebar*/
 aside .bloc{
-	margin-bottom:35px;
+	margin:0 0 35px;
 }
 
 .bloc-other-testimonials{

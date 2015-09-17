@@ -52,7 +52,7 @@
         <?php 
 		include('includes/test-current-page.php'); 
 		?>
-        <div class="col-sm-6 center-col">
+        <div class="col-sm-9 col-md-6 center-col">
         	<div class="row">
 		<?php
 		$i_news=1;
@@ -96,7 +96,7 @@
         </div>
         
        
-			<aside class="col-sm-3 right-col">
+			<aside class="col-sm-12 col-md-3 right-col">
       			<?php get_sidebar( 'news' ); ?>
 		
 			</aside>

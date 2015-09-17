@@ -10,7 +10,8 @@
 global $sidebar_a_acharger;
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
-
+	<div class="row">
+<div class="col-sm-4 col-md-12">
     <div class="bloc">
         <h4>Faire un don</h4>
         3 moyens sont à votre disposition pour effectuer un don <br /><br />
@@ -27,7 +28,8 @@ global $sidebar_a_acharger;
             </div>
         </div>
     </div>
-
+</div>
+<div class="col-sm-4 col-md-12">
     <div class="bloc">
     	<h4>Plaquette</h4>
         <div class="container-fluid">
@@ -37,7 +39,8 @@ global $sidebar_a_acharger;
         </div>  
         
     </div>
-
+</div>
+<div class="col-sm-4 col-md-12">
     <div class="bloc">
         <h4>Contact</h4>
         
@@ -48,5 +51,6 @@ global $sidebar_a_acharger;
       		<a href="mailto:fondation@ieseg.fr" target="_blank" title="Contacter Guillaume de RENDINGER" class="btn">fondation@ieseg.fr</a>
       	</div>
      </div>
-
+</div>
+</div>
 </div><!-- #content-sidebar -->

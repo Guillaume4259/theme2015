@@ -14,6 +14,7 @@ global $sidebar_a_acharger;
 
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+	<div class="row">
 <?php
 //ID de la taxonomie en cours
 $id_current_taxo = get_queried_object()->term_id;
@@ -73,23 +74,25 @@ $categories = get_categories( $args );
     
 if ($categories):					
 ?> 
-<div class="bloc">
-    <h4><?php echo $str_titre_bloc ?></h4>
-    <ul>
-    <?php
-        foreach ($categories as $category) {
-            $class='';
-            if($category->term_id  == $id_current_taxo || $category->term_id == $categories_du_post[0]->term_id){
-                $class = 'class="font-bold"';
+<div class="col-sm-4 col-md-12">
+    <div class="bloc">
+        <h4><?php echo $str_titre_bloc ?></h4>
+        <ul>
+        <?php
+            foreach ($categories as $category) {
+                $class='';
+                if($category->term_id  == $id_current_taxo || $category->term_id == $categories_du_post[0]->term_id){
+                    $class = 'class="font-bold"';
+                }
+        ?>
+            <li <?php echo $class ?>><a href="<?php echo get_term_link($category) ; ?>" title="<?php echo $category->cat_name ; ?>"><?php echo $category->cat_name  ; ?></a></li>
+        <?php
             }
-    ?>
-        <li <?php echo $class ?>><a href="<?php echo get_term_link($category) ; ?>" title="<?php echo $category->cat_name ; ?>"><?php echo $category->cat_name  ; ?></a></li>
-    <?php
-        }
-    ?>
-    </ul>
-    <div class="text-center">
-    	<a href="<?php echo get_post_type_archive_link($custom_post_type_slug); ?>" title="<?php echo $str_btn_all ?>" class="btn"><?php echo $str_btn_all ?></a>
+        ?>
+        </ul>
+        <div class="text-center">
+            <a href="<?php echo get_post_type_archive_link($custom_post_type_slug); ?>" title="<?php echo $str_btn_all ?>" class="btn"><?php echo $str_btn_all ?></a>
+        </div>
     </div>
 </div>
 <?php 
@@ -115,24 +118,27 @@ $args =
  $postslist = get_posts( $args );
  if (!empty($postslist)):
 ?>
-<div class="bloc">
-    <h4><?php _e("In the same category","ieseg2015") ?></h4>
-    <ul>
-    <?php
-	foreach ( $postslist as $post ) :
-		setup_postdata( $post ); 
-		$id=$post->ID;
-	  ?>
-		<li>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-        </li>
-    <?php
-        endforeach;
-    ?>
-    </ul>
-    <a href="<?php echo get_post_type_archive_link($custom_post_type_slug); ?>" title="<?php echo $str_btn_all ?>" class="btn"><?php echo $str_btn_all ?></a>
-</div> 
+<div class="col-sm-4 col-md-12">
+    <div class="bloc">
+        <h4><?php _e("In the same category","ieseg2015") ?></h4>
+        <ul>
+        <?php
+        foreach ( $postslist as $post ) :
+            setup_postdata( $post ); 
+            $id=$post->ID;
+          ?>
+            <li>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+            </li>
+        <?php
+            endforeach;
+        ?>
+        </ul>
+        <a href="<?php echo get_post_type_archive_link($custom_post_type_slug); ?>" title="<?php echo $str_btn_all ?>" class="btn"><?php echo $str_btn_all ?></a>
+    </div>
+</div>
 <?php 
 endif;
-endif; ?>               
+endif; ?>   
+</div>            
 </div><!-- #content-sidebar -->

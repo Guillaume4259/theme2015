@@ -13,6 +13,7 @@ if ( ! is_active_sidebar( 'sidebar-2' ) ) {
 global $sidebar_a_acharger;
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+	<div class="row">
 					<?php
 					//page accueil des MSc
 					if ($sidebar_a_acharger['section']=="msc_accueil"){
@@ -259,7 +260,7 @@ Academic Director, Negotiation Department"/>
 					<a href="https://application.ieseg.fr/" target="_blank" title="Apply now" class="btn_apply"></a>
 						
 					<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-						<div class="bloc bloc_gris_fonce bloc_contact">
+						<div class="bloc">
 							<h4 style="margin-bottom:20px;">Contact</h4>
 							<a href="mailto:mfm@ieseg.fr" target="_blank" title="Contact Mrs. Noemie GONZALEZ">Mrs. Noemie GONZALEZ</a>
 							<a href="mailto:mfm@ieseg.fr" target="_blank" title="Contact Mrs. Noemie GONZALEZ" class="lien_mail"><span></span>mfm@ieseg.fr</a>
@@ -268,4 +269,5 @@ Academic Director, Negotiation Department"/>
 					<?php
 					} //fin MSc Fashion Management
 					?>
+</div>
 </div><!-- #content-sidebar -->

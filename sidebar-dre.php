@@ -11,6 +11,7 @@
 global $sidebar_a_acharger;
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+	<div class="row">
 <?php
 $args = 
 		array(
@@ -30,35 +31,38 @@ $args =
 		);
  $postslist = get_posts( $args );
  if (!empty($postslist)){?>
-<div class="bloc bloc-agenda">
-	<h4><?php _e('Agenda', 'ieseg2015'); ?></h4>
-
- 
- <?php
-	foreach ( $postslist as $post ) :
-		setup_postdata( $post ); 
-		$id=$post->ID;
-	  ?>
-		<div class="container-event-agenda">
-        	<time class="" datetime="<?php echo date('Y',get_post_meta($id,'wpcf-start-date',true)).'-'.date('m',get_post_meta($id,'wpcf-start-date',true)).'-'.date('d',get_post_meta($id,'wpcf-start-date',true)); ?>"> 
-                 <span class="glyphicon glyphicon-calendar"></span> 
-					<?php echo strftime('%d %B %Y',get_post_meta($id,'wpcf-start-date',true)).' - '.get_post_meta($id,'wpcf-city-town', true) ;?>
-             
-			</time>
-        	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>	
-		</div>
-	<?php
-	endforeach;
-	?>
-
+<div class="col-sm-4 col-md-12">
+    <div class="bloc bloc-agenda">
+        <h4><?php _e('Agenda', 'ieseg2015'); ?></h4>
+    
+     
      <?php
-	  $id_rub_dre = intval(apply_filters('wpml_object_id', 55, 'events-category')); //obligé de faire un intval pour convertir l'id en int
-	 ?>
-    <div class="text-center">
-     	<a href="<?php echo get_term_link($id_rub_dre,'events-category')?>" title="<?php _e('All events', 'ieseg2015')?>" class="btn"><?php _e('All events', 'ieseg2015')?></a>
-	</div>
+        foreach ( $postslist as $post ) :
+            setup_postdata( $post ); 
+            $id=$post->ID;
+          ?>
+            <div class="container-event-agenda">
+                <time class="" datetime="<?php echo date('Y',get_post_meta($id,'wpcf-start-date',true)).'-'.date('m',get_post_meta($id,'wpcf-start-date',true)).'-'.date('d',get_post_meta($id,'wpcf-start-date',true)); ?>"> 
+                     <span class="glyphicon glyphicon-calendar"></span> 
+                        <?php echo strftime('%d %B %Y',get_post_meta($id,'wpcf-start-date',true)).' - '.get_post_meta($id,'wpcf-city-town', true) ;?>
+                 
+                </time>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>	
+            </div>
+        <?php
+        endforeach;
+        ?>
+    
+         <?php
+          $id_rub_dre = intval(apply_filters('wpml_object_id', 55, 'events-category')); //obligé de faire un intval pour convertir l'id en int
+         ?>
+        <div class="text-center">
+            <a href="<?php echo get_term_link($id_rub_dre,'events-category')?>" title="<?php _e('All events', 'ieseg2015')?>" class="btn"><?php _e('All events', 'ieseg2015')?></a>
+        </div>
+     </div>
  </div>
  <?php
  }
  ?>	
+</div>
 </div><!-- #content-sidebar -->

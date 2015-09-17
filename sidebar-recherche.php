@@ -13,6 +13,7 @@ if ( ! is_active_sidebar( 'sidebar-2' ) ) {
 global $sidebar_a_acharger;
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+	<div class="row">
 					<?php
 					//12th Corporate FinanceDay
 					if ($sidebar_a_acharger['section']=="12th_corporate"){ 
@@ -193,6 +194,7 @@ if ($sidebar_a_acharger['section']=="2015_ilm"){
 //Recherche FR
 if ($sidebar_a_acharger['section']=="recherche-fr"){
 ?>
+<div class="col-sm-4 col-md-12">
 <div class="bloc">
 	<h4><?php _e('Research Agenda', 'ieseg2015'); ?></h4>
 <?php
@@ -243,8 +245,9 @@ $args =
  }
  ?>	
 </div>
+</div>
 <?php
 } //Fin Recherche FR
 ?>
-                    				
+</div>                 				
 </div><!-- #content-sidebar -->

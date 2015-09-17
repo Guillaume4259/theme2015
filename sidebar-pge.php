@@ -18,7 +18,7 @@ global $sidebar_a_acharger;
 if(is_page(array($icl_object_id_page_pge_3eme_annee, $page_pge_3eme_annee->ID))){
 ?>
 <div class="conteneur_bloc conteneur_bloc_gris_medium">
-		<div class="bloc bloc_gris_medium bloc_edito">
+		<div class="bloc">
 			<h4>Live - Learn</h4>
 <p>Pour appréhender au mieux les défis du monde professionnel, l'IÉSEG développe
 un programme et une pédagogie adaptés aux challenges de l'entreprise. Dès la

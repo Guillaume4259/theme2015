@@ -45,7 +45,7 @@
 		include('includes/test-current-page.php'); 
 		
 		if (!empty($sidebar_a_acharger['global'])):?>
-        <div class="col-sm-6 center-col">
+        <div class="col-sm-9 col-md-6 center-col">
         <?php
 		else:
 		?>
@@ -65,7 +65,7 @@
         
         <?php
 		if (!empty($sidebar_a_acharger['global'])){?>
-			<aside class="col-sm-3 right-col">
+			<aside class="col-sm-12 col-md-3 right-col">
         <?php
 		}
 		

@@ -13,6 +13,7 @@ if ( ! is_active_sidebar( 'sidebar-2' ) ) {
 global $sidebar_a_acharger;
 ?>
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+<div class="row">
 <?php
 //Agenda FR et GB
 if ($sidebar_a_acharger['section']=="global-fr" || $sidebar_a_acharger['section']=="global-gb"){ 
@@ -35,6 +36,7 @@ $args =
 		);
  $postslist = get_posts( $args );
  if (!empty($postslist)){?>
+<div class="col-sm-4 col-md-12">
 <div class="bloc bloc-agenda">
 	<h4><?php _e('Agenda', 'ieseg2015'); ?></h4>
 
@@ -63,6 +65,7 @@ $args =
      	<a href="<?php echo get_term_link($id_rub_dre,'events-category')?>" title="<?php _e('All events', 'ieseg2015')?>" class="btn"><?php _e('All events', 'ieseg2015')?></a>
 	</div>
  </div>
+ </div>
  <?php
  }
 }//fin agenda FR GB
@@ -70,25 +73,27 @@ $args =
 //Global FR
 if ($sidebar_a_acharger['section']=="global-fr"){
  ?>	
-
-<div class="bloc">
-    <h4>Documents</h4>
-    <a href="http://issuu.com/ieseg/docs/i__seg_executive_education?e=3614770/9860701" target="_blank" title="Téléchargez le catalogue Formation Continue">Téléchargez le catalogue Formation Continue ></a>
-    <br /><br />
-    <a href="http://issuu.com/ieseg/docs/ieseg-emba" target="_blank" title="Téléchargez la brochure Executive MBA">Téléchargez la brochure Executive MBA ></a>
-    <br /><br />
-    <a href="http://issuu.com/ieseg/docs/executive_education_-_business-trip" target="_blank" title="Téléchargez la plaquette Learning Trip & Training Programs">Téléchargez la plaquette "Learning Trip & Training Programs" ></a>
-    <br /><br />
-</div>
-
-<div class="bloc">
-    <h4>Contact</h4>
-    Lille : &nbsp;&nbsp;03.20.29.62.27<br />
-    Paris : 01.55.91.98.02<br /><br />
-    <div class="text-center">
-        <a href="mailto:executive@ieseg.fr" target="_blank" title="Contacter le service Formation Continue" class="btn">executive@ieseg.fr</a>
+<div class="col-sm-4 col-md-12">
+    <div class="bloc">
+        <h4>Documents</h4>
+        <a href="http://issuu.com/ieseg/docs/i__seg_executive_education?e=3614770/9860701" target="_blank" title="Téléchargez le catalogue Formation Continue">Téléchargez le catalogue Formation Continue ></a>
+        <br /><br />
+        <a href="http://issuu.com/ieseg/docs/ieseg-emba" target="_blank" title="Téléchargez la brochure Executive MBA">Téléchargez la brochure Executive MBA ></a>
+        <br /><br />
+        <a href="http://issuu.com/ieseg/docs/executive_education_-_business-trip" target="_blank" title="Téléchargez la plaquette Learning Trip & Training Programs">Téléchargez la plaquette "Learning Trip & Training Programs" ></a>
+        <br /><br />
     </div>
-</div> 
+</div>
+<div class="col-sm-4 col-md-12">
+    <div class="bloc">
+        <h4>Contact</h4>
+        Lille : &nbsp;&nbsp;03.20.29.62.27<br />
+        Paris : 01.55.91.98.02<br /><br />
+        <div class="text-center">
+            <a href="mailto:executive@ieseg.fr" target="_blank" title="Contacter le service Formation Continue" class="btn">executive@ieseg.fr</a>
+        </div>
+    </div> 
+</div>
 <?php
 } //fin  Exec FR
 ?>
@@ -97,23 +102,26 @@ if ($sidebar_a_acharger['section']=="global-fr"){
 <?php
 //Global GB
 if ($sidebar_a_acharger['section']=="global-gb"){  
-?>	
-<div class="bloc">
-    <h4>Brochures</h4>
-    <a href="http://issuu.com/ieseg/docs/i__seg_executive_education?e=3614770/9860701" target="_blank" title="Executive Education catalog">Download Executive Education catalog ></a>
-    <br /><br />
-    <a href="http://issuu.com/ieseg/docs/ieseg-emba" target="_blank" title="Executive MBA Program">Download Executive MBA Program</a>
-    <br /><br />
-    <a href="http://issuu.com/ieseg/docs/executive_education_-_business-trip" target="_blank" title="Learning trip">Download Learning trip brochure</a>
-    <br /><br />
+?>
+<div class="col-sm-4 col-md-12">
+    <div class="bloc">
+        <h4>Brochures</h4>
+        <a href="http://issuu.com/ieseg/docs/i__seg_executive_education?e=3614770/9860701" target="_blank" title="Executive Education catalog">Download Executive Education catalog ></a>
+        <br /><br />
+        <a href="http://issuu.com/ieseg/docs/ieseg-emba" target="_blank" title="Executive MBA Program">Download Executive MBA Program</a>
+        <br /><br />
+        <a href="http://issuu.com/ieseg/docs/executive_education_-_business-trip" target="_blank" title="Learning trip">Download Learning trip brochure</a>
+        <br /><br />
+    </div>
 </div>
-
-<div class="bloc">
-    <h4>Contact</h4>
-    Lille : &nbsp;&nbsp;03.20.29.62.27<br />
-    Paris : 01.55.91.98.02<br /><br />
-    <div class="text-center">
-        <a href="mailto:executive@ieseg.fr" target="_blank" title="Contact Executive Education" class="lien_mail"><span></span>executive@ieseg.fr</a>
+<div class="col-sm-4 col-md-12">
+    <div class="bloc">
+        <h4>Contact</h4>
+        Lille : &nbsp;&nbsp;03.20.29.62.27<br />
+        Paris : 01.55.91.98.02<br /><br />
+        <div class="text-center">
+            <a href="mailto:executive@ieseg.fr" target="_blank" title="Contact Executive Education" class="lien_mail"><span></span>executive@ieseg.fr</a>
+        </div>
     </div>
 </div>
 
@@ -230,5 +238,5 @@ if ($sidebar_a_acharger['section']=="programme-direction-financiere" || $sidebar
 <?php
 } //fin PROGRAMME DIRECTION FINANCIERE
 ?>
-                    
+</div>               
 </div><!-- #content-sidebar -->
