@@ -448,3 +448,40 @@
         chart8.draw(data8, options);
       }
       
+<!-- PGE > Admission Master en Alternance > Profil des intégrés -->
+
+    google.setOnLoadCallback(drawChart9);
+
+      function drawChart9() {
+
+          var data9 = google.visualization.arrayToDataTable([
+              ['Title', 'Percentage'],
+              ['Licence éco gestion', 33],
+              ['DUT GEA', 22],
+              ['DUT TC', 35],
+              ['École de Commerce', 6],
+              ['Prépa ENS Cachan', 2],
+              ['Autre', 2],
+          ]);
+
+          var options = {
+              pieSliceText: 'percentage',
+              legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 16}, position: 'right'},
+              slices: {  
+                    0: {offset: 0.0, color: '#f7941e' },
+                    1: {offset: 0.0, color: '#f36f21' },
+                    2: {offset: 0.0, color: '#018990' },
+                    3: {offset: 0.0, color: '#014C50' },
+                    4: {offset: 0.0, color: '#939598' },
+                    5: {offset: 0.0, color: '#02D2DC' },
+              },
+              pieHole: 0.0,
+			  chartArea: {height: '800', width:'95%'},
+			  pieSliceTextStyle: {color: '#fff', fontSize: '12px', fontName: 'foundrysterling-boldregular'},
+			  tooltip: {textStyle: {color: '#636466'}, showColorCode: true, fontName: 'foundrysterling-lightregular', fontSize: '14px', text: 'percentage'},
+             };
+          var chart9 = new google.visualization.PieChart(document.getElementById('pge-alternance-profil'));
+
+          chart9.draw(data9, options);
+      }
+
