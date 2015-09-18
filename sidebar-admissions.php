@@ -19,7 +19,7 @@ global $sidebar_a_acharger;
 if ($sidebar_a_acharger['section']=="rencontrez-nous"){
 	if (ICL_LANGUAGE_CODE=="fr"){
 ?>							
-		
+<div class="col-sm-4 col-md-12">		
     <div class="bloc">
         <h4>Contact</h4>
         <em>Vous souhaitez rencontrer le service des admissions pour des informations sur :</em><br />
@@ -34,7 +34,8 @@ if ($sidebar_a_acharger['section']=="rencontrez-nous"){
         <strong>Admission en MSc </strong><br /> 
         <a href="mailto:admissions@ieseg.fr" target="_blank" class="lien_mail" style="margin-top:10px;">e.lagorsse@ieseg </a>
     </div>
-    
+ </div> 
+ <div class="col-sm-4 col-md-12">   
     <div class="bloc">
 		<div class="remove-margins">
 			<iframe width="100%" height="222" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=3%20rue%20de%20la%20digue%20lille&key=AIzaSyAFz4SPvq87AbAH5da_ewmDcXEkmfHO43k" allowfullscreen></iframe>
@@ -49,7 +50,8 @@ if ($sidebar_a_acharger['section']=="rencontrez-nous"){
                 </a>
             </div>
 	</div>
-    
+ </div>
+ <div class="col-sm-4 col-md-12">   
     <div class="bloc">
         <div class="remove-margins">
             <iframe width="100%" height="222" frameborder="0" style="border:0"
@@ -66,7 +68,7 @@ if ($sidebar_a_acharger['section']=="rencontrez-nous"){
             </a>
         </div>
 	</div>
-		
+</div>	
 <?php
 	}
 } //fin if(is_page
@@ -75,17 +77,21 @@ if ($sidebar_a_acharger['section']=="rencontrez-nous"){
 //SIDEBAR Admissions accueil, admissions Contact
 if ($sidebar_a_acharger['section']=="adm-accueil" || $sidebar_a_acharger['section']=="adm-contact"){
 	if (ICL_LANGUAGE_CODE=="fr"){
-?>							
-			<div class="bloc bloc_gris_medium bloc_contact">
-				<a href="https://application.ieseg.fr/InfoRequest?lcid=1036" target="_blank" title="Demander la brochure" style="font-size:13px;font-weight:bold;">Demander la brochure ></a>
-			</div>							
+?>	
+<div class="col-sm-4 col-md-12">						
+    <div class="bloc">
+        <a href="https://application.ieseg.fr/InfoRequest?lcid=1036" target="_blank" title="Demander la brochure" style="font-size:13px;font-weight:bold;">Demander la brochure ></a>
+    </div>	
+</div>						
 <?php
 	}
 	else{
-?>					
-			<div class="bloc bloc_gris_medium bloc_contact">
-				<a href="https://application.ieseg.fr/InfoRequest?lcid=2057" target="_blank" title="Download brochure" style="font-size:13px;font-weight:bold;">Download brochure ></a>
-			</div>
+?>
+<div class="col-sm-4 col-md-12">					
+    <div class="bloc">
+        <a href="https://application.ieseg.fr/InfoRequest?lcid=2057" target="_blank" title="Download brochure" style="font-size:13px;font-weight:bold;">Download brochure ></a>
+    </div>
+</div>
 <?php
 	}
 ?>
@@ -98,21 +104,21 @@ if ($sidebar_a_acharger['section']=="adm-accueil" || $sidebar_a_acharger['sectio
 if ($sidebar_a_acharger['section']=="adm-1ere-annee"){
 	if (ICL_LANGUAGE_CODE=="fr"){
 ?>
-		<div class="conteneur_bloc conteneur_bloc_gris_medium">
+		<div class="col-sm-4 col-md-12">
 			<div class="bloc bloc_gris_medium bloc_contact">
 				<a href="https://application.ieseg.fr/InfoRequest?lcid=1036" target="_blank" title="Demander la brochure" style="font-size:13px;font-weight:bold;">Demander la brochure ></a>
 			</div>
 		</div>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce conteneur_brochure_acces">
-			<div class="bloc bloc_gris_fonce bloc_contact">
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
 				<a href="http://www.concours-acces.com/public/Plaquette_ACCES2014.pdf" target="_blank" title="Consulter la brochure Concours ACCÈS" style="font-size:13px;font-weight:bold;">Consulter la brochure Concours ACCÈS ></a>
 			</div>
 		</div>
 		
 		<a href="http://www.concours-acces.com" target="_blank" class="btn_concours_acces"><img src="<?php echo get_template_directory_uri(); ?>/images/btn_concours_acces.png" alt="Inscription Concours ACCES"/></a>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce conteneur_qcm_acces">
+		<div class="col-sm-4 col-md-12">
 			<div class="bloc bloc_gris_fonce bloc_qcm_acces">
 			<a href="http://youtu.be/tNNUR4wRUiwf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_qcm_acces.png" alt="Comment remplir le QCM ACCÈS ?"/></a>
 				<a href="http://youtu.be/tNNUR4wRUiwf" target="_blank" title="Comment remplir le QCM ACCÈS ?" style="font-size:13px;font-weight:bold;">Comment remplir le QCM ACCÈS ? ></a>
@@ -121,9 +127,9 @@ if ($sidebar_a_acharger['section']=="adm-1ere-annee"){
 		
 		<a href="https://application.ieseg.fr" target="_blank" title="Candidature en ligne" class="btn_apply btn_apply_fr" style="display:none;"></a>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
-				<h4 style="margin-bottom:20px;">Contact</h4>
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
+				<h4 >Contact</h4>
 				<div style="" class="contact_acces">
 				<a href="mailto:concours@ieseg.fr" target="_blank" title="Contacter le Service Admissions">Céline VERDRIÈRE, <em>Responsable du concours ACCÈS</em></a>
 				<a href="mailto:concours@ieseg.fr" target="_blank" title="Contacter le Service Admissions" class="lien_mail"><span></span>concours@ieseg.fr</a>
@@ -144,15 +150,15 @@ if ($sidebar_a_acharger['section']=="adm-1ere-annee"){
 ?>
 		<a href="https://application.ieseg.fr" target="_blank" title="Apply now" class="btn_apply"></a>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_medium">
+		<div class="col-sm-4 col-md-12">
 			<div class="bloc bloc_gris_medium bloc_contact">
 				<a href="https://application.ieseg.fr/InfoRequest?lcid=2057" target="_blank" title="Download brochure" style="font-size:13px;font-weight:bold;">Download brochure ></a>
 			</div>
 		</div>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
-				<h4 style="margin-bottom:20px;">Contact</h4>
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
+				<h4>Contact</h4>
 				<div style="" class="contact_acces">
 				<a href="mailto:concours@ieseg.fr" target="_blank" title="Contact Admissions Department">Céline VERDRIÈRE, <em>ACCÈS Exam Manager</em></a>
 				<a href="mailto:concours@ieseg.fr" target="_blank" title="Contact Admissions Department" class="lien_mail"><span></span>concours@ieseg.fr</a>
@@ -175,8 +181,8 @@ if ($sidebar_a_acharger['section']=="adm-1ere-annee"){
 if ($sidebar_a_acharger['section']=="adm-3eme-annee"){
 	if (ICL_LANGUAGE_CODE=="fr"){
 ?>					
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
 				<a href="<?php bloginfo('url'); ?>/programmes/programme-grande-ecole/"  title="Consulter le Programme Grande Ecole" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_pge.png" alt="Consulter le Programme Grande Ecole">
 				</a>
@@ -186,15 +192,15 @@ if ($sidebar_a_acharger['section']=="adm-3eme-annee"){
 		
 		<a href="https://application.ieseg.fr" target="_blank" title="Candidature en ligne" class="btn_apply btn_apply_fr"></a>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_medium">
-			<div class="bloc bloc_gris_medium bloc_contact">
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
 				<a href="https://application.ieseg.fr/InfoRequest?lcid=1036" target="_blank" title="Demander la brochure" style="font-size:13px;font-weight:bold;">Demander la brochure ></a>
 			</div>
 		</div>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
-				<h4 style="margin-bottom:20px;">Contact</h4>
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
+				<h4>Contact</h4>
 				<div  class="">
 				<a href="mailto:m.brecville@ieseg.fr" target="_blank" title="Contacter le Service Admissions">Matthieu BRECVILLE, Responsable Admissions Parallèles</a>
 				<a href="mailto:m.brecville@ieseg.fr" target="_blank" title="Contacter le Service Admissions" class="lien_mail"><span></span>m.brecville@ieseg.fr</a>
@@ -205,8 +211,8 @@ if ($sidebar_a_acharger['section']=="adm-3eme-annee"){
 	}
 	else{
 ?>
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
 				<a href="<?php bloginfo('url'); ?>programs/grande-ecole-programme-5-years/bachelor/"  title="View Bachelor Program" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_pge.png" alt="View Bachelor Program">
 				</a>
@@ -216,15 +222,15 @@ if ($sidebar_a_acharger['section']=="adm-3eme-annee"){
 		
 		<a href="https://application.ieseg.fr" target="_blank" title="Apply now" class="btn_apply"></a>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_medium">
+		<div class="col-sm-4 col-md-12">
 			<div class="bloc bloc_gris_medium bloc_contact">
 				<a href="https://application.ieseg.fr/InfoRequest?lcid=2057" target="_blank" title="Download brochure" style="font-size:13px;font-weight:bold;">Download brochure ></a>
 			</div>
 		</div>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
-				<h4 style="margin-bottom:20px;">Contact</h4>
+		<div class="col-sm-4 col-md-12">>
+			<div class="bloc">
+				<h4>Contact</h4>
 				<div  class="">
 				<a href="mailto:m.brecville@ieseg.fr" target="_blank" title="Contact Admissions Department">Matthieu BRECVILLE, International Admissions Manager</a>
 				<a href="mailto:m.brecville@ieseg.fr" target="_blank" title="Contact Admissions Department" class="lien_mail"><span></span>m.brecville@ieseg.fr</a>
@@ -243,8 +249,8 @@ if ($sidebar_a_acharger['section']=="adm-3eme-annee"){
 if ($sidebar_a_acharger['section']=="adm-master"){
 	if (ICL_LANGUAGE_CODE=="fr"){
 ?>
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
 				<a href="<?php bloginfo('url'); ?>/programmes/programme-grande-ecole/programme-master/"  title="Consulter le Programme Master" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_pge.png" alt="Consulter le Programme Master">
 				</a>
@@ -254,15 +260,15 @@ if ($sidebar_a_acharger['section']=="adm-master"){
 		
 		<a href="https://application.ieseg.fr" target="_blank" title="Candidature en ligne" class="btn_apply btn_apply_fr"></a>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_medium">
+		<div class="col-sm-4 col-md-12">
 			<div class="bloc bloc_gris_medium bloc_contact">
 				<a href="https://application.ieseg.fr/InfoRequest?lcid=1036" target="_blank" title="Demander la brochure" style="font-size:13px;font-weight:bold;">Demander la brochure ></a>
 			</div>
 		</div>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
-				<h4 style="margin-bottom:20px;">Contact</h4>
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
+				<h4>Contact</h4>
 				<div  class="">
 				<a href="mailto:m.brecville@ieseg.fr" target="_blank" title="Contacter le Service Admissions">Matthieu BRECVILLE, Responsable Admissions Parallèles</a>
 				<a href="mailto:m.brecville@ieseg.fr" target="_blank" title="Contacter le Service Admissions" class="lien_mail"><span></span>m.brecville@ieseg.fr</a>
@@ -273,8 +279,8 @@ if ($sidebar_a_acharger['section']=="adm-master"){
 	}
 	else{
 ?>
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
 				<a href="<?php bloginfo('url'); ?>programs/graduate-programmes/msc-in-management/"  title="View MSc in Management Program" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_pge.png" alt="View the MSc in Management Program">
 				</a>
@@ -284,15 +290,15 @@ if ($sidebar_a_acharger['section']=="adm-master"){
 		
 		<a href="https://application.ieseg.fr" target="_blank" title="Apply now" class="btn_apply"></a>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_medium">
-			<div class="bloc bloc_gris_medium bloc_contact">
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
 				<a href="https://application.ieseg.fr/InfoRequest?lcid=2057" target="_blank" title="Download brochure" style="font-size:13px;font-weight:bold;">Download brochure ></a>
 			</div>
 		</div>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
-				<h4 style="margin-bottom:20px;">Contact</h4>
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
+				<h4>Contact</h4>
 				<div  class="">
 				<a href="mailto:m.brecville@ieseg.fr" target="_blank" title="Contact Admissions Department">Matthieu BRECVILLE, International Admissions Manager</a>
 				<a href="mailto:m.brecville@ieseg.fr" target="_blank" title="Contact Admissions Department" class="lien_mail"><span></span>m.brecville@ieseg.fr</a>
@@ -310,8 +316,8 @@ if ($sidebar_a_acharger['section']=="adm-master"){
 if ($sidebar_a_acharger['section']=="adm-master-apprentissage"){
 	if (ICL_LANGUAGE_CODE=="fr"){
 ?>							
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
 				<a href="<?php bloginfo('url'); ?>/programmes/master-apprentissage/"  title="Consulter le Programme Master en Apprentissage" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_pge.png" alt="Consulter le Programme Master en Apprentissage">
 				</a>
@@ -321,15 +327,15 @@ if ($sidebar_a_acharger['section']=="adm-master-apprentissage"){
 		
 		<a href="https://application.ieseg.fr" target="_blank" title="Candidature en ligne" class="btn_apply btn_apply_fr"></a>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_medium">
-			<div class="bloc bloc_gris_medium bloc_contact">
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
 				<a href="https://application.ieseg.fr/InfoRequest?lcid=1036" target="_blank" title="Demander la brochure" style="font-size:13px;font-weight:bold;">Demander la brochure ></a>
 			</div>
 		</div>
 		
-		<div class="conteneur_bloc conteneur_bloc_gris_fonce">
-			<div class="bloc bloc_gris_fonce bloc_contact">
-				<h4 style="margin-bottom:20px;">Contact</h4>
+		<div class="col-sm-4 col-md-12">
+			<div class="bloc">
+				<h4>Contact</h4>
 				<div  class="">
 				<a href="mailto:m.brecville@ieseg.fr" target="_blank" title="Contacter le Service Admissions">Matthieu BRECVILLE, Responsable Admissions Parallèles</a>
 				<a href="mailto:m.brecville@ieseg.fr" target="_blank" title="Contacter le Service Admissions" class="lien_mail"><span></span>m.brecville@ieseg.fr</a>

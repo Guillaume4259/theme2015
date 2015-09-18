@@ -104,14 +104,14 @@ $args =
 	array(
 		'posts_per_page' 	=> 4,
 		'order'				=> 'DESC',
-		'post_type' 		=> 'news',
+		'post_type' 		=> $custom_post_type_slug,
 		'exclude'			=> $post->ID,
 		'tax_query' 		=> 
 						array(
 							array(
-								'taxonomy' => 'news-category',
+								'taxonomy' => $custom_post_type_taxonomy,
 								'field'    => 'term_id',
-								'terms'    => apply_filters('wpml_object_id', $categories_du_post[0]->term_id, 'news-category'),
+								'terms'    => apply_filters('wpml_object_id', $categories_du_post[0]->term_id, $custom_post_type_taxonomy),
 							),
 						)
 	);
@@ -134,7 +134,9 @@ $args =
             endforeach;
         ?>
         </ul>
+        <div class="text-center">
         <a href="<?php echo get_post_type_archive_link($custom_post_type_slug); ?>" title="<?php echo $str_btn_all ?>" class="btn"><?php echo $str_btn_all ?></a>
+        </div>
     </div>
 </div>
 <?php 

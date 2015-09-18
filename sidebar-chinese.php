@@ -15,7 +15,7 @@ global $sidebar_a_acharger;
 <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
 	<div class="row">
         <div class="col-sm-4 col-md-12">
-            <div class="bloc bloc_gris_fonce bloc_contact">
+            <div class="bloc">
                 <h4>联系方式</h4>
                 <strong>中国办公室</strong><br /><br />
                 Phone: +86 21 33821506<br /><br />
