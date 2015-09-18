@@ -36,7 +36,7 @@ function egalize_blocks(){
 	var a = jQuery( ".bloca" ).height()  ;
 
 	var b = jQuery( ".blocb" ).height()  ;
-
+//alert('a = '+ a + 'b = '+ b);
 	if (a < b){
 	        jQuery( ".bloca" ).height(b);
 	}
