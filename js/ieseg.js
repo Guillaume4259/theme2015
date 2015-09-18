@@ -29,31 +29,35 @@ else{
 }
 
 
-// Egaliser deux blocs (divers) :
 
-var a = jQuery( ".bloca" ).height()  ;
+function egalize_blocks(){
+	 // Egaliser deux blocs (divers) :
 
-var b = jQuery( ".blocb" ).height()  ;
+	var a = jQuery( ".bloca" ).height()  ;
 
-if (a < b){
-        jQuery( ".bloca" ).height(b);
+	var b = jQuery( ".blocb" ).height()  ;
+
+	if (a < b){
+	        jQuery( ".bloca" ).height(b);
+	}
+	else{
+	        jQuery( ".blocb" ).height(a);
+	}
+
+	// Egaliser deux blocs (dans la cas où on a 4 blocs sur la même page) :
+
+	var c = jQuery( ".blocc" ).height()  ;
+
+	var d = jQuery( ".blocd" ).height()  ;
+
+	if (c < d){
+	        jQuery( ".blocc" ).height(d);
+	}
+	else{
+	        jQuery( ".blocd" ).height(c);
+	}   
 }
-else{
-        jQuery( ".blocb" ).height(a);
-}
 
-// Egaliser deux blocs (dans la cas où on a 4 blocs sur la même page) :
-
-var c = jQuery( ".blocc" ).height()  ;
-
-var d = jQuery( ".blocd" ).height()  ;
-
-if (c < d){
-        jQuery( ".blocc" ).height(d);
-}
-else{
-        jQuery( ".blocd" ).height(c);
-}
 
 //Formulaire Recherche sur page 404
 
@@ -115,7 +119,10 @@ jQuery('.course_title').click(function(){
 	
 });
 
+egalize_blocks();
 
+jQuery('.activate-egalizer').click(function(){
+	egalize_blocks();
 });
 
-     
+});

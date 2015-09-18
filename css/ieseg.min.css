@@ -2864,6 +2864,11 @@ section.container-campus{
 
 	li.nav-deux-onglets {
     width: 50% !important;
+	}
+
+    li.nav-quatre-onglets {
+    width: 25% !important;
+	}
 }
 
 	.contact-programme .contact-email {
