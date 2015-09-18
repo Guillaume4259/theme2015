@@ -230,6 +230,7 @@ function custom_search_footer( $form ) {
     return $form;
 }
 
+//Reprise de la classe CSS de l'element de menu courant dans le body 
 add_filter('body_class','menu_class_to_body');
 function menu_class_to_body($classes)
 {
@@ -259,4 +260,29 @@ function menu_class_to_body($classes)
         $classes[] =  $current[0][0];
 
         return $classes;
+}
+
+//Prochains événements
+function upcoming_events($events_number=4){
+	$args = array( 
+			'posts_per_page' => $events_number,							
+			'post_type' => 'events',
+			'meta_key'=> 'wpcf-start-date',
+			'suppress_filters' => false, //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
+			'orderby' => 'meta_value_num',
+			'order' => 'ASC',
+			'meta_query' => array(
+								array(
+									'key' => 'wpcf-start-date',
+									'value' => time(), //time() = timstamp du jour
+									'compare' => '>'
+									//'type' => 'CHAR'
+								)
+							)
+			);
+	$postslist = get_posts( $args );
+	//on a les 4 events les plus proches du jour actuel. 
+	//Maintenant on inverse les resultats pour obtenir l'ordre d'affiche nous convienne (event le plus proche en bas de liste)
+	$postslist = array_reverse($postslist); 
+	return $postslist;
 }

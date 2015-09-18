@@ -302,17 +302,17 @@ include('includes/test-current-page.php');
                    
                 <div class="row">
                     <?php
-                    $args = array( 'posts_per_page' => 4, 'order'=> 'DESC', 'orderby' => 'meta_value_num','post_type' => 'events', 'meta_key'=> 'wpcf-start-date','suppress_filters' => false );
-                    //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
-                    $postslist = get_posts( $args );
-                    foreach ( $postslist as $post ) :
+                  
+					$upcoming_events = upcoming_events(4); 
+					
+                    foreach ( $upcoming_events as $post ) :
                         setup_postdata( $post ); 
                         $id=$post->ID;
                       ?> 
                         <div class="col-sm-12">
                             <div class="bloc-events-home">
                                 <div class="row">
-                                    <time class="col-sm-2 text-center">                       
+                                    <time class="col-sm-2 text-center" datetime="<?php echo date('Y',get_post_meta($id,'wpcf-start-date',true)).'-'.date('m',get_post_meta($id,'wpcf-start-date',true)).'-'.date('d',get_post_meta($id,'wpcf-start-date',true)); ?>">                       
                                         <span class="jour foundry_bold"><?php echo strftime('%a',get_post_meta($id,'wpcf-start-date',true)); ?></span>
                                         <span class="date foundry_bold"><?php echo date('d',get_post_meta($id,'wpcf-start-date',true)); ?></span>
                                         <span class="mois foundry_bold"><?php echo strftime('%b',get_post_meta($id,'wpcf-start-date',true)); ?></span>

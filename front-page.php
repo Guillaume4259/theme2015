@@ -96,10 +96,8 @@
         <h2 class="text-center"><?php _e("Events","ieseg2015") ?></h2>
         <div class="row">
             <?php
-            $args = array( 'posts_per_page' => 4, 'order'=> 'DESC', 'orderby' => 'meta_value_num','post_type' => 'events', 'meta_key'=> 'wpcf-start-date','suppress_filters' => false );
-            //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
-            $postslist = get_posts( $args );
-            foreach ( $postslist as $post ) :
+            $upcoming_events = upcoming_events(4); 
+            foreach ( $upcoming_events as $post ) :
                 setup_postdata( $post ); 
                 $id=$post->ID;
               ?> 
@@ -197,19 +195,19 @@
         <div class="col-sm-4 col-lg-2 wow fadeInUp" data-wow-delay="1.5s">
         	<a href="<?php echo get_page_link(apply_filters( 'wpml_object_id',18645, 'page' ));?>" title="<?php _e('Postgraduate Programs', 'ieseg2015');?>" class="bloc-programme-home center-block">
 				<span class="container-titre-programme-home"><?php _e("Postgraduate Programs","ieseg2015") ?></span>
-            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/msc.jpg" alt="<?php _e("Postgraduate Programs","ieseg2015") ?>" class="img-responsive"/>
+            	<img src="<?php echo get_template_directory_uri() ;?>/images/home/msc.jpg" alt="<?php _e("Masters of Science","ieseg2015") ?>" class="img-responsive"/>
             	<span class="container-info-programme-home">
                     <span class="show programme-duration"><span class="picto-programme-duration"></span>18 <?php _e("months","ieseg2015") ?></span>
                     <span class="show">
                     	<span class="picto-programme-acessibility show pull-left"></span>
 						<?php 
 						if (ICL_LANGUAGE_CODE=="fr"){?>
-							Accessible niveau Bac+4
+							Accessibles niveau Bac+4
 						<?php 
 						}
 						else {
 						?>
-							MSc programs
+							Postgraduate programs
 						<?php 
 						}
 						?>

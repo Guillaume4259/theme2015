@@ -108,9 +108,9 @@ if ($sidebar_a_acharger['section']=="global-gb"){
         <h4>Brochures</h4>
         <a href="http://issuu.com/ieseg/docs/i__seg_executive_education?e=3614770/9860701" target="_blank" title="Executive Education catalog">Download Executive Education catalog ></a>
         <br /><br />
-        <a href="http://issuu.com/ieseg/docs/ieseg-emba" target="_blank" title="Executive MBA Program">Download Executive MBA Program</a>
+        <a href="http://issuu.com/ieseg/docs/ieseg-emba" target="_blank" title="Executive MBA Program">Download Executive MBA Program ></a>
         <br /><br />
-        <a href="http://issuu.com/ieseg/docs/executive_education_-_business-trip" target="_blank" title="Learning trip">Download Learning trip brochure</a>
+        <a href="http://issuu.com/ieseg/docs/executive_education_-_business-trip" target="_blank" title="Learning trip">Download Learning trip brochure ></a>
         <br /><br />
     </div>
 </div>
@@ -120,7 +120,7 @@ if ($sidebar_a_acharger['section']=="global-gb"){
         Lille : &nbsp;&nbsp;03.20.29.62.27<br />
         Paris : 01.55.91.98.02<br /><br />
         <div class="text-center">
-            <a href="mailto:executive@ieseg.fr" target="_blank" title="Contact Executive Education" class="lien_mail"><span></span>executive@ieseg.fr</a>
+            <a href="mailto:executive@ieseg.fr" target="_blank" title="Contact Executive Education" class="btn">executive@ieseg.fr</a>
         </div>
     </div>
 </div>
