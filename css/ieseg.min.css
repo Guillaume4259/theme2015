@@ -58,6 +58,10 @@ body{
 	margin-bottom: 30px;
 }
 
+.padding-10 {
+	padding: 10px;
+}
+
 /*----------------FIN FONTS----------------------*/
 
 
@@ -2166,8 +2170,16 @@ footer a, footer a:hover{
 	background:url(../images/sprite-ieseg.png) no-repeat 0 -124px; 
 }
 
+.btn-lille span:hover{
+	background:url(../images/sprite-ieseg.png) no-repeat -228px -226px; 
+}
+
 .btn-paris span{
 	background:url(../images/sprite-ieseg.png) no-repeat -38px -124px; 
+}
+
+.btn-paris span:hover{
+	background:url(../images/sprite-ieseg.png) no-repeat -229px -294px; 
 }
 
 .btn-instagram span{
