@@ -62,6 +62,23 @@ body{
 	padding: 10px;
 }
 
+.text-large {
+	font-size: 36px;
+}
+
+.text-medium {
+	font-size: 26px;
+}
+
+
+.black-text {
+	color: #000 !important;
+}
+
+.border-bottom-1 {
+	border-bottom: 1px solid;
+}
+
 /*----------------FIN FONTS----------------------*/
 
 
@@ -1277,9 +1294,6 @@ table > thead {
 	width: 100%;
 }
 
-.black-text {
-	color: #000 !important;
-}
 
 .palme {
 	background: url("../images/sprite-ieseg.png") no-repeat scroll 48px -1984px;
@@ -1781,9 +1795,6 @@ div.course_title:hover>div.read_on {
 	margin-bottom: 10px;
 }
 
-.text-large {
-	font-size: 36px;
-}
 
 /* ------------------------ Fin Page Services Aux Etudiants -------------------- */
 
