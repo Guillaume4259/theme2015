@@ -2525,6 +2525,10 @@ video.fillWidth {
 		overflow:hidden;
 		max-height:171px;
 	}
+	
+	.bloc-news-home .glyphicon-map-marker{
+		margin-left:15px;
+	}
 
 .container-events{
 	min-height:400px;
@@ -2610,7 +2614,6 @@ video.fillWidth {
 	.picto-programme-duration, .picto-programme-acessibility{
 		width:25px;
 		height:20px;
-		
 		vertical-align:middle;
 		background: url("../images/sprite-ieseg.png") no-repeat;
 	}
@@ -2664,7 +2667,6 @@ video.fillWidth {
 		width:80px;
 		background-position: -156px -1108px;
 	}
-
 
 .key-fact-number{
 	font-size:48px;
@@ -2830,14 +2832,14 @@ section.container-campus{
 	}
 
 	.proghome-testimonials .bx-wrapper .bx-controls-direction a {
-    height: 109px;
-    outline: 0 none;
-    position: absolute;
-    text-indent: -9999px;
-    top: 40%;
-    width: 40px;
-    z-index: 9999;
-}
+		height: 109px;
+		outline: 0 none;
+		position: absolute;
+		text-indent: -9999px;
+		top: 40%;
+		width: 40px;
+		z-index: 9999;
+	}
 
 	.keyfacts{
 		background: rgba(255, 255, 255, 0.95);
@@ -2869,7 +2871,6 @@ section.container-campus{
     li.nav-quatre-onglets {
     width: 25% !important;
 	}
-}
 
 	.contact-programme .contact-email {
 		width: 50%;
