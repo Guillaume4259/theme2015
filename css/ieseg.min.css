@@ -2174,6 +2174,10 @@ footer a, footer a:hover{
 	background:url(../images/sprite-ieseg.png) no-repeat -38px -124px; 
 }
 
+.btn-paris span:hover{
+	background:url(../images/sprite-ieseg.png) no-repeat -229px -294px; 
+}
+
 .btn-instagram span{
 	height: 20px;
 	background:url(../images/sprite-ieseg.png) no-repeat -230px -1168px; 
