@@ -76,10 +76,8 @@ Template Name: Mediatheque
                             
                         <iframe src="https://ytchannelembed.com/ytce-gallery.php?user=IESEGChannel&rows=1&ratio=hd&width=350&margin=15" style="width:100%;max-width:350px;height:200px;" class="ytce"></iframe>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-4 col-sm-offset-4">
-                            <a href="https://www.youtube.com/user/IESEGChannel" title="<?php _e('Visit IÉSEG Youtube Channel', 'ieseg2015');?>" class="btn center-block" target="_blank"><?php _e("Visit IÉSEG Youtube Channel","ieseg2015") ?></a>	
-                        </div>
+                    <div class="row text-center">
+                            <a href="https://www.youtube.com/user/IESEGChannel" title="<?php _e('Visit IÉSEG Youtube Channel', 'ieseg2015');?>" class="btn" target="_blank"><?php _e("Visit IÉSEG Youtube Channel","ieseg2015") ?></a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -98,7 +96,7 @@ Template Name: Mediatheque
 					?>
 					
 							<div class="col-sm-4">
-                            	<img src="<?php echo $src; ?>" class="img-responsive" alt="Gallery image" />
+                            	<img src="<?php echo $src; ?>" class="img-responsive" alt="" />
 							</div>
 						<?php
 							$i_gal++;
@@ -107,8 +105,8 @@ Template Name: Mediatheque
         			endif;
 					?>
                     </div>
-                    <div class="col-sm-4 col-sm-offset-4">
-                        <a href="<?php echo get_permalink($phototheque); ?>" title="<?php _e('All photos', 'ieseg2015');?>" class="btn center-block"><?php _e("All photos","ieseg2015") ?></a>	
+                    <div class="text-center">
+                        <a href="<?php echo get_permalink($phototheque); ?>" title="<?php _e('All photos', 'ieseg2015');?>" class="btn"><?php _e("All photos","ieseg2015") ?></a>	
                     </div>
                 </div>
             </div>
@@ -152,10 +150,8 @@ Template Name: Mediatheque
                     ?>	
                     
                 	</div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-2 col-sm-offset-5">
-                            <a href="<?php echo get_post_type_archive_link('news'); ?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn btn-cta-home"><?php _e("All news","ieseg2015") ?></a>
-                        </div>
+                    <div class="row text-center">
+                            <a href="<?php echo get_post_type_archive_link('news'); ?>" title="<?php _e('All news', 'ieseg2015');?>" class="btn"><?php _e("All news","ieseg2015") ?></a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -190,9 +186,8 @@ Template Name: Mediatheque
                         <br />
                     </div>
                     
-                    <div class="row">
-                    <div class="col-sm-4 col-sm-offset-4">
-                        <a href="<?php echo get_post_type_archive_link('events'); ?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn center-block"><?php _e("All events","ieseg2015") ?></a>	
+                    <div class="row text-center">
+                        <a href="<?php echo get_post_type_archive_link('events'); ?>" title="<?php _e('All events', 'ieseg2015');?>" class="btn"><?php _e("All events","ieseg2015") ?></a>	
                     </div>
 				</div>	
                 </div>
