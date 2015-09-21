@@ -532,7 +532,7 @@
 
       google.load("visualization", "1", {packages:["corechart","geochart"]});
 
-    google.setOnLoadCallback(drawChart10);
+    google.setOnLoadCallback(drawChart11);
 
       function drawChart11() {
 
