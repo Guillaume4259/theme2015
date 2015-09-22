@@ -1706,9 +1706,8 @@ div.course_title:hover>div.read_on {
 	font-size: 18px;
 }
 
-.keyfacts .keytitle {
+.keytitle {
 	font-size: 25px !important;
-	padding-top: 20px;
 }
 
 .keyfacts .table > tbody > tr > td, .keyfacts .table > tbody > tr > th, .keyfacts .table > tfoot > tr > td, 
@@ -2865,7 +2864,8 @@ section.container-campus{
 		background: rgba(255, 255, 255, 0.95);
 		border-top: 4px solid #ffc20e;
 		float: right;
-		margin-top: 70px;
+		margin-top: 2em;
+		padding-top: 20px;
 		width: 30%;
 	}
 
