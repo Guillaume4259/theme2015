@@ -758,7 +758,7 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -66px -1386px;
 	height: 40px;
 }
-#menu-program .picto-master:hover a, #menu-program .picto--master.current-menu-item a {
+#menu-program .picto-master:hover a, #menu-program .picto-master.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -66px -1469px;
 }
 
@@ -766,6 +766,7 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  18px -1552px;
 	height: 40px;
 	width: 114px;
+	display: inline-block;
 }
 #menu-program .picto-alternance:hover a, #menu-program .picto-alternance.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  19px -1636px;
@@ -774,6 +775,7 @@ li#menu-program  .picto-admission a {
 #menu-program .picto-pedagogy a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -125px -1552px;
 	height: 40px;
+	display: inline-block;
 }
 #menu-program .picto-pedagogy:hover a, #menu-program .picto-pedagogy.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -125px -1636px;
