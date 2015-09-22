@@ -263,7 +263,7 @@ function menu_class_to_body($classes)
 }
 
 //Prochains événements
-function upcoming_events($events_number=4){
+function upcoming_events($events_number=4,$cat=null){
 	$args = array( 
 			'posts_per_page' => $events_number,							
 			'post_type' => 'events',
@@ -271,6 +271,7 @@ function upcoming_events($events_number=4){
 			'suppress_filters' => false, //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
 			'orderby' => 'meta_value_num',
 			'order' => 'ASC',
+			
 			'meta_query' => array(
 								array(
 									'key' => 'wpcf-start-date',
@@ -280,6 +281,16 @@ function upcoming_events($events_number=4){
 								)
 							)
 			);
+			if($cat){ //si on a passe une categorie en parametre
+				$args['tax_query'] = 
+							array(
+								array(
+									'taxonomy' => 'events-category',
+									'field'    => 'term_id',
+									'terms'    => apply_filters('wpml_object_id', $cat, 'events-category'),
+								),
+							);
+			}
 	$postslist = get_posts( $args );
 	//on a les 4 events les plus proches du jour actuel. 
 	//Maintenant on inverse les resultats pour obtenir l'ordre d'affiche nous convienne (event le plus proche en bas de liste)

@@ -232,8 +232,8 @@ if ($postslist){
     </div>
 </section>
 <?php
-                }
-                ?>
+}
+?>
 <!--End Témoignages-->
 
 <?php

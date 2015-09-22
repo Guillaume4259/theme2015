@@ -94,7 +94,7 @@
 
     <div class="container-fluid container-1600 container-main-nav clearfix" role="main">
     	<div class="row">
-        <a href="<?php home_url(); ?>" title="Ieseg School Of Management" id="header-logo">Ieseg School Of Management, école de commerce post-bac à Lille et Paris</a>
+        <a href="<?php home_url(); ?>" title="IÉSEG School Of Management" id="header-logo">IÉSEG School Of Management, école de commerce post-bac à Lille et Paris</a>
      
             <!-- MAIN NAVIGATION -->
             <?php wp_nav_menu( array(

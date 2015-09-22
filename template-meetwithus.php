@@ -144,7 +144,7 @@ Template Name: Meet with Us
 		<div class="row">
         	<div class="col-xs-12">
 				<?php
-                $args = array( 
+                /*$args = array( 
 							'posts_per_page' 	=> -1,
 							'order'				=> 'ASC',
 							'orderby' 			=> 'meta_value_num',
@@ -160,7 +160,10 @@ Template Name: Meet with Us
 												)
 							);
 
-                $opendays = get_posts( $args );
+                $opendays = get_posts( $args );*/
+				
+				$opendays = upcoming_events(-1,134); 
+				
                 if ($opendays):?>
                 <h2><?php _e("Open days","ieseg2015");?></h2>
                 <?php if (ICL_LANGUAGE_CODE=="fr"){?>
