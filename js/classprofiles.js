@@ -315,7 +315,7 @@
           ]);
 
           var options = {
-               pieHole: 0.0,
+               pieHole: 0.4,
 				  pieSliceText: 'percentage',
 				  slices: {0: {offset: 0.0, color: '#018990'}, 1: {offset: 0.0, color: '#f36f21'}, 2: {offset: 0.0, color: '#00b1cd'}, 3: {offset: 0.0, color: '#f7941e'}, 4: {offset: 0.0, color: '#264967'}, 5: {color: '#e04c3c'}, 6: {offset: 0.0, color: '#939598'}, 7: {offset: 0.0, color: '#018990'}, 8: {offset: 0.0, color: '#f36f21'}, 9: {offset: 0.0, color: '#00b1cd'}, 10: {offset: 0.0, color: '#f7941e'}, 11: {offset: 0.0, color: '#264967'}, 12: {color: '#e04c3c'}, 13: {offset: 0.0, color: '#939598'}, 14: {offset: 0.0, color: '#f7941e'}, 15: {offset: 0.0, color: '#018990'}, 16: {offset: 0.0, color: '#f36f21'}, 17: {offset: 0.0, color: '#00b1cd'}},
 				  pieSliceTextStyle: {color: '#fff', fontSize: '12px', fontName: 'foundrysterling-boldregular'},
@@ -361,9 +361,9 @@
           ]);
 
           var options = {
-                pieHole: 0.0,
+                pieHole: 0.4,
 				  pieSliceText: 'percentage',
-				  slices: {0: {offset: 0.0, color: '#018990'}, 1: {offset: 0.0, color: '#f36f21'}, 2: {offset: 0.0, color: '#00b1cd'}, 3: {offset: 0.0, color: '#f7941e'}, 4: {offset: 0.0, color: '#264967'}, 5: {color: '#e04c3c'}, 6: {offset: 0.0, color: '#939598'}},
+				  slices: {0: {offset: 0.0, color: '#018990'}, 1: {offset: 0.0, color: '#f36f21'}, 2: {offset: 0.0, color: '#00b1cd'}, 3: {offset: 0.0, color: '#f7941e'}, 4: {offset: 0.0, color: '#264967'}, 5: {color: '#e04c3c'}, 6: {offset: 0.0, color: '#018990'}, 7: {offset: 0.0, color: '#f36f21'}, 8: {offset: 0.0, color: '#00b1cd'}, 9: {offset: 0.0, color: '#f7941e'}, 9: {offset: 0.0, color: '#264967'}, 10: {offset: 0.0, color: '#e04c3c'}, 11: {offset: 0.0, color: '#018990'}, 12: {offset: 0.0, color: '#f36f21'}, 13: {offset: 0.0, color: '#f7941e'}, 13: {offset: 0.0, color: '#264967'}},
 				  pieSliceTextStyle: {color: '#fff', fontSize: '12px', fontName: 'foundrysterling-boldregular'},
 				  titleTextStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: '20px'},
 				  tooltip: {textStyle: {color: '#636466'}, showColorCode: true, fontName: 'foundrysterling-lightregular', fontSize: '14px', text: 'percentage'},
@@ -408,7 +408,7 @@
                     5: {offset: 0.0, color: '#02D2DC' },
                     6: {offset: 0.0, color: '#e04c3c' },
               },
-              pieHole: 0.0,
+              pieHole: 0.4,
 			  chartArea: {height: '800', width:'95%'},
 			  pieSliceTextStyle: {color: '#fff', fontSize: '12px', fontName: 'foundrysterling-boldregular'},
 			  tooltip: {textStyle: {color: '#636466'}, showColorCode: true, fontName: 'foundrysterling-lightregular', fontSize: '14px', text: 'percentage'},
