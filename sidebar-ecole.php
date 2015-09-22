@@ -105,10 +105,10 @@ if ($sidebar_a_acharger['section']=="presse-fr"){
  <div class="col-sm-4 col-md-12">
        <div class="bloc">
 			<h4>Contact Presse</h4>
-			<span>Andrew MILLER<br />
+			<img alt="Andrew MILLER" src="<?php echo get_template_directory_uri(); ?>/images/andrew-miller.jpg" class="contact-photo"><strong>Andrew MILLER</strong><br />
 				Attaché de presse<br />
 				Tél.: +33 (0)3.20.54.58.92
-			</span><br /><br />
+			<br /><br />
             <div class="text-center">
                 <a class="btn" target="_blank" href="mailto:a.miller@ieseg.fr">
                     a.miller@ieseg.fr
@@ -129,6 +129,42 @@ if ($sidebar_a_acharger['section']=="presse-fr"){
 </div>
 <?php
 } //fin Presse FR
+?> 
+ <?php
+//Presse GB
+if ($sidebar_a_acharger['section']=="presse-GB"){  
+ ?>	
+ <div class="col-sm-4 col-md-12">
+       <div class="bloc">
+			<h4>Contact</h4>
+			<img alt="Andrew MILLER" src="<?php echo get_template_directory_uri(); ?>/images/andrew-miller.jpg" class="contact-photo"><strong>Andrew MILLER</strong><br />
+				Press officer<br />
+				Phone: +33 (0)3.20.54.58.92<br />
+                Address: Andrew MILLER<br />
+                IÉSEG School of Management<br />
+                3 rue de la Digue<br />
+                59 000 Lille (France)
+			<br /><br />
+            <div class="text-center">
+                <a class="btn" target="_blank" href="mailto:a.miller@ieseg.fr">
+                    a.miller@ieseg.fr
+                </a>
+            </div>
+		</div>
+</div>
+<div class="col-sm-4 col-md-12">
+		<div class="bloc">
+			<h4>Press Kit</h4>
+			<br />
+            <div class="text-center">
+                <a class="btn" title="Download our Press Kit" target="_blank" href="<?php bloginfo('url');?>/wp-content/uploads/DP_FR_sept2014_andrew2.pdf">
+                    Download our Press Kit
+                </a>
+            </div>
+		</div>
+</div>
+<?php
+} //fin Presse GB
 ?>                   
 </div>                   
 </div><!-- #content-sidebar -->

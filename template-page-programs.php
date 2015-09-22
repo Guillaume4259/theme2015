@@ -138,7 +138,28 @@ include('includes/test-current-page.php');
 <?php    
  if ($is_home_programe==true){
  ?>
-<!--   Temoignages   -->    
+<!--   Temoignages   -->   
+<?php
+$args = array(
+	'posts_per_page' => -1,
+	'order'=> 'DESC',
+	'post_type' => 'testimonial',
+	//'suppress_filters' => false,
+	'tax_query' => 
+	array(
+		array(
+			'taxonomy' => 'testimonial-category',
+			'field'    => 'term_id',
+			'terms'    => apply_filters('wpml_object_id', $id_cat_testimonials, 'testimonial-category'),
+			//$id_cat_testimonials est affectee dans includes/test-current-page.php;
+		),
+	)
+
+);
+//supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
+$postslist = get_posts( $args );
+if ($postslist){
+?> 
 <section class="container-testimonials">
 	<div class="container-fluid title container-titre-section-programmes-gris">
     	<?php
@@ -158,27 +179,6 @@ include('includes/test-current-page.php');
         <div class="row">
         <div class="col-sm-12">
         <div class="proghome-testimonials">            
-			<?php
-                $args = array(
-                    'posts_per_page' => -1,
-                    'order'=> 'DESC',
-                    'post_type' => 'testimonial',
-                    //'suppress_filters' => false,
-                    'tax_query' => 
-                    array(
-                        array(
-                            'taxonomy' => 'testimonial-category',
-                            'field'    => 'term_id',
-                            'terms'    => apply_filters('wpml_object_id', $id_cat_testimonials, 'testimonial-category'),
-                            //$id_cat_testimonials est affectee dans includes/test-current-page.php;
-                        ),
-                    )
-
-                );
-                //supress_filter false est utile pour WPML (ne retourne les posts que dans la langue en cours)
-                $postslist = get_posts( $args );
-                if ($postslist){
-                ?>
                 <ul class="bxslider">
                 <?php
                 foreach ( $postslist as $post ) :
@@ -219,12 +219,7 @@ include('includes/test-current-page.php');
                 endforeach; 
                 ?>
                 </ul> 
-                <?php
-                }
-                else{
-                    _e("No testimonial for this program","ieseg2015");
-                }
-                ?>
+                
         </div>
     </div>
     	</div>
@@ -236,6 +231,9 @@ include('includes/test-current-page.php');
         </div>
     </div>
 </section>
+<?php
+                }
+                ?>
 <!--End Témoignages-->
 
 <?php
