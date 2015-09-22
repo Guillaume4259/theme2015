@@ -34,7 +34,7 @@ global $sidebar_a_acharger;
     	<h4>Plaquette</h4>
         <div class="container-fluid">
             <div class="row">
-                    <a href="<?php bloginfo('url');?>/pdf/fondation_ieseg.pdf" target="_blank" title="Télécharger la plaquette" class="btn col-sm-6 col-sm-offset-3">Télécharger la plaquette</a>
+                    <a href="<?php home_url();?>/pdf/fondation_ieseg.pdf" target="_blank" title="Télécharger la plaquette" class="btn col-sm-6 col-sm-offset-3">Télécharger la plaquette</a>
             </div>
         </div>  
         

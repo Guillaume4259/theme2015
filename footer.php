@@ -88,7 +88,7 @@
                 	</div>
                     <div class="row footer-adress">
                     	<div class="col-sm-3">
-                        	<a href="<?php bloginfo('url'); ?>" title="Ieseg School Of Management" class="footer-logo">
+                        	<a href="<?php home_url(); ?>" title="Ieseg School Of Management" class="footer-logo">
                             
                             </a>
                         </div>

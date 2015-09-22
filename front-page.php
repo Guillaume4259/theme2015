@@ -269,7 +269,7 @@
     <div class="container-fluid container-1600">
         <h2 class="text-center"><?php _e("Need information ?","ieseg2015") ?></h2>
         <div class="row">
-            	<form id="form-cibles-home" action="<?php bloginfo('url');?>">
+            	<form id="form-cibles-home" action="<?php home_url();?>">
                 	<div class="col-sm-4 col-sm-offset-4">
                         <select name="select-statut-home" class="form-control input-lg">
                             <option><?php _e("You are","ieseg2015") ?></option>

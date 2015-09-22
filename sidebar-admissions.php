@@ -183,10 +183,10 @@ if ($sidebar_a_acharger['section']=="adm-3eme-annee"){
 ?>					
 		<div class="col-sm-4 col-md-12">
 			<div class="bloc">
-				<a href="<?php bloginfo('url'); ?>/programmes/programme-grande-ecole/"  title="Consulter le Programme Grande Ecole" >
+				<a href="<?php home_url(); ?>/programmes/programme-grande-ecole/"  title="Consulter le Programme Grande Ecole" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_pge.png" alt="Consulter le Programme Grande Ecole">
 				</a>
-				<a href="<?php bloginfo('url'); ?>/programmes/programme-grande-ecole/"  title="Consulter le Programme Grande Ecole" style="font-size:13px;font-weight:bold;">Consulter le Programme Grande Ecole ></a>
+				<a href="<?php home_url(); ?>/programmes/programme-grande-ecole/"  title="Consulter le Programme Grande Ecole" style="font-size:13px;font-weight:bold;">Consulter le Programme Grande Ecole ></a>
 			</div>
 		</div>
 		
@@ -213,10 +213,10 @@ if ($sidebar_a_acharger['section']=="adm-3eme-annee"){
 ?>
 		<div class="col-sm-4 col-md-12">
 			<div class="bloc">
-				<a href="<?php bloginfo('url'); ?>programs/grande-ecole-programme-5-years/bachelor/"  title="View Bachelor Program" >
+				<a href="<?php home_url(); ?>programs/grande-ecole-programme-5-years/bachelor/"  title="View Bachelor Program" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_pge.png" alt="View Bachelor Program">
 				</a>
-				<a href="<?php bloginfo('url'); ?>programs/grande-ecole-programme-5-years/bachelor/"  title="View Bachelor Program" style="font-size:13px;font-weight:bold;">View Bachelor Program</a>
+				<a href="<?php home_url(); ?>programs/grande-ecole-programme-5-years/bachelor/"  title="View Bachelor Program" style="font-size:13px;font-weight:bold;">View Bachelor Program</a>
 			</div>
 		</div>
 		
@@ -251,10 +251,10 @@ if ($sidebar_a_acharger['section']=="adm-master"){
 ?>
 		<div class="col-sm-4 col-md-12">
 			<div class="bloc">
-				<a href="<?php bloginfo('url'); ?>/programmes/programme-grande-ecole/programme-master/"  title="Consulter le Programme Master" >
+				<a href="<?php home_url(); ?>/programmes/programme-grande-ecole/programme-master/"  title="Consulter le Programme Master" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_pge.png" alt="Consulter le Programme Master">
 				</a>
-				<a href="<?php bloginfo('url'); ?>/programmes/programme-grande-ecole/programme-master/"  title="Consulter le Programme Master" style="font-size:13px;font-weight:bold;">Consulter le Programme Master ></a>
+				<a href="<?php home_url(); ?>/programmes/programme-grande-ecole/programme-master/"  title="Consulter le Programme Master" style="font-size:13px;font-weight:bold;">Consulter le Programme Master ></a>
 			</div>
 		</div>
 		
@@ -281,10 +281,10 @@ if ($sidebar_a_acharger['section']=="adm-master"){
 ?>
 		<div class="col-sm-4 col-md-12">
 			<div class="bloc">
-				<a href="<?php bloginfo('url'); ?>programs/graduate-programmes/msc-in-management/"  title="View MSc in Management Program" >
+				<a href="<?php home_url(); ?>programs/graduate-programmes/msc-in-management/"  title="View MSc in Management Program" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_pge.png" alt="View the MSc in Management Program">
 				</a>
-				<a href="<?php bloginfo('url'); ?>programs/graduate-programmes/msc-in-management/"  title="View MSc in Management Program" style="font-size:13px;font-weight:bold;">View MSc in Management Program ></a>
+				<a href="<?php home_url(); ?>programs/graduate-programmes/msc-in-management/"  title="View MSc in Management Program" style="font-size:13px;font-weight:bold;">View MSc in Management Program ></a>
 			</div>
 		</div>
 		
@@ -318,10 +318,10 @@ if ($sidebar_a_acharger['section']=="adm-master-apprentissage"){
 ?>							
 		<div class="col-sm-4 col-md-12">
 			<div class="bloc">
-				<a href="<?php bloginfo('url'); ?>/programmes/master-apprentissage/"  title="Consulter le Programme Master en Apprentissage" >
+				<a href="<?php home_url(); ?>/programmes/master-apprentissage/"  title="Consulter le Programme Master en Apprentissage" >
 					<img src="<?php echo get_template_directory_uri(); ?>/images/sidebar_pge.png" alt="Consulter le Programme Master en Apprentissage">
 				</a>
-				<a href="<?php bloginfo('url'); ?>/programmes/master-apprentissage/"  title="Consulter le Programme Master en Apprentissage" style="font-size:13px;font-weight:bold;">Consulter le Programme Master en Apprentissage</a>
+				<a href="<?php home_url(); ?>/programmes/master-apprentissage/"  title="Consulter le Programme Master en Apprentissage" style="font-size:13px;font-weight:bold;">Consulter le Programme Master en Apprentissage</a>
 			</div>
 		</div>
 		

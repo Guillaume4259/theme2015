@@ -25,7 +25,7 @@ global $sidebar_a_acharger;
 <p><em>Socle de la Grande-Arche</em></p>
 <p><em>1 parvis de la Défense</em></p>
 <p><em>92044 Paris-La Défense, France</em></p>
-								<a href="<?php bloginfo('url'); ?>/faculty-and-research/ieseg-research/corporate-finance-day/venue/"  title="Conference Venue" style="font-size:13px;font-weight:bold;">Conference Venue ></a>
+								<a href="<?php home_url(); ?>/faculty-and-research/ieseg-research/corporate-finance-day/venue/"  title="Conference Venue" style="font-size:13px;font-weight:bold;">Conference Venue ></a>
 					</div>
 					</div>
 					<div class="conteneur_bloc conteneur_bloc_jaune">

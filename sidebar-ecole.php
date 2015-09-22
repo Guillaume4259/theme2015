@@ -34,7 +34,7 @@ if ($sidebar_a_acharger['section']=="campus-lille-fr"){
 <div class="col-sm-4 col-md-12">
 	<div class="bloc">
         <div class="remove-margins">
-            <a target="_blank" href="https://walkinto.in/tour/bytz02hsVgZJeFGA2nsEl"><img class="img-reponsive" src="<?php bloginfo('url');?>/wp-content/uploads/lille-visite-virtuelle-2.jpg" alt="Visite virtuelle du campus de Lille" title="CLiquer pour accèder à la visite virtuelle du campus de Lille" width="100%" height="auto"></a>
+            <a target="_blank" href="https://walkinto.in/tour/bytz02hsVgZJeFGA2nsEl"><img class="img-reponsive" src="<?php home_url();?>/wp-content/uploads/lille-visite-virtuelle-2.jpg" alt="Visite virtuelle du campus de Lille" title="CLiquer pour accèder à la visite virtuelle du campus de Lille" width="100%" height="auto"></a>
         </div>
 			<h4>Visite virtuelle</h4>
 			<span>Depuis chez vous, visitez notre campus de Lille grâce à la visite virtuelle qui vous est proposée.</span><br />
@@ -73,7 +73,7 @@ if ($sidebar_a_acharger['section']=="campus-paris-fr"){
  <div class="col-sm-4 col-md-12">
     <div class="bloc">
         <div class="remove-margins">
-            <a target="_blank" href="https://walkinto.in/tour/eJgUHAPipelkle8S0Do6e"><img class="img-reponsive" src="<?php bloginfo('url');?>/wp-content/uploads/paris-visite-virtuelle.jpg" alt="Visite virtuelle du campus de Paris" title="Cliquer pour accèder à la visite virtuelle du campus de Paris" width="100%" height="auto"></a>
+            <a target="_blank" href="https://walkinto.in/tour/eJgUHAPipelkle8S0Do6e"><img class="img-reponsive" src="<?php home_url();?>/wp-content/uploads/paris-visite-virtuelle.jpg" alt="Visite virtuelle du campus de Paris" title="Cliquer pour accèder à la visite virtuelle du campus de Paris" width="100%" height="auto"></a>
         </div>
         <h4>Visite virtuelle</h4>
         <span>Depuis chez vous, visitez notre campus de Paris grâce à la visite virtuelle qui vous est proposée.</span><br />
@@ -89,7 +89,7 @@ if ($sidebar_a_acharger['section']=="campus-paris-fr"){
         <h4>Plan du campus de La Défense</h4>
         <span>Répérez-vous plus facilement sur la campus de Paris.</span> <br />
         <div class="text-center">
-            <a class="btn" title="Plan du campus de La Défense" target="_blank" href="<?php bloginfo('url');?>/wp-content/uploads/plan-IESEG-campus-Paris.pdf">
+            <a class="btn" title="Plan du campus de La Défense" target="_blank" href="<?php home_url();?>/wp-content/uploads/plan-IESEG-campus-Paris.pdf">
                 Voir le plan
             </a>
         </div>
@@ -105,11 +105,11 @@ if ($sidebar_a_acharger['section']=="presse-fr"){
  <div class="col-sm-4 col-md-12">
        <div class="bloc">
 			<h4>Contact Presse</h4>
-			<img alt="Andrew MILLER" src="<?php echo get_template_directory_uri(); ?>/images/andrew-miller.jpg" class="contact-photo"><strong>Andrew MILLER</strong><br />
+			<img alt="Andrew MILLER" src="<?php echo get_template_directory_uri(); ?>/images/andrew-miller.jpg" class="pull-left" style="margin-right:10px;"><strong>Andrew MILLER</strong><br />
 				Attaché de presse<br />
 				Tél.: +33 (0)3.20.54.58.92
 			<br /><br />
-            <div class="text-center">
+            <div class="text-center clearfix">
                 <a class="btn" target="_blank" href="mailto:a.miller@ieseg.fr">
                     a.miller@ieseg.fr
                 </a>
@@ -121,7 +121,7 @@ if ($sidebar_a_acharger['section']=="presse-fr"){
 			<h4>Dossier de presse</h4>
 			<br />
             <div class="text-center">
-                <a class="btn" title="Téléchargez le Dossier de Presse" target="_blank" href="<?php bloginfo('url');?>/wp-content/uploads/DP_FR_sept2014_andrew2.pdf">
+                <a class="btn" title="Téléchargez le Dossier de Presse" target="_blank" href="<?php home_url();?>/wp-content/uploads/DP_FR_sept2014_andrew2.pdf">
                     Téléchargez le Dossier de Presse
                 </a>
             </div>
@@ -132,7 +132,7 @@ if ($sidebar_a_acharger['section']=="presse-fr"){
 ?> 
  <?php
 //Presse GB
-if ($sidebar_a_acharger['section']=="presse-GB"){  
+if ($sidebar_a_acharger['section']=="presse-gb"){  
  ?>	
  <div class="col-sm-4 col-md-12">
        <div class="bloc">
@@ -140,12 +140,10 @@ if ($sidebar_a_acharger['section']=="presse-GB"){
 			<img alt="Andrew MILLER" src="<?php echo get_template_directory_uri(); ?>/images/andrew-miller.jpg" class="contact-photo"><strong>Andrew MILLER</strong><br />
 				Press officer<br />
 				Phone: +33 (0)3.20.54.58.92<br />
-                Address: Andrew MILLER<br />
-                IÉSEG School of Management<br />
                 3 rue de la Digue<br />
                 59 000 Lille (France)
-			<br /><br />
-            <div class="text-center">
+			<br />
+            <div class="text-center clearfix">
                 <a class="btn" target="_blank" href="mailto:a.miller@ieseg.fr">
                     a.miller@ieseg.fr
                 </a>
@@ -157,7 +155,7 @@ if ($sidebar_a_acharger['section']=="presse-GB"){
 			<h4>Press Kit</h4>
 			<br />
             <div class="text-center">
-                <a class="btn" title="Download our Press Kit" target="_blank" href="<?php bloginfo('url');?>/wp-content/uploads/DP_FR_sept2014_andrew2.pdf">
+                <a class="btn" title="Download our Press Kit" target="_blank" href="<?php home_url();?>/wp-content/uploads/DP_FR_sept2014_andrew2.pdf">
                     Download our Press Kit
                 </a>
             </div>
