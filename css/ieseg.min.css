@@ -83,6 +83,10 @@ body{
 	border-bottom: 1px solid;
 }
 
+.vertical-align {
+	vertical-align: middle !important;
+}
+
 /*----------------FIN FONTS----------------------*/
 
 
