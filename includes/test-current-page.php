@@ -6,7 +6,10 @@ if(is_page(1910)  //Campus de Lille - FR
 || custom_is_child(1910)
 || is_page(31454) //Campus de Paris - FR
 || custom_is_child(31454)
-|| is_page(1797) //Espace Presse - FR
+|| is_page(32942) //Communication et presse - FR
+|| is_page(32944) //Communication et presse - GB
+|| is_page(1797) //Communiques Presse - FR
+|| is_page(503) //Communiques Presse - GB
 ){
 	$sidebar_a_acharger['global']="ecole";
 	if(is_page(1910) || custom_is_child(1910) ) //Campus de Lille - FR
@@ -17,9 +20,14 @@ if(is_page(1910)  //Campus de Lille - FR
 	{
 		$sidebar_a_acharger['section']="campus-paris-fr";			
 	}
-	if(is_page(1797)) //Presse - FR
+	if(is_page(1797) || is_page(32942)) //Presse - FR
 	{
 		$sidebar_a_acharger['section']="presse-fr";			
+	}
+	
+	if(is_page(32944) || is_page(503)) //Presse - GB
+	{
+		$sidebar_a_acharger['section']="presse-gb";			
 	}
 }
 
