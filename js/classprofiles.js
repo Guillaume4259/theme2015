@@ -450,6 +450,8 @@
       
 <!-- PGE > Admission Master en Alternance > Profil des intégrés -->
 
+      google.load("visualization", "1", {packages:["corechart","geochart"]});
+
     google.setOnLoadCallback(drawChart9);
 
       function drawChart9() {
@@ -464,24 +466,105 @@
               ['Autre', 2],
           ]);
 
-          var options = {
+          var options9 = {
               pieSliceText: 'percentage',
-              legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 16}, position: 'right'},
+              legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 18}, position: 'right'},
               slices: {  
-                    0: {offset: 0.0, color: '#f7941e' },
-                    1: {offset: 0.0, color: '#f36f21' },
-                    2: {offset: 0.0, color: '#018990' },
-                    3: {offset: 0.0, color: '#014C50' },
-                    4: {offset: 0.0, color: '#939598' },
-                    5: {offset: 0.0, color: '#02D2DC' },
+                    0: {offset: 0.02, color: '#f7941e' },
+                    1: {offset: 0.01, color: '#f36f21' },
+                    2: {offset: 0.04, color: '#018990' },
+                    3: {offset: 0.02, color: '#00b1cd' },
+                    4: {offset: 0.03, color: '#284967' },
+                    5: {offset: 0.00, color: '#de4d3b' },
               },
-              pieHole: 0.0,
-			  chartArea: {height: '800', width:'95%'},
-			  pieSliceTextStyle: {color: '#fff', fontSize: '12px', fontName: 'foundrysterling-boldregular'},
-			  tooltip: {textStyle: {color: '#636466'}, showColorCode: true, fontName: 'foundrysterling-lightregular', fontSize: '14px', text: 'percentage'},
+              pieHole: 0.4,
+			  chartArea: {height: '250', width:'500'},
+			  pieSliceTextStyle: {color: '#fff', fontSize: '26px', fontName: 'foundrysterling-boldregular'},
+			  tooltip: {textStyle: {color: '#636466'}, showColorCode: true, fontName: 'foundrysterling-lightregular', fontSize: '18px', text: 'percentage'},
+			  width: '600',
+			  height: '250',
              };
           var chart9 = new google.visualization.PieChart(document.getElementById('pge-alternance-profil'));
 
-          chart9.draw(data9, options);
+          chart9.draw(data9, options9);
       }
 
+<!-- PGE > Admission Master > Profil des intégrés -->
+
+      google.load("visualization", "1", {packages:["corechart","geochart"]});
+
+    google.setOnLoadCallback(drawChart10);
+
+      function drawChart10() {
+
+          var data10 = google.visualization.arrayToDataTable([
+              ['Title', 'Percentage'],
+              ['Bachelor', 31],
+              ['DUETI / DUETE', 2],
+              ['Licence Économie (gestion/finance...)', 52],
+              ['École de Commerce', 12],
+              ['Autre', 3],
+          ]);
+
+          var options10 = {
+              pieSliceText: 'percentage',
+              legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 18}, position: 'right'},
+              slices: {  
+                    0: {offset: 0.02, color: '#f7941e' },
+                    1: {offset: 0.01, color: '#f36f21' },
+                    2: {offset: 0.00, color: '#018990' },
+                    3: {offset: 0.02, color: '#00b1cd' },
+                    4: {offset: 0.00, color: '#284967' },
+              },
+              pieHole: 0.4,
+			  chartArea: {height: '250', width:'500'},
+			  pieSliceTextStyle: {color: '#fff', fontSize: '26px', fontName: 'foundrysterling-boldregular'},
+			  tooltip: {textStyle: {color: '#636466'}, showColorCode: true, fontName: 'foundrysterling-lightregular', fontSize: '18px', text: 'percentage'},
+			  width: '600',
+			  height: '250',
+             };
+          var chart10 = new google.visualization.PieChart(document.getElementById('pge-master-profil'));
+
+          chart10.draw(data10, options10);
+      }
+
+<!-- PGE > Admission 3eme année > Profil des intégrés -->
+
+      google.load("visualization", "1", {packages:["corechart","geochart"]});
+
+    google.setOnLoadCallback(drawChart11);
+
+      function drawChart11() {
+
+          var data11 = google.visualization.arrayToDataTable([
+              ['Title', 'Percentage'],
+              ['DUT TC', 35],
+              ['DUT GEA', 22],
+              ['Licence Éco gestion', 33],
+              ['École de Commerce', 6],
+              ['Prépa ENS Cachan', 2],
+              ['Autre', 2],
+          ]);
+
+          var options11 = {
+              pieSliceText: 'percentage',
+              legend: {textStyle: {color: 'black', fontName: 'foundrysterling-lightregular', fontSize: 18}, position: 'right'},
+              slices: {  
+                    0: {offset: 0.02, color: '#f7941e' },
+                    1: {offset: 0.01, color: '#f36f21' },
+                    2: {offset: 0.00, color: '#018990' },
+                    3: {offset: 0.02, color: '#00b1cd' },
+                    4: {offset: 0.00, color: '#284967' },
+                    5: {offset: 0.00, color: '#de4d3b' },
+              },
+              pieHole: 0.4,
+			  chartArea: {height: '250', width:'500'},
+			  pieSliceTextStyle: {color: '#fff', fontSize: '26px', fontName: 'foundrysterling-boldregular'},
+			  tooltip: {textStyle: {color: '#636466'}, showColorCode: true, fontName: 'foundrysterling-lightregular', fontSize: '18px', text: 'percentage'},
+			  width: '600',
+			  height: '250',
+             };
+          var chart11 = new google.visualization.PieChart(document.getElementById('pge-troisiemeannee-profil'));
+
+          chart11.draw(data11, options11);
+      }

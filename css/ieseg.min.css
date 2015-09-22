@@ -62,6 +62,31 @@ body{
 	padding: 10px;
 }
 
+.padding-15 {
+	padding: 15px;
+}
+
+.text-large {
+	font-size: 36px;
+}
+
+.text-medium {
+	font-size: 26px;
+}
+
+
+.black-text {
+	color: #000 !important;
+}
+
+.border-bottom-1 {
+	border-bottom: 1px solid;
+}
+
+.vertical-align {
+	vertical-align: middle !important;
+}
+
 /*----------------FIN FONTS----------------------*/
 
 
@@ -733,7 +758,7 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -66px -1386px;
 	height: 40px;
 }
-#menu-program .picto-master:hover a, #menu-program .picto--master.current-menu-item a {
+#menu-program .picto-master:hover a, #menu-program .picto-master.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -66px -1469px;
 }
 
@@ -741,6 +766,7 @@ li#menu-program  .picto-admission a {
 	background: url("../images/sprite-ieseg.png") no-repeat  18px -1552px;
 	height: 40px;
 	width: 114px;
+	display: inline-block;
 }
 #menu-program .picto-alternance:hover a, #menu-program .picto-alternance.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  19px -1636px;
@@ -749,6 +775,7 @@ li#menu-program  .picto-admission a {
 #menu-program .picto-pedagogy a{
 	background: url("../images/sprite-ieseg.png") no-repeat  -125px -1552px;
 	height: 40px;
+	display: inline-block;
 }
 #menu-program .picto-pedagogy:hover a, #menu-program .picto-pedagogy.current-menu-item a {
 	background: url("../images/sprite-ieseg.png") no-repeat  -125px -1636px;
@@ -1048,7 +1075,7 @@ a:hover div.btn > .picto-photos {
 
 .emphasize-text {
 	font-size: 30px;
-	width: 50%;
+	width: 65%;
 }
 
 .transparent-white h2 {
@@ -1094,7 +1121,6 @@ a:hover div.btn > .picto-photos {
 .overview-intro-bold {
 	font-family: 'Source Sans pro', sans-serif;
 	font-weight: 600;
-	padding: 15px;
     display: block;
 }
 
@@ -1277,9 +1303,6 @@ table > thead {
 	width: 100%;
 }
 
-.black-text {
-	color: #000 !important;
-}
 
 .palme {
 	background: url("../images/sprite-ieseg.png") no-repeat scroll 48px -1984px;
@@ -1781,9 +1804,6 @@ div.course_title:hover>div.read_on {
 	margin-bottom: 10px;
 }
 
-.text-large {
-	font-size: 36px;
-}
 
 /* ------------------------ Fin Page Services Aux Etudiants -------------------- */
 
