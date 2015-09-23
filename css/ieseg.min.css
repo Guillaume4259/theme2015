@@ -107,6 +107,10 @@ body{
     margin-bottom: -15px;
 }
 
+.remove-left-margin {
+	margin-left: -15px;
+}
+
 .container-overview-margins {
 	margin-top: 20px;
 }
