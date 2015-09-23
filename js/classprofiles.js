@@ -427,13 +427,13 @@
       function drawChart8() {
         var data8 = google.visualization.arrayToDataTable([
         ['Field', 'Students'],
-		['Administration/Finance/Gestion/Comptabilité', '21.5'],
-		['Marketing','17.4'],
-		['Audit','12.4'],
-		['Fonctions Commerciales', '12.4'],
-		['Direction Générale','7.4'],
-		['Ressources Humanines', '5.8'],
-		['Achats, Approvisionnements, Logistique', '5']
+		['Administration/Finance/Gestion/Comptabilité', 21.5],
+		['Marketing',17.4],
+		['Audit', 12.4],
+		['Fonctions Commerciales', 12.4],
+		['Direction Générale', 7.4],
+		['Ressources Humanines', 5.8],
+		['Achats, Approvisionnements, Logistique', 5],
         ]);
 
       var options = {
