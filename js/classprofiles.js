@@ -426,10 +426,14 @@
  google.setOnLoadCallback(drawChart8);
       function drawChart8() {
         var data8 = google.visualization.arrayToDataTable([
-          ['Field', 'Students'],
-          ['Marketing',  15.1],
-          ['Commerce',  22.7],
-          ['Audit', 22.7],
+        ['Field', 'Students'],
+		['Administration/Finance/Gestion/Comptabilité', '21.5'],
+		['Marketing','17.4'],
+		['Audit','12.4'],
+		['Fonctions Commerciales', '12.4'],
+		['Direction Générale','7.4'],
+		['Ressources Humanines', '5.8'],
+		['Achats, Approvisionnements, Logistique', '5']
         ]);
 
       var options = {
@@ -441,6 +445,10 @@
         slices: {  0: {offset: 0.05, color: 'none'},
                    1: {offset: 0.05, color: 'none'},
                    2: {offset: 0.05, color: 'none'},
+                   3: {offset: 0.05, color: 'none'},
+                   4: {offset: 0.05, color: 'none'},
+                   5: {offset: 0.05, color: 'none'},
+                   6: {offset: 0.05, color: 'none'},
                }
       };
 
