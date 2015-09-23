@@ -589,7 +589,7 @@ if(is_page(9782) || custom_is_child(9782)){ //PGE FR
             <th colspan="2" class="keytitle foundry_bold">Informations</th>
           </tr>
           <tr class="foundry_light">
-            <th>Durée</th>
+            <th width="30%">Durée</th>
             <td>5 ans</td>
           </tr>
           <tr class="foundry_light">
