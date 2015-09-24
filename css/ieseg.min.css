@@ -1036,6 +1036,12 @@ a:hover div.btn > .picto-photos {
 	position: relative;
 }
 
+.background-amphi {
+	background: url("../images/pge-background-image.jpg") no-repeat top;
+	background-size: cover;
+	position: relative;
+}
+
 .background-pge-debouches {
 	background: url("../images/fond-page-pge-debouches.jpg") no-repeat top;
 	background-size: cover;
