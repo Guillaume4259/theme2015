@@ -117,9 +117,6 @@ if(is_page(2554) || custom_is_child(2554)){
 		//$id_page_testimonials = 34752;
 		$keyfacts_programme = '
 		<table class="table">
-			  <tr>
-				<th colspan="2" class="keytitle foundry_bold">Informations</th>
-			  </tr>
 			  <tr class="foundry_light">
 				<th>Durée</th>
 				<td>14 mois</td>
@@ -147,9 +144,6 @@ if(is_page(2554) || custom_is_child(2554)){
 		$id_page_testimonials = 34752;
 		$keyfacts_programme = '
 		<table class="table">
-			  <tr>
-				<th colspan="2" class="keytitle foundry_bold">Informations</th>
-			  </tr>
 			  <tr class="foundry_light">
 				<th>Durée</th>
 				<td>24 mois</td>
@@ -185,9 +179,6 @@ if(is_page(18322) || custom_is_child(18322)){
 	$punchline_programme="Punchline en attente";
 	$keyfacts_programme = '
       <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>3 years</td>
@@ -220,9 +211,6 @@ if(is_page(17148) || custom_is_child(17148) || $cat_testi[0]->term_id==128){
 	$id_cat_testimonials = 128;
 	$keyfacts_programme = '
       <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>1 year</td>
@@ -264,9 +252,6 @@ if(is_page(17155) || custom_is_child(17155) || $cat_testi[0]->term_id==121){
 	$id_page_testimonials = 17175;
 	$keyfacts_programme = '
     <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>1 year / 3 terms</td>
@@ -300,9 +285,6 @@ if(is_page(10873) || custom_is_child(10873) || $cat_testi[0]->term_id==123){
 	$id_page_testimonials = 23572;
 	$keyfacts_programme = '
       <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>1 year / 3 terms</td>
@@ -336,9 +318,6 @@ if(is_page(17340) || custom_is_child(17340) || $cat_testi[0]->term_id==124){
 	$id_page_testimonials = 30221;
 	$keyfacts_programme = '
         <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>3 semesters</td>
@@ -372,9 +351,6 @@ if(is_page(17394) || custom_is_child(17394) || $cat_testi[0]->term_id==119){
 	$punchline_programme="Translate Strategic Plans into Tangible Performance";
 	$keyfacts_programme = '
     <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>1 year / 3 terms</td>
@@ -408,9 +384,6 @@ if(is_page(17445) || custom_is_child(17445) || $cat_testi[0]->term_id==122){
 	$punchline_programme="Enhance your Understanding of Financial Mechanisms";
 	$keyfacts_programme = '
       <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>1 year / 3 terms</td>
@@ -444,9 +417,6 @@ if(is_page(17417) || custom_is_child(17417) || $cat_testi[0]->term_id==127){
 	$punchline_programme="Master the Ins and Outs of Financial Reporting and Advisory Services";
 	$keyfacts_programme = '
       <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>1 year / 3 terms</td>
@@ -480,9 +450,6 @@ if(is_page(21849) || custom_is_child(21849) || $cat_testi[0]->term_id==126){
 	$punchline_programme="Deepen your Expertise in Capital Markets";
 	$keyfacts_programme = '
       <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>1 year / 3 terms</td>
@@ -515,9 +482,6 @@ if(is_page(21911) || custom_is_child(21911)){
 	$punchline_programme="Optimize Managerial Decision Making through Big Data Analytics";
 	$keyfacts_programme = '
       <table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>1 year / 3 terms</td>
@@ -585,9 +549,6 @@ if(is_page(9782) || custom_is_child(9782)){ //PGE FR
 	$id_cat_testimonials = 104;
 	$id_page_testimonials = 34265;
 	$keyfacts_programme = '<table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Informations</th>
-          </tr>
           <tr class="foundry_light">
             <th width="30%">Durée</th>
             <td>5 ans</td>
@@ -618,9 +579,6 @@ if(is_page(558) || custom_is_child(558)){ //PGE GB
 	$id_cat_testimonials = 104;
 	$id_page_testimonials = 34265;
 	$keyfacts_programme = '<table class="table">
-          <tr>
-            <th colspan="2" class="keytitle foundry_bold">Key facts</th>
-          </tr>
           <tr class="foundry_light">
             <th>Duration</th>
             <td>5 years</td>
