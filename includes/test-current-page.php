@@ -272,6 +272,10 @@ if(is_page(17155) || custom_is_child(17155) || $cat_testi[0]->term_id==121){
             <th>Intakes</th>
             <td>Sept. & Jan. (Lille only)</td>
           </tr>
+          <tr class="foundry_light">
+            <th>Accreditations</th>
+            <td>Conf. Gdes Écoles + Univ Catho</td>
+          </tr>
         </table>
   ';
 }
@@ -304,6 +308,10 @@ if(is_page(10873) || custom_is_child(10873) || $cat_testi[0]->term_id==123){
           <tr class="foundry_light">
             <th>Intakes</th>
             <td>September</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Accreditations</th>
+            <td>Conf. Gdes Écoles + Univ Catho</td>
           </tr>
         </table>
   ';
@@ -338,6 +346,10 @@ if(is_page(17340) || custom_is_child(17340) || $cat_testi[0]->term_id==124){
             <th>Intakes</th>
             <td>September</td>
           </tr>
+          <tr class="foundry_light">
+            <th>Accreditations</th>
+            <td>Conf. Gdes Écoles + Univ Catho</td>
+          </tr>
         </table>
   ';
 }
@@ -370,6 +382,10 @@ if(is_page(17394) || custom_is_child(17394) || $cat_testi[0]->term_id==119){
           <tr class="foundry_light">
             <th>Intakes</th>
             <td>September</td>
+          </tr>
+           <tr class="foundry_light">
+            <th>Accreditations</th>
+            <td>Conf. Gdes Écoles + Univ Catho</td>
           </tr>
         </table>
   ';
@@ -404,6 +420,10 @@ if(is_page(17445) || custom_is_child(17445) || $cat_testi[0]->term_id==122){
             <th>Intakes</th>
             <td>September</td>
           </tr>
+          <tr class="foundry_light">
+            <th>Accreditations</th>
+            <td>Conf. Gdes Écoles + Univ Catho</td>
+          </tr>
         </table>
   ';
 }
@@ -436,6 +456,10 @@ if(is_page(17417) || custom_is_child(17417) || $cat_testi[0]->term_id==127){
           <tr class="foundry_light">
             <th>Intakes</th>
             <td>September</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Accreditations</th>
+            <td>Conf. Gdes Écoles + Univ Catho</td>
           </tr>
         </table>
   ';
@@ -470,6 +494,10 @@ if(is_page(21849) || custom_is_child(21849) || $cat_testi[0]->term_id==126){
             <th>Intakes</th>
             <td>September</td>
           </tr>
+          <tr class="foundry_light">
+            <th>Accreditations</th>
+            <td>Conf. Gdes Écoles + Univ Catho</td>
+          </tr>
         </table>
   ';
 }
@@ -501,6 +529,10 @@ if(is_page(21911) || custom_is_child(21911)){
           <tr class="foundry_light">
             <th>Intakes</th>
             <td>September</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Accreditations</th>
+            <td>Conf. Gdes Écoles + Univ Catho</td>
           </tr>
         </table>
   ';
@@ -536,6 +568,10 @@ if(is_page(21935) || custom_is_child(21935) || $cat_testi[0]->term_id==120){
           <tr class="foundry_light">
             <th>Intakes</th>
             <td>September</td>
+          </tr>
+          <tr class="foundry_light">
+            <th>Accreditations</th>
+            <td>Conf. Gdes Écoles + Univ Catho</td>
           </tr>
         </table>
   ';
