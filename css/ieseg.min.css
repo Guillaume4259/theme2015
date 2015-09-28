@@ -1022,6 +1022,12 @@ a:hover div.btn > .picto-photos {
 	width: 42px;
 }
 
+.picto-conf {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -72px -2231;
+	height: 40px;
+	width: 42px;
+}
+
 .container-margin-15 {
 	margin: 15px;
 }
@@ -1722,7 +1728,7 @@ div.course_title:hover>div.read_on {
 
 .keyfacts .table tbody tr th {	
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: bold;
 	font-size: 18px;
 }
 

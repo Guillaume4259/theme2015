@@ -311,7 +311,9 @@ if(is_page(10873) || custom_is_child(10873) || $cat_testi[0]->term_id==123){
           </tr>
           <tr class="foundry_light">
             <th>Accreditations</th>
-            <td>Conf. Gdes Écoles + Univ Catho</td>
+            <td>
+            <div class="picto-conf">CONF</div>
+            </td>
           </tr>
         </table>
   ';
