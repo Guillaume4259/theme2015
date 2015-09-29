@@ -1023,9 +1023,15 @@ a:hover div.btn > .picto-photos {
 }
 
 .picto-conf {
-	background: url("../images/sprite-ieseg.png") no-repeat scroll -72px -2231;
-	height: 40px;
-	width: 42px;
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -4px -2611px;
+	height: 51px;
+	width: 118px;
+}
+
+.picto-catho {
+	background: url("../images/sprite-ieseg.png") no-repeat scroll -126px -2611px;
+	height: 51px;
+	width: 31px;
 }
 
 .container-margin-15 {

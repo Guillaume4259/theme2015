@@ -212,7 +212,7 @@ if(is_page(17148) || custom_is_child(17148) || $cat_testi[0]->term_id==128){
 	$keyfacts_programme = '
       <table class="table">
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>1 year</td>
           </tr>
           <tr class="foundry_light">
@@ -253,7 +253,7 @@ if(is_page(17155) || custom_is_child(17155) || $cat_testi[0]->term_id==121){
 	$keyfacts_programme = '
     <table class="table">
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>1 year / 3 terms</td>
           </tr>
           <tr class="foundry_light">
@@ -274,7 +274,7 @@ if(is_page(17155) || custom_is_child(17155) || $cat_testi[0]->term_id==121){
           </tr>
           <tr class="foundry_light">
             <th>Accreditations</th>
-            <td>Conf. Gdes Écoles + Univ Catho</td>
+            <td><div class="pull-left picto-conf" alt="Conférence des Grandes Écoles" title="Conférence des Grandes Écoles"></div><div class="pull-left picto-catho" alt="Université Catholique de Lille" title="Université Catholique de Lille"></div></td>
           </tr>
         </table>
   ';
@@ -290,7 +290,7 @@ if(is_page(10873) || custom_is_child(10873) || $cat_testi[0]->term_id==123){
 	$keyfacts_programme = '
       <table class="table">
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>1 year / 3 terms</td>
           </tr>
           <tr class="foundry_light">
@@ -312,7 +312,7 @@ if(is_page(10873) || custom_is_child(10873) || $cat_testi[0]->term_id==123){
           <tr class="foundry_light">
             <th>Accreditations</th>
             <td>
-            <div class="picto-conf">CONF</div>
+            <div class="pull-left picto-conf" alt="Conférence des Grandes Écoles" title="Conférence des Grandes Écoles"></div><div class="pull-left picto-catho" alt="Université Catholique de Lille" title="Université Catholique de Lille"></div>
             </td>
           </tr>
         </table>
@@ -329,7 +329,7 @@ if(is_page(17340) || custom_is_child(17340) || $cat_testi[0]->term_id==124){
 	$keyfacts_programme = '
         <table class="table">
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>3 semesters</td>
           </tr>
           <tr class="foundry_light">
@@ -350,7 +350,7 @@ if(is_page(17340) || custom_is_child(17340) || $cat_testi[0]->term_id==124){
           </tr>
           <tr class="foundry_light">
             <th>Accreditations</th>
-            <td>Conf. Gdes Écoles + Univ Catho</td>
+            <td><div class="pull-left picto-conf" alt="Conférence des Grandes Écoles" title="Conférence des Grandes Écoles"></div><div class="pull-left picto-catho" alt="Université Catholique de Lille" title="Université Catholique de Lille"></div></td>
           </tr>
         </table>
   ';
@@ -366,7 +366,7 @@ if(is_page(17394) || custom_is_child(17394) || $cat_testi[0]->term_id==119){
 	$keyfacts_programme = '
     <table class="table">
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>1 year / 3 terms</td>
           </tr>
           <tr class="foundry_light">
@@ -387,7 +387,7 @@ if(is_page(17394) || custom_is_child(17394) || $cat_testi[0]->term_id==119){
           </tr>
            <tr class="foundry_light">
             <th>Accreditations</th>
-            <td>Conf. Gdes Écoles + Univ Catho</td>
+            <td><div class="pull-left picto-conf" alt="Conférence des Grandes Écoles" title="Conférence des Grandes Écoles"></div><div class="pull-left picto-catho" alt="Université Catholique de Lille" title="Université Catholique de Lille"></td>
           </tr>
         </table>
   ';
@@ -403,7 +403,7 @@ if(is_page(17445) || custom_is_child(17445) || $cat_testi[0]->term_id==122){
 	$keyfacts_programme = '
       <table class="table">
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>1 year / 3 terms</td>
           </tr>
           <tr class="foundry_light">
@@ -424,7 +424,7 @@ if(is_page(17445) || custom_is_child(17445) || $cat_testi[0]->term_id==122){
           </tr>
           <tr class="foundry_light">
             <th>Accreditations</th>
-            <td>Conf. Gdes Écoles + Univ Catho</td>
+            <td><div class="picto-conf pull-left" alt="Conférence des Grandes Écoles" title="Conférence des Grandes Écoles"></div><div class="picto-catho pull-left" alt="Université Catholique de Lille" title="Université Catholique de Lille"></div></td>
           </tr>
         </table>
   ';
@@ -440,7 +440,7 @@ if(is_page(17417) || custom_is_child(17417) || $cat_testi[0]->term_id==127){
 	$keyfacts_programme = '
       <table class="table">
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>1 year / 3 terms</td>
           </tr>
           <tr class="foundry_light">
@@ -461,7 +461,7 @@ if(is_page(17417) || custom_is_child(17417) || $cat_testi[0]->term_id==127){
           </tr>
           <tr class="foundry_light">
             <th>Accreditations</th>
-            <td>Conf. Gdes Écoles + Univ Catho</td>
+            <td><div class="picto-conf pull-left" alt="Conférence des Grandes Écoles" title="Conférence des Grandes Écoles"></div><div class="picto-catho pull-left" alt="Université Catholique de Lille" title="Université Catholique de Lille"></div></td>
           </tr>
         </table>
   ';
@@ -477,7 +477,7 @@ if(is_page(21849) || custom_is_child(21849) || $cat_testi[0]->term_id==126){
 	$keyfacts_programme = '
       <table class="table">
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>1 year / 3 terms</td>
           </tr>
           <tr class="foundry_light">
@@ -498,7 +498,7 @@ if(is_page(21849) || custom_is_child(21849) || $cat_testi[0]->term_id==126){
           </tr>
           <tr class="foundry_light">
             <th>Accreditations</th>
-            <td>Conf. Gdes Écoles + Univ Catho</td>
+            <td><div class="picto-conf pull-left" alt="Conférence des Grandes Écoles" title="Conférence des Grandes Écoles"></div><div class="picto-catho pull-left" alt="Université Catholique de Lille" title="Université Catholique de Lille"></div></td>
           </tr>
         </table>
   ';
@@ -513,7 +513,7 @@ if(is_page(21911) || custom_is_child(21911)){
 	$keyfacts_programme = '
       <table class="table">
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>1 year / 3 terms</td>
           </tr>
           <tr class="foundry_light">
@@ -534,7 +534,7 @@ if(is_page(21911) || custom_is_child(21911)){
           </tr>
           <tr class="foundry_light">
             <th>Accreditations</th>
-            <td>Conf. Gdes Écoles + Univ Catho</td>
+            <td><div class="picto-conf pull-left" alt="Conférence des Grandes Écoles" title="Conférence des Grandes Écoles"></div><div class="picto-catho pull-left" alt="Université Catholique de Lille" title="Université Catholique de Lille"></div></td>
           </tr>
         </table>
   ';
@@ -552,7 +552,7 @@ if(is_page(21935) || custom_is_child(21935) || $cat_testi[0]->term_id==120){
             <th colspan="2" class="keytitle foundry_bold">Key Facts</th>
           </tr>
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>1 year / 3 terms</td>
           </tr>
           <tr class="foundry_light">
@@ -573,7 +573,7 @@ if(is_page(21935) || custom_is_child(21935) || $cat_testi[0]->term_id==120){
           </tr>
           <tr class="foundry_light">
             <th>Accreditations</th>
-            <td>Conf. Gdes Écoles + Univ Catho</td>
+            <td><div class="picto-conf pull-left" alt="Conférence des Grandes Écoles" title="Conférence des Grandes Écoles"></div><div class="pull-left picto-catho" alt="Université Catholique de Lille" title="Université Catholique de Lille"></div></td>
           </tr>
         </table>
   ';
@@ -588,7 +588,7 @@ if(is_page(9782) || custom_is_child(9782)){ //PGE FR
 	$id_page_testimonials = 34265;
 	$keyfacts_programme = '<table class="table">
           <tr class="foundry_light">
-            <th width="30%">Durée</th>
+            <th width="40%">Durée</th>
             <td>5 ans</td>
           </tr>
           <tr class="foundry_light">
@@ -618,7 +618,7 @@ if(is_page(558) || custom_is_child(558)){ //PGE GB
 	$id_page_testimonials = 34265;
 	$keyfacts_programme = '<table class="table">
           <tr class="foundry_light">
-            <th>Duration</th>
+            <th width="40%">Duration</th>
             <td>5 years</td>
           </tr>
           <tr class="foundry_light">
